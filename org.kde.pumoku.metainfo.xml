@@ -23,12 +23,11 @@
     <name translate="no">KDE</name>
   </developer>
   <description>
-    <p>Multiple paragraphs of long description, describing this software component.</p>
-    <p>You can also use ordered and unordered lists:</p>
+    <p>PuMoKu is a classic, 9x9 pumoku solving game aimed at Plasma Mobile. It comes with flexible highlighting options and (touch) input methods, full undo stack and more.</p>
     <ul>
-      <li>Feature 1</li>
-      <li>Feature 2</li>
+      <li>Input methods: Cell first, Number first or Hybrid</li>
+      <li>Built in sudoku generator</li>
+      <li>Automatic undo when the same action is repeated</li>
     </ul>
-    <p>Keep in mind to XML-escape characters, and that this is not HTML markup.</p>
   </description>
 </component>

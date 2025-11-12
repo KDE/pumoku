@@ -3,7 +3,7 @@
 
     [] = TODO [-] = doing, [x] = done
 
-    [-] Git !!! TODO: Import to invent.kde.org
+    [x] Git !!! TODO: Import to invent.kde.org
 
     [-] Seperate logic from UI: Mostly done, at least by a blank line. Split GameBoard.qml file? See below item.
     [] Componentify some more! => game cell, number key, etc.
