@@ -6,8 +6,7 @@ import QtQuick.Controls as QQC2
 import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 import org.kde.pumoku
-// import org.kde.pumoku.private
-
+import org.kde.config as Config
 
 Kirigami.ApplicationWindow {
     id: root
@@ -21,27 +20,12 @@ Kirigami.ApplicationWindow {
     // width: 360
     // height: 780
 
-    onClosing: App.saveWindowGeometry(root)
-
-    onWidthChanged: saveWindowGeometryTimer.restart()
-    onHeightChanged: saveWindowGeometryTimer.restart()
-    onXChanged: saveWindowGeometryTimer.restart()
-    onYChanged: saveWindowGeometryTimer.restart()
-
-    Component.onCompleted: {
-        App.restoreWindowGeometry(root);
-        setPage(mainMenu);
+    Config.WindowStateSaver {
+	configGroupName: 'main'
     }
 
-    // This timer allows to batch update the window size change to reduce
-    // the io load and also work around the fact that x/y/width/height are
-    // changed when loading the page and overwrite the saved geometry from
-    // the previous session.
-    Timer {
-
-        id: saveWindowGeometryTimer
-        interval: 1000
-        onTriggered: App.saveWindowGeometry(root)
+    Component.onCompleted: {
+        setPage(mainMenu);
     }
 
 

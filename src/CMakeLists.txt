@@ -5,7 +5,6 @@
 qt_add_qml_module(pumoku_static
     STATIC
     URI org.kde.pumoku
-    VERSION 1.0
     QML_FILES
         contents/ui/Main.qml
         contents/ui/GamePage.qml
@@ -19,7 +18,6 @@ qt_add_qml_module(pumoku_static
 qt_add_resources(RESOURCES resources.qrc)
 
 target_sources(pumoku_static PRIVATE
-    app.cpp
     qqwing.cpp
     qqw.cpp
 )
