@@ -5,11 +5,23 @@
  -->
 <component type="desktop-application">
   <id>org.kde.pumoku</id>
+  <provides>
+    <binary>pumoku</binary>
+  </provides>
   <name>PuMoKu Kirigami Application</name>
   <summary>A classic 9x9 sudoku game for plasma mobile</summary>
-  <metadata_license>A permissive license for this metadata, e.g. "FSFAP" + Update the SPDX tags above!</metadata_license>
-  <project_license>The license of this software as SPDX string, e.g. "GPL-2.0-or-later"</project_license>
-  <developer_name>The software vendor name, e.g. "ACME Corporation"</developer_name>
+  <metadata_license>FSFAP</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <url type="homepage">https://apps.kde.org/pumoku/</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=Pumoku</url>
+  <content_rating type="oars-1.1" />
+  <launchable type="desktop-id">org.kde.pumoku.desktop</launchable>
+  <categories>
+    <category>Game</category>
+  </categories>
+  <developer id="kde.org">
+    <name translate="no">KDE</name>
+  </developer>
   <description>
     <p>Multiple paragraphs of long description, describing this software component.</p>
     <p>You can also use ordered and unordered lists:</p>
