@@ -31,15 +31,17 @@ FormCard.FormCardPage {
             onCurrentValueChanged: Config.input_method = currentValue
 
         }
-    }
-    FormCard.FormCard {
+
+        FormCard.FormDelegateSeparator {}
+
         FormCard.FormSwitchDelegate {
             text: i18n("Reset time with game")
             checked: Config.reset_time
             onCheckedChanged: Config.reset_time = checked
         }
-    }
-    FormCard.FormCard {
+
+        FormCard.FormDelegateSeparator {}
+
         FormCard.FormSwitchDelegate {
             text: i18n("Clean up pencil marks when setting a cell value")
             checked: Config.cleanup_pencilmarks
@@ -56,43 +58,49 @@ FormCard.FormCardPage {
             checked: Config.houses
             onCheckedChanged: Config.houses = checked
         }
-    }
-    FormCard.FormCard {
+
+        FormCard.FormDelegateSeparator {}
+
         FormCard.FormSwitchDelegate {
             text: i18n("Cells with active digit")
             checked: Config.digit_value
             onCheckedChanged: Config.digit_value = checked
         }
-    }
-    FormCard.FormCard {
+
+        FormCard.FormDelegateSeparator {}
+
         FormCard.FormSwitchDelegate {
             text: i18n("Cells with active digit pencilmark")
             checked: Config.digit_pencilmark
             onCheckedChanged: Config.digit_pencilmark = checked
         }
-    }
-    FormCard.FormCard {
+
+        FormCard.FormDelegateSeparator {}
+
         FormCard.FormSwitchDelegate {
             text: i18n("Logical errors in values")
             checked: Config.logical_error_value
             onCheckedChanged: Config.logical_error_value = checked
         }
-    }
-    FormCard.FormCard {
+
+        FormCard.FormDelegateSeparator {}
+
         FormCard.FormSwitchDelegate {
             text: i18n("Logical errors in pencilmarks")
             checked: Config.logical_error_pencilmark
             onCheckedChanged: Config.logical_error_pencilmark = checked
         }
-    }
-    FormCard.FormCard {
+
+        FormCard.FormDelegateSeparator {}
+
         FormCard.FormSwitchDelegate {
             text: i18n("Erasable cells with eraser active")
             checked: Config.erasable
             onCheckedChanged: Config.erasable = checked
         }
-    }
-    FormCard.FormCard {
+
+        FormCard.FormDelegateSeparator {}
+
         FormCard.FormSwitchDelegate {
             text: i18n("Wrong values")
             checked: Config.error_value
