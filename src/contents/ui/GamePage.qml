@@ -1079,7 +1079,7 @@ Kirigami.Page {
                         QQC2.MenuItem {
                             text: i18n("Solve cell")
                             onTriggered: solveCell(currentCell)
-                            visible: currentCell > -1 && board[currentCell] == 0
+                            enabled: currentCell > -1 && board[currentCell] === 0
                         }
                         QQC2.MenuItem {
                             text: i18n("Set pencilmarks")
