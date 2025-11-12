@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk>
+SPDX-License-Identifier: LGPL-2.0-or-later
+-->
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+    http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+    <group name="General">
+        <entry name="alternateBlockBackgrounds" type="Bool">
+            <label>Alternate block backgrounds</label>
+            <default>true</default>
+        </entry>
+    </group>
+    <group name="Game">
+        <entry name="reset_time" type="Bool">
+            <label>Reset time when resetting game</label>
+            <default>true</default>
+        </entry>
+        <entry name="cleanup_pencilmarks" type="Bool">
+            <label>Clean up pencil marks when setting a cell value</label>
+            <default>true</default>
+        </entry>
+        <entry name="input_method" type="String">
+            <label>Input method</label>
+            <default>hybrid</default>
+        </entry>
+    </group>
+    <group name="Highlight">
+        <entry name="houses" type="Bool">
+            <label>Houses of a selected cell</label>
+            <default>true</default>
+        </entry>
+        <entry name="digit_value" type="Bool">
+            <label>Cells with active digit</label>
+            <default>true</default>
+        </entry>
+        <entry name="digit_pencilmark" type="Bool">
+            <label>Cells with active digit pencilmark</label>
+            <default>true</default>
+        </entry>
+        <entry name="logical_error_value" type="Bool">
+            <label>Logical errors in value</label>
+            <default>true</default>
+        </entry>
+        <entry name="logical_error_pencilmark" type="Bool">
+            <label>Logical errors in pencil marks</label>
+            <default>true</default>
+        </entry>
+        <entry name="erasable" type="Bool">
+            <label>Erasable cells with erase button active</label>
+            <default>true</default>
+        </entry>
+        <entry name="error_value" type="Bool">
+            <label>Wrong values</label>
+            <default>false</default>
+        </entry>
+
+    </group>
+</kcfg>

@@ -1,0 +1,10 @@
+<!-- SPDX-License-Identifier: LGPL-2.1-or-later
+     SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk> -->
+<RCC>
+    <qresource prefix="/">
+        <file alias="About.qml">contents/ui/About.qml</file>
+        <file alias="Settings.qml">contents/ui/Settings.qml</file>
+        <file alias="Import.qml">contents/ui/Import.qml</file>
+        <file alias="pumoku.svg">contents/graphics/pumoku.svg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk>
+# SPDX-License-Identifier: LGPL-2.0-or-later
+
+File=pumokuconfig.kcfg
+ClassName=PuMoKuConfig
+Mutators=true
+DefaultValueGetters=true
+GenerateProperties=true
+ParentInConstructor=true
+Singleton=true
