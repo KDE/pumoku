@@ -16,7 +16,6 @@
 #include <QQuickStyle>
 #include <QUrl>
 
-#include "app.h"
 #include "version-pumoku.h"
 #include <KAboutData>
 #include <KLocalizedContext>
