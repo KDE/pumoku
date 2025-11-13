@@ -47,6 +47,7 @@ if (ANDROID)
 endif()
 
 add_subdirectory(src)
+add_subdirectory(icons)
 
 install(FILES org.kde.pumoku.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.pumoku.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
