@@ -89,9 +89,9 @@ Kirigami.Page {
     // properties supporting satistics and weighted finishing status
     // hint status bitmask
     property int hintStatusUsedHints: 1
-    // property int hintStatusPMLogicalErrorsVisible: 2
-    // property int hintStatusLogicalValueErrorsVisible: 4
-    // property int hintStatusValueErrorsVisible: 8
+    property int hintStatusPMLogicalErrorsVisible: 2
+    property int hintStatusLogicalValueErrorsVisible: 4
+    property int hintStatusValueErrorsVisible: 8
     property int hintStatusUsedAutoPM: 16
     property int hintStatusAutoSolved: 32
     property string finishHeader: ""
@@ -335,11 +335,8 @@ Kirigami.Page {
 
     function rowFromIndex(index) { return Math.trunc(index/9); }
     function colFromIndex(index) { return index%9; }
-    function blockFromRC(row, col) { return row - row%3 + (col - col%3)/3; }
     function blockFromIndex(index) {
-        let row = rowFromIndex(index);
-        let col = colFromIndex(index);
-        return row - row%3 + (col - col%3)/3;
+        return boardMap[index];
     }
 
     function copyOfList(list){
@@ -515,24 +512,24 @@ Kirigami.Page {
             let rowMark = 0;
             let colMark = 0;
             let blkMark = 0;
-            const bb = (i - i%3)*9+i%3 * 3; // block base bmindex
             // 1. collect values from each house
             for (let j=0; j<9; j++) {
-                rowMark |= 2**(values[i*9+j]-1);
-                colMark |= 2**(values[i+9*j]-1);
-                const jm3 = j%3;
-                const c = bb + (j - jm3) * 3 + jm3; // cell index in block
+                let c = i*9+j;
+                rowMark |= 2**(values[c]-1);
+                c = boardMap[c];
                 blkMark |= 2**(values[c]-1);
+                colMark |= 2**(values[i+9*j]-1);
+                // const jm3 = j%3;
+                // const c = bb + (j - jm3) * 3 + jm3; // cell index in block
             }
             // 2. remove pm's accordingly
             for (let j=0; j<9; j++) {
                 let c = i*9+j; // cell index in row
                 if (!values[c]) pencilMarks[c] &= ~rowMark;
+                c =  boardMap[c];
+                if (!values[c]) pencilMarks[c] &= ~blkMark;
                 c = i+9*j; // cell index in col
                 if (!values[c]) pencilMarks[c] &= ~colMark;
-                const jm3 = j%3;
-                c = bb + (j - jm3) * 3 + jm3; // cell index in block
-                if (!values[c]) pencilMarks[c] &= ~blkMark;
             }
         }
 
@@ -697,9 +694,9 @@ Kirigami.Page {
 
     // Error checking
     // Error type bits:
-    readonly property int errValue: 2**11
-    readonly property int errValueLogical: 2**10
-    readonly property int errPencilMarkLogical: 2**9
+    readonly property int errValue: 2**11 // 2048
+    readonly property int errValueLogical: 2**10 // 1024
+    readonly property int errPencilMarkLogical: 2**9 // 512
     // the above appears in hintStatus if seen and displayed.
     // 2**[0-8] are individual pencilmark errors
 
@@ -707,6 +704,7 @@ Kirigami.Page {
     // and logical pencilmark errors.
     // returns the number of errors
     function checkErrors(row, col, block, bmindex, val, type) {
+        console.log("checking for errors " + type)
         let found = [[],[],[]];
         const rb = row * 9; // row base bmindex
         const br = (block - block%3) * 3; // block base row
