@@ -70,10 +70,7 @@ int main(int argc, char *argv[])
         KAboutLicense::GPL,
         // Copyright Statement.
         i18n("(c) 2024"));
-    aboutData.addAuthor(i18nc("@info:credit", "Anders Lund"),
-                        i18nc("@info:credit", "Maintainer"),
-                        u"anders@alweb.dk"_s,
-                        u"https://yourwebsite.com"_s);
+    aboutData.addAuthor(i18nc("@info:credit", "Anders Lund"), i18nc("@info:credit", "Maintainer"), u"anders@alweb.dk"_s);
     aboutData.setTranslator(i18nc("NAME OF TRANSLATORS", "Your names"), i18nc("EMAIL OF TRANSLATORS", "Your emails"));
     KAboutData::setApplicationData(aboutData);
     QGuiApplication::setWindowIcon(QIcon::fromTheme(u"org.kde.pumoku"_s));
