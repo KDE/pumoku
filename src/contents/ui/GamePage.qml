@@ -94,6 +94,7 @@ Kirigami.Page {
     property int hintStatusValueErrorsVisible: 8
     property int hintStatusUsedAutoPM: 16
     property int hintStatusAutoSolved: 32
+
     property string finishHeader: ""
     property string finishText: ""
     property string finishMsg: ""
@@ -555,9 +556,10 @@ Kirigami.Page {
     // Finishing
     // property int hintStatusUsedHints: 1
     // property int hintStatusPMLogicalErrorsVisible: 2
-    // property int hintStatusUsedAutoPM: 4
-    // property int hintStatusErrorsVisible: 8
-    // property int hintStatusAutoSolved: 16
+    // property int hintStatusLogicalValueErrorsVisible: 4
+    // property int hintStatusValueErrorsVisible: 8
+    // property int hintStatusUsedAutoPM: 16
+    // property int hintStatusAutoSolved: 32
     // property string finishHeader: ""
     // property string finishText: ""
     // property string finishMsg: ""
@@ -704,50 +706,49 @@ Kirigami.Page {
     // and logical pencilmark errors.
     // returns the number of errors
     function checkErrors(row, col, block, bmindex, val, type) {
-        console.log("checking for errors " + type)
+        // console.log("checking for errors " + type)
         let found = [[],[],[]];
         const rb = row * 9; // row base bmindex
         const br = (block - block%3) * 3; // block base row
         const bc = block%3 * 3; // block base col
         const bb = br*3+bc; // block base bmindex
 
-        // if type is errPencilMarkLogical, only set error if mark is present (else remove).
-        // this is only checked for that type, not for errValueLogical
-        // this allows to unset the mark if there is no error.
-        // true if not a mark, or mark is set in cells pencilmarks
-        // FIXME better name??
-        let hasMarkIf = type == errValueLogical ? true : (pencilMarks[bmindex] & 2**(val-1));
         // in case of pencilmark logical error, the error value should be the pencilmark bit ([0-8]**2)
         // this will avoid pencilmark errors wrongly being cleared, and allow to show the error
         // in the pencilmark cell (should I want to)
         // when looking a cell with this type of errer, the error will be > 0 and < errPencilMarkLogical (512)
-        let errValue = type == errPencilMarkLogical ? 2**(val-1) : type;
+        const err = type == errPencilMarkLogical ? 2**(val-1) : type;
+        // if type is errPencilMarkLogical, only set error if mark is present (else remove).
+        // this is only checked for that type, not for errValueLogical
+        // this allows to unset the mark if there is no error.
+        // true if not a mark, or mark is set in cells pencilmarks
+        let hasPencilMark = type == errValueLogical ? true : (pencilMarks[bmindex] & err);
         for (let i = 0; i < 9; i++) {
             const im3 = i%3;
             // block
             let c = bb + (i - im3) * 3 + im3; // bmindex of block cell
             let idx = (type == errValueLogical) ? c : bmindex;
-            if (values[c] > 0 && values[c] == val && hasMarkIf) {
-                found[0].push([idx,errValue]);
-                hintStatus |= errValue;
-            } else {
-                errors[idx] &= ~errValue;
+            if (values[c] > 0 && values[c] == val && hasPencilMark) {
+                found[0].push([idx,err]);
+                hintStatus |= err;
+            } else if (hasMarkIf) {
+                errors[idx] &= ~err;
             }
             // row
             c = rb + i; // bmindex of row cell
             idx = (type == errValueLogical) ? c : bmindex;
-            if (values[c] > 0 && values[c] == val && hasMarkIf) {
-                found[1].push([idx,errValue]);
+            if (values[c] > 0 && values[c] == val && hasPencilMark) {
+                found[1].push([idx,err]);
             } else {
-                errors[idx] &= ~errValue;
+                errors[idx] &= ~err;
             }
             // column
             c = i * 9 + col; // bmindex of col cell
             idx = (type == errValueLogical) ? c : bmindex;
-            if (values[c] > 0 && values[c] == val && hasMarkIf) {
-                    found[2].push([idx,errValue]);
+            if (values[c] > 0 && values[c] == val && hasPencilMark) {
+                    found[2].push([idx,err]);
             } else {
-                errors[idx] &= ~errValue;
+                errors[idx] &= ~err;
             }
         }
         let cnt = 0;
