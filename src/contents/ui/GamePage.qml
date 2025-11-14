@@ -499,54 +499,39 @@ Kirigami.Page {
     }
 
     // generate pencilmarks:
-    // for each house, first collect seen numbers in a pm 'enum',
+    // for each house, first collect seen numbers in a pm bitmask,
     // then add those to the pm of the house cells
     function generatePencilMarks() {
         let undodata = copyOfList(pencilMarks);
         // clearPencilMarks();
-        const all = 1|2|4|8|16|32|64|128|256;
+        const all = 511; // 1|2|4|8|16|32|64|128|256
         for (let i=0; i < 81; i++) {
             if (values[i] == 0)
                 pencilMarks[i] = all;
         }
         for (let i=0; i<9; i++) {
+            const ir = i*9; // index of first row cell
             let rowMark = 0;
             let colMark = 0;
             let blkMark = 0;
             // 1. collect values from each house
             for (let j=0; j<9; j++) {
-                let c = i*9+j;
+                let c = ir+j; // cell index
                 rowMark |= 2**(values[c]-1);
                 c = boardMap[c];
                 blkMark |= 2**(values[c]-1);
-                colMark |= 2**(values[i+9*j]-1);
-                // const jm3 = j%3;
-                // const c = bb + (j - jm3) * 3 + jm3; // cell index in block
+                colMark |= 2**(values[i+j*9]-1);
             }
             // 2. remove pm's accordingly
             for (let j=0; j<9; j++) {
-                let c = i*9+j; // cell index in row
+                let c = ir+j; // cell index
                 if (!values[c]) pencilMarks[c] &= ~rowMark;
                 c =  boardMap[c];
                 if (!values[c]) pencilMarks[c] &= ~blkMark;
-                c = i+9*j; // cell index in col
+                c = i+j*9; // cell index in col
                 if (!values[c]) pencilMarks[c] &= ~colMark;
             }
         }
-
-
-        // Old way of doing this, likely slower than current
-        // for (let i=0; i<9; i++) {
-        //     for (let j=0; j<9; j++) {
-        //         let index = i*9+j;
-        //         if (values[index] != 0) {
-        //             // Calculating block index from row, col:
-        //             // row - row%3 + (col - col%3)/3
-        //             const b = (i-i%3)+((j-j%3)/3)
-        //             cleanPencilMarks(i,j,b,index,values[index]);
-        //         }
-        //     }
-        // }
 
         addUndo(undoPMBoard,0,1,undodata,copyOfList(pencilMarks));
         hintStatus |= hintStatusUsedAutoPM;
@@ -608,18 +593,13 @@ Kirigami.Page {
 
     // help and hints
     function solve() {
-        let undoData = copyOfList(values);
         digitCounters  = [];
         digitCounters.length = 10;
         for (let i=0; i<81; i++) {
             values[i] = solution[i];
             digitCounters[values[i]]++;
         }
-        addUndo(undoValueBoard, 0, 1, undoData,copyOfList(values));
         hintStatus |= hintStatusAutoSolved;
-        checkErrorsBoard(errValue);
-        checkErrorsBoard(errValueLogical);
-        checkErrorsBoard(errPencilMarkLogical);
         finish();
     }
 
@@ -696,9 +676,9 @@ Kirigami.Page {
 
     // Error checking
     // Error type bits:
-    readonly property int errValue: 2**11 // 2048
-    readonly property int errValueLogical: 2**10 // 1024
-    readonly property int errPencilMarkLogical: 2**9 // 512
+    readonly property int errValue: 2048 // 2**11
+    readonly property int errValueLogical: 1024 // 2**10
+    readonly property int errPencilMarkLogical: 512 // 2**9
     // the above appears in hintStatus if seen and displayed.
     // 2**[0-8] are individual pencilmark errors
 
@@ -718,36 +698,37 @@ Kirigami.Page {
         // in the pencilmark cell (should I want to)
         // when looking a cell with this type of errer, the error will be > 0 and < errPencilMarkLogical (512)
         const err = type == errPencilMarkLogical ? 2**(val-1) : type;
+        console.log ("err: " + err )
         // if type is errPencilMarkLogical, only set error if mark is present (else remove).
         // this is only checked for that type, not for errValueLogical
         // this allows to unset the mark if there is no error.
         // true if not a mark, or mark is set in cells pencilmarks
-        let hasPencilMark = type == errValueLogical ? true : (pencilMarks[bmindex] & err);
+        let hasMark = type == errValueLogical ? true : (pencilMarks[bmindex] & err);
         for (let i = 0; i < 9; i++) {
             const im3 = i%3;
             // block
             let c = bb + (i - im3) * 3 + im3; // bmindex of block cell
             let idx = (type == errValueLogical) ? c : bmindex;
-            if (values[c] > 0 && values[c] == val && hasPencilMark) {
+            if (values[c] > 0 && values[c] == val && hasMark) {
                 found[0].push([idx,err]);
                 hintStatus |= err;
-            } else if (hasMarkIf) {
+            } else if (hasMark) {
                 errors[idx] &= ~err;
             }
             // row
             c = rb + i; // bmindex of row cell
             idx = (type == errValueLogical) ? c : bmindex;
-            if (values[c] > 0 && values[c] == val && hasPencilMark) {
+            if (values[c] > 0 && values[c] == val && hasMark) {
                 found[1].push([idx,err]);
-            } else {
+            } else if (hasMark) {
                 errors[idx] &= ~err;
             }
             // column
             c = i * 9 + col; // bmindex of col cell
             idx = (type == errValueLogical) ? c : bmindex;
-            if (values[c] > 0 && values[c] == val && hasPencilMark) {
+            if (values[c] > 0 && values[c] == val && hasMark) {
                     found[2].push([idx,err]);
-            } else {
+            } else if (hasMark) {
                 errors[idx] &= ~err;
             }
         }
@@ -765,6 +746,7 @@ Kirigami.Page {
             // console.log("checkErrors: found " + cnt)
             setHintStatusErr (type);
         }
+        // console.log("checkErrors - fucked? " + (errors[bmindex] & hintStatusAutoSolved))
         return cnt;
     }
 
