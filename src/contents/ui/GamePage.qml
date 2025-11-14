@@ -336,13 +336,12 @@ Kirigami.Page {
 
     function rowFromIndex(index) { return Math.trunc(index/9); }
     function colFromIndex(index) { return index%9; }
-    function blockFromIndex(index) {
-        return boardMap[index];
-    }
+    function blockFromIndex(index) { return boardMap[index]; }
 
     function copyOfList(list){
         let ret = [];
-        for (let i=0;i<list.length;i++) { ret.push(list[i]); }
+        ret.push(...list)
+        // for (let i=0;i<list.length;i++) { ret.push(list[i]); }
         return ret;
     }
 
@@ -698,7 +697,7 @@ Kirigami.Page {
         // in the pencilmark cell (should I want to)
         // when looking a cell with this type of errer, the error will be > 0 and < errPencilMarkLogical (512)
         const err = type == errPencilMarkLogical ? 2**(val-1) : type;
-        console.log ("err: " + err )
+        // console.log ("err: " + err )
         // if type is errPencilMarkLogical, only set error if mark is present (else remove).
         // this is only checked for that type, not for errValueLogical
         // this allows to unset the mark if there is no error.
