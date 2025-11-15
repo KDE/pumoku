@@ -364,24 +364,25 @@ Kirigami.Page {
         // block first cell row: (index - index%3) * 3;
         // block first cell column index%3 * 3; // block base col
         // bmindex of that cell: row*3+column
+        // TODO TEST this
         const bb = (block - block%3)*9+block%3 * 3; // block base bmindex
         let count = 0;
+        // loop through each house
         for (var i = 0; i < 9; i++) {
             // block
-            var im3 = i%3;
-            var b = bb + (i - im3) * 3 + im3; // bmindex of block cell
+            const b = boardMap[bb+i]; // bmindex of block cell
             if (b!= bmindex && (pencilMarks[b] & m)) {
                pencilMarks[b] &= ~m;
                count++;
             }
             // row
-            var r = rb + i; // bmindex of row cell
+            const r = rb + i; // bmindex of row cell
             if (r != bmindex && (pencilMarks[r] & m)) {
                 pencilMarks[r] &= ~m;
                 count++;
             }
             // column
-            var c = i * 9 + col; // bmindex of col cell
+            const c = i * 9 + col; // bmindex of col cell
             if (c != bmindex && (pencilMarks[c] & m)) {
                 pencilMarks[c] &= ~m;
                 count++;
@@ -704,8 +705,8 @@ Kirigami.Page {
         // true if not a mark, or mark is set in cells pencilmarks
         let hasMark = type == errValueLogical ? true : (pencilMarks[bmindex] & err);
         for (let i = 0; i < 9; i++) {
-            const im3 = i%3;
             // block
+            const im3 = i%3;
             let c = bb + (i - im3) * 3 + im3; // bmindex of block cell
             let idx = (type == errValueLogical) ? c : bmindex;
             if (values[c] > 0 && values[c] == val && hasMark) {
