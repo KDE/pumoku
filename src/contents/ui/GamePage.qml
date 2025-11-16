@@ -16,7 +16,7 @@ Kirigami.Page {
     // globalToolBarStyle: Kirigami.ApplicationHeaderStyle.None //gamePage.isCurrentPage && wideScreen ? Kirigami.ApplicationHeaderStyle.None : Kirigami.ApplicationHeaderStyle.ToolBar
     property bool wideScreen: applicationWindow().isWideScreen
 
-
+    // BEGIN GAME
     property bool hasGame: false
 
     // props and init
@@ -680,7 +680,7 @@ Kirigami.Page {
     readonly property int errValue: 2048 // 2**11
     readonly property int errValueLogical: 1024 // 2**10
     readonly property int errPencilMarkLogical: 512 // 2**9
-    // FIXME the above appears in hintStatus if seen and displayed.
+    // TODO the above appears in hintStatus if seen and displayed.
     // 2**[0-8] are individual pencilmark errors
 
     // check houses of a cell for logical value errors
@@ -698,7 +698,7 @@ Kirigami.Page {
         // in the pencilmark cell (should I want to)
         // when looking a cell with this type of errer, the error will be > 0 and < errPencilMarkLogical (512)
         const err = type == errPencilMarkLogical ? 2**(val-1) : type;
-        // if type is errPencilMarkLogical, only set error if mark is present (else remove).
+        // if type is errPencilMarkLogFIXME ical, only set error if mark is present (else remove).
         // this is only checked for that type, not for errValueLogical
         // this allows to unset the mark if there is no error.
         // true if not a mark, or mark is set in cells pencilmarks
@@ -709,7 +709,6 @@ Kirigami.Page {
             let idx = (type == errValueLogical) ? c : bmindex;
             if (values[c] > 0 && values[c] == val && hasMark) {
                 found[0].push([idx,err]);
-                hintStatus |= type;
             } else if (hasMark) {
                 errors[idx] &= ~err;
             }
@@ -726,7 +725,7 @@ Kirigami.Page {
             idx = (type == errValueLogical) ? c : bmindex;
             if (values[c] > 0 && values[c] == val && hasMark) {
                 found[2].push([idx,err]);
-            } else if (hasMark || type == errPencilMarkLogical) {
+            } else if (hasMark) {
                 errors[idx] &= ~err;
             }
         }
@@ -801,7 +800,6 @@ Kirigami.Page {
         }
     }
 
-
     // check for value errors (wrong solution) at finish
     function countBoardErrors() {
         let errcnt = 0;
@@ -812,8 +810,6 @@ Kirigami.Page {
         }
         return errcnt;
     }
-
-    // UI
 
     Timer {
         id: gameTimer
@@ -832,7 +828,9 @@ Kirigami.Page {
             stime = h + ":" + m + ":" + s;
         }
     }
+    // END GAME
 
+    // UI
     // Game board
     Rectangle {
         id: boardContainer
