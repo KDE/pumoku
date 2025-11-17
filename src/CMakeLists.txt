@@ -13,6 +13,7 @@ qt_add_qml_module(pumoku_static
         contents/ui/MainMenu.qml
         contents/ui/DigitButton.qml
         contents/ui/Import.qml
+        contents/ui/PumokuEngine.qml
 )
 
 qt_add_resources(RESOURCES resources.qrc)
