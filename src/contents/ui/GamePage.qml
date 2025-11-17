@@ -270,6 +270,7 @@ Kirigami.Page {
             case undoValueCell :
                 let index = undoStack[undoPos][1];
                 values[index] = undoStack[undoPos][isUndo?3:4];
+                errors[index] &= ~errValueLogical;
                 if (values[index] == 0 || values[index] == solution[index]){
                     errors[index] &= ~errValue;
                 } else {
@@ -289,7 +290,7 @@ Kirigami.Page {
                 pencilMarks[undoStack[undoPos][1]] = undoStack[undoPos][isUndo?3:4];
                 // reverseengineer the mark index and add one for a value
                 // if 2**y = z, then y = log(z)/log(y)
-                let val = (Math.log(Math.abs(undoStack[undoPos][3] - undoStack[undoPos][4]))/Math.log(2))+1;
+                const val = (Math.log(Math.abs(undoStack[undoPos][3] - undoStack[undoPos][4]))/Math.log(2))+1;
                 index = undoStack[undoPos][1];
                 checkErrors(rowFromIndex(index),colFromIndex(index),blockFromIndex(index),index,val,errPencilMarkLogical);
                 break;
@@ -421,10 +422,10 @@ Kirigami.Page {
             if (undoStack[checkPos][0] == undoType /*&& undoStack[checkPos][1] == index*/) {
                 // check 2: same value in redo field of undo item.
                 if ((type == valueTValue && undoStack[checkPos][4] == value) ||
-                (type == valueTMark && undoStack[checkPos][4] & value)) { // <= OPTIONAL ERROR
+                (type == valueTMark && undoStack[checkPos][4] & 2**(value-1))) {
                     // undo if cell contains value, else redo
                     if ((type == valueTValue && values[index] == value) ||
-                    (type == valueTMark && pencilMarks[index] & value))  {
+                    (type == valueTMark && pencilMarks[index] & 2**(value-1))) {
                         undo();
                     } else {
                         redo();
@@ -709,7 +710,7 @@ Kirigami.Page {
             let idx = (type == errValueLogical) ? c : bmindex;
             if (values[c] > 0 && values[c] == val && hasMark) {
                 found[0].push([idx,err]);
-            } else if (hasMark) {
+            } else {
                 errors[idx] &= ~err;
             }
             // row
@@ -717,7 +718,7 @@ Kirigami.Page {
             idx = (type == errValueLogical) ? c : bmindex;
             if (values[c] > 0 && values[c] == val && hasMark) {
                 found[1].push([idx,err]);
-            } else if (hasMark) {
+            } else {
                 errors[idx] &= ~err;
             }
             // column
@@ -725,7 +726,7 @@ Kirigami.Page {
             idx = (type == errValueLogical) ? c : bmindex;
             if (values[c] > 0 && values[c] == val && hasMark) {
                 found[2].push([idx,err]);
-            } else if (hasMark) {
+            } else {
                 errors[idx] &= ~err;
             }
         }
