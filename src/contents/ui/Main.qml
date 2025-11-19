@@ -35,6 +35,7 @@ Kirigami.ApplicationWindow {
     }
 
     globalDrawer: Kirigami.GlobalDrawer {
+        enabled: pageStack.layers.depth == 1
         // isMenu: true
         collapseButtonVisible: false
         actions: [
