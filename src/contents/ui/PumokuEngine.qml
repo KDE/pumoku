@@ -486,10 +486,11 @@ QtObject {
             // 1. collect values from each house
             for (let j=0; j<9; j++) {
                 let c = ir+j; // cell index
-                rowMark |= 2**(values[c]-1);
+                if (values[c]) rowMark |= 2**(values[c]-1);
                 c = boardMap[c];
-                blkMark |= 2**(values[c]-1);
-                colMark |= 2**(values[i+j*9]-1);
+                if (values[c]) blkMark |= 2**(values[c]-1);
+                c = i+j*9; // cell index in col
+                if (values[c]) colMark |= 2**(values[c]-1);
             }
             // 2. remove pm's accordingly
             for (let j=0; j<9; j++) {
