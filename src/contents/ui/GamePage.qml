@@ -164,13 +164,16 @@ Kirigami.Page {
     // Game board
     Rectangle {
         id: boardContainer
-        width: wideScreen ? gameBoard.height : gameBoard.width
+        width: wideScreen ? Math.min(gameBoard.height, 600) : Math.min(gameBoard.width, 600)
         height: width
+        x: isWideScreen ?  Math.max((parent.width - width*2)/2, 0) : (parent.width - width)/2
+        y: isWideScreen ? Math.max((parent.height - height)/2, 0)
+            : parent.width <= 600 ? 0 : (root.height - (height +  bottomTitle.height + bottomBar.height + buttonBoard.height))/2.5
         color: Kirigami.Theme.backgroundColor
         Rectangle {
             id: bgbd
             anchors.centerIn: parent
-            property real pw: Math.floor((Math.min(gameBoard.width, gameBoard.height)-12)/9)*9+12
+            property real pw: Math.floor((Math.min(parent.width, gameBoard.height)-12)/9)*9+12
             width: pw //Math.min(gamePage.width,gamePage.height)
             height: width
             color: Kirigami.Theme.backgroundColor
@@ -286,8 +289,8 @@ Kirigami.Page {
         id: bottomContainer
         anchors.top: wideScreen ? boardContainer.top : boardContainer.bottom
         anchors.left: wideScreen ? boardContainer.right : boardContainer.left
-        width: wideScreen ? root.width - boardContainer.width : root.width
-        height: wideScreen ? gamePage.height : gamePage.height - boardContainer.height
+        width: wideScreen ? Math.min(applicationWindow().width - boardContainer.x - boardContainer.width, boardContainer.width) : boardContainer.width
+        height: wideScreen ? boardContainer.height : gamePage.height - boardContainer.height
         color: Kirigami.Theme.backgroundColor
         Rectangle {
             id: bottomTitle
@@ -487,7 +490,8 @@ Kirigami.Page {
             }
         }
         Rectangle {
-            anchors.bottom: bottomContainer.bottom
+            id: bottomBar
+            anchors.top: buttonBoard.bottom
             width: bottomContainer.width
             height: childrenRect.height
             color: Kirigami.Theme.backgroundColor
@@ -503,17 +507,19 @@ Kirigami.Page {
         Rectangle {
             id: drawer
             width: parent.width
-            height: bottomTitle.visible ? parent.height - bottomTitle.height : parent.height
-            y: parent.height -1// + 1
+            // workaround for qml Layout preventing height property to be reliable.
+            height: Math.max(implicitHeight, wideScreen ? boardContainer.height - bottomTitle.height : applicationWindow().height - bottomContainer.y)
+            z: 1
             property bool isOpen: false
             states: [
                 State {
                     name: "open"; when: drawer.isOpen
-                    PropertyChanges { target: drawer; y: bottomTitle.visible ? bottomTitle.height + 1 : 0; }
+                    // PropertyChanges { target: drawer; y: bottomTitle.visible ? bottomTitle.height + 1 : 0; }
+                    PropertyChanges { target: drawer; y: wideScreen ? bottomTitle.height + 1 : 0 }
                 },
                 State {
                     name: "closed"; when: !drawer.isOpen
-                    PropertyChanges { target: drawer; y: parent.height + 1; }
+                    PropertyChanges { target: drawer; y: applicationWindow().height }
                 }
             ]
 
@@ -570,3 +576,4 @@ Kirigami.Page {
         }
     }
 }
+
