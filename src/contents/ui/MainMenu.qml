@@ -12,7 +12,8 @@ Kirigami.Page {
     title: i18nc("@title:window", "Main menu")
 
     ColumnLayout {
-        width: parent.width
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: gamePage.wideScreen ? parent.height : parent.width
         Layout.margins: Kirigami.Units.gridUnit * 3
         // anchors.fill: parent
         Kirigami.Heading {
@@ -25,7 +26,7 @@ Kirigami.Page {
             Layout.topMargin: Kirigami.Units.gridUnit
             Layout.bottomMargin: Kirigami.Units.gridUnit
             source: "qrc:/pumoku.svg"
-            width: parent.width/2
+            width: gamePage.wideScreen ? parent.height/2 : parent.width/2
             height: width
             sourceSize.width: width
             sourceSize.height: height
