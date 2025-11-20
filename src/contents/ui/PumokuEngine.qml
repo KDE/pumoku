@@ -89,6 +89,7 @@ QtObject {
         board.length = 81;
         errors.length = 81;
         undoStack = [];
+        undoPos = -1;
 
         digitCounters.length = 0;
         digitCounters.length = 10;
@@ -190,6 +191,7 @@ QtObject {
             }
         }
         undoStack = [];
+        undoPos = -1;
         finished = false;
         finishHeader = "";
         finishText = "";

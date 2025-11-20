@@ -454,9 +454,16 @@ Kirigami.Page {
                         id: gameMenu
                         QQC2.MenuItem {
                             text: i18n("Reset game")
-                            onTriggered: {
-                                game.reset();
-                                timer.reset();
+                            onTriggered: { resetPrompt.open() }
+                            Kirigami.PromptDialog {
+                                id: resetPrompt
+                                title: i18n("Reset game?")
+                                subtitle: i18n("You loose any changes you have made, reset can't be undone.")
+                                standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
+                                onAccepted: {
+                                    game.reset();
+                                    timer.reset();
+                                }
                             }
                         }
                         QQC2.MenuItem {
@@ -465,16 +472,23 @@ Kirigami.Page {
                         }
                         QQC2.MenuItem {
                             text: i18n("Give up")
-                            onTriggered: {
-                                game.clear();
-                                gameBoard.goHome();
+                            onTriggered: { giveupPrompt.open() }
+                            Kirigami.PromptDialog {
+                                id: giveupPrompt
+                                title: i18n("Give up?")
+                                subtitle: i18n("Giving up means that you loose any changes you have made, it can't be undone.")
+                                standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
+                                onAccepted: {
+                                    game.clear();
+                                    gameBoard.goHome();
+                                }
                             }
                         }
                         QQC2.MenuItem {
                             text: i18n("Solve game")
-                            onTriggered: { dialogSolve.open() }
+                            onTriggered: { solvePrompt.open() }
                             Kirigami.PromptDialog {
-                                id: dialogSolve
+                                id: solvePrompt
                                 title: i18n("Are you sure??")
                                 subtitle: i18n("you loose any changes you have made, and can't solve the puzzele on your own!")
                                 standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel

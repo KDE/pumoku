@@ -28,6 +28,27 @@ Kirigami.ApplicationWindow {
         setPage(mainMenu);
     }
 
+    property bool acceptClose: false
+    onClosing: (close) => {
+        if (gamePage.hasGame && !acceptClose) {
+            closePrompt.open();
+            close.accepted = false
+        } else {
+            close.accepted = true
+        }
+    }
+
+    Kirigami.PromptDialog {
+        id: closePrompt
+        title: i18n("Give up active game?")
+        subtitle: i18n("Pumoku does not save your game yet. Closing the app means giving up.")
+        standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
+        onAccepted: {
+            acceptClose = true;
+            Qt.quit();
+        }
+
+    }
 
     function setPage (page) {
         pageStack.clear()
