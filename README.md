@@ -6,7 +6,7 @@ PuMoKu is a classic, 9x9 pumoku solving game aimed at Plasma Mobile. It comes wi
 
 ## Status
 
-This project is in alpha state. It compiles, and is playable, but will not save/load files, and some features are missing as of 2025/11/11.
+This project is in beta state. It compiles, play is functional, but will not save/load files, and some features are missing as of 2025/11/21.
 
 ## Contributing
 
