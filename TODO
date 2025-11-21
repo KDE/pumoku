@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC0-1.0
+     SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk> -->
 
     # PuMoKu TODO
 
@@ -5,7 +7,7 @@
 
     [x] Git !!! TODO: Import to invent.kde.org
 
-    [-] Seperate logic from UI: Mostly done, at least by a blank line. Split GameBoard.qml file? See below item.
+    [x] Seperate logic from UI: Mostly done, at least by a blank line. Split GameBoard.qml file? See below item.
     [] Componentify some more! => game cell, number key, etc.
     [] => put game in a component/file of its own (C++!!)
     [] => put game board in a component/file
@@ -31,7 +33,7 @@
     [] main/new game page
     [-] help - see Notes.md, a lot can be used.
     [-] icon
-    [] Desktop file
+    [x] Desktop file
     [] statistics: A database of date, level, time, and page to render. Check at finish if there is a new record, maybe some rendering of time level?
     [] => Different buttonboard layout? Use Loaders to load appropriate layout, for entering fame fx
     [] turn highlight on/off easily (button on game ui)

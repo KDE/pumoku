@@ -1,3 +1,9 @@
+// SPDX-FileCopyrightText: 2006-2014 Stephen Ostermiller http://ostermiller.org/
+// SPDX-FileCopyrightText: 2007 Jacques Bensimon (jacques@ipm.com)
+// SPDX-FileCopyrightText: 2011 Jean Guillerez (j.guillerez - orange.fr)
+// SPDX-FileCopyrightText: 2014 Michael Catanzaro (mcatanzaro@gnome.org)
+// SPDX-License-Identifier: GPL-2.0-or-later
+
 /*
  * qqwing - A Sudoku solver and generator
  * Copyright (C) 2006-2014 Stephen Ostermiller http://ostermiller.org/
