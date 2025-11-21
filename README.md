@@ -18,7 +18,7 @@ The [KDE Community Code](https://kde.org/code-of-conduct) of Conduct is applied.
 
 ## License
 
-This project is licensed mainly under the LGPL-2.1-or-later. More information can be found in the LICENSES folder.
+This project is licensed mainly under the GPL-2.1-or-later. More information can be found in the LICENSES folder.
 
 ## Authors
 
