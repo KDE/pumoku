@@ -19,15 +19,19 @@ bool Qqw::generate(SudokuBoard::Difficulty difficulty, SudokuBoard::Symmetry sym
 {
 
     // initialize random generator
-    srand ( unsigned ( time(NULL) ) );
+    srand(unsigned(time(nullptr)));
 
     SudokuBoard *sb = new SudokuBoard();
+    sb->setRecordHistory(true);
+    sb->setLogHistory(false);
     bool done = false;
     while (!done) {
         if (sb->generatePuzzleSymmetry(symmetry)) {
-            sb->setRecordHistory(true);
+            int solutions = sb->countSolutions();
             sb->solve();
-            done = difficulty == sb->getDifficulty() && sb->hasUniqueSolution();
+            if (solutions == 1 && difficulty == sb->getDifficulty()) {
+                done = true;
+            }
         }
     }
     // FIXME change these away from const in qqwing?
