@@ -14,11 +14,11 @@ Kirigami.ApplicationWindow {
     controlsVisible: (gamePage.visible && isWideScreen) ? false : true
     title: i18n("PuMoKu")
 
-    minimumWidth: Kirigami.Units.gridUnit * 20
+    minimumWidth: Kirigami.Units.gridUnit * 24
     minimumHeight: minimumWidth //Kirigami.Units.gridUnit * 32
-    // my oneplus 6t phone display size unscaled
-    // width: 360
-    // height: 780
+
+    width: 400
+    height: 800
 
     Config.WindowStateSaver {
 	configGroupName: 'main'
