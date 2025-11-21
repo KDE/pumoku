@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk>
-SPDX-License-Identifier: LGPL-2.0-or-later
+SPDX-License-Identifier: GPL-2.0-or-later
 -->
 <kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

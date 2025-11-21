@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk>
+SPDX-License-Identifier: CC0-1.0-or-later
+-->
+
 # PuMoKu
 
 PuMoKu is a classic, 9x9 pumoku solving game aimed at Plasma Mobile. It comes with flexible highlighting options and (touch) input methods, full undo stack and more.
