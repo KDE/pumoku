@@ -1,4 +1,4 @@
-<!-- SPDX-License-Identifier: LGPL-2.1-or-later
+<!-- SPDX-License-Identifier: CC-BY-4.0
      SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk> -->
 
 # Project vision
