@@ -1,6 +1,6 @@
 <!--
 SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk>
-SPDX-License-Identifier: CC0-1.0-or-later
+SPDX-License-Identifier: CC0-1.0
 -->
 
 # PuMoKu
