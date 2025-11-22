@@ -325,9 +325,9 @@ Kirigami.Page {
         }
         Rectangle {
             id: progressBar
-            width: parent.width /*- Kirigami.Units.largeSpacing*4*/
+            width: tabletMode ? parent.width - 2*Kirigami.Units.largeSpacing : parent.width
             anchors.top: bottomTitle.visible ? bottomTitle.bottom : parent.top
-            // anchors.horizontalCenter: parent.horizontalCenter
+            anchors.horizontalCenter: parent.horizontalCenter
             height: Kirigami.Units.largeSpacing
             color: Kirigami.Theme.positiveBackgroundColor
             property real sW: width/81
