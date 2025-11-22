@@ -4,5 +4,5 @@
 /build-dir
 /.flatpak-builder
 *.kate-swp
-/build/*
+/build*/*
 .clang-format
