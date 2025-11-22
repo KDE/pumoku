@@ -20,7 +20,9 @@ qt_add_resources(RESOURCES resources.qrc)
 
 target_sources(pumoku_static PRIVATE
     qqwing.cpp
+    qqwing.hpp
     qqw.cpp
+    qqw.h
 )
 target_sources(pumoku_static PUBLIC
     ${RESOURCES}
