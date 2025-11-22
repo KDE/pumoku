@@ -11,7 +11,7 @@ import org.kde.config as Config
 Kirigami.ApplicationWindow {
     id: root
     property bool isWideScreen: width > height
-    controlsVisible: (gamePage.visible && isWideScreen) ? false : true
+    controlsVisible: (gamePage.visible && isWideScreen && !gamePage.tabletMode) ? false : true
     title: i18n("PuMoKu")
 
     minimumWidth: Kirigami.Units.gridUnit * 24

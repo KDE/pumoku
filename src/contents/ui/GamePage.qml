@@ -13,14 +13,14 @@ Kirigami.Page {
     title: "PuMoKu: " + game.levelName
     padding: 0
     width: root.width
-    // globalToolBarStyle: Kirigami.ApplicationHeaderStyle.None //gamePage.isCurrentPage && wideScreen ? Kirigami.ApplicationHeaderStyle.None : Kirigami.ApplicationHeaderStyle.ToolBar
+    globalToolBarStyle: wideScreen && !tabletMode ? Kirigami.ApplicationHeaderStyle.None : Kirigami.ApplicationHeaderStyle.ToolBar
 
     PumokuEngine {
         id: game
     }
 
     property bool wideScreen: applicationWindow().isWideScreen
-    property bool tabletMode: (wideScreen && height > 600) || width > 600
+    property bool tabletMode: (wideScreen && applicationWindow().height > 600) || (!wideScreen && width > 600)
 
     property bool hasGame: !game.finished
     property bool numberKeyActive: false
@@ -291,7 +291,7 @@ Kirigami.Page {
         anchors.top: wideScreen ? boardContainer.top : boardContainer.bottom
         anchors.left: wideScreen ? boardContainer.right : boardContainer.left
         width: wideScreen ? Math.min(applicationWindow().width - boardContainer.x - boardContainer.width, boardContainer.width) : boardContainer.width
-        height: wideScreen ? (tabletMode ? bgbd.height : boardContainer.height) : gamePage.height - boardContainer.height
+        height: !wideScreen ? gamePage.height - boardContainer.height : tabletMode ? bgbd.height : boardContainer.height
         color: Kirigami.Theme.backgroundColor
         Rectangle {
             id: bottomTitle
@@ -300,7 +300,7 @@ Kirigami.Page {
             color: Kirigami.Theme.backgroundColor
             width: parent.width
             height: bottomHeading.height + 1
-            visible: wideScreen
+            visible: wideScreen && !tabletMode
 
             QQC2.ToolButton {
                 id: drawerBtn
@@ -525,14 +525,13 @@ Kirigami.Page {
             id: drawer
             width: parent.width
             // workaround for qml Layout preventing height property to be reliable.
-            height: Math.max(implicitHeight, wideScreen ? boardContainer.height - bottomTitle.height : applicationWindow().height - bottomContainer.y)
+            height: !wideScreen ? applicationWindow().height - bottomContainer.y : tabletMode ? bgbd.height : boardContainer.height - bottomTitle.height
             z: 1
             property bool isOpen: false
             states: [
                 State {
                     name: "open"; when: drawer.isOpen
-                    // PropertyChanges { target: drawer; y: bottomTitle.visible ? bottomTitle.height + 1 : 0; }
-                    PropertyChanges { target: drawer; y: wideScreen ? bottomTitle.height : 0 }
+                    PropertyChanges { target: drawer; y: bottomTitle.visible ? bottomTitle.height : 0; }
                 },
                 State {
                     name: "closed"; when: !drawer.isOpen
@@ -550,14 +549,13 @@ Kirigami.Page {
             color: finishColor
 
             ColumnLayout {
+                anchors.centerIn: parent
                 width: parent.width
                 Layout.margins: Kirigami.Units.mediumSpacing
-                spacing: Kirigami.Units.largeSpacing
+                // spacing: Kirigami.Units.largeSpacing
 
                 Kirigami.Heading {
                     Layout.alignment: Qt.AlignHCenter
-                    padding: 10
-                    // bottomPadding:10
                     text: finishHeader
                 }
                 QQC2.Label {
