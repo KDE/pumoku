@@ -20,6 +20,7 @@ Kirigami.Page {
     }
 
     property bool wideScreen: applicationWindow().isWideScreen
+    property bool tabletMode: (wideScreen && height > 600) || width > 600
 
     property bool hasGame: !game.finished
     property bool numberKeyActive: false
@@ -290,7 +291,7 @@ Kirigami.Page {
         anchors.top: wideScreen ? boardContainer.top : boardContainer.bottom
         anchors.left: wideScreen ? boardContainer.right : boardContainer.left
         width: wideScreen ? Math.min(applicationWindow().width - boardContainer.x - boardContainer.width, boardContainer.width) : boardContainer.width
-        height: wideScreen ? boardContainer.height : gamePage.height - boardContainer.height
+        height: wideScreen ? (tabletMode ? bgbd.height : boardContainer.height) : gamePage.height - boardContainer.height
         color: Kirigami.Theme.backgroundColor
         Rectangle {
             id: bottomTitle
@@ -359,6 +360,7 @@ Kirigami.Page {
                 Layout.leftMargin: Kirigami.Units.largeSpacing
                 Layout.fillWidth: true
                 Layout.fillHeight: true
+                Layout.minimumWidth: implicitWidth
                 QQC2.Button {
                 Layout.fillWidth: true
                     id: btnUndo
@@ -428,6 +430,7 @@ Kirigami.Page {
                 Layout.rightMargin: Kirigami.Units.largeSpacing
                 Layout.topMargin: Kirigami.Units.largeSpacing
                 Layout.fillWidth: true
+                Layout.minimumWidth: implicitWidth
                 QQC2.Button {
                 Layout.fillWidth: true
                     id: btnPencilMarks
@@ -529,7 +532,7 @@ Kirigami.Page {
                 State {
                     name: "open"; when: drawer.isOpen
                     // PropertyChanges { target: drawer; y: bottomTitle.visible ? bottomTitle.height + 1 : 0; }
-                    PropertyChanges { target: drawer; y: wideScreen ? bottomTitle.height + 1 : 0 }
+                    PropertyChanges { target: drawer; y: wideScreen ? bottomTitle.height : 0 }
                 },
                 State {
                     name: "closed"; when: !drawer.isOpen

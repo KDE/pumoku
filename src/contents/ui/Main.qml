@@ -15,7 +15,7 @@ Kirigami.ApplicationWindow {
     title: i18n("PuMoKu")
 
     minimumWidth: Kirigami.Units.gridUnit * 24
-    minimumHeight: minimumWidth //Kirigami.Units.gridUnit * 32
+    minimumHeight: minimumWidth
 
     width: 400
     height: 800
