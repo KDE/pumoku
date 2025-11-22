@@ -539,7 +539,7 @@ Kirigami.Page {
                 }
             ]
 
-            transitions: Transition { SmoothedAnimation { target: drawer; property: "y"; velocity: 3000 } }
+            transitions: Transition { SmoothedAnimation { target: drawer; property: "y"; velocity: tabletMode ? 5000 : 3000 } }
 
             TapHandler {} // QML will let the event drop through if not present.
 
