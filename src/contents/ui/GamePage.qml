@@ -171,8 +171,7 @@ Kirigami.Page {
         width: wideScreen ? Math.min(gameBoard.height, 600) : Math.min(gameBoard.width, 600)
         height: width
         x: isWideScreen ?  Math.max((parent.width - width*2)/2, 0) : (parent.width - width)/2
-        y: isWideScreen ? Math.max((parent.height - height)/2, 0)
-            : parent.width <= 600 ? 0 : (root.height - (height +  bottomTitle.height + bottomBar.height + buttonBoard.height))/2.5
+        y: isWideScreen ? Math.max((parent.height - height)/2, 0) : tabletMode ? (height*2) >= parent.height ? 0 : (parent.height - height*2)/2 : 0
         color: Kirigami.Theme.backgroundColor
         Rectangle {
             id: bgbd
@@ -525,6 +524,7 @@ Kirigami.Page {
             color: Kirigami.Theme.backgroundColor
             QQC2.Label {
                 anchors.bottom: parent.bottom
+                leftPadding: Kirigami.Units.largeSpacing
                 id: timerDisplay
                 text: "Time: " + timer.stime
             }
@@ -562,7 +562,7 @@ Kirigami.Page {
             id: drawer
             width: parent.width
             // workaround for qml Layout preventing height property to be reliable.
-            height: !wideScreen ? applicationWindow().height - bottomContainer.y : tabletMode ? bgbd.height : boardContainer.height - bottomTitle.height
+            height: bottomTitle.visible ? parent.height - bottomTitle.height : parent.height
             z: 1
             property bool isOpen: false
             states: [
@@ -584,13 +584,11 @@ Kirigami.Page {
             function close() { isOpen = false }
 
             color: finishColor
-
             ColumnLayout {
                 anchors.centerIn: parent
                 width: parent.width
                 Layout.margins: Kirigami.Units.mediumSpacing
                 // spacing: Kirigami.Units.largeSpacing
-
                 QQC2.Label {
                     Layout.alignment: Qt.AlignHCenter
                     font.pointSize: 20
