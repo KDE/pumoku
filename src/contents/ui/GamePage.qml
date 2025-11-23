@@ -25,6 +25,9 @@ Kirigami.Page {
     property bool hasGame: !game.finished
     property bool numberKeyActive: false
 
+    property bool showHighlight: true
+    property bool showPencilMarks: false
+
     // Qml weirdness: can't be done from button menu
     function goHome() {root.setPage(mainMenu);}
 
@@ -225,9 +228,11 @@ Kirigami.Page {
                                     implicitHeight: width
                                     // color for various highlights: selected cell or digit.
                                         // logical errors
-                                    color: (Config.logical_error_value && (game.errors[bmidx] & game.errValueLogical) === game.errValueLogical) ||
+                                    color: {
+                                        if (gameBoard.showHighlight) {
+                                        (Config.logical_error_value && (game.errors[bmidx] & game.errValueLogical) === game.errValueLogical) ||
                                            // (Config.logical_error_pencilmark && (errors[bmidx] & errPencilMarkLogical) === errPencilMarkLogical)  ?
-                                           (Config.logical_error_pencilmark && game.errors[bmidx] > 0 && game.errors[bmidx] < game.errPencilMarkLogical)  ?
+                                           (gameBoard.showPencilMarks && Config.logical_error_pencilmark && game.errors[bmidx] > 0 && game.errors[bmidx] < game.errPencilMarkLogical)  ?
                                         Kirigami.Theme.negativeBackgroundColor :
                                         // value errors
                                         (Config.error_value && (game.errors[bmidx] & game.errValue) === game.errValue) ? Kirigami.Theme.visitedLinkBackgroundColor :
@@ -238,12 +243,17 @@ Kirigami.Page {
                                         (Config.digit_value && game.values[bmidx] > 0 && game.values[bmidx] == game.currentDigit) || bmidx == game.currentCell ?
                                         Kirigami.Theme.highlightColor :
                                         // highlight pencilmarks with number key active
-                                        Config.digit_pencilmark && game.values[bmidx] == 0 && (game.pencilMarks[bmidx] & (2**(game.currentDigit-1))) === 2**(game.currentDigit-1) ?
+                                        gameBoard.showPencilMarks && Config.digit_pencilmark && game.values[bmidx] == 0 && (game.pencilMarks[bmidx] & (2**(game.currentDigit-1))) === 2**(game.currentDigit-1) ?
                                         Kirigami.Theme.positiveBackgroundColor :
                                         // highlight houses related to selected cell
                                         Config.houses && (rowIndex == game.currentRow || columnIndex == game.currentColumn || parent.index == game.currentBlock) ?
                                         Kirigami.Theme.activeBackgroundColor :
                                         Config.alternateBlockBackgrounds && parent.index%2 == 0 ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
+                                        } else {
+                                            bmidx == game.currentCell ? Kirigami.Theme.highlightColor : Config.alternateBlockBackgrounds && parent.index%2 == 0 ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
+                                        }
+
+                                    }
                                     Text {
                                         text: game.values[bmidx] > 0 ? game.values[bmidx] : ""
                                         anchors.centerIn: parent
@@ -255,7 +265,7 @@ Kirigami.Page {
                                     // pencil marks
                                     Rectangle {
                                         anchors.fill: parent
-                                        visible: 0 == game.values[parent.bmidx]
+                                        visible: gameBoard.showPencilMarks && 0 == game.values[parent.bmidx]
                                         color: parent.color
                                         Layout.fillWidth: true
                                         GridLayout {
@@ -291,7 +301,7 @@ Kirigami.Page {
         anchors.top: wideScreen ? boardContainer.top : boardContainer.bottom
         anchors.left: wideScreen ? boardContainer.right : boardContainer.left
         width: wideScreen ? Math.min(applicationWindow().width - boardContainer.x - boardContainer.width, boardContainer.width) : boardContainer.width
-        height: !wideScreen ? gamePage.height - boardContainer.height : tabletMode ? bgbd.height : boardContainer.height
+        height: !wideScreen ? gamePage.height - boardContainer.height - boardContainer.y : tabletMode ? bgbd.height : boardContainer.height
         color: Kirigami.Theme.backgroundColor
         Rectangle {
             id: bottomTitle
@@ -437,6 +447,7 @@ Kirigami.Page {
                     checkable: true
                     text: i18n("Pencil")
                     icon.name: "open-for-editing-symbolic"
+                    onClicked: gameBoard.showPencilMarks = true
                 }
                 QQC2.Button {
                 Layout.fillWidth: true
@@ -508,15 +519,41 @@ Kirigami.Page {
         }
         Rectangle {
             id: bottomBar
-            anchors.top: buttonBoard.bottom
+            anchors.bottom: bottomContainer.bottom
+            anchors.margins: Kirigami.Units.mediumSpacing
             width: bottomContainer.width
-            height: childrenRect.height
             color: Kirigami.Theme.backgroundColor
             QQC2.Label {
-                Layout.alignment: Qt.AlignHCenter
-                padding: Kirigami.Units.largeSpacing
+                anchors.bottom: parent.bottom
                 id: timerDisplay
                 text: "Time: " + timer.stime
+            }
+            QQC2.Button {
+                anchors.right: btnShowHighlight.left
+                anchors.bottom: parent.bottom
+                id: btnShowPencilMarks
+                icon.name: "open-for-editing-symbolic"
+                checkable: true
+                checked: gameBoard.showPencilMarks
+                onClicked: gameBoard.showPencilMarks = !gameBoard.showPencilMarks
+                flat: true
+                icon.color: checked ? Kirigami.Theme.positiveTextColor : Kirigami.Theme.disabledTextColor
+                icon.width: 32
+                icon.height: 32
+            }
+            QQC2.Button {
+                anchors.right: parent.right
+                anchors.bottom: parent.bottom
+                anchors.rightMargin: Kirigami.Units.mediumSpacing
+                id: btnShowHighlight
+                icon.name: "flashlight-on-symbolic"
+                checkable: true
+                checked: gameBoard.showHighlight
+                onClicked: gameBoard.showHighlight = !gameBoard.showHighlight
+                flat: true
+                icon.color: checked ? Kirigami.Theme.positiveTextColor : Kirigami.Theme.disabledTextColor
+                icon.width: 32
+                icon.height: 32
             }
         }
 
@@ -554,8 +591,9 @@ Kirigami.Page {
                 Layout.margins: Kirigami.Units.mediumSpacing
                 // spacing: Kirigami.Units.largeSpacing
 
-                Kirigami.Heading {
+                QQC2.Label {
                     Layout.alignment: Qt.AlignHCenter
+                    font.pointSize: 20
                     text: finishHeader
                 }
                 QQC2.Label {
