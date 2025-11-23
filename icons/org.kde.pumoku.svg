@@ -1,159 +1,66 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   viewBox="0 0 48 48"
-   version="1.1"
-   id="svg14"
-   sodipodi:docname="pumoku.svg"
-   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs14" />
-  <sodipodi:namedview
-     id="namedview14"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="true"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="11.763163"
-     inkscape:cx="24.653232"
-     inkscape:cy="25.715871"
-     inkscape:window-width="1920"
-     inkscape:window-height="1036"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg14" />
-  <g
-     id="g21"
-     transform="translate(-0.00109693)">
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.956719;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       id="rect19"
-       width="39.043282"
-       height="39.043282"
-       x="4.4794564"
-       y="4.4778619" />
-    <rect
-       style="fill:#e0effa;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       id="rect21"
-       width="12.66666"
-       height="25.1633"
-       x="4.9306464"
-       y="18.022364" />
-    <rect
-       style="fill:#e0effa;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       id="rect20"
-       width="24.993277"
-       height="12.326615"
-       x="18.107374"
-       y="5.0156574" />
-    <rect
-       style="fill:#26ad5f;fill-opacity:1;stroke-width:1.13745"
-       id="rect18-3"
-       width="13.063021"
-       height="12.488426"
-       x="4.9539227"
-       y="4.8821054" />
-    <path
-       d="M 5.0087194,17.509804 H 43.105259"
-       id="path1"
-       style="fill:none;stroke:#000000;stroke-width:1.03298;stroke-linecap:square;stroke-linejoin:round" />
-    <path
-       d="M 4.5837574,30.173728 H 43.112946"
-       id="path2"
-       style="fill:none;stroke:#000000;stroke-width:1.03882;stroke-linecap:butt;stroke-linejoin:round" />
-    <path
-       d="M 30.546228,4.6697035 V 43.013828"
-       id="path3"
-       style="fill:none;stroke:#000000;stroke-width:1.02524;stroke-linecap:butt;stroke-linejoin:round" />
-    <rect
-       style="fill:#3dade9;fill-opacity:1;stroke-width:1.02524"
-       id="rect18"
-       width="11.38925"
-       height="11.637018"
-       x="18.654457"
-       y="18.023256" />
-    <path
-       d="M 18.151936,4.6697035 V 43.013828"
-       id="path4"
-       style="fill:none;stroke:#000000;stroke-width:1.02524;stroke-linecap:butt;stroke-linejoin:round" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3028px;font-family:Sans;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:1.02524"
-       x="8.3466749"
-       y="15.610254"
-       id="text14"
-       transform="scale(0.98929709,1.0108187)"><tspan
-         sodipodi:role="line"
-         id="tspan14"
-         x="8.3466749"
-         y="15.610254"
-         style="stroke-width:1.02524">P</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3028px;font-family:Sans;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:1.02524"
-       x="20.183681"
-       y="15.548741"
-       id="text15"
-       transform="scale(0.98929709,1.0108187)"><tspan
-         sodipodi:role="line"
-         id="tspan15"
-         x="20.183681"
-         y="15.548741"
-         style="stroke-width:1.02524">U</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3028px;font-family:Sans;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:1.02524"
-       x="19.094881"
-       y="27.798817"
-       id="text16"
-       transform="scale(0.98929709,1.0108187)"><tspan
-         sodipodi:role="line"
-         id="tspan16"
-         x="19.094881"
-         y="27.798817"
-         style="stroke-width:1.02524">M</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3028px;font-family:Sans;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:1.02524"
-       x="32.396851"
-       y="27.80497"
-       id="text17"
-       transform="scale(0.98929709,1.0108187)"><tspan
-         sodipodi:role="line"
-         id="tspan17"
-         x="32.396851"
-         y="27.80497"
-         style="stroke-width:1.02524">O</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3028px;font-family:Sans;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:1.02524"
-       x="7.5171781"
-       y="40.933956"
-       id="text18"
-       transform="scale(0.98929709,1.0108187)"><tspan
-         sodipodi:role="line"
-         id="tspan18"
-         x="7.5171781"
-         y="40.933956"
-         style="stroke-width:1.02524">K</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3028px;font-family:Sans;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:1.02524"
-       x="32.915012"
-       y="40.872444"
-       id="text15-7"
-       transform="scale(0.98929709,1.0108187)"><tspan
-         sodipodi:role="line"
-         id="tspan15-4"
-         x="32.915012"
-         y="40.872444"
-         style="stroke-width:1.02524">U</tspan></text>
-  </g>
+<svg version="1.1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient id="linearGradient12">
+            <stop stop-color="#197cf1" offset="0"/>
+            <stop stop-color="#05a7e7" offset="1"/>
+        </linearGradient>
+        <linearGradient id="linearGradient9">
+            <stop stop-color="#418b2a" offset="0"/>
+            <stop stop-color="#50a536" offset="1"/>
+        </linearGradient>
+        <linearGradient id="linearGradient34">
+            <stop stop-color="#20620f" offset="0"/>
+            <stop stop-color="#479230" offset="1"/>
+        </linearGradient>
+        <linearGradient id="linearGradient2" x1="4" x2="4" y1="44" y2="4" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#e5e5e5" offset="0"/>
+            <stop stop-color="#f2f2f2" offset="1"/>
+        </linearGradient>
+        <linearGradient id="linearGradient18" x1="32" x2="14" y1="32" y2="14" gradientUnits="userSpaceOnUse">
+            <stop stop-opacity="0" offset="0"/>
+            <stop stop-opacity=".1" offset="1"/>
+        </linearGradient>
+        <linearGradient id="linearGradient23" x1="6" x2="6" y1="28" y2="20" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient12"/>
+        <linearGradient id="linearGradient30" x1="34" x2="34" y1="14" y2="6" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient12"/>
+        <linearGradient id="linearGradient32" x1="20" x2="20" y1="28" y2="20" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient9"/>
+        <linearGradient id="linearGradient35" x1="6" x2="6" y1="14" y2="6" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient9"/>
+        <linearGradient id="linearGradient4" x1="2" x2="2" y1="46" y2="2" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient34"/>
+        <linearGradient id="linearGradient8" x1="32" x2="32" y1="46" y2="2" gradientTransform="matrix(1 0 0 .95455 0 1.0909)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient34"/>
+        <linearGradient id="linearGradient13" x1="46" x2="2" y1="-4" y2="-4" gradientTransform="matrix(1 0 0 .95455 0 -1.0909)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient34"/>
+        <linearGradient id="linearGradient16" x1="16" x2="16" y1="46" y2="2" gradientTransform="matrix(1 0 0 .95455 0 1.0909)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient34"/>
+        <linearGradient id="linearGradient50" x1="46" x2="2" y1="-44.857" y2="-44.857" gradientTransform="matrix(1 0 0 1.1667 0 6.3333)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient34"/>
+        <linearGradient id="linearGradient52" x1="46" x2="46" y1="44.857" y2="7.1429" gradientTransform="matrix(1 0 0 1.1667 0 -6.3333)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient34"/>
+        <linearGradient id="linearGradient64" x1="46" x2="46" y1="44.857" y2="7.1429" gradientTransform="matrix(1 0 0 1.1667 0 -6.3333)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient34"/>
+    </defs>
+    <rect x="2" y="2" width="44" height="44" ry="2" fill="url(#linearGradient4)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.1391"/>
+    <rect x="4" y="4" width="40" height="40" ry="0" fill="url(#linearGradient2)"/>
+    <rect x="35" y="17" width="1" height="14" fill="url(#linearGradient52)"/>
+    <rect x="21" y="3" width="1" height="14" fill="url(#linearGradient52)"/>
+    <rect x="30" y="3" width="2" height="42" fill="url(#linearGradient8)"/>
+    <rect transform="rotate(90)" x="30" y="-45" width="2" height="42" fill="url(#linearGradient13)"/>
+    <rect transform="rotate(90)" x="26" y="-45" width="1" height="14" fill="url(#linearGradient50)"/>
+    <rect x="26" y="3" width="1" height="14" fill="url(#linearGradient52)"/>
+    <rect x="12.003" y="31" width="1" height="14" fill="url(#linearGradient64)"/>
+    <rect x="16" y="3" width="2" height="42" fill="url(#linearGradient16)"/>
+    <rect transform="rotate(90)" x="7" y="-31" width="1" height="14" fill="url(#linearGradient50)"/>
+    <rect transform="rotate(90)" x="16" y="-45" width="2" height="42" fill="url(#linearGradient13)"/>
+    <rect transform="rotate(90)" x="12" y="-31" width="1" height="14" fill="url(#linearGradient50)"/>
+    <rect transform="rotate(90)" x="35" y="-17.003" width="1" height="14" fill="url(#linearGradient50)"/>
+    <rect x="40" y="17" width="1" height="14" fill="url(#linearGradient52)"/>
+    <g>
+        <path d="m14 6 32 32v-12l-12-12 8-8 4 4-2 34-20 2-18-18 6-8-6-6z" fill="url(#linearGradient18)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <rect x="20" y="20" width="8" height="8" ry="0" fill="url(#linearGradient32)"/>
+        <rect x="6" y="6" width="8" height="8" ry="0" fill="url(#linearGradient35)"/>
+        <rect x="6" y="20" width="8" height="8" ry="0" fill="url(#linearGradient23)"/>
+        <rect x="34" y="6" width="8" height="8" ry="0" fill="url(#linearGradient30)"/>
+    </g>
+    <g fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m10 41v-6l-2 2" display="none"/>
+        <path transform="translate(0,14)" d="m37 13h1a2 2 135 0 0 2-2v-2a2 2 45 0 0-2-2 2 2 135 0 0-2 2 2 2 45 0 0 2 2 2 2 135 0 0 2-2" display="none"/>
+        <path transform="translate(0,-14)" d="m26 27h-4l3.2-2.4a2 2 116.57 0 0 0.8-1.6 2 2 45 0 0-2-2 2 2 135 0 0-2 2" display="none"/>
+    </g>
+    <path d="m46 43c0 1.108-0.892 2-2 2h-40c-1.108 0-2-0.892-2-2v1c0 1.108 0.892 2 2 2h40c1.108 0 2-0.892 2-2z" fill-opacity=".2" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.1391"/>
+    <rect transform="rotate(90)" x="21" y="-45" width="1" height="14" fill="url(#linearGradient50)"/>
+    <rect x="7.0027" y="31" width="1" height="14" fill="url(#linearGradient64)"/>
+    <rect transform="rotate(90)" x="40" y="-17.003" width="1" height="14" fill="url(#linearGradient50)"/>
 </svg>
