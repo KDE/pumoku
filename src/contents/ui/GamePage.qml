@@ -403,7 +403,10 @@ Kirigami.Page {
                         }
                         QQC2.MenuItem {
                             text: i18n("Set pencilmarks")
-                            onTriggered: game.generatePencilMarks()
+                            onTriggered: {
+                                game.generatePencilMarks()
+                                gameBoard.showPencilMarks = true
+                            }
                         }
                     }
                 }
