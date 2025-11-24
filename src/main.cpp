@@ -9,7 +9,13 @@
 #else
 #include <QApplication>
 #endif
- 
+
+#include "config-pumoku.h"
+
+#if HAVE_KCRASH
+#include <KCrash>
+#endif
+
 #include <QIcon>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
@@ -73,6 +79,9 @@ int main(int argc, char *argv[])
     aboutData.addAuthor(i18nc("@info:credit", "Anders Lund"), i18nc("@info:credit", "Maintainer"), u"anders@alweb.dk"_s);
     aboutData.setTranslator(i18nc("NAME OF TRANSLATORS", "Your names"), i18nc("EMAIL OF TRANSLATORS", "Your emails"));
     KAboutData::setApplicationData(aboutData);
+#if HAVE_KCRASH
+    KCrash::initialize();
+#endif
     QGuiApplication::setWindowIcon(QIcon::fromTheme(u"org.kde.pumoku"_s));
 
     QQmlApplicationEngine engine;

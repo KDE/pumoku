@@ -1,6 +1,8 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk>
 
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config-pumoku.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-pumoku.h)
+
 # Target: static library
 qt_add_qml_module(pumoku_static
     STATIC
@@ -57,4 +59,7 @@ kconfig_add_kcfg_files(pumoku_static GENERATE_MOC pumokuconfig.kcfgc)
 # Target: main executable
 add_executable(pumoku main.cpp)
 target_link_libraries(pumoku PRIVATE pumoku_static pumoku_staticplugin)
+if (TARGET KF6::Crash)
+   target_link_libraries(pumoku PRIVATE KF6::Crash)
+endif()
 install(TARGETS pumoku ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

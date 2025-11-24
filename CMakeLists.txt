@@ -38,12 +38,20 @@ endif()
 find_package(Qt6 ${QT6_MIN_VERSION} REQUIRED COMPONENTS Core Gui Qml QuickControls2 Svg ${QT_EXTRA_COMPONENTS})
 find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 CoreAddons Config I18n)
 
+if (NOT ANDROID)
+   find_package(KF6 ${KF_MIN_VERSION} OPTIONAL_COMPONENTS Crash)
+endif()
+
 qt_policy(SET QTP0001 NEW)
 
 ecm_find_qmlmodule(org.kde.kirigamiaddons.formcard 1.0)
 
 if (ANDROID)
     configure_file(${CMAKE_CURRENT_SOURCE_DIR}/android/version.gradle.in ${CMAKE_BINARY_DIR}/version.gradle)
+endif()
+
+if (TARGET KF6::Crash)
+    set(HAVE_KCRASH TRUE)
 endif()
 
 add_subdirectory(src)
