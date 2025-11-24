@@ -130,7 +130,7 @@ Kirigami.Page {
         } else {
             finishColor = Kirigami.Theme.positiveBackgroundColor;
             finishHeader = i18n("CONGRATULATIONS!!");
-            finishText = i18n("You finished this %1 suduko with no hints or help using %2 steps in ", game.levelName, stepmsg);
+            finishText = i18n("You finished this %1 suduko with no hints or help using %2 steps in ", game.levelName, stepCount);
             finishMsg = i18n("Well done!")
         }
 
