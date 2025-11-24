@@ -112,27 +112,25 @@ Kirigami.Page {
     property color finishColor: Kirigami.Theme.neutralBackgroundColor
 
     function finish() {
-        let stepcnt = 0;
-        game.stepCount.forEach((value) => stepcnt += value )
-        let stepmsg = i18n("using " + stepcnt + " steps ");
+        let stepcount = 0;
+        game.stepCount.forEach((value) => stepcount += value )
         if (game.hintStatus & game.hintStatusAutoSolved) {
             finishColor = Kirigami.Theme.alternateBackgroundColor;
             finishHeader = i18n("There is your solution.")
-            finishText = i18n("You gave in after " + stepcnt + " steps");
-            finishMsg = "Automatically solved. ";
-            finishMsg += i18n("Hints: ") + game.hintCount;
+            finishText = i18n("You gave in after %1 steps", stepcount);
+            finishMsg = i18n("Automatically solved. Hints: %1", game.hintCount );
         } else if (game.hintCount || game.hintStatus & game.hintStatusUsedAutoPM) {
             finishColor = Kirigami.Theme.neutralBackgroundColor;
             finishHeader = i18n("Well done!");
-            finishText = i18n("You finished this " + game.levelName + " suduko (with a bit of help) " + stepmsg + "in ");
+            finishText = i18n("You finished this %1 suduko (with a bit of help) using %2 steps in", game.levelName, stepcount);
             if (game.hintStatus & game.hintStatusUsedAutoPM) {
-                finishMsg = i18n("Auto pencilmarks used. ")
+                finishMsg = i18n("Auto pencilmarks used.")
             }
-            finishMsg += i18n("Hints: ") + game.hintCount;
+            finishMsg += i18n("Hints: %1 ", game.hintCount);
         } else {
             finishColor = Kirigami.Theme.positiveBackgroundColor;
             finishHeader = i18n("CONGRATULATIONS!!");
-            finishText = i18n("You finished this " + game.levelName + " suduko with no hints or help " + stepmsg + "in ");
+            finishText = i18n("You finished this %1 suduko with no hints or help using %2 steps in ", game.levelName, stepmsg);
             finishMsg = i18n("Well done!")
         }
 
@@ -618,7 +616,7 @@ Kirigami.Page {
                     Layout.rightMargin: Kirigami.Units.mediumSpacing
                     Layout.alignment: Qt.AlignHCenter
                     QQC2.Button  {
-                        text: i18n("Another " + game.levelName)
+                        text: i18n("Another %1", game.levelName)
                         onClicked: { generateSudoku(game.level, 0); drawer.close(); }
                     }
                     QQC2.Button {
