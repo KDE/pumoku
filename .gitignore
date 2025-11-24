@@ -6,3 +6,4 @@
 *.kate-swp
 /build*/*
 .clang-format
+.qtcreator/
