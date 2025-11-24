@@ -18,7 +18,7 @@ Kirigami.Page {
         // anchors.fill: parent
         Kirigami.Heading {
             Layout.alignment: Qt.AlignHCenter
-            text: i18n("Wellcome to PuMoKu")
+            text: i18n("Welcome to PuMoKu")
             level: 1
         }
         Image {
