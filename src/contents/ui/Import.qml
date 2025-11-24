@@ -32,7 +32,7 @@ Kirigami.Page {
             Layout.fillWidth: true
             Layout.maximumWidth: parent.width-parent.margins*2
             wrapMode: Text.WordWrap
-            text: i18n("Enter or paste a string of 81 characters. 1-9 for given cells, zero or any single non-numeric character except space will do for blanks cells. PuMoKu will check that the sudoku is solvable and calculate the level.\n\nLine breaks and spaces are silently removed, so that you can enter one row pr line with some optional whitespace.")
+            text: i18n("Enter or paste a string of 81 characters. 1-9 for given cells, zero or any single non-numeric character except space will do for blanks cells. PuMoKu will check that the sudoku is solvable and calculate the level.\n\nLine breaks and spaces are silently removed, so that you can enter one row per line with some optional whitespace.")
         }
         Kirigami.InlineMessage {
             id: message

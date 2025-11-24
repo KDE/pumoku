@@ -503,7 +503,7 @@ Kirigami.Page {
                             Kirigami.PromptDialog {
                                 id: solvePrompt
                                 title: i18n("Are you sure??")
-                                subtitle: i18n("you loose any changes you have made, and can't solve the puzzele on your own!")
+                                subtitle: i18n("you loose any changes you have made, and can't solve the puzzle on your own!")
                                 standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
                                 onAccepted: {
                                     game.solve();
