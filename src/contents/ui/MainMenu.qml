@@ -53,14 +53,14 @@ Kirigami.Page {
             }
             QQC2.Button {
                 id: buttonContinue
-                text: i18n("Continue ...")
+                text: i18n("Continue …")
                 Layout.preferredWidth: parent.parent.width * 0.7
                 onClicked: root.setPage(gamePage)
                 visible: gamePage.hasGame
             }
             QQC2.Button {
                 id: buttonImport
-                text: i18n("Import ...")
+                text: i18n("Import …")
                 Layout.preferredWidth: parent.parent.width * 0.7
                 onClicked: root.pageStack.layers.push("qrc:/Import.qml")
             }
