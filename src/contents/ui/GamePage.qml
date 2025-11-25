@@ -33,6 +33,7 @@ Kirigami.Page {
 
     function generateSudoku(difficulty, symmetry) {
         if (Qqw.generate(difficulty, symmetry)) {
+            drawer.close();
             setGame(Qqw.sudoku, Qqw.solution);
         }
     }
@@ -109,7 +110,7 @@ Kirigami.Page {
     property string finishHeader: ""
     property string finishText: ""
     property string finishMsg: ""
-    property color finishColor: Kirigami.Theme.neutralBackgroundColor
+    property color finishColor: Kirigami.Theme.backgroundColor
 
     function finish() {
         let stepcount = 0;
