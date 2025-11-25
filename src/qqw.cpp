@@ -8,7 +8,7 @@
 Qqw::Qqw(QObject *parent) : QObject(parent)
 {
     m_difficultyNames = QStringList { i18n("UNKNOWN"), i18n("Simple"), i18n("Easy"), i18n("Intermediate"), i18n("Expert") };
-    m_symmetries = QStringList { i18n("None"), i18n("Rotate 90°"), i18n("rotate 180°"), i18n("Mirror"), i18n("Flip"), i18n("Random") };
+    m_symmetries = QStringList { i18n("None"), i18n("Rotate 90°"), i18n("Rotate 180°"), i18n("Mirror"), i18n("Flip"), i18n("Random") };
     m_difficulty = SudokuBoard::UNKNOWN;
     m_symmetry = SudokuBoard::NONE;
     m_sudoku = QList<int>(81,0);
@@ -71,14 +71,14 @@ Qqw::SolveStatus Qqw::solve(const QList<int> &board)
             for(int i=0; i<81; i++) {
                 m_solution << s[i];
             }
-            m_message = i18n("Looking good. Difficulty: ") + m_difficultyNames[m_difficulty];
+            m_message = i18n("Looking good. Difficulty:") + QStringLiteral(" ") + m_difficultyNames[m_difficulty];
             return Qqw::SolveStatus::OK;
         }
-        m_message = i18n("The provided sudoku does not have a unique solution.");
+        m_message = i18n("The provided Sudoku does not have a unique solution.");
         m_sudoku = board;
         return Qqw::SolveStatus::Multiple;
     }
-    m_message = i18n("The provided sudoku is not solvable");
+    m_message = i18n("The provided Sudoku is not solvable.");
     return Qqw::SolveStatus::Failed;
 }
 

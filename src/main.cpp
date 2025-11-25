@@ -71,11 +71,11 @@ int main(int argc, char *argv[])
         // The program version string.
         QStringLiteral(PUMOKU_VERSION_STRING),
         // Short description of what the app does.
-        i18n("PuMoKu is a classic sudoku game, developed for mobile."),
+        i18n("PuMoKu is a classic Sudoku game, aimed for Plasma Mobile"),
         // The license this code is released under.
         KAboutLicense::GPL,
         // Copyright Statement.
-        i18n("(c) 2024"));
+        i18n("© 2025 KDE Developers"));
     aboutData.addAuthor(i18nc("@info:credit", "Anders Lund"), i18nc("@info:credit", "Maintainer"), u"anders@alweb.dk"_s);
     aboutData.setTranslator(i18nc("NAME OF TRANSLATORS", "Your names"), i18nc("EMAIL OF TRANSLATORS", "Your emails"));
     KAboutData::setApplicationData(aboutData);

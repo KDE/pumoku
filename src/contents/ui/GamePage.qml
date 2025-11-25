@@ -116,21 +116,21 @@ Kirigami.Page {
         game.stepCount.forEach((value) => stepcount += value )
         if (game.hintStatus & game.hintStatusAutoSolved) {
             finishColor = Kirigami.Theme.alternateBackgroundColor;
-            finishHeader = i18n("There is your solution.")
-            finishText = i18n("You gave in after %1 steps", stepcount);
-            finishMsg = i18n("Automatically solved. Hints: %1", game.hintCount );
+            finishHeader = i18n("There is your solution")
+            finishText = i18nc("%1 is step count", "You gave in after %1 steps.", stepcount);
+            finishMsg = i18nc("%1 is hint count", "Automatically solved. Hints: %1", game.hintCount);
         } else if (game.hintCount || game.hintStatus & game.hintStatusUsedAutoPM) {
             finishColor = Kirigami.Theme.neutralBackgroundColor;
             finishHeader = i18n("Well done!");
-            finishText = i18n("You finished this %1 suduko (with a bit of help) using %2 steps in", game.levelName, stepcount);
+            finishText = i18nc("%1 is level name, %2 is step count", "You finished this %1 Sudoku (with a bit of help) using %2 steps.", game.levelName, stepcount);
             if (game.hintStatus & game.hintStatusUsedAutoPM) {
                 finishMsg = i18n("Auto pencilmarks used.")
             }
-            finishMsg += i18n("Hints: %1 ", game.hintCount);
+            finishMsg += i18nc("%1 is hint count", "Hints: %1 ", game.hintCount);
         } else {
             finishColor = Kirigami.Theme.positiveBackgroundColor;
             finishHeader = i18n("CONGRATULATIONS!!");
-            finishText = i18n("You finished this %1 suduko with no hints or help using %2 steps in ", game.levelName, stepcount);
+            finishText = i18nc("%1 is level name, %2 is step count", "You finished this %1 Sudoku with no hints or help using %2 steps.", game.levelName, stepcount);
             finishMsg = i18n("Well done!")
         }
 
@@ -371,7 +371,7 @@ Kirigami.Page {
                 QQC2.Button {
                 Layout.fillWidth: true
                     id: btnUndo
-                    text: i18n("Undo")
+                    text: i18nc("@action:button", "Undo")
                     // text: "Fortryd"
                     icon.name: "edit-undo-symbolic"
                     onClicked: game.undo();
@@ -380,7 +380,7 @@ Kirigami.Page {
                 QQC2.Button {
                     Layout.fillWidth: true
                     id: btnRedo
-                    text: i18n("Redo")
+                    text: i18nc("@action:button", "Redo")
                     // text: "Gendan"
                     icon.name: "edit-redo-symbolic"
                     onClicked: game.redo();
@@ -389,18 +389,18 @@ Kirigami.Page {
                 QQC2.Button {
                     Layout.fillWidth: true
                     id: btnHint
-                    text: i18n("Hint")
+                    text: i18nc("@action:button", "Hint")
                     icon.name: "games-hint-symbolic"
                     onClicked: hintsMenu.open()
                     QQC2.Menu {
                         id: hintsMenu
                         QQC2.MenuItem {
-                            text: i18n("Solve cell")
+                            text: i18nc("@action:inmenu", "Solve Cell")
                             onTriggered: game.solveCell(game.currentCell)
                             enabled: game.currentCell > -1 && game.board[game.currentCell] === 0
                         }
                         QQC2.MenuItem {
-                            text: i18n("Set pencilmarks")
+                            text: i18nc("@action:inmenu", "Set Pencilmarks")
                             onTriggered: {
                                 game.generatePencilMarks()
                                 gameBoard.showPencilMarks = true
@@ -445,7 +445,7 @@ Kirigami.Page {
                 Layout.fillWidth: true
                     id: btnPencilMarks
                     checkable: true
-                    text: i18n("Pencil")
+                    text: i18nc("@action:button", "Pencil")
                     icon.name: "open-for-editing-symbolic"
                     onClicked: gameBoard.showPencilMarks = true
                 }
@@ -453,7 +453,7 @@ Kirigami.Page {
                 Layout.fillWidth: true
                     id: btnErase
                     checkable: true
-                    text: i18n("Erase")
+                    text: i18nc("@action:button", "Erase")
                     // text: "Visk ud"
                     icon.name: "tool_eraser-symbolic"
                     onClicked: eraseClicked();
@@ -461,18 +461,18 @@ Kirigami.Page {
                 QQC2.Button {
                 Layout.fillWidth: true
                     id: btnGame
-                    text: i18n("Game")
+                    text: i18nc("@action:button", "Game")
                     icon.name: "application-menu-symbolic"
                     onClicked: gameMenu.open()
                     QQC2.Menu {
                         id: gameMenu
                         QQC2.MenuItem {
-                            text: i18n("Reset game")
+                            text: i18nc("@action:inmenu", "Reset Game")
                             onTriggered: { resetPrompt.open() }
                             Kirigami.PromptDialog {
                                 id: resetPrompt
-                                title: i18n("Reset game?")
-                                subtitle: i18n("You loose any changes you have made, reset can't be undone.")
+                                title: i18nc("@title:window", "Reset Game?")
+                                subtitle: i18n("You will lose any changes you have made, this cannot be undone.")
                                 standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
                                 onAccepted: {
                                     game.reset();
@@ -481,16 +481,16 @@ Kirigami.Page {
                             }
                         }
                         QQC2.MenuItem {
-                            text: i18n("Clear pencilmarks")
+                            text: i18nc("@action:inmenu", "Clear Pencilmarks")
                             onTriggered: game.clearPencilMarks()
                         }
                         QQC2.MenuItem {
-                            text: i18n("Give up")
+                            text: i18nc("@action:inmenu", "Give Up")
                             onTriggered: { giveupPrompt.open() }
                             Kirigami.PromptDialog {
                                 id: giveupPrompt
-                                title: i18n("Give up?")
-                                subtitle: i18n("Giving up means that you loose any changes you have made, it can't be undone.")
+                                title: i18nc("@title:window", "Give Up?")
+                                subtitle: i18n("You will lose any changes you have made, this cannot be undone.")
                                 standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
                                 onAccepted: {
                                     game.clear();
@@ -499,12 +499,12 @@ Kirigami.Page {
                             }
                         }
                         QQC2.MenuItem {
-                            text: i18n("Solve game")
+                            text: i18nc("@action:inmenu", "Solve Game")
                             onTriggered: { solvePrompt.open() }
                             Kirigami.PromptDialog {
                                 id: solvePrompt
-                                title: i18n("Are you sure??")
-                                subtitle: i18n("you loose any changes you have made, and can't solve the puzzle on your own!")
+                                title: i18nc("@title:window", "Solve Game?")
+                                subtitle: i18n("You will lose any changes you have made, this cannot be undone. You can’t solve the puzzle on your own!")
                                 standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
                                 onAccepted: {
                                     game.solve();
@@ -616,11 +616,11 @@ Kirigami.Page {
                     Layout.rightMargin: Kirigami.Units.mediumSpacing
                     Layout.alignment: Qt.AlignHCenter
                     QQC2.Button  {
-                        text: i18n("Another %1", game.levelName)
+                        text: i18nc("@action:button, %1 is level name", "Another %1", game.levelName)
                         onClicked: { generateSudoku(game.level, 0); drawer.close(); }
                     }
                     QQC2.Button {
-                        text: i18n("Main menu")
+                        text: i18nc("@action:button", "Main Menu")
                         onClicked: { goHome(); drawer.close(); }
                     }
                 }

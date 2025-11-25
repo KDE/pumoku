@@ -8,14 +8,14 @@
   <provides>
     <binary>pumoku</binary>
   </provides>
-  <name>PuMoKu Kirigami Application</name>
+  <name>PuMoKu</name>
   <name xml:lang="ca">Aplicació de Kirigami PuMoKu</name>
   <name xml:lang="ca-valencia">Aplicació de Kirigami PuMoKu</name>
   <name xml:lang="pt-BR">Aplicativo Kirigami PuMoKu</name>
   <name xml:lang="tr">PuMoKu</name>
   <name xml:lang="uk">Програма на Kirigami PuMoKu</name>
   <name xml:lang="zh-TW">PuMoKu Kirigami 應用程式</name>
-  <summary>A classic 9x9 sudoku game for plasma mobile</summary>
+  <summary>A classic 9 × 9 sudoku game</summary>
   <summary xml:lang="ca">Un joc de Sudoku 9x9 clàssic per al Plasma Mobile</summary>
   <summary xml:lang="ca-valencia">Un joc de Sudoku 9x9 clàssic per a Plasma Mobile</summary>
   <summary xml:lang="pt-BR">Um clássico jogo de Sudoku 9x9 para dispositivos móveis Plasma</summary>
@@ -35,7 +35,7 @@
     <name translate="no">KDE</name>
   </developer>
   <description>
-    <p>PuMoKu is a classic, 9x9 pumoku solving game aimed at Plasma Mobile. It comes with flexible highlighting options and (touch) input methods, full undo stack and more.</p>
+    <p>PuMoKu is a classic, 9 × 9 Sudoku solving game aimed for Plasma Mobile. It comes with flexible highlighting options and (touch) input methods, full undo stack and more.</p>
     <p xml:lang="ca">El PuMoKu és un joc clàssic de resolució de Sudokus 9x9 destinat al Plasma Mobile. Ve amb opcions de ressaltat i mètodes d'entrada (tocs) flexibles, pila de desfer completa i més.</p>
     <p xml:lang="ca-valencia">PuMoKu és un joc clàssic de resolució de Sudoku 9x9 destinat a Plasma Mobile. Ve amb opcions de ressaltat i mètodes d'entrada (tocs) flexibles, pila de desfer completa i més.</p>
     <p xml:lang="pt-BR">PuMoKu é um jogo clássico de resolução de pumoku 9x9 para dispositivos Plasma Mobile. Ele oferece opções flexíveis de destaque de texto e métodos de entrada (por toque), funcionalidade completa de desfazer e muito mais.</p>

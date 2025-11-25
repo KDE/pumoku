@@ -9,7 +9,7 @@ import org.kde.pumoku
 import org.kde.pumoku.private
 
 Kirigami.Page {
-    title: i18nc("@title:window", "Main menu")
+    title: i18nc("@title:window", "Main Menu")
 
     ColumnLayout {
         anchors.horizontalCenter: parent.horizontalCenter
@@ -18,7 +18,7 @@ Kirigami.Page {
         // anchors.fill: parent
         Kirigami.Heading {
             Layout.alignment: Qt.AlignHCenter
-            text: i18n("Welcome to PuMoKu")
+            text: i18nc("@title", "Welcome to PuMoKu")
             level: 1
         }
         Image {
@@ -35,7 +35,7 @@ Kirigami.Page {
             Layout.alignment: Qt.AlignHCenter
             QQC2.Button {
                 id: buttonSolve
-                text: i18n("Solve a sudoku")
+                text: i18nc("@action:button", "Solve a Sudoku")
                 Layout.preferredWidth: parent.parent.width * 0.7
                 onClicked: sudokuMenu.open();
                 QQC2.Menu {
@@ -53,14 +53,14 @@ Kirigami.Page {
             }
             QQC2.Button {
                 id: buttonContinue
-                text: i18n("Continue …")
+                text: i18nc("@action:button", "Continue…")
                 Layout.preferredWidth: parent.parent.width * 0.7
                 onClicked: root.setPage(gamePage)
                 visible: gamePage.hasGame
             }
             QQC2.Button {
                 id: buttonImport
-                text: i18n("Import …")
+                text: i18nc("@action:button", "Import…")
                 Layout.preferredWidth: parent.parent.width * 0.7
                 onClicked: root.pageStack.layers.push("qrc:/Import.qml")
             }

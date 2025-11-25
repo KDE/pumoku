@@ -40,7 +40,7 @@ Kirigami.ApplicationWindow {
 
     Kirigami.PromptDialog {
         id: closePrompt
-        title: i18n("Give up active game?")
+        title: i18nc("@action:button", "Give Up Active Game?")
         subtitle: i18n("Pumoku does not save your game yet. Closing the app means giving up.")
         standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
         onAccepted: {
@@ -61,33 +61,33 @@ Kirigami.ApplicationWindow {
         collapseButtonVisible: false
         actions: [
             Kirigami.Action {
-                text: i18n("Main menu")
+                text: i18nc("@action:inmenu", "Main Menu")
                 icon.name: "go-home-large-symbolic"
                 onTriggered: root.setPage(mainMenu)
             },
             // Kirigami.Action {
-            //     text: i18n("Statistics")
+            //     text: i18nc("@action:inmenu", "Statistics")
             //     icon.name: "office-chart-line"
             //     // onTriggered: root.pageStack.pushDialogLayer(settingsPage)
             // },
             // Kirigami.Action {
-            //     text: i18n("Help")
+            //     text: i18nc("@action:inmenu", "Help")
             //     icon.name: "help-contents-symbolic"
             //     // onTriggered: root.pageStack.pushDialogLayer(settingsPage)
             // },
             Kirigami.Action {
-                text: i18n("Settings")
+                text: i18nc("@action:inmenu", "Settings")
                 icon.name: "settings-configure-symbolic"
                 onTriggered: root.pageStack.layers.push("qrc:/Settings.qml")
             },
             Kirigami.Action {
-                text: i18n("About PuMoKu")
+                text: i18nc("@action:inmenu", "About PuMoKu")
                 icon.name: "help-about"
                 onTriggered: root.pageStack.layers.push("qrc:/About.qml")
             },
             Kirigami.Action {
                 visible: !Kirigami.Settings.isMobile
-                text: i18n("Quit")
+                text: i18nc("@action:inmenu", "Quit")
                 icon.name: "application-exit"
                 onTriggered: Qt.quit()
             }

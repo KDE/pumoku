@@ -10,7 +10,7 @@ import org.kde.pumoku.private
 
 Kirigami.Page {
     id: importPage
-    title: i18n("Import sudoku")
+    title: i18nc("@title:window", "Import Sudoku")
 
     ColumnLayout {
         width: parent.width
@@ -32,7 +32,7 @@ Kirigami.Page {
             Layout.fillWidth: true
             Layout.maximumWidth: parent.width-parent.margins*2
             wrapMode: Text.WordWrap
-            text: i18n("Enter or paste a string of 81 characters. 1-9 for given cells, zero or any single non-numeric character except space will do for blanks cells. PuMoKu will check that the sudoku is solvable and calculate the level.\n\nLine breaks and spaces are silently removed, so that you can enter one row per line with some optional whitespace.")
+            text: i18nc("Use en dash for number range", "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any single non-numeric character except space will do for blanks cells. PuMoKu will check that the Sudoku is solvable and calculate the level.\n\nLine breaks and spaces are silently removed, so that you can enter one row per-line with some optional whitespace.")
         }
         Kirigami.InlineMessage {
             id: message
@@ -46,11 +46,11 @@ Kirigami.Page {
             spacing: Kirigami.Units.largeSpacing
             Layout.alignment: Qt.AlignRight
             QQC2.Button {
-                text: i18n("Cancel")
+                text: i18nc("@action:button", "Cancel")
                 onClicked: applicationWindow().pageStack.layers.pop()
             }
             QQC2.Button {
-                text: i18n("Import")
+                text: i18nc("@action:button", "Import")
                 property list<int> importboard: []
                 onClicked: {
                     let s = importString.text
@@ -59,7 +59,7 @@ Kirigami.Page {
 
                     if (s.length != 81) {
                         console.log("Wrong string length: " + s.length)
-                        message.text = i18n("The provided string is not exactly 81 characters after cleanup. Please fix.")
+                        message.text = i18n("The provided string is not exactly 81 characters after cleanup. Please amend.")
                         message.visible = true
                     } else {
                         let importboard = [];
