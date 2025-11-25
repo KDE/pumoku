@@ -2,7 +2,23 @@
 # SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk>
 [Desktop Entry]
 Name=PuMoKu
+Name[ca]=PuMoKu
+Name[ca@valencia]=PuMoKu
+Name[es]=PuMoKu
+Name[nl]=PuMoKu
+Name[pt_BR]=PuMoKu
+Name[tr]=PuMoKu
+Name[uk]=PuMoKu
+Name[zh_TW]=PuMoKu
 Comment=Sudoku game
+Comment[ca]=Joc de Sudoku
+Comment[ca@valencia]=Joc de Sudoku
+Comment[es]=Juego de Sudoku
+Comment[nl]=Sudoku-spel
+Comment[pt_BR]=Jogo Sudoku
+Comment[tr]=Sudoku oyunu
+Comment[uk]=Гра у судоку
+Comment[zh_TW]=數獨遊戲
 Version=1.0
 Exec=pumoku
 Icon=org.kde.pumoku
