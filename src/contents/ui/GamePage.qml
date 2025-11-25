@@ -118,15 +118,15 @@ Kirigami.Page {
             finishColor = Kirigami.Theme.alternateBackgroundColor;
             finishHeader = i18n("There is your solution")
             finishText = i18nc("%1 is step count", "You gave in after %1 steps.", stepcount);
-            finishMsg = i18nc("%1 is hint count", "Automatically solved. Hints: %1", game.hintCount);
+            finishMsg = i18nc("%1 is hint count", "Automatically solved. Hints: %1.", game.hintCount);
         } else if (game.hintCount || game.hintStatus & game.hintStatusUsedAutoPM) {
             finishColor = Kirigami.Theme.neutralBackgroundColor;
             finishHeader = i18n("Well done!");
             finishText = i18nc("%1 is level name, %2 is step count", "You finished this %1 Sudoku (with a bit of help) using %2 steps.", game.levelName, stepcount);
             if (game.hintStatus & game.hintStatusUsedAutoPM) {
-                finishMsg = i18n("Auto pencilmarks used.")
+                finishMsg = i18n("Auto pencilmarks used.") + QStringLiteral(" ");
             }
-            finishMsg += i18nc("%1 is hint count", "Hints: %1 ", game.hintCount);
+            finishMsg += i18nc("%1 is hint count", "Hints: %1.", game.hintCount);
         } else {
             finishColor = Kirigami.Theme.positiveBackgroundColor;
             finishHeader = i18n("CONGRATULATIONS!!");
