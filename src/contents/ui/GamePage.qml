@@ -536,7 +536,10 @@ Kirigami.Page {
                 icon.name: "open-for-editing-symbolic"
                 checkable: true
                 checked: gameBoard.showPencilMarks
-                onClicked: gameBoard.showPencilMarks = !gameBoard.showPencilMarks
+                onClicked: {
+                    gameBoard.showPencilMarks = !gameBoard.showPencilMarks
+                    btnPencilMarks.checked = false
+                }
                 flat: true
                 icon.color: checked ? Kirigami.Theme.positiveTextColor : Kirigami.Theme.disabledTextColor
                 icon.width: 32
