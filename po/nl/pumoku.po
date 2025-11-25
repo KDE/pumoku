@@ -1,0 +1,481 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the pumoku package.
+#
+# SPDX-FileCopyrightText: 2025 Freek de Kruijf <freekdekruijf@kde.nl>
+msgid ""
+msgstr ""
+"Project-Id-Version: pumoku\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-11-25 00:40+0000\n"
+"PO-Revision-Date: 2025-11-24 12:31+0100\n"
+"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 25.08.3\n"
+
+#: contents/ui/GamePage.qml:119
+#, kde-format
+msgid "There is your solution."
+msgstr "Daar is uw oplossing."
+
+#: contents/ui/GamePage.qml:120
+#, fuzzy, kde-format
+#| msgid "You gave in after "
+msgid "You gave in after %1 steps"
+msgstr "U gaf op na "
+
+#: contents/ui/GamePage.qml:121
+#, kde-format
+msgid "Automatically solved. Hints: %1"
+msgstr ""
+
+#: contents/ui/GamePage.qml:124 contents/ui/GamePage.qml:134
+#, kde-format
+msgid "Well done!"
+msgstr "Goed gedaan!"
+
+#: contents/ui/GamePage.qml:125
+#, kde-format
+msgid "You finished this %1 suduko (with a bit of help) using %2 steps in"
+msgstr ""
+
+#: contents/ui/GamePage.qml:127
+#, fuzzy, kde-format
+#| msgid "Auto pencilmarks used. "
+msgid "Auto pencilmarks used."
+msgstr "Automatische potloodmarkeringen gebruikt. "
+
+#: contents/ui/GamePage.qml:129
+#, fuzzy, kde-format
+#| msgid "Hints: "
+msgid "Hints: %1 "
+msgstr "Tips: "
+
+#: contents/ui/GamePage.qml:132
+#, kde-format
+msgid "CONGRATULATIONS!!"
+msgstr "GEFELICITEERD!!"
+
+#: contents/ui/GamePage.qml:133
+#, kde-format
+msgid "You finished this %1 suduko with no hints or help using %2 steps in "
+msgstr ""
+
+#: contents/ui/GamePage.qml:374
+#, kde-format
+msgid "Undo"
+msgstr "Ongedaan maken"
+
+#: contents/ui/GamePage.qml:383
+#, kde-format
+msgid "Redo"
+msgstr "Opnieuw"
+
+#: contents/ui/GamePage.qml:392
+#, kde-format
+msgid "Hint"
+msgstr "Tip"
+
+#: contents/ui/GamePage.qml:398
+#, kde-format
+msgid "Solve cell"
+msgstr "Cel oplossen"
+
+#: contents/ui/GamePage.qml:403
+#, kde-format
+msgid "Set pencilmarks"
+msgstr "Potloodmarkering zetten"
+
+#: contents/ui/GamePage.qml:448
+#, kde-format
+msgid "Pencil"
+msgstr "Potlood"
+
+#: contents/ui/GamePage.qml:456
+#, kde-format
+msgid "Erase"
+msgstr "Wissen"
+
+#: contents/ui/GamePage.qml:464 contents/ui/Settings.qml:18
+#, kde-format
+msgid "Game"
+msgstr "Spel"
+
+#: contents/ui/GamePage.qml:470
+#, kde-format
+msgid "Reset game"
+msgstr "Spel resetten"
+
+#: contents/ui/GamePage.qml:474
+#, kde-format
+msgid "Reset game?"
+msgstr "Spel resetten?"
+
+#: contents/ui/GamePage.qml:475
+#, kde-format
+msgid "You loose any changes you have made, reset can't be undone."
+msgstr ""
+"U verliest elke wijziging die u hebt gemaakt, reset kan niet ongedaan "
+"gemaakt worden."
+
+#: contents/ui/GamePage.qml:484
+#, kde-format
+msgid "Clear pencilmarks"
+msgstr "Potloodmarkeringen wissen"
+
+#: contents/ui/GamePage.qml:488
+#, kde-format
+msgid "Give up"
+msgstr "Opgeven"
+
+#: contents/ui/GamePage.qml:492
+#, kde-format
+msgid "Give up?"
+msgstr "Opgeven?"
+
+#: contents/ui/GamePage.qml:493
+#, kde-format
+msgid ""
+"Giving up means that you loose any changes you have made, it can't be undone."
+msgstr ""
+"Opgeven betekent dat u elke wijziging die u hebt gemaakt verliest, het kan "
+"niet ongedaan worden gemaakt."
+
+#: contents/ui/GamePage.qml:502
+#, kde-format
+msgid "Solve game"
+msgstr "Spel oplossen"
+
+#: contents/ui/GamePage.qml:506
+#, kde-format
+msgid "Are you sure??"
+msgstr "Weet u het zeker?"
+
+#: contents/ui/GamePage.qml:507
+#, fuzzy, kde-format
+#| msgid ""
+#| "you loose any changes you have made, and can't solve the puzzele on your "
+#| "own!"
+msgid ""
+"you loose any changes you have made, and can't solve the puzzle on your own!"
+msgstr ""
+"u verliest elke wijziging die u hebt gemaakt en kan de puzzel niet "
+"zelfstandig oplossen!"
+
+#: contents/ui/GamePage.qml:619
+#, fuzzy, kde-format
+#| msgid "Another "
+msgid "Another %1"
+msgstr "Nog een "
+
+#: contents/ui/GamePage.qml:623 contents/ui/Main.qml:64
+#, kde-format
+msgid "Main menu"
+msgstr "Hoofdmenu"
+
+#: contents/ui/Import.qml:13
+#, kde-format
+msgid "Import sudoku"
+msgstr "Sudoku importeren"
+
+#: contents/ui/Import.qml:35
+#, fuzzy, kde-format
+#| msgid ""
+#| "Enter or paste a string of 81 characters. 1-9 for given cells, zero or "
+#| "any single non-numeric character except space will do for blanks cells. "
+#| "PuMoKu will check that the sudoku is solvable and calculate the level.\n"
+#| "\n"
+#| "Line breaks and spaces are silently removed, so that you can enter one "
+#| "row pr line with some optional whitespace."
+msgid ""
+"Enter or paste a string of 81 characters. 1-9 for given cells, zero or any "
+"single non-numeric character except space will do for blanks cells. PuMoKu "
+"will check that the sudoku is solvable and calculate the level.\n"
+"\n"
+"Line breaks and spaces are silently removed, so that you can enter one row "
+"per line with some optional whitespace."
+msgstr ""
+"Voer in of plak een tekenreeks van 81 tekens. 1-9 voor gegeven cellen, nul "
+"of elk enkel niet-numeriek teken behalve spatie voldoet voor lege cellen. "
+"PuMoKu zal controleren of de sudoku oplosbaar is en het niveau berekenen.\n"
+"\n"
+"Regelafbrekingen en spaties worden stilletjes verwijderd, zodat u één rij "
+"per regel kunt invoeren met enige optionele witruimte."
+
+#: contents/ui/Import.qml:49
+#, kde-format
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: contents/ui/Import.qml:53
+#, kde-format
+msgid "Import"
+msgstr "Importeren"
+
+#: contents/ui/Import.qml:62
+#, kde-format
+msgid ""
+"The provided string is not exactly 81 characters after cleanup. Please fix."
+msgstr ""
+"De geleverde tekenreeks is niet exact 81 tekens na opschonen. Graag "
+"repareren."
+
+#: contents/ui/Main.qml:15
+#, kde-format
+msgid "PuMoKu"
+msgstr "PuMoKu"
+
+#: contents/ui/Main.qml:43
+#, kde-format
+msgid "Give up active game?"
+msgstr "Actieve spel opgeven?"
+
+#: contents/ui/Main.qml:44
+#, kde-format
+msgid "Pumoku does not save your game yet. Closing the app means giving up."
+msgstr ""
+"Pumoku slat uw spel nog niet op. Sluiten van de toepassing betekent "
+"opgegeven."
+
+#: contents/ui/Main.qml:79
+#, kde-format
+msgid "Settings"
+msgstr "Instellingen"
+
+#: contents/ui/Main.qml:84
+#, kde-format
+msgid "About PuMoKu"
+msgstr "Info over PuMoKu"
+
+#: contents/ui/Main.qml:90
+#, kde-format
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: contents/ui/MainMenu.qml:12
+#, kde-format
+msgctxt "@title:window"
+msgid "Main menu"
+msgstr "Hoofdmenu"
+
+#: contents/ui/MainMenu.qml:21
+#, fuzzy, kde-format
+#| msgid "Wellcome to PuMoKu"
+msgid "Welcome to PuMoKu"
+msgstr "Welkom bij PuMoKu"
+
+#: contents/ui/MainMenu.qml:38
+#, kde-format
+msgid "Solve a sudoku"
+msgstr "Los een sudoku op"
+
+#: contents/ui/MainMenu.qml:56
+#, fuzzy, kde-format
+#| msgid "Continue ..."
+msgid "Continue …"
+msgstr "Doorgaan ..."
+
+#: contents/ui/MainMenu.qml:63
+#, fuzzy, kde-format
+#| msgid "Import"
+msgid "Import …"
+msgstr "Importeren"
+
+#: contents/ui/Settings.qml:15
+#, kde-format
+msgctxt "@title:window"
+msgid "Settings"
+msgstr "Instellingen"
+
+#: contents/ui/Settings.qml:24
+#, kde-format
+msgid "Input method"
+msgstr "Invoermethode"
+
+#: contents/ui/Settings.qml:27
+#, kde-format
+msgid "Hybrid"
+msgstr "Hybride"
+
+#: contents/ui/Settings.qml:28
+#, kde-format
+msgid "Digit, then cell"
+msgstr "Cijfer, dan cel"
+
+#: contents/ui/Settings.qml:29
+#, kde-format
+msgid "Cell, then digit"
+msgstr "Cel dan cijfer"
+
+#: contents/ui/Settings.qml:38
+#, kde-format
+msgid "Reset time with game"
+msgstr "Tijd met spel resetten"
+
+#: contents/ui/Settings.qml:46
+#, kde-format
+msgid "Clean up pencil marks when setting a cell value"
+msgstr "Potloodmarkeringen wissen bij zetten van een waarde in de cel"
+
+#: contents/ui/Settings.qml:53
+#, kde-format
+msgid "Highlight"
+msgstr "Accentueren"
+
+#: contents/ui/Settings.qml:57
+#, kde-format
+msgid "Houses of a selected cell"
+msgstr "Huizen van een geselecteerde cel"
+
+#: contents/ui/Settings.qml:65
+#, kde-format
+msgid "Cells with active digit"
+msgstr "Cellen met actief cijfer"
+
+#: contents/ui/Settings.qml:73
+#, kde-format
+msgid "Cells with active digit pencilmark"
+msgstr "Cellen met actief cijfer als potloodmarkering"
+
+#: contents/ui/Settings.qml:81
+#, kde-format
+msgid "Logical errors in values"
+msgstr "Logische fouten in waarden"
+
+#: contents/ui/Settings.qml:89
+#, kde-format
+msgid "Logical errors in pencilmarks"
+msgstr "Logische fouten in potloodmarkeringen"
+
+#: contents/ui/Settings.qml:97
+#, kde-format
+msgid "Erasable cells with eraser active"
+msgstr "Wisbare cellen met actieve wisser"
+
+#: contents/ui/Settings.qml:105
+#, kde-format
+msgid "Wrong values"
+msgstr "Verkeerde waarden"
+
+#: main.cpp:70
+#, kde-format
+msgctxt "@title"
+msgid "PuMoKu"
+msgstr "PuMoKu"
+
+#: main.cpp:74
+#, kde-format
+msgid "PuMoKu is a classic sudoku game, developed for mobile."
+msgstr "PuMoKu is een klassiek sudoku spel, ontwikkelt voor mobiel."
+
+#: main.cpp:78
+#, kde-format
+msgid "(c) 2024"
+msgstr "(c) 2024"
+
+#: main.cpp:79
+#, kde-format
+msgctxt "@info:credit"
+msgid "Anders Lund"
+msgstr "Anders Lund"
+
+#: main.cpp:79
+#, kde-format
+msgctxt "@info:credit"
+msgid "Maintainer"
+msgstr "Onderhouder"
+
+#: main.cpp:80
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Freek de Kruijf - 2025"
+
+#: main.cpp:80
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "freekdekruijf@kde.nl"
+
+#: qqw.cpp:10
+#, kde-format
+msgid "UNKNOWN"
+msgstr "ONBEKEND"
+
+#: qqw.cpp:10
+#, kde-format
+msgid "Simple"
+msgstr "Eenvoudig"
+
+#: qqw.cpp:10
+#, kde-format
+msgid "Easy"
+msgstr "Gemakkelijk"
+
+#: qqw.cpp:10
+#, kde-format
+msgid "Intermediate"
+msgstr "Tussenliggend"
+
+#: qqw.cpp:10
+#, kde-format
+msgid "Expert"
+msgstr "Expert"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "None"
+msgstr "Geen"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Rotate 90°"
+msgstr "90° draaien"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "rotate 180°"
+msgstr "180° draaien"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Mirror"
+msgstr "Spiegelen"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Flip"
+msgstr "Verticaal spiegelen"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Random"
+msgstr "Willekeurig"
+
+#: qqw.cpp:74
+#, kde-format
+msgid "Looking good. Difficulty: "
+msgstr "Ziet er goed uit. Moeilijkheidsgraad: "
+
+#: qqw.cpp:77
+#, kde-format
+msgid "The provided sudoku does not have a unique solution."
+msgstr "De gegeven sudoku heeft geen unieke oplossing."
+
+#: qqw.cpp:81
+#, kde-format
+msgid "The provided sudoku is not solvable"
+msgstr "De gegeven sudoku is niet op te lossen"
+
+#~ msgid "using "
+#~ msgstr "gebruikt "
+
+#~ msgid "You finished this "
+#~ msgstr "U hebt dit beëindigd "
+
+#~ msgid "Import ..."
+#~ msgstr "Importeren ..."

@@ -1,0 +1,477 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the pumoku package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: pumoku\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-11-25 00:40+0000\n"
+"PO-Revision-Date: 2025-11-24 14:17+0200\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 23.04.3\n"
+
+#: contents/ui/GamePage.qml:119
+#, kde-format
+msgid "There is your solution."
+msgstr "Є ваш розв'язок."
+
+#: contents/ui/GamePage.qml:120
+#, fuzzy, kde-format
+#| msgid "You gave in after "
+msgid "You gave in after %1 steps"
+msgstr "Ви здалися після "
+
+#: contents/ui/GamePage.qml:121
+#, kde-format
+msgid "Automatically solved. Hints: %1"
+msgstr ""
+
+#: contents/ui/GamePage.qml:124 contents/ui/GamePage.qml:134
+#, kde-format
+msgid "Well done!"
+msgstr "Добре!"
+
+#: contents/ui/GamePage.qml:125
+#, kde-format
+msgid "You finished this %1 suduko (with a bit of help) using %2 steps in"
+msgstr ""
+
+#: contents/ui/GamePage.qml:127
+#, fuzzy, kde-format
+#| msgid "Auto pencilmarks used. "
+msgid "Auto pencilmarks used."
+msgstr "Використано автоматичні позначки олівцем. "
+
+#: contents/ui/GamePage.qml:129
+#, fuzzy, kde-format
+#| msgid "Hints: "
+msgid "Hints: %1 "
+msgstr "Підказки: "
+
+#: contents/ui/GamePage.qml:132
+#, kde-format
+msgid "CONGRATULATIONS!!"
+msgstr "ВІТАЄМО!"
+
+#: contents/ui/GamePage.qml:133
+#, kde-format
+msgid "You finished this %1 suduko with no hints or help using %2 steps in "
+msgstr ""
+
+#: contents/ui/GamePage.qml:374
+#, kde-format
+msgid "Undo"
+msgstr "Скасувати"
+
+#: contents/ui/GamePage.qml:383
+#, kde-format
+msgid "Redo"
+msgstr "Повторити"
+
+#: contents/ui/GamePage.qml:392
+#, kde-format
+msgid "Hint"
+msgstr "Підказка"
+
+#: contents/ui/GamePage.qml:398
+#, kde-format
+msgid "Solve cell"
+msgstr "Розв'язати комірку"
+
+#: contents/ui/GamePage.qml:403
+#, kde-format
+msgid "Set pencilmarks"
+msgstr "Встановити позначки олівцем"
+
+#: contents/ui/GamePage.qml:448
+#, kde-format
+msgid "Pencil"
+msgstr "Олівець"
+
+#: contents/ui/GamePage.qml:456
+#, kde-format
+msgid "Erase"
+msgstr "Витерти"
+
+#: contents/ui/GamePage.qml:464 contents/ui/Settings.qml:18
+#, kde-format
+msgid "Game"
+msgstr "Гра"
+
+#: contents/ui/GamePage.qml:470
+#, kde-format
+msgid "Reset game"
+msgstr "Відновити початковий стан гри"
+
+#: contents/ui/GamePage.qml:474
+#, kde-format
+msgid "Reset game?"
+msgstr "Відновити початковий стан гри?"
+
+#: contents/ui/GamePage.qml:475
+#, kde-format
+msgid "You loose any changes you have made, reset can't be undone."
+msgstr "Ви втратите усі внесені зміни, скидання не можна буде скасувати."
+
+#: contents/ui/GamePage.qml:484
+#, kde-format
+msgid "Clear pencilmarks"
+msgstr "Зняти позначки олівцем"
+
+#: contents/ui/GamePage.qml:488
+#, kde-format
+msgid "Give up"
+msgstr "Здатися"
+
+#: contents/ui/GamePage.qml:492
+#, kde-format
+msgid "Give up?"
+msgstr "Здатися?"
+
+#: contents/ui/GamePage.qml:493
+#, kde-format
+msgid ""
+"Giving up means that you loose any changes you have made, it can't be undone."
+msgstr ""
+"Якщо ви здастеся, ви втратите усі внесені зміни. Результат не можна буде "
+"скасувати."
+
+#: contents/ui/GamePage.qml:502
+#, kde-format
+msgid "Solve game"
+msgstr "Розв'язати гру"
+
+#: contents/ui/GamePage.qml:506
+#, kde-format
+msgid "Are you sure??"
+msgstr "Ви впевнені?"
+
+#: contents/ui/GamePage.qml:507
+#, fuzzy, kde-format
+#| msgid ""
+#| "you loose any changes you have made, and can't solve the puzzele on your "
+#| "own!"
+msgid ""
+"you loose any changes you have made, and can't solve the puzzle on your own!"
+msgstr "ви втратите усі внесені зміни і не зможете виграти гру власноруч!"
+
+#: contents/ui/GamePage.qml:619
+#, fuzzy, kde-format
+#| msgid "Another "
+msgid "Another %1"
+msgstr "Ще одна "
+
+#: contents/ui/GamePage.qml:623 contents/ui/Main.qml:64
+#, kde-format
+msgid "Main menu"
+msgstr "Головне меню"
+
+#: contents/ui/Import.qml:13
+#, kde-format
+msgid "Import sudoku"
+msgstr "Імпортувати судоку"
+
+#: contents/ui/Import.qml:35
+#, fuzzy, kde-format
+#| msgid ""
+#| "Enter or paste a string of 81 characters. 1-9 for given cells, zero or "
+#| "any single non-numeric character except space will do for blanks cells. "
+#| "PuMoKu will check that the sudoku is solvable and calculate the level.\n"
+#| "\n"
+#| "Line breaks and spaces are silently removed, so that you can enter one "
+#| "row pr line with some optional whitespace."
+msgid ""
+"Enter or paste a string of 81 characters. 1-9 for given cells, zero or any "
+"single non-numeric character except space will do for blanks cells. PuMoKu "
+"will check that the sudoku is solvable and calculate the level.\n"
+"\n"
+"Line breaks and spaces are silently removed, so that you can enter one row "
+"per line with some optional whitespace."
+msgstr ""
+"Введіть або вставте рядок із 81 символу. Для заданих комірок "
+"використовуються символи від 1 до 9, для порожніх комірок – нуль або будь-"
+"який нечисловий символ, окрім пробілу. PuMoKu перевірить, чи судоку можна "
+"розв'язати, та розрахує рівень.\n"
+"\n"
+"Розриви рядків та пробіли буде без попередження вилучено, тож ви можете "
+"ввести один рядок на рядок з будь-якими необов'язковими пробілами."
+
+#: contents/ui/Import.qml:49
+#, kde-format
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: contents/ui/Import.qml:53
+#, kde-format
+msgid "Import"
+msgstr "Імпортувати"
+
+#: contents/ui/Import.qml:62
+#, kde-format
+msgid ""
+"The provided string is not exactly 81 characters after cleanup. Please fix."
+msgstr ""
+"Після чищення наданий рядок не складається точно з 81 символу. Будь ласка, "
+"виправте його."
+
+#: contents/ui/Main.qml:15
+#, kde-format
+msgid "PuMoKu"
+msgstr "PuMoKu"
+
+#: contents/ui/Main.qml:43
+#, kde-format
+msgid "Give up active game?"
+msgstr "Здатися в активній грі?"
+
+#: contents/ui/Main.qml:44
+#, kde-format
+msgid "Pumoku does not save your game yet. Closing the app means giving up."
+msgstr "Pumoku ще не зберігала вашу гру. Закрити програму — здатися."
+
+#: contents/ui/Main.qml:79
+#, kde-format
+msgid "Settings"
+msgstr "Параметри"
+
+#: contents/ui/Main.qml:84
+#, kde-format
+msgid "About PuMoKu"
+msgstr "Про PuMoKu"
+
+#: contents/ui/Main.qml:90
+#, kde-format
+msgid "Quit"
+msgstr "Вийти"
+
+#: contents/ui/MainMenu.qml:12
+#, kde-format
+msgctxt "@title:window"
+msgid "Main menu"
+msgstr "Головне меню"
+
+#: contents/ui/MainMenu.qml:21
+#, fuzzy, kde-format
+#| msgid "Wellcome to PuMoKu"
+msgid "Welcome to PuMoKu"
+msgstr "Вітаємо у PuMoKu"
+
+#: contents/ui/MainMenu.qml:38
+#, kde-format
+msgid "Solve a sudoku"
+msgstr "Розв'язати судоку"
+
+#: contents/ui/MainMenu.qml:56
+#, fuzzy, kde-format
+#| msgid "Continue ..."
+msgid "Continue …"
+msgstr "Продовжити…"
+
+#: contents/ui/MainMenu.qml:63
+#, fuzzy, kde-format
+#| msgid "Import"
+msgid "Import …"
+msgstr "Імпортувати"
+
+#: contents/ui/Settings.qml:15
+#, kde-format
+msgctxt "@title:window"
+msgid "Settings"
+msgstr "Параметри"
+
+#: contents/ui/Settings.qml:24
+#, kde-format
+msgid "Input method"
+msgstr "Спосіб введення"
+
+#: contents/ui/Settings.qml:27
+#, kde-format
+msgid "Hybrid"
+msgstr "Гібридне"
+
+#: contents/ui/Settings.qml:28
+#, kde-format
+msgid "Digit, then cell"
+msgstr "Цифра, потім комірка"
+
+#: contents/ui/Settings.qml:29
+#, kde-format
+msgid "Cell, then digit"
+msgstr "Комірка, потім цифра"
+
+#: contents/ui/Settings.qml:38
+#, kde-format
+msgid "Reset time with game"
+msgstr "Скидати час зі зміною гри"
+
+#: contents/ui/Settings.qml:46
+#, kde-format
+msgid "Clean up pencil marks when setting a cell value"
+msgstr "Знімати позначки олівцем при встановлення значення у комірці"
+
+#: contents/ui/Settings.qml:53
+#, kde-format
+msgid "Highlight"
+msgstr "Підсвічування"
+
+#: contents/ui/Settings.qml:57
+#, kde-format
+msgid "Houses of a selected cell"
+msgstr "Місця позначеної комірки"
+
+#: contents/ui/Settings.qml:65
+#, kde-format
+msgid "Cells with active digit"
+msgstr "Комірки з активною цифрою"
+
+#: contents/ui/Settings.qml:73
+#, kde-format
+msgid "Cells with active digit pencilmark"
+msgstr "Комірки з активною позначкою цифри олівцем"
+
+#: contents/ui/Settings.qml:81
+#, kde-format
+msgid "Logical errors in values"
+msgstr "Логічні помилки у значеннях"
+
+#: contents/ui/Settings.qml:89
+#, kde-format
+msgid "Logical errors in pencilmarks"
+msgstr "Логічні помилки у позначках олівцем"
+
+#: contents/ui/Settings.qml:97
+#, kde-format
+msgid "Erasable cells with eraser active"
+msgstr "Придатні до витирання комірки із активною гумкою"
+
+#: contents/ui/Settings.qml:105
+#, kde-format
+msgid "Wrong values"
+msgstr "Помилкові значення"
+
+#: main.cpp:70
+#, kde-format
+msgctxt "@title"
+msgid "PuMoKu"
+msgstr "PuMoKu"
+
+#: main.cpp:74
+#, kde-format
+msgid "PuMoKu is a classic sudoku game, developed for mobile."
+msgstr "PuMoKu — класична гра у судоку, розроблена для мобільних пристроїв."
+
+#: main.cpp:78
+#, kde-format
+msgid "(c) 2024"
+msgstr "© 2024"
+
+#: main.cpp:79
+#, kde-format
+msgctxt "@info:credit"
+msgid "Anders Lund"
+msgstr "Андерс Лунд"
+
+#: main.cpp:79
+#, kde-format
+msgctxt "@info:credit"
+msgid "Maintainer"
+msgstr "Супровідник"
+
+#: main.cpp:80
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Юрій Чорноіван"
+
+#: main.cpp:80
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "yurchor@ukr.net"
+
+#: qqw.cpp:10
+#, kde-format
+msgid "UNKNOWN"
+msgstr "НЕВІДОМА"
+
+#: qqw.cpp:10
+#, kde-format
+msgid "Simple"
+msgstr "Проста"
+
+#: qqw.cpp:10
+#, kde-format
+msgid "Easy"
+msgstr "Легка"
+
+#: qqw.cpp:10
+#, kde-format
+msgid "Intermediate"
+msgstr "Середня"
+
+#: qqw.cpp:10
+#, kde-format
+msgid "Expert"
+msgstr "Експерт"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "None"
+msgstr "Немає"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Rotate 90°"
+msgstr "Обернути на 90°"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "rotate 180°"
+msgstr "Обернути на 180°"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Mirror"
+msgstr "Віддзеркалити"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Flip"
+msgstr "Перевернути"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Random"
+msgstr "Випадковий"
+
+#: qqw.cpp:74
+#, kde-format
+msgid "Looking good. Difficulty: "
+msgstr "Усе добре. Складність: "
+
+#: qqw.cpp:77
+#, kde-format
+msgid "The provided sudoku does not have a unique solution."
+msgstr "Надане судоку не має однозначного розв'язку."
+
+#: qqw.cpp:81
+#, kde-format
+msgid "The provided sudoku is not solvable"
+msgstr "Надане судоку не можна розв'язати"
+
+#~ msgid "using "
+#~ msgstr "з використанням"
+
+#~ msgid "You finished this "
+#~ msgstr "Ви завершити "
+
+#~ msgid "Import ..."
+#~ msgstr "Імпортувати…"
