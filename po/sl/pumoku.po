@@ -1,211 +1,231 @@
-# Copyright (C) 2025 This file is copyright:
-# This file is distributed under the same license as the pumoku package.
-#
-# SPDX-FileCopyrightText: 2025 Emir SARI <emir_sari@îcloud.com>
+# SPDX-FileCopyrightText: 2025 Matjaž Jeran <matjaz.jeran@amis.net>
 msgid ""
 msgstr ""
-"Project-Id-Version: pumoku\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-26 00:41+0000\n"
-"PO-Revision-Date: 2025-11-25 12:16+0300\n"
-"Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
-"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
-"Language: tr\n"
+"PO-Revision-Date: 2025-11-25 09:51+0100\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.08.2\n"
+"X-Generator: Lokalize 25.08.3\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
 
 #: contents/ui/GamePage.qml:119
 #, fuzzy, kde-format
 #| msgid "There is your solution."
 msgid "There is your solution"
-msgstr "İşte çözüm."
+msgstr "Tukaj je vaša rešitev."
 
 #: contents/ui/GamePage.qml:120
 #, fuzzy, kde-format
 #| msgid "You gave in after %1 steps"
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
-msgstr "%1 adımdan sonra bıraktınız"
+msgstr "Oddali ste jo po %1 korakih"
 
 #: contents/ui/GamePage.qml:121
 #, fuzzy, kde-format
 #| msgid "Automatically solved. Hints: %1"
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
-msgstr "Kendiliğinden çözüldü. İpuçları: %1"
+msgstr "Samodejno rešeno. Namigi: %1"
 
 #: contents/ui/GamePage.qml:124 contents/ui/GamePage.qml:134
 #, kde-format
 msgid "Well done!"
-msgstr "Aferin!"
+msgstr "Odlično narejeno!"
 
 #: contents/ui/GamePage.qml:125
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "You finished this %1 suduko (with a bit of help) using %2 steps in"
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
-msgstr ""
+msgstr "Ta %1 suduko ste (z malo pomoči) končali z %2 korakih v"
 
 #: contents/ui/GamePage.qml:127
 #, kde-format
 msgid "Auto pencilmarks used."
-msgstr "Otomatik kalem imleri kullanıldı."
+msgstr "Uporabljene so samodejne oznake s svinčnikom."
 
 #: contents/ui/GamePage.qml:129
 #, fuzzy, kde-format
 #| msgid "Hints: %1 "
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
-msgstr "İpuçları: %1 "
+msgstr "Namigi: %1 "
 
 #: contents/ui/GamePage.qml:132
 #, kde-format
 msgid "CONGRATULATIONS!!"
-msgstr "TEBRİKLER!"
+msgstr "ČESTITKE!!"
 
 #: contents/ui/GamePage.qml:133
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "You finished this %1 suduko with no hints or help using %2 steps in "
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
-msgstr ""
+msgstr "Ta %1 suduko ste končali brez namigov ali pomoči z %2 korakih v"
 
 #: contents/ui/GamePage.qml:374
 #, fuzzy, kde-format
 #| msgid "Undo"
 msgctxt "@action:button"
 msgid "Undo"
-msgstr "Geri Al"
+msgstr "Razveljavi"
 
 #: contents/ui/GamePage.qml:383
 #, fuzzy, kde-format
 #| msgid "Redo"
 msgctxt "@action:button"
 msgid "Redo"
-msgstr "Yinele"
+msgstr "Uveljavi"
 
 #: contents/ui/GamePage.qml:392
 #, fuzzy, kde-format
 #| msgid "Hint"
 msgctxt "@action:button"
 msgid "Hint"
-msgstr "İpucu"
+msgstr "Namig"
 
 #: contents/ui/GamePage.qml:398
 #, fuzzy, kde-format
 #| msgid "Solve cell"
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
-msgstr "Hücreyi Çöz"
+msgstr "Reši celico"
 
 #: contents/ui/GamePage.qml:403
 #, fuzzy, kde-format
 #| msgid "Set pencilmarks"
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
-msgstr "Kalem İmleri Koy"
+msgstr "Nastavi oznake s svinčnikom"
 
 #: contents/ui/GamePage.qml:448
 #, fuzzy, kde-format
 #| msgid "Pencil"
 msgctxt "@action:button"
 msgid "Pencil"
-msgstr "Kalem"
+msgstr "Svinčnik"
 
 #: contents/ui/GamePage.qml:456
 #, fuzzy, kde-format
 #| msgid "Erase"
 msgctxt "@action:button"
 msgid "Erase"
-msgstr "Silgi"
+msgstr "Izbriši"
 
 #: contents/ui/GamePage.qml:464
 #, fuzzy, kde-format
 #| msgid "Game"
 msgctxt "@action:button"
 msgid "Game"
-msgstr "Oyun"
+msgstr "Igra"
 
 #: contents/ui/GamePage.qml:470
 #, fuzzy, kde-format
 #| msgid "Reset game"
 msgctxt "@action:inmenu"
 msgid "Reset Game"
-msgstr "Oyunu Sıfırla"
+msgstr "Ponastavi igro"
 
 #: contents/ui/GamePage.qml:474
 #, fuzzy, kde-format
 #| msgid "Reset game?"
 msgctxt "@title:window"
 msgid "Reset Game?"
-msgstr "Oyun sıfırlansın mı?"
+msgstr "Naj ponastavim igro?"
 
 #: contents/ui/GamePage.qml:475 contents/ui/GamePage.qml:493
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "You loose any changes you have made, reset can't be undone."
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr ""
+"Izgubite vse spremembe, ki ste jih naredili, ponastavitve ni mogoče "
+"razveljaviti."
 
 #: contents/ui/GamePage.qml:484
 #, fuzzy, kde-format
-#| msgid "Set pencilmarks"
+#| msgid "Clear pencilmarks"
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
-msgstr "Kalem İmleri Koy"
+msgstr "Počisti oznake svinčnika"
 
 #: contents/ui/GamePage.qml:488
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Give up"
 msgctxt "@action:inmenu"
 msgid "Give Up"
-msgstr ""
+msgstr "Odneham"
 
 #: contents/ui/GamePage.qml:492
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Give up?"
 msgctxt "@title:window"
 msgid "Give Up?"
-msgstr ""
+msgstr "Naj odneham?"
 
 #: contents/ui/GamePage.qml:502
 #, fuzzy, kde-format
-#| msgid "Solve cell"
+#| msgid "Solve game"
 msgctxt "@action:inmenu"
 msgid "Solve Game"
-msgstr "Hücreyi Çöz"
+msgstr "Reši igro"
 
 #: contents/ui/GamePage.qml:506
 #, fuzzy, kde-format
-#| msgid "Solve cell"
+#| msgid "Solve game"
 msgctxt "@title:window"
 msgid "Solve Game?"
-msgstr "Hücreyi Çöz"
+msgstr "Reši igro"
 
 #: contents/ui/GamePage.qml:507
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "you loose any changes you have made, and can't solve the puzzle on your "
+#| "own!"
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
 "solve the puzzle on your own!"
 msgstr ""
+"izgubite vse spremembe, ki ste jih naredili, in uganke ne morete rešiti sami!"
 
 #: contents/ui/GamePage.qml:619
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Another %1"
 msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
-msgstr ""
+msgstr "Še ena %1"
 
 #: contents/ui/GamePage.qml:623
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "contents/ui/GamePage.qml:623 contents/ui/Main.qml:64"
+#| msgid "Main menu"
 msgctxt "@action:button"
 msgid "Main Menu"
-msgstr ""
+msgstr "Glavni meni"
 
 #: contents/ui/Import.qml:13
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import sudoku"
 msgctxt "@title:window"
 msgid "Import Sudoku"
-msgstr ""
+msgstr "Uvozi sudoku"
 
 #: contents/ui/Import.qml:35
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Enter or paste a string of 81 characters. 1-9 for given cells, zero or "
+#| "any single non-numeric character except space will do for blanks cells. "
+#| "PuMoKu will check that the sudoku is solvable and calculate the level.\n"
+#| "\n"
+#| "Line breaks and spaces are silently removed, so that you can enter one "
+#| "row per line with some optional whitespace."
 msgctxt "Use en dash for number range"
 msgid ""
 "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
@@ -215,203 +235,248 @@ msgid ""
 "Line breaks and spaces are silently removed, so that you can enter one row "
 "per-line with some optional whitespace."
 msgstr ""
+"Vnesite ali prilepite niz 81 znakov. Za dane celice uporabite številke od 1 "
+"do 9, za prazne celice pa nič ali kateri koli neštevilski znak, razen "
+"presledka. PuMoKu bo preveril, ali je sudoku rešljiv, in izračunal raven. "
+"Prelomi vrstic in presledki se potihem odstranijo, tako da lahko vnesete eno "
+"vrstico na vrstico z nekaj neobveznimi presledki."
 
 #: contents/ui/Import.qml:49
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cancel"
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr ""
+msgstr "Prekliči"
 
 #: contents/ui/Import.qml:53
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import"
 msgctxt "@action:button"
 msgid "Import"
-msgstr ""
+msgstr "Uvozi"
 
 #: contents/ui/Import.qml:62
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The provided string is not exactly 81 characters after cleanup. Please "
+#| "fix."
 msgid ""
 "The provided string is not exactly 81 characters after cleanup. Please amend."
-msgstr ""
+msgstr "Navedeni niz po čiščenju nima natanko 81 znakov. Prosimo, popravite."
 
 #: contents/ui/Main.qml:15
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "contents/ui/Main.qml:15"
+#| msgid "PuMoKu"
 msgid "PuMoKu"
-msgstr ""
+msgstr "PuMoKu"
 
 #: contents/ui/Main.qml:43
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Give up active game?"
 msgctxt "@action:button"
 msgid "Give Up Active Game?"
-msgstr ""
+msgstr "Želite prekiniti aktivno igro?"
 
 #: contents/ui/Main.qml:44
 #, kde-format
 msgid "Pumoku does not save your game yet. Closing the app means giving up."
 msgstr ""
+"Pumoku še ne shrani vaše igre. Zapiranje aplikacije pomeni, da boste "
+"odnehali."
 
 #: contents/ui/Main.qml:64
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "contents/ui/GamePage.qml:623 contents/ui/Main.qml:64"
+#| msgid "Main menu"
 msgctxt "@action:inmenu"
 msgid "Main Menu"
-msgstr ""
+msgstr "Glavni meni"
 
 #: contents/ui/Main.qml:79
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "contents/ui/Main.qml:79"
+#| msgid "Settings"
 msgctxt "@action:inmenu"
 msgid "Settings"
-msgstr ""
+msgstr "Nastavitve"
 
 #: contents/ui/Main.qml:84
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "About PuMoKu"
 msgctxt "@action:inmenu"
 msgid "About PuMoKu"
-msgstr ""
+msgstr "O PuMoKuju"
 
 #: contents/ui/Main.qml:90
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Quit"
 msgctxt "@action:inmenu"
 msgid "Quit"
-msgstr ""
+msgstr "Izhod"
 
 #: contents/ui/MainMenu.qml:12
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "contents/ui/GamePage.qml:623 contents/ui/Main.qml:64"
+#| msgid "Main menu"
 msgctxt "@title:window"
 msgid "Main Menu"
-msgstr ""
+msgstr "Glavni meni"
 
 #: contents/ui/MainMenu.qml:21
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Welcome to PuMoKu"
 msgctxt "@title"
 msgid "Welcome to PuMoKu"
-msgstr ""
+msgstr "Dobrodošli v PuMoKu"
 
 #: contents/ui/MainMenu.qml:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Solve a sudoku"
 msgctxt "@action:button"
 msgid "Solve a Sudoku"
-msgstr ""
+msgstr "Reši sudoku"
 
 #: contents/ui/MainMenu.qml:56
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Continue …"
 msgctxt "@action:button"
 msgid "Continue…"
-msgstr ""
+msgstr "Nadaljuj …"
 
 #: contents/ui/MainMenu.qml:63
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import …"
 msgctxt "@action:button"
 msgid "Import…"
-msgstr ""
+msgstr "Uvozi …"
 
 #: contents/ui/Settings.qml:15
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "contents/ui/Main.qml:79"
+#| msgid "Settings"
 msgctxt "@title:window"
 msgid "Settings"
-msgstr ""
+msgstr "Nastavitve"
 
 #: contents/ui/Settings.qml:18
 #, fuzzy, kde-format
 #| msgid "Game"
 msgctxt "@title"
 msgid "Game"
-msgstr "Oyun"
+msgstr "Igra"
 
 #: contents/ui/Settings.qml:24
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Input method"
 msgctxt "@label:listbox"
 msgid "Input method"
-msgstr ""
+msgstr "Način vnosa"
 
 #: contents/ui/Settings.qml:27
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hybrid"
 msgctxt "@item:inlistbox"
 msgid "Hybrid"
-msgstr ""
+msgstr "Hibrid"
 
 #: contents/ui/Settings.qml:28
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Digit, then cell"
 msgctxt "@item:inlistbox"
 msgid "Digit, then cell"
-msgstr ""
+msgstr "Številka, nato celica"
 
 #: contents/ui/Settings.qml:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cell, then digit"
 msgctxt "@item:inlistbox"
 msgid "Cell, then digit"
-msgstr ""
+msgstr "Celica, nato številka"
 
 #: contents/ui/Settings.qml:38
 #, fuzzy, kde-format
-#| msgid "Reset game"
+#| msgid "Reset time with game"
 msgctxt "@option:check"
 msgid "Reset time with game"
-msgstr "Oyunu Sıfırla"
+msgstr "Ponastavi čas igre"
 
 #: contents/ui/Settings.qml:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Clean up pencil marks when setting a cell value"
 msgctxt "@option:check"
 msgid "Clean up pencil marks when setting a cell value"
-msgstr ""
+msgstr "Počisti oznake svinčnika pri nastavljanju vrednosti celice"
 
 #: contents/ui/Settings.qml:53
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Highlight"
 msgctxt "@title"
 msgid "Highlight"
-msgstr ""
+msgstr "Označi"
 
 #: contents/ui/Settings.qml:57
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Houses of a selected cell"
 msgctxt "@option:check"
 msgid "Houses of a selected cell"
-msgstr ""
+msgstr "Hiše izbrane celice"
 
 #: contents/ui/Settings.qml:65
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cells with active digit"
 msgctxt "@option:check"
 msgid "Cells with active digit"
-msgstr ""
+msgstr "Celice z aktivno številko"
 
 #: contents/ui/Settings.qml:73
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cells with active digit pencilmark"
 msgctxt "@option:check"
 msgid "Cells with active digit pencilmark"
-msgstr ""
+msgstr "Celice z aktivno številko, označeno svinčnikom"
 
 #: contents/ui/Settings.qml:81
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Logical errors in values"
 msgctxt "@option:check"
 msgid "Logical errors in values"
-msgstr ""
+msgstr "Logične napake v vrednostih"
 
 #: contents/ui/Settings.qml:89
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Logical errors in pencilmarks"
 msgctxt "@option:check"
 msgid "Logical errors in pencilmarks"
-msgstr ""
+msgstr "Logične napake v oznakah svinčnika"
 
 #: contents/ui/Settings.qml:97
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Erasable cells with eraser active"
 msgctxt "@option:check"
 msgid "Erasable cells with eraser active"
-msgstr ""
+msgstr "Brisanje celic z aktivno radirko"
 
 #: contents/ui/Settings.qml:105
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Wrong values"
 msgctxt "@option:check"
 msgid "Wrong values"
-msgstr ""
+msgstr "Napačne vrednosti"
 
 #: main.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "contents/ui/Main.qml:15"
+#| msgid "PuMoKu"
 msgctxt "@title"
 msgid "PuMoKu"
-msgstr ""
+msgstr "PuMoKu"
 
 #: main.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "PuMoKu is a classic sudoku game, developed for mobile."
 msgid "PuMoKu is a classic Sudoku game, aimed for Plasma Mobile"
-msgstr ""
+msgstr "PuMoKu je klasična igra sudoku, razvita za mobilne naprave."
 
 #: main.cpp:78
 #, kde-format
@@ -419,101 +484,128 @@ msgid "© 2025 KDE Developers"
 msgstr ""
 
 #: main.cpp:79
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Anders Lund"
 msgctxt "@info:credit"
 msgid "Anders Lund"
-msgstr ""
+msgstr "Anders Lund"
 
 #: main.cpp:79
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Maintainer"
 msgctxt "@info:credit"
 msgid "Maintainer"
-msgstr ""
+msgstr "Vzdrževalec"
 
 #: main.cpp:80
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Your names"
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Matjaž Jeran"
 
 #: main.cpp:80
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Your emails"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "matjaz.jeran@amis.net"
 
 #: qqw.cpp:10
 #, kde-format
 msgid "UNKNOWN"
-msgstr ""
+msgstr "NEZNANO"
 
 #: qqw.cpp:10
 #, kde-format
 msgid "Simple"
-msgstr ""
+msgstr "Preprosto"
 
 #: qqw.cpp:10
 #, kde-format
 msgid "Easy"
-msgstr ""
+msgstr "Lahko"
 
 #: qqw.cpp:10
 #, kde-format
 msgid "Intermediate"
-msgstr ""
+msgstr "Srednje zahtevno"
 
 #: qqw.cpp:10
 #, kde-format
 msgid "Expert"
-msgstr ""
+msgstr "Napredno"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "None"
-msgstr ""
+msgstr "Brez"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "Rotate 90°"
-msgstr ""
+msgstr "Zavrti za 90°"
 
 #: qqw.cpp:11
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "rotate 180°"
 msgid "Rotate 180°"
-msgstr ""
+msgstr "Zavrti za 180°"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "Mirror"
-msgstr ""
+msgstr "Zrcali"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "Flip"
-msgstr ""
+msgstr "Obrni"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "Random"
-msgstr ""
+msgstr "Naključno"
 
 #: qqw.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Looking good. Difficulty: "
 msgid "Looking good. Difficulty:"
-msgstr ""
+msgstr "Izgleda dobro. Težavnost:"
 
 #: qqw.cpp:77
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The provided sudoku does not have a unique solution."
 msgid "The provided Sudoku does not have a unique solution."
-msgstr ""
+msgstr "Podani sudoku nima enolične rešitve."
 
 #: qqw.cpp:81
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The provided sudoku is not solvable"
 msgid "The provided Sudoku is not solvable."
-msgstr ""
+msgstr "Podani sudoku ni rešljiv"
 
-#~ msgid "using "
-#~ msgstr "kullanarak"
+#~ msgid ""
+#~ "Giving up means that you loose any changes you have made, it can't be "
+#~ "undone."
+#~ msgstr ""
+#~ "Če odnehate pomeni, da izgubite vse spremembe, ki ste jih naredili, tega "
+#~ "ni mogoče razveljaviti."
 
-#~ msgid "You finished this "
-#~ msgstr "Şunu bitirdiniz: "
+#~ msgid "Are you sure??"
+#~ msgstr "Ste prepričani??"
+
+#~ msgctxt "contents/ui/MainMenu.qml:12"
+#~ msgid "Main menu"
+#~ msgstr "Glavni meni"
+
+#~ msgctxt "contents/ui/Settings.qml:15"
+#~ msgid "Settings"
+#~ msgstr "Nastavitve"
+
+#~ msgctxt "main.cpp:70"
+#~ msgid "PuMoKu"
+#~ msgstr "PuMoKu"
+
+#~ msgid "(c) 2024"
+#~ msgstr "(c) 2024"
