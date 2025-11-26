@@ -57,7 +57,7 @@ public:
         Multiple
     };
     Q_ENUM(SolveStatus)
-    Q_INVOKABLE SolveStatus solve(const QList<int> &sudoku);
+    Q_INVOKABLE Qqw::SolveStatus solve(const QList<int> &sudoku);
 
     Q_PROPERTY(QList<int> sudoku MEMBER m_sudoku)
     Q_PROPERTY(QList<int> solution MEMBER m_solution)
