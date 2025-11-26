@@ -9,19 +9,7 @@
     <binary>pumoku</binary>
   </provides>
   <name>PuMoKu</name>
-  <name xml:lang="ca">Aplicació de Kirigami PuMoKu</name>
-  <name xml:lang="ca-valencia">Aplicació de Kirigami PuMoKu</name>
-  <name xml:lang="pt-BR">Aplicativo Kirigami PuMoKu</name>
-  <name xml:lang="tr">PuMoKu</name>
-  <name xml:lang="uk">Програма на Kirigami PuMoKu</name>
-  <name xml:lang="zh-TW">PuMoKu Kirigami 應用程式</name>
   <summary>A classic 9 × 9 sudoku game</summary>
-  <summary xml:lang="ca">Un joc de Sudoku 9x9 clàssic per al Plasma Mobile</summary>
-  <summary xml:lang="ca-valencia">Un joc de Sudoku 9x9 clàssic per a Plasma Mobile</summary>
-  <summary xml:lang="pt-BR">Um clássico jogo de Sudoku 9x9 para dispositivos móveis Plasma</summary>
-  <summary xml:lang="tr">Plasma Cep için klasik 9 × 9 Sudoku oyunu</summary>
-  <summary xml:lang="uk">Класична гра судоку 9x9 для мобільної Плазми</summary>
-  <summary xml:lang="zh-TW">Plasma 行動用的經典 9x9 數獨遊戲</summary>
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-3.0</project_license>
   <url type="homepage">https://apps.kde.org/pumoku/</url>
@@ -36,16 +24,12 @@
   </developer>
   <description>
     <p>PuMoKu is a classic, 9 × 9 Sudoku solving game aimed for Plasma Mobile. It comes with flexible highlighting options and (touch) input methods, full undo stack and more.</p>
-    <p xml:lang="ca">El PuMoKu és un joc clàssic de resolució de Sudokus 9x9 destinat al Plasma Mobile. Ve amb opcions de ressaltat i mètodes d'entrada (tocs) flexibles, pila de desfer completa i més.</p>
-    <p xml:lang="ca-valencia">PuMoKu és un joc clàssic de resolució de Sudoku 9x9 destinat a Plasma Mobile. Ve amb opcions de ressaltat i mètodes d'entrada (tocs) flexibles, pila de desfer completa i més.</p>
-    <p xml:lang="pt-BR">PuMoKu é um jogo clássico de resolução de pumoku 9x9 para dispositivos Plasma Mobile. Ele oferece opções flexíveis de destaque de texto e métodos de entrada (por toque), funcionalidade completa de desfazer e muito mais.</p>
-    <p xml:lang="tr">PuMoKu, Plasma Cep için tasarlanmış, klasik 9 × 9 Sudoku çözme oyunudur. Esnek vurgu ve (dokunmatik) giriş seçenekleri, tam geri alma desteği ve çok daha fazlasıyla gelir.</p>
-    <p xml:lang="uk">PuMoKu — класична гра у судоку 9x9, яку призначено для мобільної Плазми. У ній передбачено гнучкі можливості з підсвічування і (сенсорні) способи введення, повний стос скасування дій та додаткові можливості.</p>
-    <p xml:lang="zh-TW">PuMoKu 是一個設計給 Plasma 行動用的經典 9x9 數獨遊戲。它提供有彈性的突顯選項與輸入方法（包含觸控）、完整復原功能等等。</p>
     <ul>
       <li>Input methods: Cell first, Number first or Hybrid</li>
       <li xml:lang="ca">Mètode d'entrada: primera cel·la, primer nombre o híbrid</li>
       <li xml:lang="ca-valencia">Mètode d'entrada: primera cel·la, primer nombre o híbrid</li>
+      <li xml:lang="es">Métodos de entrada: celda primero, número primero o híbrido</li>
+      <li xml:lang="nl">Invoermethoden: cel eerst, getal eerst of hybride</li>
       <li xml:lang="pt-BR">Métodos de entrada: Célula primeiro, Número primeiro ou Híbrido</li>
       <li xml:lang="tr">Giriş yöntemleri: Önce hücre, sayı veya hibrit</li>
       <li xml:lang="uk">Способи введення: спочатку комірка, спочатку число або гібридний</li>
@@ -53,6 +37,8 @@
       <li>Built in sudoku generator</li>
       <li xml:lang="ca">Generador integrat de Sudokus</li>
       <li xml:lang="ca-valencia">Generador integrat de Sudoku</li>
+      <li xml:lang="es">Generador de sudokus integrado</li>
+      <li xml:lang="nl">Ingebouwde sudoku generator</li>
       <li xml:lang="pt-BR">Gerador de sudoku integrado</li>
       <li xml:lang="tr">Yerleşik Sudoku üreteci</li>
       <li xml:lang="uk">Створено у засобі створення судоку</li>
@@ -60,6 +46,8 @@
       <li>Automatic undo when the same action is repeated</li>
       <li xml:lang="ca">Desfer automàtic quan es repeteix la mateixa acció</li>
       <li xml:lang="ca-valencia">Desfer automàtic quan es repetix la mateixa acció</li>
+      <li xml:lang="es">Deshacer automáticamente cuando se repite la misma acción</li>
+      <li xml:lang="nl">Automatisch ongedaan maken wanneer dezelfde actie wordt herhaald</li>
       <li xml:lang="pt-BR">Desfazer automaticamente quando a mesma ação é repetida</li>
       <li xml:lang="tr">Aynı eylem yinelendiğinde kendiliğinden geri alma</li>
       <li xml:lang="uk">Автоматичне скасування, якщо повторюється та сама дія</li>
