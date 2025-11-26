@@ -28,7 +28,11 @@
 #include <KLocalizedString>
 
 #include "pumokuconfig.h"
- 
+
+#ifdef Q_OS_WINDOWS
+#include <windows.h>
+#endif
+
 using namespace Qt::Literals::StringLiterals;
  
 #ifdef Q_OS_ANDROID
