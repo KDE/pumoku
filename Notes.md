@@ -11,7 +11,7 @@ The goal with PoMuKo is to create a beautiful, usable, well functioning classic 
 - Stellar suduko solving features
 - fully translatable, using i18n & friends throughout the code
 
-# Licenceing
+# Licencing
 
 All code is GPL-2.1 or later
 Other files (this file, graphics, other) ? CC-BY-SA-4.0
@@ -27,7 +27,7 @@ Anyone is wellcome to contribute to translations, with (nice!) comments and sugg
 
 # Sudoku basics
 
-The classic Soduko puzzle board consists of 9x9 cells, which can be seed as 
+The classic Soduko puzzle board consists of 9x9 cells, which can be seed as
 
 - 9 rows of 9 cells
 - 9 columns of 9 cells
@@ -50,7 +50,7 @@ Each cell is a member of 3 houses: a block, a row and a cell as illustrated belo
     |     |     |  r  |
     |_ _ _|_ _ _|_ r _|
 
-The puzzle comes with number of given cell values (1-9), and the object is to fill out the rest of the cells such that 
+The puzzle comes with number of given cell values (1-9), and the object is to fill out the rest of the cells such that
 
 - there is only one instance of a digit (1-9) in each house
 - the solution is unique
@@ -65,9 +65,9 @@ Depending on the difficulty of the puzzle, solving strategies spans from simple 
 - singles: For example: a digit can only be placed in one cell of a house, due to values in other houses.
 - hiddens: Two of more cells in a house shares a set of candidates, that means the other cells in that hous can't contain those digits.
 - chains: a pattern of candidates in a set of cells means that a value can be set, or one or more cells in related houses can't contain either candidate.
-- 
-- 
-- 
+-
+-
+-
 - wild guessing
 
 Look for sudopedia on the www for inspiration!
@@ -134,7 +134,7 @@ You can do either. To use cell first, all digit buttons needs to be unchecked. T
 
 ## Eraser
 
-- The eraser works with both input methods. 
+- The eraser works with both input methods.
 - Only cells that are not given will have their values erased.
 - With a cell selected, clicking the eraser will erase that cell, value or mark as present.
 - With a digit button selected, tapping a cell will erase any value or a corresponding mark as present.

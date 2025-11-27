@@ -7,7 +7,7 @@
 
     [x] Git !!! TODO: Import to invent.kde.org
 
-    [x] Seperate logic from UI: Mostly done, at least by a blank line. Split GameBoard.qml file? See below item.
+    [x] Separate logic from UI: Mostly done, at least by a blank line. Split GameBoard.qml file? See below item.
     [] Componentify some more! => game cell, number key, etc.
     [] => put game in a component/file of its own (C++!!)
     [] => put game board in a component/file
@@ -16,7 +16,7 @@
     [] hints - solve one cell (from solution)
     [-] hints UI design, that allows for stepped hint procedure: tip, more info, fix
     [] hints - check values (from solution) => step 1 number/ok, step 2 => show, step 3 => fix
-    [] hints - textual tips about a next step, using solving analysis, potential 2-3 steps? Theese should come (partially) from qqwing?
+    [] hints - textual tips about a next step, using solving analysis, potential 2-3 steps? These should come (partially) from qqwing?
     [] hints - coloring feature (color cells to aid finding a solution). Check with Enjoy Sudoku
     [] bookmark feature: A state to go back to, either in undo tree or a saved state.
         => set a bookmark, a undoStack position for starters.
@@ -65,6 +65,3 @@
     [] => X-chain
     [] => xy-chain
     [] => ...
-
-
-
