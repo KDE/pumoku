@@ -628,4 +628,3 @@ Kirigami.Page {
         }
     }
 }
-

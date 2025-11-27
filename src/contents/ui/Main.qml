@@ -110,4 +110,3 @@ Kirigami.ApplicationWindow {
     }
 
 }
-
