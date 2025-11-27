@@ -29,8 +29,10 @@
       <li xml:lang="ca">Mètode d'entrada: primera cel·la, primer nombre o híbrid</li>
       <li xml:lang="ca-valencia">Mètode d'entrada: primera cel·la, primer nombre o híbrid</li>
       <li xml:lang="es">Métodos de entrada: celda primero, número primero o híbrido</li>
+      <li xml:lang="ka">შეყვანის მეთოდები: ჯერ უჯრედი, ჯერ რიცხვი, ან ჰიბრიდული</li>
       <li xml:lang="nl">Invoermethoden: cel eerst, getal eerst of hybride</li>
       <li xml:lang="pt-BR">Métodos de entrada: Célula primeiro, Número primeiro ou Híbrido</li>
+      <li xml:lang="sl">Načini vnosa: Najprej celica, Najprej številka ali Hibrid</li>
       <li xml:lang="tr">Giriş yöntemleri: Önce hücre, sayı veya hibrit</li>
       <li xml:lang="uk">Способи введення: спочатку комірка, спочатку число або гібридний</li>
       <li xml:lang="zh-TW">輸入方法：先方格、先數字還是混合</li>
@@ -38,8 +40,10 @@
       <li xml:lang="ca">Generador integrat de Sudokus</li>
       <li xml:lang="ca-valencia">Generador integrat de Sudoku</li>
       <li xml:lang="es">Generador de sudokus integrado</li>
+      <li xml:lang="ka">ჩაშენებული სუდოკუს გენერატორი</li>
       <li xml:lang="nl">Ingebouwde sudoku generator</li>
       <li xml:lang="pt-BR">Gerador de sudoku integrado</li>
+      <li xml:lang="sl">Vgrajen generator sudokujev</li>
       <li xml:lang="tr">Yerleşik Sudoku üreteci</li>
       <li xml:lang="uk">Створено у засобі створення судоку</li>
       <li xml:lang="zh-TW">內建數獨產生器</li>
@@ -47,8 +51,10 @@
       <li xml:lang="ca">Desfer automàtic quan es repeteix la mateixa acció</li>
       <li xml:lang="ca-valencia">Desfer automàtic quan es repetix la mateixa acció</li>
       <li xml:lang="es">Deshacer automáticamente cuando se repite la misma acción</li>
+      <li xml:lang="ka">ავტომატური გაუქმება იგივე ქმედების გამეორებისას</li>
       <li xml:lang="nl">Automatisch ongedaan maken wanneer dezelfde actie wordt herhaald</li>
       <li xml:lang="pt-BR">Desfazer automaticamente quando a mesma ação é repetida</li>
+      <li xml:lang="sl">Samodejna razveljavitev, ko se isto dejanje ponovi</li>
       <li xml:lang="tr">Aynı eylem yinelendiğinde kendiliğinden geri alma</li>
       <li xml:lang="uk">Автоматичне скасування, якщо повторюється та сама дія</li>
       <li xml:lang="zh-TW">重複同樣動作時自動復原</li>
