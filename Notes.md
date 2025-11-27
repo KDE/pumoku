@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 SPDX-License-Identifier: CC0-1.0
 SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk>
 
