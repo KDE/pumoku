@@ -5,19 +5,19 @@
 #include <iostream>
 // #include "qqwing.hpp"
 
-Qqw::Qqw(QObject *parent) : QObject(parent)
+Qqw::Qqw(QObject *parent)
+    : QObject(parent)
 {
-    m_difficultyNames = QStringList { i18n("UNKNOWN"), i18n("Simple"), i18n("Easy"), i18n("Intermediate"), i18n("Expert") };
-    m_symmetries = QStringList { i18n("None"), i18n("Rotate 90°"), i18n("Rotate 180°"), i18n("Mirror"), i18n("Flip"), i18n("Random") };
+    m_difficultyNames = QStringList{i18n("UNKNOWN"), i18n("Simple"), i18n("Easy"), i18n("Intermediate"), i18n("Expert")};
+    m_symmetries = QStringList{i18n("None"), i18n("Rotate 90°"), i18n("Rotate 180°"), i18n("Mirror"), i18n("Flip"), i18n("Random")};
     m_difficulty = SudokuBoard::UNKNOWN;
     m_symmetry = SudokuBoard::NONE;
-    m_sudoku = QList<int>(81,0);
-    m_solution = QList<int>(81,0);
+    m_sudoku = QList<int>(81, 0);
+    m_solution = QList<int>(81, 0);
 }
 
 bool Qqw::generate(SudokuBoard::Difficulty difficulty, SudokuBoard::Symmetry symmetry)
 {
-
     // initialize random generator
     srand(unsigned(time(nullptr)));
 
@@ -40,7 +40,7 @@ bool Qqw::generate(SudokuBoard::Difficulty difficulty, SudokuBoard::Symmetry sym
     m_solution.clear();
     const int *p = sb->getPuzzle();
     const int *s = sb->getSolution();
-    for(int i=0; i<81; i++) {
+    for (int i = 0; i < 81; i++) {
         m_sudoku << p[i];
         m_solution << s[i];
     }
@@ -50,15 +50,15 @@ bool Qqw::generate(SudokuBoard::Difficulty difficulty, SudokuBoard::Symmetry sym
     return true;
 }
 
-
-
 Qqw::SolveStatus Qqw::solve(const QList<int> &board)
 {
     m_symmetry = SudokuBoard::NONE;
     SudokuBoard *sb = new SudokuBoard();
     const int *d = board.data();
     int dd[81];
-    for (int i=0; i<81; i++) { dd[i] = d[i]; }
+    for (int i = 0; i < 81; i++) {
+        dd[i] = d[i];
+    }
     if (sb->setPuzzle(dd)) {
         sb->setRecordHistory(true);
         sb->solve();
@@ -68,7 +68,7 @@ Qqw::SolveStatus Qqw::solve(const QList<int> &board)
             sb->solve();
             m_solution.clear();
             const int *s = sb->getSolution();
-            for(int i=0; i<81; i++) {
+            for (int i = 0; i < 81; i++) {
                 m_solution << s[i];
             }
             m_message = i18n("Looking good. Difficulty:") + QStringLiteral(" ") + m_difficultyNames[m_difficulty];
@@ -81,4 +81,3 @@ Qqw::SolveStatus Qqw::solve(const QList<int> &board)
     m_message = i18n("The provided Sudoku is not solvable.");
     return Qqw::SolveStatus::Failed;
 }
-

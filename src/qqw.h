@@ -6,11 +6,10 @@
 #ifndef QQW_H
 #define QQW_H
 
-#include <klocalizedstring.h>
 #include "qqwing.hpp"
 #include <QObject>
+#include <klocalizedstring.h>
 #include <qqmlregistration.h>
-
 
 /**
  * Interface to qqwing, in place of the cli program it comes with.
@@ -21,14 +20,13 @@
  * for the purpose of giving a textual hint, of solving a step.
  */
 
-class Qqw: public QObject
+class Qqw : public QObject
 {
     Q_OBJECT
     QML_SINGLETON
     QML_ELEMENT
 
 public:
-
     explicit Qqw(QObject *parent = nullptr);
 
     /**

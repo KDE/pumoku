@@ -28,11 +28,11 @@
 #include <KLocalizedString>
 
 #include "pumokuconfig.h"
- 
+
 using namespace Qt::Literals::StringLiterals;
- 
+
 #ifdef Q_OS_ANDROID
-	Q_DECL_EXPORT
+Q_DECL_EXPORT
 #endif
 
 int main(int argc, char *argv[])
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
     if (AttachConsole(ATTACH_PARENT_PROCESS)) {
         freopen("CONOUT$", "w", stdout);
         freopen("CONOUT$", "w", stderr);
-    } 
+    }
     QApplication::setStyle(QStringLiteral("breeze"));
     auto font = app.font();
     font.setPointSize(10);
