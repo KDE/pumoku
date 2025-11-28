@@ -9,7 +9,23 @@
     <binary>pumoku</binary>
   </provides>
   <name>PuMoKu</name>
+  <name xml:lang="ca">PuMoKu</name>
+  <name xml:lang="es">PuMoKu</name>
+  <name xml:lang="ka">PuMoKu</name>
+  <name xml:lang="nl">PuMoKu</name>
+  <name xml:lang="pt-BR">PuMoKu</name>
+  <name xml:lang="sl">PuMoKu</name>
+  <name xml:lang="tr">PuMoKu</name>
+  <name xml:lang="uk">PuMoKu</name>
   <summary>A classic 9 × 9 sudoku game</summary>
+  <summary xml:lang="ca">Un joc de Sudoku 9 x 9 clàssic</summary>
+  <summary xml:lang="es">El clásico juego sudoku de 9×9</summary>
+  <summary xml:lang="ka">კლასიკური 9 x 9 სუდოკუ</summary>
+  <summary xml:lang="nl">Een klassiek 9 x 9 sudoku spel</summary>
+  <summary xml:lang="pt-BR">Um clássico jogo de Sudoku 9x9</summary>
+  <summary xml:lang="sl">Klasična igra sudoku 9x9</summary>
+  <summary xml:lang="tr">Klasik 9 × 9 Sudoku oyunu</summary>
+  <summary xml:lang="uk">Класична гра судоку 9x9</summary>
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-3.0</project_license>
   <url type="homepage">https://apps.kde.org/pumoku/</url>
@@ -24,11 +40,20 @@
   </developer>
   <description>
     <p>PuMoKu is a classic, 9 × 9 Sudoku solving game aimed for Plasma Mobile. It comes with flexible highlighting options and (touch) input methods, full undo stack and more.</p>
+    <p xml:lang="ca">El PuMoKu és un joc clàssic de resolució de Sudokus 9 x 9 destinat al Plasma Mobile. Ve amb opcions de ressaltat i mètodes d'entrada (tocs) flexibles, pila de desfer completa i més.</p>
+    <p xml:lang="es">PuMoKu es el clásico juego de resolver sudokus de 9×9 para Plasma Móvil. Dispone de funciones de resaltado flexible y métodos de entrada (táctiles), completa pila de deshacer movimientos y mucho más.</p>
+    <p xml:lang="ka">PuMoKu წარმოადგენს კლასიკურ 9x9 სუდოკუს, რომელიც განკუთვნილია Plasma Mobile-ისთვის. მას მოჰყვება მოქნილი გამოკვეთის პარამეტრები და (შეხებით) შეყვანის მეთოდები, გაუქმების სრული სტეკი და სხვ.</p>
+    <p xml:lang="nl">PuMoKu is een klassiek, 9 x 9 pumoku oplosspel gericht op Plasma Mobiel. Het komt met flexibele accentueringsopties en (aanraak) invoermethoden, stapel voor volledig ongedaan maken en meer.</p>
+    <p xml:lang="pt-BR">PuMoKu é um jogo clássico de resolução de pumoku 9x9 para dispositivos Plasma Mobile. Ele oferece opções flexíveis de destaque de texto e métodos de entrada (por toque), funcionalidade completa de desfazer e muito mais.</p>
+    <p xml:lang="sl">PuMoKu je klasična igra reševanja sudoku velikosti 9x9, namenjena za Plasma Mobile. Ponuja prilagodljive možnosti označevanja in metode vnosa (na dotik), celoten nabor ukazov za razveljavitev in še več.</p>
+    <p xml:lang="tr">PuMoKu, Plasma Cep için tasarlanmış, klasik 9 × 9 Sudoku çözme oyunudur. Esnek vurgu ve (dokunmatik) giriş seçenekleri, tam geri alma desteği ve çok daha fazlasıyla gelir.</p>
+    <p xml:lang="uk">PuMoKu — класична гра у судоку 9x9, яку призначено для мобільної Плазми. У ній передбачено гнучкі можливості з підсвічування і (сенсорні) способи введення, повний стос скасування дій та додаткові можливості.</p>
     <ul>
       <li>Input methods: Cell first, Number first or Hybrid</li>
       <li xml:lang="ca">Mètode d'entrada: primera cel·la, primer nombre o híbrid</li>
       <li xml:lang="ca-valencia">Mètode d'entrada: primera cel·la, primer nombre o híbrid</li>
       <li xml:lang="es">Métodos de entrada: celda primero, número primero o híbrido</li>
+      <li xml:lang="he">שיטות קלט: תא קודם, מספר קודם או משולב</li>
       <li xml:lang="ka">შეყვანის მეთოდები: ჯერ უჯრედი, ჯერ რიცხვი, ან ჰიბრიდული</li>
       <li xml:lang="nl">Invoermethoden: cel eerst, getal eerst of hybride</li>
       <li xml:lang="pt-BR">Métodos de entrada: Célula primeiro, Número primeiro ou Híbrido</li>
@@ -40,6 +65,7 @@
       <li xml:lang="ca">Generador integrat de Sudokus</li>
       <li xml:lang="ca-valencia">Generador integrat de Sudoku</li>
       <li xml:lang="es">Generador de sudokus integrado</li>
+      <li xml:lang="he">מחולל סודוקו מובנה</li>
       <li xml:lang="ka">ჩაშენებული სუდოკუს გენერატორი</li>
       <li xml:lang="nl">Ingebouwde sudoku generator</li>
       <li xml:lang="pt-BR">Gerador de sudoku integrado</li>
@@ -51,6 +77,7 @@
       <li xml:lang="ca">Desfer automàtic quan es repeteix la mateixa acció</li>
       <li xml:lang="ca-valencia">Desfer automàtic quan es repetix la mateixa acció</li>
       <li xml:lang="es">Deshacer automáticamente cuando se repite la misma acción</li>
+      <li xml:lang="he">הסגה אוטומטית כשפעולה מסוימת חוזרת על עצמה</li>
       <li xml:lang="ka">ავტომატური გაუქმება იგივე ქმედების გამეორებისას</li>
       <li xml:lang="nl">Automatisch ongedaan maken wanneer dezelfde actie wordt herhaald</li>
       <li xml:lang="pt-BR">Desfazer automaticamente quando a mesma ação é repetida</li>
