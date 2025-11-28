@@ -113,7 +113,7 @@ QtObject {
 
     function solveImported(sudoku) {
         let result = qqw.solve(sudoku);
-        if (result == 1) {
+        if (result === 1) {
             setGame(Qqw.sudoku, Qqw.solution)
             // root.setPage(gamePage);
         } else {
@@ -124,7 +124,7 @@ QtObject {
     // int list args
     function setGame(puzzle,solved) {
         clear();
-        let hasSolution = solved.length == 81;
+        let hasSolution = solved.length === 81;
         for (let i=0; i < 81; i++) {
             let v = puzzle[i];
             board[i] = v;
@@ -243,7 +243,7 @@ QtObject {
                 let index = undoStack[undoPos][1];
                 values[index] = undoStack[undoPos][isUndo?3:4];
                 errors[index] &= ~errValueLogical;
-                if (values[index] == 0 || values[index] == solution[index]){
+                if (values[index] === 0 || values[index] === solution[index]){
                     errors[index] &= ~errValue;
                 } else {
                     errors[index] |= errValue;
@@ -297,7 +297,7 @@ QtObject {
 
     function digitCount(digit) {
         let count = 0;
-        for(let i=0;i<81;i++) { if (values[i]==digit) count++; }
+        for(let i=0;i<81;i++) { if (values[i]===digit) count++; }
         return count;
     }
 
@@ -325,7 +325,7 @@ QtObject {
     }
 
     // we can erase cells that are not given, and has a value or pencilmark
-    function erasable(index) { return (board[index] == 0 && (values[index] > 0 || pencilMarks[index] > 0)); }
+    function erasable(index) { return (board[index] === 0 && (values[index] > 0 || pencilMarks[index] > 0)); }
 
     // Gamechangers - event handlers for buttons/taps and functions to apply value changes
 
@@ -342,19 +342,19 @@ QtObject {
         for (let i = 0; i < 9; i++) {
             // block
             const b = bb+blockLoop[i]; // bmindex of block cell
-            if (b!= bmindex && (pencilMarks[b] & m)) {
+            if (b!== bmindex && (pencilMarks[b] & m)) {
                pencilMarks[b] &= ~m;
                count++;
             }
             // row
             const r = rb + i; // bmindex of row cell
-            if (r != bmindex && (pencilMarks[r] & m)) {
+            if (r !== bmindex && (pencilMarks[r] & m)) {
                 pencilMarks[r] &= ~m;
                 count++;
             }
             // column
             const c = i * 9 + col; // bmindex of col cell
-            if (c != bmindex && (pencilMarks[c] & m)) {
+            if (c !== bmindex && (pencilMarks[c] & m)) {
                 pencilMarks[c] &= ~m;
                 count++;
             }
@@ -371,7 +371,7 @@ QtObject {
     property int lastVal: 0;
     property int lastType: 0;
     function setValue(index, row, col, block, value, type) {
-        const isEqualAction = index == lastIndex && value == lastVal && type == lastType;
+        const isEqualAction = index === lastIndex && value === lastVal && type === lastType;
         lastIndex = index;
         lastVal = value;
         lastType = type;
@@ -381,20 +381,20 @@ QtObject {
         // same type, cell and value, just undo or redo as fit.
         if (undoStack.length && isEqualAction) {
             // the same type, index and value, just undo() or redo().
-            let undoType = type == valueTValue ? undoValueCell : undoPMCell;
+            let undoType = type === valueTValue ? undoValueCell : undoPMCell;
             let checkPos = undoStack.length - 1;
             // in case of cell value, undo count may be 2 (if pencilMarks were cleaned)
-            if (undoStack[checkPos][2] == 2) {
+            if (undoStack[checkPos][2] === 2) {
                 checkPos -=1;
             }
             // check 1: same undoType and cell
-            if (undoStack[checkPos][0] == undoType /*&& undoStack[checkPos][1] == index*/) {
+            if (undoStack[checkPos][0] === undoType /*&& undoStack[checkPos][1] == index*/) {
                 // check 2: same value in redo field of undo item.
-                if ((type == valueTValue && undoStack[checkPos][4] == value) ||
-                (type == valueTMark && undoStack[checkPos][4] & 2**(value-1))) {
+                if ((type === valueTValue && undoStack[checkPos][4] === value) ||
+                (type === valueTMark && undoStack[checkPos][4] & 2**(value-1))) {
                     // undo if cell contains value, else redo
-                    if ((type == valueTValue && values[index] == value) ||
-                    (type == valueTMark && pencilMarks[index] & 2**(value-1))) {
+                    if ((type === valueTValue && values[index] === value) ||
+                    (type === valueTMark && pencilMarks[index] & 2**(value-1))) {
                         undo();
                     } else {
                         redo();
@@ -405,8 +405,8 @@ QtObject {
         }
         // console.log("SKIPPED automatic undo/redo");
         // DONE automatic undo/redo
-        if (type == valueTValue) {
-            if (values[index] == value) {
+        if (type === valueTValue) {
+            if (values[index] === value) {
                 digitCounters[value]--;
                 value = 0;
             } else if (values[index]) {
@@ -416,7 +416,7 @@ QtObject {
             let undodata = values[index];
             values[index] = value;
             if (value) { digitCounters[value]++; }
-            if (value != 0 && solution[index] != value) {
+            if (value !== 0 && solution[index] !== value) {
                 errors[index] |= errValue;
                 // if (Config.error_value)
                 //     hintStatus |= errValue;
@@ -438,11 +438,11 @@ QtObject {
             stepCount[0]++;
 
             // no errors and 81 filled cells => game finished :)
-            if (errcnt == 0 && valueCnt == 81) {
+            if (errcnt === 0 && valueCnt == 81) {
                     finish();
             }
         }
-        else if (type == valueTMark) {
+        else if (type === valueTMark) {
             // if value is 0, clear marks, else toggle
             let undodata = pencilMarks[index];
             let newmark = 0;
@@ -477,7 +477,7 @@ QtObject {
         // clearPencilMarks();
         const all = 511; // 1|2|4|8|16|32|64|128|256
         for (let i=0; i < 81; i++) {
-            if (values[i] == 0)
+            if (values[i] === 0)
                 pencilMarks[i] = all;
         }
         for (let i=0; i<9; i++) {
@@ -576,40 +576,40 @@ QtObject {
         // this will avoid pencilmark errors wrongly being cleared, and allow to show the error
         // in the pencilmark cell (should I want to)
         // when looking a cell with this type of errer, the error will be > 0 and < errPencilMarkLogical (512)
-        const err = type == errPencilMarkLogical ? 2**(val-1) : type;
+        const err = type === errPencilMarkLogical ? 2**(val-1) : type;
         // if type is errPencilMarkLogFIXME ical, only set error if mark is present (else remove).
         // this is only checked for that type, not for errValueLogical
         // this allows to unset the mark if there is no error.
         // true if not a mark, or mark is set in cells pencilmarks
-        let hasMark = type == errValueLogical ? true : (pencilMarks[bmindex] & err);
+        let hasMark = type === errValueLogical ? true : (pencilMarks[bmindex] & err);
         for (let i = 0; i < 9; i++) {
             // block
             let c = bb + blockLoop[i];
-            let idx = (type == errValueLogical) ? c : bmindex;
-            if (values[c] > 0 && values[c] == val && hasMark) {
+            let idx = (type === errValueLogical) ? c : bmindex;
+            if (values[c] > 0 && values[c] === val && hasMark) {
                 found[0].push([idx,err]);
             } else {
                 errors[idx] &= ~err;
             }
             // row
             c = rb + i; // bmindex of row cell
-            idx = (type == errValueLogical) ? c : bmindex;
-            if (values[c] > 0 && values[c] == val && hasMark) {
+            idx = (type === errValueLogical) ? c : bmindex;
+            if (values[c] > 0 && values[c] === val && hasMark) {
                 found[1].push([idx,err]);
             } else {
                 errors[idx] &= ~err;
             }
             // column
             c = i * 9 + col; // bmindex of col cell
-            idx = (type == errValueLogical) ? c : bmindex;
-            if (values[c] > 0 && values[c] == val && hasMark) {
+            idx = (type === errValueLogical) ? c : bmindex;
+            if (values[c] > 0 && values[c] === val && hasMark) {
                 found[2].push([idx,err]);
             } else {
                 errors[idx] &= ~err;
             }
         }
         let cnt = 0;
-        let minErrs = type == errPencilMarkLogical ? 0 : 1;
+        let minErrs = type === errPencilMarkLogical ? 0 : 1;
         found.forEach((value) => {
             if(value.length > minErrs) {
                 value.forEach((value) => {
@@ -639,17 +639,17 @@ QtObject {
         // console.log("checking board errors (" + type + ")" );
         for (let i=0; i<81; i++) {
             errors[i] &= ~type;
-            if (type == errValue) {
-                if (values[i] > 0 && values[i] != solution[i]) {
+            if (type === errValue) {
+                if (values[i] > 0 && values[i] !== solution[i]) {
                     errors[i] |= type;
                     setHintStatusErr (type);
                 }
                 else{
                     errors[i] &= ~type;
                 }
-            } else if (type == errValueLogical && values[i]) {
+            } else if (type === errValueLogical && values[i]) {
                 checkErrors(rowFromIndex(i), colFromIndex(i), blockFromIndex(i), i, values[i], type);
-            } else if (type == errPencilMarkLogical) {
+            } else if (type === errPencilMarkLogical) {
                 for (let j=0; j<9; j++) {
                     if (!values[i] && pencilMarks[i] & 2**j) {
                         checkErrors(rowFromIndex(i), colFromIndex(i), blockFromIndex(i), i, j+1, type);

@@ -56,14 +56,14 @@ Kirigami.Page {
             }
             // return;
         } else if (btnPencilMarks.checked && numberKeyActive) {
-            if (game.values[index] == 0) {
+            if (game.values[index] === 0) {
                 game.setValue(index, row, col, block, game.currentDigit, game.valueTMark)
             }
         } else if (numberKeyActive) {
-            if (game.board[index] == 0) {
+            if (game.board[index] === 0) {
                 game.setValue(index, row, col, block, game.currentDigit, game.valueTValue);
             }
-        } else if (game.currentCell != index) {
+        } else if (game.currentCell !== index) {
             // select cell
             game.currentDigit = game.values[index];
             game.currentCell = index;
@@ -234,16 +234,16 @@ Kirigami.Page {
                                         // value errors
                                         (Config.error_value && (game.errors[bmidx] & game.errValue) === game.errValue) ? Kirigami.Theme.visitedLinkBackgroundColor :
                                         // erasable cells while erase button is checked
-                                        btnErase.checked && Config.erasable && game.board[bmidx] == 0 && (game.values[bmidx] > 0 || game.pencilMarks[bmidx] > 0) ?
+                                        btnErase.checked && Config.erasable && game.board[bmidx] === 0 && (game.values[bmidx] > 0 || game.pencilMarks[bmidx] > 0) ?
                                         Kirigami.Theme.neutralBackgroundColor :
                                         // values with number key active
-                                        (Config.digit_value && game.values[bmidx] > 0 && game.values[bmidx] == game.currentDigit) || bmidx == game.currentCell ?
+                                        (Config.digit_value && game.values[bmidx] > 0 && game.values[bmidx] === game.currentDigit) || bmidx == game.currentCell ?
                                         Kirigami.Theme.highlightColor :
                                         // highlight pencilmarks with number key active
-                                        gameBoard.showPencilMarks && Config.digit_pencilmark && game.values[bmidx] == 0 && (game.pencilMarks[bmidx] & (2**(game.currentDigit-1))) === 2**(game.currentDigit-1) ?
+                                        gameBoard.showPencilMarks && Config.digit_pencilmark && game.values[bmidx] === 0 && (game.pencilMarks[bmidx] & (2**(game.currentDigit-1))) === 2**(game.currentDigit-1) ?
                                         Kirigami.Theme.positiveBackgroundColor :
                                         // highlight houses related to selected cell
-                                        Config.houses && (rowIndex == game.currentRow || columnIndex == game.currentColumn || parent.index == game.currentBlock) ?
+                                        Config.houses && (rowIndex == game.currentRow || columnIndex == game.currentColumn || parent.index === game.currentBlock) ?
                                         Kirigami.Theme.activeBackgroundColor :
                                         Config.alternateBlockBackgrounds && parent.index%2 == 0 ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
                                         } else {
@@ -256,13 +256,13 @@ Kirigami.Page {
                                         anchors.centerIn: parent
                                         color: Kirigami.Theme.textColor
                                         font.pixelSize: parent.width*0.8
-                                        font.bold: game.values[bmidx] == game.board[parent.bmidx]
+                                        font.bold: game.values[bmidx] === game.board[parent.bmidx]
                                     }
                                     TapHandler { onTapped: cellTapped(rowIndex, columnIndex, parent.parent.index, bmidx); }
                                     // pencil marks
                                     Rectangle {
                                         anchors.fill: parent
-                                        visible: gameBoard.showPencilMarks && 0 == game.values[parent.bmidx]
+                                        visible: gameBoard.showPencilMarks && 0 === game.values[parent.bmidx]
                                         color: parent.color
                                         Layout.fillWidth: true
                                         GridLayout {

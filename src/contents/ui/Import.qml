@@ -57,7 +57,7 @@ Kirigami.Page {
                     s = s.replace(/[\s\n]/g,"");
                     s = s.replace(/\D/,"0");
 
-                    if (s.length != 81) {
+                    if (s.length !== 81) {
                         console.log("Wrong string length: " + s.length)
                         message.text = i18n("The provided string is not exactly 81 characters after cleanup. Please amend.")
                         message.visible = true
@@ -66,7 +66,7 @@ Kirigami.Page {
                         for(let i=0; i<81; i++) {
                             importboard.push(parseInt(s[i]));
                         }
-                        if (Qqw.solve(importboard) == 1) {
+                        if (Qqw.solve(importboard) === 1) {
                             gamePage.setGame(Qqw.sudoku, Qqw.solution);
                             applicationWindow().setPage(gamePage);
                             applicationWindow().pageStack.layers.pop();
