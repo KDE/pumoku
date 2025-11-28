@@ -54,6 +54,7 @@ if (TARGET KF6::Crash)
     set(HAVE_KCRASH TRUE)
 endif()
 
+KDE_ENABLE_EXCEPTIONS()
 add_subdirectory(src)
 add_subdirectory(icons)
 
