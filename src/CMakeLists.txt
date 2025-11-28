@@ -42,7 +42,6 @@ target_link_libraries(pumoku_static PUBLIC
     KF6::ConfigGui
 )
 target_include_directories(pumoku_static PRIVATE ${CMAKE_BINARY_DIR})
-target_compile_options (pumoku_static PUBLIC -fexceptions)
 if (ANDROID)
     kirigami_package_breeze_icons(ICONS
         list-add
