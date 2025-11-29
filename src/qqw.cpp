@@ -81,3 +81,5 @@ Qqw::SolveStatus Qqw::solve(const QList<int> &board)
     m_message = i18n("The provided Sudoku is not solvable.");
     return Qqw::SolveStatus::Failed;
 }
+
+#include "moc_qqw.cpp"
