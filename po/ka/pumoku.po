@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-26 00:41+0000\n"
+"POT-Creation-Date: 2025-11-29 00:40+0000\n"
 "PO-Revision-Date: 2025-11-26 03:21+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -397,99 +397,99 @@ msgctxt "@option:check"
 msgid "Wrong values"
 msgstr "არასწორი მნიშვნელობები"
 
-#: main.cpp:70
+#: main.cpp:74
 #, kde-format
 msgctxt "@title"
 msgid "PuMoKu"
 msgstr "PuMoKu"
 
-#: main.cpp:74
+#: main.cpp:78
 #, kde-format
 msgid "PuMoKu is a classic Sudoku game, aimed for Plasma Mobile"
 msgstr ""
 "PuMoKu არის კლასიკური სუდოკუს თამაში, რომელიც შემუშავებულია Plasma Mobile-"
 "ისთვის"
 
-#: main.cpp:78
+#: main.cpp:82
 #, kde-format
 msgid "© 2025 KDE Developers"
 msgstr "© 2025 KDE-ის პროგრამისტები"
 
-#: main.cpp:79
+#: main.cpp:83
 #, kde-format
 msgctxt "@info:credit"
 msgid "Anders Lund"
 msgstr "Anders Lund"
 
-#: main.cpp:79
+#: main.cpp:83
 #, kde-format
 msgctxt "@info:credit"
 msgid "Maintainer"
 msgstr "წამყვანი პროგრამისტი"
 
-#: main.cpp:80
+#: main.cpp:84
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Temuri Doghonadze"
 
-#: main.cpp:80
+#: main.cpp:84
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Temuri.doghonadze@gmail.com"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "UNKNOWN"
 msgstr "უცნობი"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "Simple"
 msgstr "მარტივი"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "Easy"
 msgstr "ადვილი"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "Intermediate"
 msgstr "შუალედური"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "Expert"
 msgstr "ექსპერტი"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "None"
 msgstr "არაფერი"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Rotate 90°"
 msgstr "90°-ით მობრუნება"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Rotate 180°"
 msgstr "180°-ით მობრუნება"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Mirror"
 msgstr "სარკე"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Flip"
 msgstr "გადაბრუნება"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Random"
 msgstr "შემთხვევითი"

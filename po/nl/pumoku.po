@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-26 00:41+0000\n"
+"POT-Creation-Date: 2025-11-29 00:40+0000\n"
 "PO-Revision-Date: 2025-11-26 15:15+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -399,97 +399,97 @@ msgctxt "@option:check"
 msgid "Wrong values"
 msgstr "Verkeerde waarden"
 
-#: main.cpp:70
+#: main.cpp:74
 #, kde-format
 msgctxt "@title"
 msgid "PuMoKu"
 msgstr "PuMoKu"
 
-#: main.cpp:74
+#: main.cpp:78
 #, kde-format
 msgid "PuMoKu is a classic Sudoku game, aimed for Plasma Mobile"
 msgstr "PuMoKu is een klassiek Sudoku spel, gericht op Plasma mobiel"
 
-#: main.cpp:78
+#: main.cpp:82
 #, kde-format
 msgid "© 2025 KDE Developers"
 msgstr "© 2025 ontwikkelaars van KDE"
 
-#: main.cpp:79
+#: main.cpp:83
 #, kde-format
 msgctxt "@info:credit"
 msgid "Anders Lund"
 msgstr "Anders Lund"
 
-#: main.cpp:79
+#: main.cpp:83
 #, kde-format
 msgctxt "@info:credit"
 msgid "Maintainer"
 msgstr "Onderhouder"
 
-#: main.cpp:80
+#: main.cpp:84
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Freek de Kruijf - 2025"
 
-#: main.cpp:80
+#: main.cpp:84
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "freekdekruijf@kde.nl"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "UNKNOWN"
 msgstr "ONBEKEND"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "Simple"
 msgstr "Eenvoudig"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "Easy"
 msgstr "Gemakkelijk"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "Intermediate"
 msgstr "Tussenliggend"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "Expert"
 msgstr "Expert"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "None"
 msgstr "Geen"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Rotate 90°"
 msgstr "90° draaien"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Rotate 180°"
 msgstr "180° draaien"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Mirror"
 msgstr "Spiegelen"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Flip"
 msgstr "Verticaal spiegelen"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Random"
 msgstr "Willekeurig"

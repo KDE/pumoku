@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-26 00:41+0000\n"
+"POT-Creation-Date: 2025-11-29 00:40+0000\n"
 "PO-Revision-Date: 2025-11-26 01:36-0300\n"
 "Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -397,98 +397,98 @@ msgctxt "@option:check"
 msgid "Wrong values"
 msgstr "Valores errados"
 
-#: main.cpp:70
+#: main.cpp:74
 #, kde-format
 msgctxt "@title"
 msgid "PuMoKu"
 msgstr "PuMoKu"
 
-#: main.cpp:74
+#: main.cpp:78
 #, kde-format
 msgid "PuMoKu is a classic Sudoku game, aimed for Plasma Mobile"
 msgstr ""
 "PuMoKu é um clássico jogo de Sudoku, desenvolvido para o Plasma Mobile."
 
-#: main.cpp:78
+#: main.cpp:82
 #, kde-format
 msgid "© 2025 KDE Developers"
 msgstr "© 2025, Os desenvolvedores do KDE"
 
-#: main.cpp:79
+#: main.cpp:83
 #, kde-format
 msgctxt "@info:credit"
 msgid "Anders Lund"
 msgstr "Anders Lund"
 
-#: main.cpp:79
+#: main.cpp:83
 #, kde-format
 msgctxt "@info:credit"
 msgid "Maintainer"
 msgstr "Mantenedor"
 
-#: main.cpp:80
+#: main.cpp:84
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Marcus Gama"
 
-#: main.cpp:80
+#: main.cpp:84
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "marcus.gama@gmail.com"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "UNKNOWN"
 msgstr "DESCONHECIDO"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "Simple"
 msgstr "Simples"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "Easy"
 msgstr "Fácil"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "Intermediate"
 msgstr "Intermediário"
 
-#: qqw.cpp:10
+#: qqw.cpp:11
 #, kde-format
 msgid "Expert"
 msgstr "Especialista"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "None"
 msgstr "Nenhum"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Rotate 90°"
 msgstr "Girar 90°"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Rotate 180°"
 msgstr "Girar 180°"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Mirror"
 msgstr "Espelhar"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Flip"
 msgstr "Inverter"
 
-#: qqw.cpp:11
+#: qqw.cpp:12
 #, kde-format
 msgid "Random"
 msgstr "Aleatório"
