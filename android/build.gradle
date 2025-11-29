@@ -10,7 +10,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.1'
+        classpath 'com.android.tools.build:gradle:8.6.0'
     }
 }
 
@@ -21,7 +21,7 @@ repositories {
 
 
 apply plugin: 'com.android.application'
-apply from: '../version.gradle'
+apply from: '../ecm-version.gradle'
 def timestamp = (int)(new Date().getTime()/1000)
 
 dependencies {
@@ -72,11 +72,11 @@ android {
     defaultConfig {
         minSdkVersion qtMinSdkVersion
         targetSdkVersion qtTargetSdkVersion
-        applicationId "org.kde.pomuko"
-        namespace "org.kde.pomuko"
-        versionCode timestamp
-        versionName projectVersionFull
-        manifestPlaceholders = [versionName: projectVersionFull, versionCode: timestamp]
+        applicationId "org.kde.pumoku"
+        namespace "org.kde.pumoku"
+        versionCode ecmVersionCode
+        versionName ecmVersionName
+        manifestPlaceholders = [versionName: ecmVersionName, versionCode: ecmVersionCode]
     }
 
 }

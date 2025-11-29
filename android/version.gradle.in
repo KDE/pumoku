@@ -1,7 +1,0 @@
-// SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk>
-// SPDX-License-Identifier: BSD-3-Clause
-
-ext {
-    projectVersionFull = "@PROJECT_VERSION@"
-}
-
