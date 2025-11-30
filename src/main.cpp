@@ -26,6 +26,7 @@
 #include <KAboutData>
 #include <KLocalizedContext>
 #include <KLocalizedString>
+#include <QCommandLineParser>
 
 #include "pumokuconfig.h"
 
@@ -87,6 +88,13 @@ int main(int argc, char *argv[])
     KCrash::initialize();
 #endif
     QGuiApplication::setWindowIcon(QIcon::fromTheme(u"org.kde.pumoku"_s));
+
+    QCommandLineParser parser;
+    parser.setApplicationDescription(i18n("PuMoKu is a classic Sudoku game, aimed for Plasma Mobile"));
+
+    aboutData.setupCommandLine(&parser);
+    parser.process(app);
+    aboutData.processCommandLine(&parser);
 
     QQmlApplicationEngine engine;
 
