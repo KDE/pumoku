@@ -125,7 +125,7 @@ Kirigami.Page {
             finishHeader = i18n("Well done!");
             finishText = i18nc("%1 is level name, %2 is step count", "You finished this %1 Sudoku (with a bit of help) using %2 steps.", game.levelName, stepcount);
             if (game.hintStatus & game.hintStatusUsedAutoPM) {
-                finishMsg = i18n("Auto pencilmarks used.") + QStringLiteral(" ");
+                finishMsg = i18n("Auto pencilmarks used.") + " ";
             }
             finishMsg += i18nc("%1 is hint count", "Hints: %1.", game.hintCount);
         } else {
