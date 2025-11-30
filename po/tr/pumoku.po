@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-29 00:40+0000\n"
+"POT-Creation-Date: 2025-11-30 00:40+0000\n"
 "PO-Revision-Date: 2025-11-26 09:10+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -17,152 +17,152 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 25.11.70\n"
 
-#: contents/ui/GamePage.qml:119
+#: contents/ui/GamePage.qml:120
 #, kde-format
 msgid "There is your solution"
 msgstr "İşte çözüm"
 
-#: contents/ui/GamePage.qml:120
+#: contents/ui/GamePage.qml:121
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "%1 adımdan sonra bıraktınız"
 
-#: contents/ui/GamePage.qml:121
+#: contents/ui/GamePage.qml:122
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "Kendiliğinden çözüldü. İpuçları: %1."
 
-#: contents/ui/GamePage.qml:124 contents/ui/GamePage.qml:134
+#: contents/ui/GamePage.qml:125 contents/ui/GamePage.qml:135
 #, kde-format
 msgid "Well done!"
 msgstr "Aferin!"
 
-#: contents/ui/GamePage.qml:125
+#: contents/ui/GamePage.qml:126
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
 msgstr "Bu %1 Sudoku’yu (biraz da yardımla) %2 adımda bitirdiniz."
 
-#: contents/ui/GamePage.qml:127
+#: contents/ui/GamePage.qml:128
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "Otomatik kalem imleri kullanıldı."
 
-#: contents/ui/GamePage.qml:129
+#: contents/ui/GamePage.qml:130
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "İpuçları: %1."
 
-#: contents/ui/GamePage.qml:132
+#: contents/ui/GamePage.qml:133
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "TEBRİKLER!"
 
-#: contents/ui/GamePage.qml:133
+#: contents/ui/GamePage.qml:134
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
 msgstr "Bu %1 Sudoku’yu ipucu veya yardım olmadan %2 adımda bitirdiniz."
 
-#: contents/ui/GamePage.qml:374
+#: contents/ui/GamePage.qml:375
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Geri Al"
 
-#: contents/ui/GamePage.qml:383
+#: contents/ui/GamePage.qml:384
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Yinele"
 
-#: contents/ui/GamePage.qml:392
+#: contents/ui/GamePage.qml:393
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "İpucu"
 
-#: contents/ui/GamePage.qml:398
+#: contents/ui/GamePage.qml:399
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Hücreyi Çöz"
 
-#: contents/ui/GamePage.qml:403
+#: contents/ui/GamePage.qml:404
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "Kalem İmleri Koy"
 
-#: contents/ui/GamePage.qml:448
+#: contents/ui/GamePage.qml:449
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "Kalem"
 
-#: contents/ui/GamePage.qml:456
+#: contents/ui/GamePage.qml:457
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "Silgi"
 
-#: contents/ui/GamePage.qml:464
+#: contents/ui/GamePage.qml:465
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "Oyun"
 
-#: contents/ui/GamePage.qml:470
+#: contents/ui/GamePage.qml:471
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "Oyunu Sıfırla"
 
-#: contents/ui/GamePage.qml:474
+#: contents/ui/GamePage.qml:475
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "Oyunu Sıfırla?"
 
-#: contents/ui/GamePage.qml:475 contents/ui/GamePage.qml:493
+#: contents/ui/GamePage.qml:476 contents/ui/GamePage.qml:494
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr "Yaptığınız herhangi bir değişiklik kaybolacak; bu, geri alınamaz."
 
-#: contents/ui/GamePage.qml:484
+#: contents/ui/GamePage.qml:485
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "Kalem İmlerini Temizle"
 
-#: contents/ui/GamePage.qml:488
+#: contents/ui/GamePage.qml:489
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Bırak"
 
-#: contents/ui/GamePage.qml:492
+#: contents/ui/GamePage.qml:493
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Oyunu Bırak?"
 
-#: contents/ui/GamePage.qml:502
+#: contents/ui/GamePage.qml:503
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Oyunu Çöz"
 
-#: contents/ui/GamePage.qml:506
+#: contents/ui/GamePage.qml:507
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Oyunu Çöz?"
 
-#: contents/ui/GamePage.qml:507
+#: contents/ui/GamePage.qml:508
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -171,13 +171,13 @@ msgstr ""
 "Yaptığınız herhangi bir değişiklik kaybolacak; bu, geri alınamaz. Oyunu "
 "kendi başınıza çözemiyorsunuz!"
 
-#: contents/ui/GamePage.qml:619
+#: contents/ui/GamePage.qml:623
 #, kde-format
 msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
 msgstr "Başka %1"
 
-#: contents/ui/GamePage.qml:623
+#: contents/ui/GamePage.qml:627
 #, kde-format
 msgctxt "@action:button"
 msgid "Main Menu"
