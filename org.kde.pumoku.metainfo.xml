@@ -12,6 +12,7 @@
   <name xml:lang="ca">PuMoKu</name>
   <name xml:lang="es">PuMoKu</name>
   <name xml:lang="he">PuMoKu</name>
+  <name xml:lang="it">PuMoKu</name>
   <name xml:lang="ka">PuMoKu</name>
   <name xml:lang="nl">PuMoKu</name>
   <name xml:lang="pt-BR">PuMoKu</name>
@@ -22,6 +23,7 @@
   <summary xml:lang="ca">Un joc de Sudoku 9 x 9 clàssic</summary>
   <summary xml:lang="es">El clásico juego sudoku de 9×9</summary>
   <summary xml:lang="he">משחק סודוקו קלסי 9 × 9</summary>
+  <summary xml:lang="it">Un classico gioco di Sudoku 9x9</summary>
   <summary xml:lang="ka">კლასიკური 9 x 9 სუდოკუ</summary>
   <summary xml:lang="nl">Een klassiek 9 x 9 sudoku spel</summary>
   <summary xml:lang="pt-BR">Um clássico jogo de Sudoku 9x9</summary>
@@ -45,6 +47,7 @@
     <p xml:lang="ca">El PuMoKu és un joc clàssic de resolució de Sudokus 9 x 9 destinat al Plasma Mobile. Ve amb opcions de ressaltat i mètodes d'entrada (tocs) flexibles, pila de desfer completa i més.</p>
     <p xml:lang="es">PuMoKu es el clásico juego de resolver sudokus de 9×9 para Plasma Móvil. Dispone de funciones de resaltado flexible y métodos de entrada (táctiles), completa pila de deshacer movimientos y mucho más.</p>
     <p xml:lang="he">PoMuKu הוא משחק חידת סודוקו בגודל 9 × 9 שמיועד לפלזמה לניידים. יש לו אפשרויות הדגשה גמישות ושיטות קלט (מגע), מערך הסגות מלא ועוד.</p>
+    <p xml:lang="it">PuMoKu è un classico gioco di risoluzione di Sudoku 9x9, pensato per Plasma Mobile. Offre opzioni di evidenziazione flessibili e metodi di input (tocco), una pila completa di annullamenti e altro.</p>
     <p xml:lang="ka">PuMoKu წარმოადგენს კლასიკურ 9x9 სუდოკუს, რომელიც განკუთვნილია Plasma Mobile-ისთვის. მას მოჰყვება მოქნილი გამოკვეთის პარამეტრები და (შეხებით) შეყვანის მეთოდები, გაუქმების სრული სტეკი და სხვ.</p>
     <p xml:lang="nl">PuMoKu is een klassiek, 9 x 9 pumoku oplosspel gericht op Plasma Mobiel. Het komt met flexibele accentueringsopties en (aanraak) invoermethoden, stapel voor volledig ongedaan maken en meer.</p>
     <p xml:lang="pt-BR">PuMoKu é um jogo clássico de resolução de pumoku 9x9 para dispositivos Plasma Mobile. Ele oferece opções flexíveis de destaque de texto e métodos de entrada (por toque), funcionalidade completa de desfazer e muito mais.</p>
@@ -57,6 +60,7 @@
       <li xml:lang="ca-valencia">Mètode d'entrada: primera cel·la, primer nombre o híbrid</li>
       <li xml:lang="es">Métodos de entrada: celda primero, número primero o híbrido</li>
       <li xml:lang="he">שיטות קלט: תא קודם, מספר קודם או משולב</li>
+      <li xml:lang="it">Metodi di input: prima cella, prima numero o ibrido</li>
       <li xml:lang="ka">შეყვანის მეთოდები: ჯერ უჯრედი, ჯერ რიცხვი, ან ჰიბრიდული</li>
       <li xml:lang="nl">Invoermethoden: cel eerst, getal eerst of hybride</li>
       <li xml:lang="pt-BR">Métodos de entrada: Célula primeiro, Número primeiro ou Híbrido</li>
@@ -69,6 +73,7 @@
       <li xml:lang="ca-valencia">Generador integrat de Sudoku</li>
       <li xml:lang="es">Generador de sudokus integrado</li>
       <li xml:lang="he">מחולל סודוקו מובנה</li>
+      <li xml:lang="it">Generatore di sudoku integrato</li>
       <li xml:lang="ka">ჩაშენებული სუდოკუს გენერატორი</li>
       <li xml:lang="nl">Ingebouwde sudoku generator</li>
       <li xml:lang="pt-BR">Gerador de sudoku integrado</li>
@@ -81,6 +86,7 @@
       <li xml:lang="ca-valencia">Desfer automàtic quan es repetix la mateixa acció</li>
       <li xml:lang="es">Deshacer automáticamente cuando se repite la misma acción</li>
       <li xml:lang="he">הסגה אוטומטית כשפעולה מסוימת חוזרת על עצמה</li>
+      <li xml:lang="it">Annullamento automatico quando la stessa azione viene ripetuta</li>
       <li xml:lang="ka">ავტომატური გაუქმება იგივე ქმედების გამეორებისას</li>
       <li xml:lang="nl">Automatisch ongedaan maken wanneer dezelfde actie wordt herhaald</li>
       <li xml:lang="pt-BR">Desfazer automaticamente quando a mesma ação é repetida</li>
