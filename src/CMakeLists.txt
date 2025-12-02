@@ -20,29 +20,31 @@ qt_add_qml_module(pumoku_static
 
 qt_add_resources(RESOURCES resources.qrc)
 
-target_sources(pumoku_static PRIVATE
-    qqwing.cpp
-    qqwing.hpp
-    qqw.cpp
-    qqw.h
+target_sources(
+    pumoku_static
+    PRIVATE
+        qqwing.cpp
+        qqwing.hpp
+        qqw.cpp
+        qqw.h
 )
-target_sources(pumoku_static PUBLIC
-    ${RESOURCES}
-)
-target_link_libraries(pumoku_static PUBLIC
-    Qt6::Core
-    Qt6::Gui
-    Qt6::Qml
-    Qt6::Quick
-    Qt6::QuickControls2
-    Qt6::Svg
-    KF6::I18n
-    KF6::CoreAddons
-    KF6::ConfigCore
-    KF6::ConfigGui
+target_sources(pumoku_static PUBLIC ${RESOURCES})
+target_link_libraries(
+    pumoku_static
+    PUBLIC
+        Qt6::Core
+        Qt6::Gui
+        Qt6::Qml
+        Qt6::Quick
+        Qt6::QuickControls2
+        Qt6::Svg
+        KF6::I18n
+        KF6::CoreAddons
+        KF6::ConfigCore
+        KF6::ConfigGui
 )
 target_include_directories(pumoku_static PRIVATE ${CMAKE_BINARY_DIR})
-if (ANDROID)
+if(ANDROID)
     kirigami_package_breeze_icons(ICONS
         list-add
         help-about
@@ -57,9 +59,18 @@ kconfig_add_kcfg_files(pumoku_static GENERATE_MOC pumokuconfig.kcfgc)
 
 # Target: main executable
 add_executable(pumoku main.cpp)
-target_link_libraries(pumoku PRIVATE pumoku_static pumoku_staticplugin)
-if (TARGET KF6::Crash)
-   target_link_libraries(pumoku PRIVATE KF6::Crash)
+target_link_libraries(
+    pumoku
+    PRIVATE
+        pumoku_static
+        pumoku_staticplugin
+)
+if(TARGET KF6::Crash)
+    target_link_libraries(pumoku PRIVATE KF6::Crash)
 endif()
-install(TARGETS pumoku ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+install(
+    TARGETS
+        pumoku
+        ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
+)
 ecm_add_android_apk(pumoku ANDROID_DIR ${CMAKE_SOURCE_DIR}/android)

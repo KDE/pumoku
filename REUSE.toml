@@ -4,7 +4,7 @@ SPDX-PackageSupplier = "Laurent Montel <montel@kde.org>"
 SPDX-PackageDownloadLocation = "https://invent.kde.org/games/pumoku"
 
 [[annotations]]
-path = ["android/res/drawable/pumoku.png", "android/pumoku-playstore.png"]
+path = ["android/res/drawable/pumoku.png", "android/pumoku-playstore.png", ".gersemirc"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "Laurent Montel <montel@kde.org>"
 SPDX-License-Identifier = "CC0-1.0"
