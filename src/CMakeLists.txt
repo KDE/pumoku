@@ -4,9 +4,10 @@
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config-pumoku.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-pumoku.h)
 
 # Target: static library
-qt_add_qml_module(pumoku_static
-    STATIC
+add_library(pumoku_static STATIC)
+ecm_add_qml_module(pumoku_static
     URI org.kde.pumoku
+    GENERATE_PLUGIN_SOURCE
     QML_FILES
         contents/ui/Main.qml
         contents/ui/GamePage.qml
