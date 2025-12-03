@@ -84,7 +84,7 @@ if(NOT ANDROID)
 endif()
 
 qt_policy(SET QTP0001 NEW)
-
+qt_policy(SET QTP0004 NEW)
 ecm_find_qmlmodule(org.kde.kirigamiaddons.formcard 1.0)
 
 if(TARGET KF6::Crash)
