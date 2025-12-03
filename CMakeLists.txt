@@ -73,7 +73,7 @@ find_package(
     ${KF6_MIN_VERSION}
     REQUIRED
     COMPONENTS
-        Kirigami2
+        Kirigami
         CoreAddons
         Config
         I18n
