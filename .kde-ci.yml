@@ -25,3 +25,4 @@ Dependencies:
 Options:
  require-passing-tests-on: ['@all']
  run-qmllint: True
+ cppcheck-arguments: '--enable=warning,performance,portability,style,unusedFunction --suppress-xml=cppcheck-suppressions.xml'
