@@ -9,7 +9,9 @@
     <binary>pumoku</binary>
   </provides>
   <name>PuMoKu</name>
+  <name xml:lang="ar">بوموكو</name>
   <name xml:lang="ca">PuMoKu</name>
+  <name xml:lang="ca-valencia">PuMoKu</name>
   <name xml:lang="es">PuMoKu</name>
   <name xml:lang="he">PuMoKu</name>
   <name xml:lang="it">PuMoKu</name>
@@ -20,7 +22,9 @@
   <name xml:lang="tr">PuMoKu</name>
   <name xml:lang="uk">PuMoKu</name>
   <summary>A classic 9 × 9 sudoku game</summary>
+  <summary xml:lang="ar">لعبة سودوكو كلاسيكية 9 × 9</summary>
   <summary xml:lang="ca">Un joc de Sudoku 9 x 9 clàssic</summary>
+  <summary xml:lang="ca-valencia">Un joc de Sudoku 9 x 9 clàssic</summary>
   <summary xml:lang="es">El clásico juego sudoku de 9×9</summary>
   <summary xml:lang="he">משחק סודוקו קלסי 9 × 9</summary>
   <summary xml:lang="it">Un classico gioco di Sudoku 9x9</summary>
@@ -44,7 +48,9 @@
   </developer>
   <description>
     <p>PuMoKu is a classic, 9 × 9 Sudoku solving game aimed for Plasma Mobile. It comes with flexible highlighting options and (touch) input methods, full undo stack and more.</p>
+    <p xml:lang="ar">بوموكو هي لعبة سودوكو كلاسيكية 9 × 9 مخصصة لأجهزة بلازما الجوال. تأتي مع خيارات تمييز مرنة وطرق إدخال (باللمس) ومكدس تراجع كامل والمزيد.</p>
     <p xml:lang="ca">El PuMoKu és un joc clàssic de resolució de Sudokus 9 x 9 destinat al Plasma Mobile. Ve amb opcions de ressaltat i mètodes d'entrada (tocs) flexibles, pila de desfer completa i més.</p>
+    <p xml:lang="ca-valencia">PuMoKu és un joc clàssic de resolució de Sudoku 9 x 9 destinat a Plasma Mobile. Ve amb opcions de ressaltat i mètodes d'entrada (tocs) flexibles, pila de desfer completa i més.</p>
     <p xml:lang="es">PuMoKu es el clásico juego de resolver sudokus de 9×9 para Plasma Móvil. Dispone de funciones de resaltado flexible y métodos de entrada (táctiles), completa pila de deshacer movimientos y mucho más.</p>
     <p xml:lang="he">PoMuKu הוא משחק חידת סודוקו בגודל 9 × 9 שמיועד לפלזמה לניידים. יש לו אפשרויות הדגשה גמישות ושיטות קלט (מגע), מערך הסגות מלא ועוד.</p>
     <p xml:lang="it">PuMoKu è un classico gioco di risoluzione di Sudoku 9x9, pensato per Plasma Mobile. Offre opzioni di evidenziazione flessibili e metodi di input (tocco), una pila completa di annullamenti e altro.</p>
@@ -56,6 +62,7 @@
     <p xml:lang="uk">PuMoKu — класична гра у судоку 9x9, яку призначено для мобільної Плазми. У ній передбачено гнучкі можливості з підсвічування і (сенсорні) способи введення, повний стос скасування дій та додаткові можливості.</p>
     <ul>
       <li>Input methods: Cell first, Number first or Hybrid</li>
+      <li xml:lang="ar">طرق الإدخال: الخلية أولاً، الرقم أولاً أو مختلط</li>
       <li xml:lang="ca">Mètode d'entrada: primera cel·la, primer nombre o híbrid</li>
       <li xml:lang="ca-valencia">Mètode d'entrada: primera cel·la, primer nombre o híbrid</li>
       <li xml:lang="es">Métodos de entrada: celda primero, número primero o híbrido</li>
@@ -69,6 +76,7 @@
       <li xml:lang="uk">Способи введення: спочатку комірка, спочатку число або гібридний</li>
       <li xml:lang="zh-TW">輸入方法：先方格、先數字還是混合</li>
       <li>Built in sudoku generator</li>
+      <li xml:lang="ar">تتضمن مولّد سودوكو</li>
       <li xml:lang="ca">Generador integrat de Sudokus</li>
       <li xml:lang="ca-valencia">Generador integrat de Sudoku</li>
       <li xml:lang="es">Generador de sudokus integrado</li>
@@ -82,6 +90,7 @@
       <li xml:lang="uk">Створено у засобі створення судоку</li>
       <li xml:lang="zh-TW">內建數獨產生器</li>
       <li>Automatic undo when the same action is repeated</li>
+      <li xml:lang="ar">التراجع الآلي عند تكرار نفس الإجراء</li>
       <li xml:lang="ca">Desfer automàtic quan es repeteix la mateixa acció</li>
       <li xml:lang="ca-valencia">Desfer automàtic quan es repetix la mateixa acció</li>
       <li xml:lang="es">Deshacer automáticamente cuando se repite la misma acción</li>
