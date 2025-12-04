@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-01 00:40+0000\n"
+"POT-Creation-Date: 2025-12-04 00:41+0000\n"
 "PO-Revision-Date: 2025-11-27 00:32+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -231,43 +231,43 @@ msgstr ""
 "La cadena que has introducido no tiene exactamente 81 caracteres tras "
 "procesarla. Tendrás que corregirla."
 
-#: contents/ui/Main.qml:15
+#: contents/ui/Main.qml:14
 #, kde-format
 msgid "PuMoKu"
 msgstr "PuMoKu"
 
-#: contents/ui/Main.qml:43
+#: contents/ui/Main.qml:42
 #, kde-format
 msgctxt "@action:button"
 msgid "Give Up Active Game?"
 msgstr "¿Abandonar el juego activo?"
 
-#: contents/ui/Main.qml:44
+#: contents/ui/Main.qml:43
 #, kde-format
 msgid "Pumoku does not save your game yet. Closing the app means giving up."
 msgstr ""
 "PuMoKu no ha guardado el juego activo. Cerrar la aplicación equivale a "
 "abandonar."
 
-#: contents/ui/Main.qml:64
+#: contents/ui/Main.qml:63
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Main Menu"
 msgstr "Menú principal"
 
-#: contents/ui/Main.qml:79
+#: contents/ui/Main.qml:78
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Settings"
 msgstr "Preferencias"
 
-#: contents/ui/Main.qml:84
+#: contents/ui/Main.qml:83
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About PuMoKu"
 msgstr "Acerca de PuMoKu"
 
-#: contents/ui/Main.qml:90
+#: contents/ui/Main.qml:89
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit"

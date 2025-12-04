@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-01 00:40+0000\n"
+"POT-Creation-Date: 2025-12-04 00:41+0000\n"
 "PO-Revision-Date: 2025-11-26 03:21+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -230,42 +230,42 @@ msgstr ""
 "შეყვანილი სტრიქონი გასუფთავების შემდეგ ზუსტად 81 სიმბოლოს არ შეიცავს. "
 "გაასწორეთ ის, გეთაყვა."
 
-#: contents/ui/Main.qml:15
+#: contents/ui/Main.qml:14
 #, kde-format
 msgid "PuMoKu"
 msgstr "PuMoKu"
 
-#: contents/ui/Main.qml:43
+#: contents/ui/Main.qml:42
 #, kde-format
 msgctxt "@action:button"
 msgid "Give Up Active Game?"
 msgstr "უარს ამბობთ აქტიურ თამაშზე?"
 
-#: contents/ui/Main.qml:44
+#: contents/ui/Main.qml:43
 #, kde-format
 msgid "Pumoku does not save your game yet. Closing the app means giving up."
 msgstr ""
 "PuMoKu-ს თქვენი თამაში ჯერ არ შეუნახავს. აპის დახურვა ნიშნავს, რომ ნებდებით."
 
-#: contents/ui/Main.qml:64
+#: contents/ui/Main.qml:63
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Main Menu"
 msgstr "მთავარი მენიუ"
 
-#: contents/ui/Main.qml:79
+#: contents/ui/Main.qml:78
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Settings"
 msgstr "მორგება"
 
-#: contents/ui/Main.qml:84
+#: contents/ui/Main.qml:83
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About PuMoKu"
 msgstr "PuMoKu-ის შესახებ"
 
-#: contents/ui/Main.qml:90
+#: contents/ui/Main.qml:89
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit"

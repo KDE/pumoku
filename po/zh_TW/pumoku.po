@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-01 00:40+0000\n"
+"POT-Creation-Date: 2025-12-04 00:41+0000\n"
 "PO-Revision-Date: 2025-11-24 17:32+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -259,45 +259,45 @@ msgid ""
 "The provided string is not exactly 81 characters after cleanup. Please amend."
 msgstr "指定的字串長度在清理之後並不是 81 個字元長。請修正它。"
 
-#: contents/ui/Main.qml:15
+#: contents/ui/Main.qml:14
 #, kde-format
 msgid "PuMoKu"
 msgstr "PuMoKu"
 
-#: contents/ui/Main.qml:43
+#: contents/ui/Main.qml:42
 #, fuzzy, kde-format
 #| msgid "Give up active game?"
 msgctxt "@action:button"
 msgid "Give Up Active Game?"
 msgstr "放棄目前遊戲？"
 
-#: contents/ui/Main.qml:44
+#: contents/ui/Main.qml:43
 #, kde-format
 msgid "Pumoku does not save your game yet. Closing the app means giving up."
 msgstr "Pumoku 目前還無法儲存遊戲。關閉遊戲代表放棄。"
 
-#: contents/ui/Main.qml:64
+#: contents/ui/Main.qml:63
 #, fuzzy, kde-format
 #| msgid "Main menu"
 msgctxt "@action:inmenu"
 msgid "Main Menu"
 msgstr "主選單"
 
-#: contents/ui/Main.qml:79
+#: contents/ui/Main.qml:78
 #, fuzzy, kde-format
 #| msgid "Settings"
 msgctxt "@action:inmenu"
 msgid "Settings"
 msgstr "設定"
 
-#: contents/ui/Main.qml:84
+#: contents/ui/Main.qml:83
 #, fuzzy, kde-format
 #| msgid "About PuMoKu"
 msgctxt "@action:inmenu"
 msgid "About PuMoKu"
 msgstr "關於 PuMoKu"
 
-#: contents/ui/Main.qml:90
+#: contents/ui/Main.qml:89
 #, fuzzy, kde-format
 #| msgid "Quit"
 msgctxt "@action:inmenu"

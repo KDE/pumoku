@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-01 00:40+0000\n"
+"POT-Creation-Date: 2025-12-04 00:41+0000\n"
 "PO-Revision-Date: 2025-11-26 09:38+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -226,43 +226,43 @@ msgid ""
 msgstr ""
 "Navedeni niz po čiščenju nima natanko 81 znakov. Prosimo, popravite ga."
 
-#: contents/ui/Main.qml:15
+#: contents/ui/Main.qml:14
 #, kde-format
 msgid "PuMoKu"
 msgstr "PuMoKu"
 
-#: contents/ui/Main.qml:43
+#: contents/ui/Main.qml:42
 #, kde-format
 msgctxt "@action:button"
 msgid "Give Up Active Game?"
 msgstr "Želite prenehati aktivno igro?"
 
-#: contents/ui/Main.qml:44
+#: contents/ui/Main.qml:43
 #, kde-format
 msgid "Pumoku does not save your game yet. Closing the app means giving up."
 msgstr ""
 "Pumoku še ne shrani vaše igre. Zapiranje aplikacije pomeni, da boste "
 "odnehali."
 
-#: contents/ui/Main.qml:64
+#: contents/ui/Main.qml:63
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Main Menu"
 msgstr "Glavni meni"
 
-#: contents/ui/Main.qml:79
+#: contents/ui/Main.qml:78
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Settings"
 msgstr "Nastavitve"
 
-#: contents/ui/Main.qml:84
+#: contents/ui/Main.qml:83
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About PuMoKu"
 msgstr "O PuMoKuju"
 
-#: contents/ui/Main.qml:90
+#: contents/ui/Main.qml:89
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit"
