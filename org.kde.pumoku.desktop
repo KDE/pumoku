@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk>
 [Desktop Entry]
 Name=PuMoKu
+Name[ar]=بوموكو
 Name[ca]=PuMoKu
 Name[ca@valencia]=PuMoKu
 Name[es]=PuMoKu
@@ -15,6 +16,7 @@ Name[tr]=PuMoKu
 Name[uk]=PuMoKu
 Name[zh_TW]=PuMoKu
 Comment=Sudoku game
+Comment[ar]=لعبة سودوكو
 Comment[ca]=Joc de Sudoku
 Comment[ca@valencia]=Joc de Sudoku
 Comment[es]=Juego de Sudoku
