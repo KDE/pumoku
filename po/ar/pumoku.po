@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-04 00:41+0000\n"
-"PO-Revision-Date: 2025-12-03 17:06+0400\n"
+"PO-Revision-Date: 2025-12-04 13:46+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -21,19 +21,19 @@ msgstr ""
 #: contents/ui/GamePage.qml:120
 #, kde-format
 msgid "There is your solution"
-msgstr ""
+msgstr "ها هو الحل"
 
 #: contents/ui/GamePage.qml:121
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
-msgstr ""
+msgstr "استسلمت بعد %1 خطوة."
 
 #: contents/ui/GamePage.qml:122
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
-msgstr ""
+msgstr "أُحلت آليًا. تلميحات: %1."
 
 #: contents/ui/GamePage.qml:125 contents/ui/GamePage.qml:135
 #, kde-format
@@ -44,12 +44,12 @@ msgstr "أحسنت عملًا!"
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
-msgstr ""
+msgstr "أنهيت هذا اللغز %1 سودوكو (بقليل من المساعدة) باستخدام %2 خطوات."
 
 #: contents/ui/GamePage.qml:128
 #, kde-format
 msgid "Auto pencilmarks used."
-msgstr ""
+msgstr "استخدمت علامات قلم رصاص آلي."
 
 #: contents/ui/GamePage.qml:130
 #, kde-format
@@ -67,6 +67,7 @@ msgstr "تَهَانِينَا!!"
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
 msgstr ""
+"أنهيت لعبة سودوكو هذه بنسبة %1 دون أي تلميحات أو مساعدة باستخدام %2 خطوات."
 
 #: contents/ui/GamePage.qml:375
 #, kde-format
@@ -96,7 +97,7 @@ msgstr "حلّ الخلية"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
-msgstr ""
+msgstr "ضع علامات قلم رصاص"
 
 #: contents/ui/GamePage.qml:449
 #, kde-format
@@ -131,13 +132,13 @@ msgstr "أأصفّر اللعبة؟"
 #: contents/ui/GamePage.qml:476 contents/ui/GamePage.qml:494
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
-msgstr ""
+msgstr "ستفقد أي تغييرات قمت بها، ولا يمكن التراجع عن ذلك."
 
 #: contents/ui/GamePage.qml:485
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
-msgstr ""
+msgstr "امحُ علامات قلم رصاص"
 
 #: contents/ui/GamePage.qml:489
 #, kde-format
@@ -169,6 +170,7 @@ msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
 "solve the puzzle on your own!"
 msgstr ""
+"ستفقد أي تغييرات قمت بها، ولا يمكن التراجع عن ذلك. لا يمكنك حل اللغز بنفسك!"
 
 #: contents/ui/GamePage.qml:623
 #, kde-format
@@ -186,7 +188,7 @@ msgstr "القائمة الرئيسة"
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Sudoku"
-msgstr ""
+msgstr "استيراد سودوكو"
 
 #: contents/ui/Import.qml:35
 #, kde-format
@@ -199,6 +201,12 @@ msgid ""
 "Line breaks and spaces are silently removed, so that you can enter one row "
 "per-line with some optional whitespace."
 msgstr ""
+"أدخل أو الصق سلسلة من 81 حرفًا. 1–9 للخلايا المحددة، و 0 أو أي حرف غير رقمي "
+"باستثناء المسافة للخلايا الفارغة. سيتحقق بوموكو من إمكانية حل سوودوكو ويحسب "
+"المستوى.\n"
+"\n"
+"تحذف فواصل الأسطر والمسافات آليًا، بحيث يمكنك إدخال صف واحد في كل سطر مع بعض "
+"المسافات البيضاء الاختيارية."
 
 #: contents/ui/Import.qml:49
 #, kde-format
@@ -216,7 +224,7 @@ msgstr "استورد"
 #, kde-format
 msgid ""
 "The provided string is not exactly 81 characters after cleanup. Please amend."
-msgstr ""
+msgstr "السلسلة المقدمة لا تحتوي على 81 حرفًا بالضبط بعد التنظيف. يرجى تعديلها."
 
 #: contents/ui/Main.qml:14
 #, kde-format
@@ -227,7 +235,7 @@ msgstr "بوموكو"
 #, kde-format
 msgctxt "@action:button"
 msgid "Give Up Active Game?"
-msgstr ""
+msgstr "هل تتخلى عن اللعبة النشطة؟"
 
 #: contents/ui/Main.qml:43
 #, kde-format
@@ -334,7 +342,7 @@ msgstr "صفّر الوقت مع اللعبة"
 #, kde-format
 msgctxt "@option:check"
 msgid "Clean up pencil marks when setting a cell value"
-msgstr ""
+msgstr "امسح علامات القلم الرصاص عند تعيين قيمة الخلية"
 
 #: contents/ui/Settings.qml:53
 #, kde-format
@@ -346,37 +354,37 @@ msgstr "الإبراز"
 #, kde-format
 msgctxt "@option:check"
 msgid "Houses of a selected cell"
-msgstr ""
+msgstr "منازل خلية محددة"
 
 #: contents/ui/Settings.qml:65
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit"
-msgstr ""
+msgstr "الخلايا ذات الرقم النشط"
 
 #: contents/ui/Settings.qml:73
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit pencilmark"
-msgstr ""
+msgstr "خلايا ذات علامات قلم رصاص رقمية نشطة"
 
 #: contents/ui/Settings.qml:81
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in values"
-msgstr ""
+msgstr "أخطاء منطقية في القيم"
 
 #: contents/ui/Settings.qml:89
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in pencilmarks"
-msgstr ""
+msgstr "أخطاء منطقية في علامات القلم الرصاص"
 
 #: contents/ui/Settings.qml:97
 #, kde-format
 msgctxt "@option:check"
 msgid "Erasable cells with eraser active"
-msgstr ""
+msgstr "خلايا قابلة للمسح مع ممحاة نشطة"
 
 #: contents/ui/Settings.qml:105
 #, kde-format
@@ -482,14 +490,14 @@ msgstr "عشوائي"
 #: qqw.cpp:74
 #, kde-format
 msgid "Looking good. Difficulty:"
-msgstr ""
+msgstr "تبدو جيدة. الصعوبة:"
 
 #: qqw.cpp:77
 #, kde-format
 msgid "The provided Sudoku does not have a unique solution."
-msgstr ""
+msgstr "السودوكو المقدم لا يحتوي على حل فريد."
 
 #: qqw.cpp:81
 #, kde-format
 msgid "The provided Sudoku is not solvable."
-msgstr ""
+msgstr "السودوكو المقدم غير قابل للحل."
