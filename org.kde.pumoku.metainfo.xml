@@ -107,8 +107,9 @@
   </description>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=pumoku</url>
   <url type="donation">https://www.kde.org/community/donations/?app=bomber&amp;source=appdata</url>
+  <screenshots>
       <screenshot type="default">
       <image>https://cdn.kde.org/screenshots/pumoku/pumoku.png</image>
     </screenshot>
-
+</screenshots>
 </component>
