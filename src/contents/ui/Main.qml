@@ -24,7 +24,8 @@ Kirigami.ApplicationWindow {
     }
 
     Component.onCompleted: {
-        setPage(mainMenu);
+        if(!gamePage.hasGame)
+            pageStack.layers.push("qrc:/MainMenu.qml", {gameLoaded: false})
     }
 
     property bool acceptClose: false
@@ -54,58 +55,19 @@ Kirigami.ApplicationWindow {
         pageStack.push(page)
     }
 
-    globalDrawer: Kirigami.GlobalDrawer {
-        enabled: pageStack.layers.depth === 1
-        // isMenu: true
-        collapseButtonVisible: false
-        actions: [
-            Kirigami.Action {
-                text: i18nc("@action:inmenu", "Main Menu")
-                icon.name: "go-home-large-symbolic"
-                onTriggered: root.setPage(mainMenu)
-            },
-            // Kirigami.Action {
-            //     text: i18nc("@action:inmenu", "Statistics")
-            //     icon.name: "office-chart-line"
-            //     // onTriggered: root.pageStack.pushDialogLayer(settingsPage)
-            // },
-            // Kirigami.Action {
-            //     text: i18nc("@action:inmenu", "Help")
-            //     icon.name: "help-contents-symbolic"
-            //     // onTriggered: root.pageStack.pushDialogLayer(settingsPage)
-            // },
-            Kirigami.Action {
-                text: i18nc("@action:inmenu", "Settings")
-                icon.name: "settings-configure-symbolic"
-                onTriggered: root.pageStack.layers.push("qrc:/Settings.qml")
-            },
-            Kirigami.Action {
-                text: i18nc("@action:inmenu", "About PuMoKu")
-                icon.name: "help-about"
-                onTriggered: root.pageStack.layers.push("qrc:/About.qml")
-            },
-            Kirigami.Action {
-                visible: !Kirigami.Settings.isMobile
-                text: i18nc("@action:inmenu", "Quit")
-                icon.name: "application-exit"
-                onTriggered: Qt.quit()
-            }
-
-        ]
+    function generateSudoku(difficulty, symmmetry) {
+        gamePage.generateSudoku(difficulty, symmmetry)
     }
-
 
     GamePage {
         id: gamePage
     }
 
-    MainMenu {
-        id: mainMenu
-    }
-    pageStack.initialPage: gamePage
-
-    contextDrawer: Kirigami.ContextDrawer {
-        id: contextDrawer
+    pageStack {
+        globalToolBar {
+            style: Kirigami.ApplicationHeaderStyle.ToolBar
+        }
+        initialPage: gamePage
     }
 
 }

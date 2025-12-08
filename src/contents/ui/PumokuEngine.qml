@@ -73,6 +73,7 @@ QtObject {
     property int valueCnt: 0
     property bool hasSolution: false
     property bool finished: true
+    property bool loaded: false
 
     Component.onCompleted: {
         clear();
@@ -83,6 +84,9 @@ QtObject {
         pencilMarks.length = 0;
         board.length = 0;
         errors.length = 0;
+        level = 0;
+        levelName = "";
+        finished = false;
 
         values.length = 81;
         pencilMarks.length = 81;
@@ -109,13 +113,14 @@ QtObject {
         valueCnt = 0;
         stepCount = [0,0,0,0,0,0];
         hintStatus = 0;
+        loaded = false;
     }
 
     function solveImported(sudoku) {
         let result = qqw.solve(sudoku);
         if (result === 1) {
             setGame(Qqw.sudoku, Qqw.solution)
-            // root.setPage(gamePage);
+            root.setPage(gamePage);
         } else {
             return result;
         }
@@ -136,6 +141,7 @@ QtObject {
         level = Qqw.difficulty;
         levelName = Qqw.difficultyNames[level];
         finished = false;
+        loaded = true;
     }
 
 
@@ -166,7 +172,8 @@ QtObject {
         undoPos = data.undopos;
         updoStack = data.undostack;
         finished = false;
-        applicationWindow().setPage(gamePage);
+        loaded = true;
+        // applicationWindow().setPage(gamePage);
     }
 
     // reset game

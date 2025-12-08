@@ -8,19 +8,15 @@ import org.kde.kirigami as Kirigami
 import org.kde.pumoku
 import org.kde.pumoku.private
 
-Kirigami.Page {
-    title: i18nc("@title:window", "Main Menu")
+Kirigami.ScrollablePage {
+    id: pumokuMenu
+    required property bool gameLoaded
+    property Kirigami.ApplicationWindow app: applicationWindow()
+    title: i18nc("@title:window", "Pumoku Menu")
+    globalToolBarStyle: gameLoaded ? Kirigami.ApplicationHeaderStyle.Titles : Kirigami.ApplicationHeaderStyle.None
 
     ColumnLayout {
-        anchors.horizontalCenter: parent.horizontalCenter
-        width: gamePage.wideScreen ? parent.height : parent.width
         Layout.margins: Kirigami.Units.gridUnit * 3
-        // anchors.fill: parent
-        Kirigami.Heading {
-            Layout.alignment: Qt.AlignHCenter
-            text: i18nc("@title", "Welcome to PuMoKu")
-            level: 1
-        }
         Image {
             Layout.alignment: Qt.AlignHCenter
             Layout.topMargin: Kirigami.Units.gridUnit
@@ -31,38 +27,47 @@ Kirigami.Page {
             sourceSize.width: width
             sourceSize.height: height
         }
+
         ColumnLayout {
             Layout.alignment: Qt.AlignHCenter
-            QQC2.Button {
-                id: buttonSolve
-                text: i18nc("@action:button", "Solve a Sudoku")
-                Layout.preferredWidth: parent.parent.width * 0.7
-                onClicked: sudokuMenu.open();
-                QQC2.Menu {
-                    id: sudokuMenu
-                    Repeater {
-                        // Skipping difficulty UNKNOWN (at [0]) means the difficulty value is index + 1.
-                        model: Qqw.difficultyNames.length - 1
-                        QQC2.MenuItem {
-                            required property int index
-                            text: Qqw.difficultyNames[index+1]
-                            onTriggered: { gamePage.generateSudoku(index+1, 0); root.setPage(gamePage) }
+            QQC2.Label {
+                text: i18n("New Sudoku:")
+                font.bold: true
+                padding: Kirigami.Units.mediumSpacing
+            }
+            ColumnLayout {
+                spacing:0
+                Repeater {
+                    model: 4
+                    delegate: QQC2.Button {
+                        required property int index
+                        Layout.preferredWidth: pumokuMenu.width * 0.7
+                        text: Qqw.difficultyNames[index+1]
+                        onClicked: {
+                            app.generateSudoku(index+1, 0)
+                            app.pageStack.layers.pop()
                         }
                     }
                 }
             }
-            QQC2.Button {
-                id: buttonContinue
-                text: i18nc("@action:button", "Continue…")
-                Layout.preferredWidth: parent.parent.width * 0.7
-                onClicked: root.setPage(gamePage)
-                visible: gamePage.hasGame
+            QQC2.Label {
+                text: i18n("Import or enter:")
+                font.bold: true
+                padding: Kirigami.Units.mediumSpacing
             }
             QQC2.Button {
-                id: buttonImport
-                text: i18nc("@action:button", "Import…")
-                Layout.preferredWidth: parent.parent.width * 0.7
-                onClicked: root.pageStack.layers.push("qrc:/Import.qml")
+                text: i18nc("@action:button", "Import Sudoku …")
+                Layout.preferredWidth: pumokuMenu.width * 0.7
+                onClicked: {
+                    app.pageStack.layers.push("qrc:/Import.qml")
+                }
+            }
+            QQC2.Button {
+                text: i18nc("@action:button", "Enter Sudoku …")
+                Layout.preferredWidth: pumokuMenu.width * 0.7
+                enabled: false
+                onClicked: {
+                }
             }
         }
     }

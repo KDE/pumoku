@@ -6,5 +6,6 @@
         <file alias="Settings.qml">contents/ui/Settings.qml</file>
         <file alias="Import.qml">contents/ui/Import.qml</file>
         <file alias="pumoku.svg">contents/graphics/pumoku.svg</file>
+        <file alias="MainMenu.qml">contents/ui/MainMenu.qml</file>
     </qresource>
 </RCC>

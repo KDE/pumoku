@@ -13,7 +13,59 @@ Kirigami.Page {
     title: "PuMoKu: " + game.levelName
     padding: 0
     width: root.width
-    globalToolBarStyle: wideScreen && !tabletMode ? Kirigami.ApplicationHeaderStyle.None : Kirigami.ApplicationHeaderStyle.ToolBar
+
+    actions: [
+        Kirigami.Action {
+            // text: i18nc("@action:inmenu", "About PuMoKu")
+            icon.name: "help-about"
+            onTriggered: root.pageStack.layers.push("qrc:/About.qml")
+        },
+        Kirigami.Action {
+            // text: i18nc("@action:inmenu", "Settings")
+            icon.name: "settings-configure-symbolic"
+            onTriggered: root.pageStack.layers.push("qrc:/Settings.qml")
+        }
+    ]
+
+    // custom bottom toolbar
+    footer: QQC2.ToolBar {
+        height: 64
+        position: QQC2.ToolBar.Footer
+        contentItem: Kirigami.ActionToolBar {
+            position: QQC2.ToolBar.Footer
+            width: parent.width
+            height: parent.height
+            flat: true
+            // heightMode: HeightMode.AllwaysFill
+            alignment: Qt.AlignCenter
+            display: QQC2.Button.TextUnderIcon
+            actions: [
+            Kirigami.Action {
+                icon.name: "document-share-symbolic"
+                // onTriggered: root.pageStack.layers.push("qrc:/Settings.qml")
+            },
+            Kirigami.Action {
+                icon.name: "application-menu-symbolic"
+                onTriggered: root.pageStack.layers.push("qrc:/MainMenu.qml", {gameLoaded: game.loaded})
+            },
+            Kirigami.Action {
+                icon.name: "open-for-editing-symbolic"
+                checkable: true
+                checked: gameBoard.showPencilMarks
+                enabled: game.loaded && !game.finished
+                onTriggered: gameBoard.showPencilMarks = !gameBoard.showPencilMarks
+            },
+            Kirigami.Action {
+                icon.name: "flashlight-on-symbolic"
+                checkable: true
+                checked: gameBoard.showHighlight
+                enabled: game.loaded && !game.finished
+                onTriggered: gameBoard.showHighlight = !gameBoard.showHighlight
+            }]
+        }
+    }
+
+    property int pageHeight: height - footer.height
 
     PumokuEngine {
         id: game
@@ -22,14 +74,12 @@ Kirigami.Page {
     property bool wideScreen: applicationWindow().isWideScreen
     property bool tabletMode: (wideScreen && applicationWindow().height > 600) || (!wideScreen && width > 600)
 
-    property bool hasGame: !game.finished
+    property bool hasGame: game.loaded && !game.finished
+    property bool gameLoaded: game.loaded
     property bool numberKeyActive: false
 
     property bool showHighlight: true
     property bool showPencilMarks: false
-
-    // Qml weirdness: can't be done from button menu
-    function goHome() {root.setPage(mainMenu);}
 
     function generateSudoku(difficulty, symmetry) {
         if (Qqw.generate(difficulty, symmetry)) {
@@ -40,13 +90,12 @@ Kirigami.Page {
 
     function setGame(puzzle, solution) {
         game.setGame(puzzle, solution);
-        root.setPage(gamePage);
         timer.reset();
     }
 
      // Event handlers FIXME move part of the code to game engine?
     function cellTapped(row, col, block, index) {
-        if (game.finished) return;
+        if (!hasGame) return;
         if (btnErase.checked) {
             if (game.erasable(index)) {
                 if (game.values[index]) {
@@ -83,7 +132,7 @@ Kirigami.Page {
     }
 
     function numberKeyClicked(index, checked, btn) {
-        if (game.finished) return;
+        if (!hasGame) return;
         let key = index + 1;
         if (btn.checked && game.currentDigit == key) {
             // digit, cell mode, toggle
@@ -144,7 +193,7 @@ Kirigami.Page {
 
     Timer {
         id: timer
-        running: applicationWindow().active && gamePage.isCurrentPage && !game.finished
+        running: applicationWindow().active && gamePage.isCurrentPage && game.loaded && !game.finished
         repeat: true
         interval: 1000
 
@@ -167,10 +216,10 @@ Kirigami.Page {
     // Game board
     Rectangle {
         id: boardContainer
-        width: wideScreen ? Math.min(gameBoard.height, 600) : Math.min(gameBoard.width, 600)
+        width: wideScreen ? Math.min(gameBoard.pageHeight, 600) : Math.min(gameBoard.width, 600)
         height: width
         x: isWideScreen ?  Math.max((parent.width - width*2)/2, 0) : (parent.width - width)/2
-        y: isWideScreen ? Math.max((parent.height - height)/2, 0) : tabletMode ? (height*2) >= parent.height ? 0 : (parent.height - height*2)/2 : 0
+        y: isWideScreen ? Math.max((gameBoard.pageHeight - height)/2, 0) : tabletMode ? (height*2) >= gameBoard.pageHeight ? 0 : (gameBoard.pageHeight - height*2)/2 : 0
         color: Kirigami.Theme.backgroundColor
         Rectangle {
             id: bgbd
@@ -296,10 +345,11 @@ Kirigami.Page {
     // button board
     Rectangle {
         id: bottomContainer
+        enabled: game.loaded
         anchors.top: wideScreen ? boardContainer.top : boardContainer.bottom
         anchors.left: wideScreen ? boardContainer.right : boardContainer.left
         width: wideScreen ? Math.min(applicationWindow().width - boardContainer.x - boardContainer.width, boardContainer.width) : boardContainer.width
-        height: !wideScreen ? gamePage.height - boardContainer.height - boardContainer.y : tabletMode ? bgbd.height : boardContainer.height
+        height: !wideScreen ? gamePage.pageHeight - boardContainer.height - boardContainer.y : tabletMode ? bgbd.height : boardContainer.height
         color: Kirigami.Theme.backgroundColor
         Rectangle {
             id: bottomTitle
@@ -495,7 +545,7 @@ Kirigami.Page {
                                 standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
                                 onAccepted: {
                                     game.clear();
-                                    gameBoard.goHome();
+                                    applicationWindow().pageStack.layers.push("qml:/MainMenu.qml", {gameLoaded: false})
                                 }
                             }
                         }
@@ -529,36 +579,6 @@ Kirigami.Page {
                 leftPadding: Kirigami.Units.largeSpacing
                 id: timerDisplay
                 text: "Time: " + timer.stime
-            }
-            QQC2.Button {
-                anchors.right: btnShowHighlight.left
-                anchors.bottom: parent.bottom
-                id: btnShowPencilMarks
-                icon.name: "open-for-editing-symbolic"
-                checkable: true
-                checked: gameBoard.showPencilMarks
-                onClicked: {
-                    gameBoard.showPencilMarks = !gameBoard.showPencilMarks
-                    btnPencilMarks.checked = false
-                }
-                flat: true
-                icon.color: checked ? Kirigami.Theme.positiveTextColor : Kirigami.Theme.disabledTextColor
-                icon.width: 32
-                icon.height: 32
-            }
-            QQC2.Button {
-                anchors.right: parent.right
-                anchors.bottom: parent.bottom
-                anchors.rightMargin: Kirigami.Units.mediumSpacing
-                id: btnShowHighlight
-                icon.name: "flashlight-on-symbolic"
-                checkable: true
-                checked: gameBoard.showHighlight
-                onClicked: gameBoard.showHighlight = !gameBoard.showHighlight
-                flat: true
-                icon.color: checked ? Kirigami.Theme.positiveTextColor : Kirigami.Theme.disabledTextColor
-                icon.width: 32
-                icon.height: 32
             }
         }
 
@@ -604,7 +624,8 @@ Kirigami.Page {
                     width: parent.width
                     Layout.alignment: Qt.AlignHCenter
                     wrapMode: Text.WordWrap
-                    text: finishText                }
+                    text: finishText
+                }
                 QQC2.Label {
                     Layout.alignment: Qt.AlignHCenter
                     font.pointSize: 20
@@ -622,10 +643,6 @@ Kirigami.Page {
                     QQC2.Button  {
                         text: i18nc("@action:button, %1 is level name", "Another %1", game.levelName)
                         onClicked: { generateSudoku(game.level, 0); drawer.close(); }
-                    }
-                    QQC2.Button {
-                        text: i18nc("@action:button", "Main Menu")
-                        onClicked: { goHome(); drawer.close(); }
                     }
                 }
             }

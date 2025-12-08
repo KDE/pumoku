@@ -69,7 +69,7 @@ Kirigami.Page {
                         if (Qqw.solve(importboard) === 1) {
                             gamePage.setGame(Qqw.sudoku, Qqw.solution);
                             applicationWindow().setPage(gamePage);
-                            applicationWindow().pageStack.layers.pop();
+                            applicationWindow().pageStack.layers.clear();
                         } else {
                             message.text = Qqw.message;
                             message.visible = true;
