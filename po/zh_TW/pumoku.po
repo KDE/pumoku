@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-04 00:41+0000\n"
+"POT-Creation-Date: 2025-12-09 00:40+0000\n"
 "PO-Revision-Date: 2025-11-24 17:32+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -17,172 +17,172 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 26.03.70\n"
 
-#: contents/ui/GamePage.qml:120
+#: contents/ui/GamePage.qml:169
 #, fuzzy, kde-format
 #| msgid "There is your solution."
 msgid "There is your solution"
 msgstr "這是您的解法。"
 
-#: contents/ui/GamePage.qml:121
+#: contents/ui/GamePage.qml:170
 #, fuzzy, kde-format
 #| msgid "You gave in after "
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "到放棄為止的時間"
 
-#: contents/ui/GamePage.qml:122
+#: contents/ui/GamePage.qml:171
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr ""
 
-#: contents/ui/GamePage.qml:125 contents/ui/GamePage.qml:135
+#: contents/ui/GamePage.qml:174 contents/ui/GamePage.qml:184
 #, kde-format
 msgid "Well done!"
 msgstr "做得好！"
 
-#: contents/ui/GamePage.qml:126
+#: contents/ui/GamePage.qml:175
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
 msgstr ""
 
-#: contents/ui/GamePage.qml:128
+#: contents/ui/GamePage.qml:177
 #, fuzzy, kde-format
 #| msgid "Auto pencilmarks used. "
 msgid "Auto pencilmarks used."
 msgstr "使用了自動鉛筆標記。"
 
-#: contents/ui/GamePage.qml:130
+#: contents/ui/GamePage.qml:179
 #, fuzzy, kde-format
 #| msgid "Hints: "
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "提示："
 
-#: contents/ui/GamePage.qml:133
+#: contents/ui/GamePage.qml:182
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "恭喜！"
 
-#: contents/ui/GamePage.qml:134
+#: contents/ui/GamePage.qml:183
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
 msgstr ""
 
-#: contents/ui/GamePage.qml:375
+#: contents/ui/GamePage.qml:425
 #, fuzzy, kde-format
 #| msgid "Undo"
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "復原"
 
-#: contents/ui/GamePage.qml:384
+#: contents/ui/GamePage.qml:434
 #, fuzzy, kde-format
 #| msgid "Redo"
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "重做"
 
-#: contents/ui/GamePage.qml:393
+#: contents/ui/GamePage.qml:443
 #, fuzzy, kde-format
 #| msgid "Hint"
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "提示"
 
-#: contents/ui/GamePage.qml:399
+#: contents/ui/GamePage.qml:449
 #, fuzzy, kde-format
 #| msgid "Solve cell"
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "提供方格解答"
 
-#: contents/ui/GamePage.qml:404
+#: contents/ui/GamePage.qml:454
 #, fuzzy, kde-format
 #| msgid "Set pencilmarks"
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "設定鉛筆標記"
 
-#: contents/ui/GamePage.qml:449
+#: contents/ui/GamePage.qml:499
 #, fuzzy, kde-format
 #| msgid "Pencil"
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "鉛筆"
 
-#: contents/ui/GamePage.qml:457
+#: contents/ui/GamePage.qml:507
 #, fuzzy, kde-format
 #| msgid "Erase"
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "抹除"
 
-#: contents/ui/GamePage.qml:465
+#: contents/ui/GamePage.qml:515
 #, fuzzy, kde-format
 #| msgid "Game"
 msgctxt "@action:button"
 msgid "Game"
 msgstr "遊戲"
 
-#: contents/ui/GamePage.qml:471
+#: contents/ui/GamePage.qml:521
 #, fuzzy, kde-format
 #| msgid "Reset game"
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "重設遊戲"
 
-#: contents/ui/GamePage.qml:475
+#: contents/ui/GamePage.qml:525
 #, fuzzy, kde-format
 #| msgid "Reset game?"
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "重設遊戲？"
 
-#: contents/ui/GamePage.qml:476 contents/ui/GamePage.qml:494
+#: contents/ui/GamePage.qml:526 contents/ui/GamePage.qml:544
 #, fuzzy, kde-format
 #| msgid "You loose any changes you have made, reset can't be undone."
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr "您將會喪失任何您所做的變更，重設將無法復原。"
 
-#: contents/ui/GamePage.qml:485
+#: contents/ui/GamePage.qml:535
 #, fuzzy, kde-format
 #| msgid "Clear pencilmarks"
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "清除鉛筆標記"
 
-#: contents/ui/GamePage.qml:489
+#: contents/ui/GamePage.qml:539
 #, fuzzy, kde-format
 #| msgid "Give up"
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "放棄"
 
-#: contents/ui/GamePage.qml:493
+#: contents/ui/GamePage.qml:543
 #, fuzzy, kde-format
 #| msgid "Give up?"
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "放棄？"
 
-#: contents/ui/GamePage.qml:503
+#: contents/ui/GamePage.qml:553
 #, fuzzy, kde-format
 #| msgid "Solve game"
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "提供遊戲解答"
 
-#: contents/ui/GamePage.qml:507
+#: contents/ui/GamePage.qml:557
 #, fuzzy, kde-format
 #| msgid "Solve game"
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "提供遊戲解答"
 
-#: contents/ui/GamePage.qml:508
+#: contents/ui/GamePage.qml:558
 #, fuzzy, kde-format
 #| msgid ""
 #| "you loose any changes you have made, and can't solve the puzzele on your "
@@ -192,19 +192,12 @@ msgid ""
 "solve the puzzle on your own!"
 msgstr "您將會喪失任何您所做的變更，且將無法自己找出解答！"
 
-#: contents/ui/GamePage.qml:623
+#: contents/ui/GamePage.qml:644
 #, fuzzy, kde-format
 #| msgid "Another "
 msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
 msgstr "再一個"
-
-#: contents/ui/GamePage.qml:627
-#, fuzzy, kde-format
-#| msgid "Main menu"
-msgctxt "@action:button"
-msgid "Main Menu"
-msgstr "主選單"
 
 #: contents/ui/Import.qml:13
 #, fuzzy, kde-format
@@ -264,80 +257,47 @@ msgstr "指定的字串長度在清理之後並不是 81 個字元長。請修�
 msgid "PuMoKu"
 msgstr "PuMoKu"
 
-#: contents/ui/Main.qml:42
+#: contents/ui/Main.qml:43
 #, fuzzy, kde-format
 #| msgid "Give up active game?"
 msgctxt "@action:button"
 msgid "Give Up Active Game?"
 msgstr "放棄目前遊戲？"
 
-#: contents/ui/Main.qml:43
+#: contents/ui/Main.qml:44
 #, kde-format
 msgid "Pumoku does not save your game yet. Closing the app means giving up."
 msgstr "Pumoku 目前還無法儲存遊戲。關閉遊戲代表放棄。"
 
-#: contents/ui/Main.qml:63
-#, fuzzy, kde-format
-#| msgid "Main menu"
-msgctxt "@action:inmenu"
-msgid "Main Menu"
-msgstr "主選單"
-
-#: contents/ui/Main.qml:78
-#, fuzzy, kde-format
-#| msgid "Settings"
-msgctxt "@action:inmenu"
-msgid "Settings"
-msgstr "設定"
-
-#: contents/ui/Main.qml:83
-#, fuzzy, kde-format
-#| msgid "About PuMoKu"
-msgctxt "@action:inmenu"
-msgid "About PuMoKu"
-msgstr "關於 PuMoKu"
-
-#: contents/ui/Main.qml:89
-#, fuzzy, kde-format
-#| msgid "Quit"
-msgctxt "@action:inmenu"
-msgid "Quit"
-msgstr "離開"
-
-#: contents/ui/MainMenu.qml:12
-#, fuzzy, kde-format
-#| msgid "Main menu"
+#: contents/ui/MainMenu.qml:15
+#, kde-format
 msgctxt "@title:window"
-msgid "Main Menu"
-msgstr "主選單"
+msgid "Pumoku Menu"
+msgstr ""
 
-#: contents/ui/MainMenu.qml:21
-#, fuzzy, kde-format
-#| msgid "Wellcome to PuMoKu"
-msgctxt "@title"
-msgid "Welcome to PuMoKu"
-msgstr "歡迎來到 PuMoKu"
-
-#: contents/ui/MainMenu.qml:38
+#: contents/ui/MainMenu.qml:34
 #, fuzzy, kde-format
 #| msgid "Solve a sudoku"
-msgctxt "@action:button"
-msgid "Solve a Sudoku"
+msgid "New Sudoku:"
 msgstr "解決數獨"
 
-#: contents/ui/MainMenu.qml:56
-#, fuzzy, kde-format
-#| msgid "Continue ..."
-msgctxt "@action:button"
-msgid "Continue…"
-msgstr "繼續 ..."
+#: contents/ui/MainMenu.qml:54
+#, kde-format
+msgid "Import or enter:"
+msgstr ""
 
-#: contents/ui/MainMenu.qml:63
+#: contents/ui/MainMenu.qml:59
 #, fuzzy, kde-format
-#| msgid "Import"
+#| msgid "Import sudoku"
 msgctxt "@action:button"
-msgid "Import…"
-msgstr "匯入"
+msgid "Import Sudoku …"
+msgstr "匯入數獨"
+
+#: contents/ui/MainMenu.qml:66
+#, kde-format
+msgctxt "@action:button"
+msgid "Enter Sudoku …"
+msgstr ""
 
 #: contents/ui/Settings.qml:15
 #, kde-format
@@ -564,6 +524,60 @@ msgstr "提供的數獨有超過一種解法。"
 #| msgid "The provided sudoku is not solvable"
 msgid "The provided Sudoku is not solvable."
 msgstr "提供的數獨不可解"
+
+#, fuzzy
+#~| msgid "Main menu"
+#~ msgctxt "@action:button"
+#~ msgid "Main Menu"
+#~ msgstr "主選單"
+
+#, fuzzy
+#~| msgid "Main menu"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Main Menu"
+#~ msgstr "主選單"
+
+#, fuzzy
+#~| msgid "Settings"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Settings"
+#~ msgstr "設定"
+
+#, fuzzy
+#~| msgid "About PuMoKu"
+#~ msgctxt "@action:inmenu"
+#~ msgid "About PuMoKu"
+#~ msgstr "關於 PuMoKu"
+
+#, fuzzy
+#~| msgid "Quit"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Quit"
+#~ msgstr "離開"
+
+#, fuzzy
+#~| msgid "Main menu"
+#~ msgctxt "@title:window"
+#~ msgid "Main Menu"
+#~ msgstr "主選單"
+
+#, fuzzy
+#~| msgid "Wellcome to PuMoKu"
+#~ msgctxt "@title"
+#~ msgid "Welcome to PuMoKu"
+#~ msgstr "歡迎來到 PuMoKu"
+
+#, fuzzy
+#~| msgid "Continue ..."
+#~ msgctxt "@action:button"
+#~ msgid "Continue…"
+#~ msgstr "繼續 ..."
+
+#, fuzzy
+#~| msgid "Import"
+#~ msgctxt "@action:button"
+#~ msgid "Import…"
+#~ msgstr "匯入"
 
 #~ msgid ""
 #~ "Giving up means that you loose any changes you have made, it can't be "

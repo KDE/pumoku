@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-04 00:41+0000\n"
+"POT-Creation-Date: 2025-12-09 00:40+0000\n"
 "PO-Revision-Date: 2025-11-26 01:36-0300\n"
 "Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -18,153 +18,153 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 25.08.3\n"
 
-#: contents/ui/GamePage.qml:120
+#: contents/ui/GamePage.qml:169
 #, kde-format
 msgid "There is your solution"
 msgstr "Aí está a sua solução"
 
-#: contents/ui/GamePage.qml:121
+#: contents/ui/GamePage.qml:170
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "Você desistiu depois de %1 passos."
 
-#: contents/ui/GamePage.qml:122
+#: contents/ui/GamePage.qml:171
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "Resolvido automaticamente. Dicas: %1."
 
-#: contents/ui/GamePage.qml:125 contents/ui/GamePage.qml:135
+#: contents/ui/GamePage.qml:174 contents/ui/GamePage.qml:184
 #, kde-format
 msgid "Well done!"
 msgstr "Muito bem!"
 
-#: contents/ui/GamePage.qml:126
+#: contents/ui/GamePage.qml:175
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
 msgstr "Você terminou este %1 sudoku (com um pouco de ajuda) usando %2 passos."
 
-#: contents/ui/GamePage.qml:128
+#: contents/ui/GamePage.qml:177
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "Marcas de lápis automáticas usadas."
 
-#: contents/ui/GamePage.qml:130
+#: contents/ui/GamePage.qml:179
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "Dicas: %1."
 
-#: contents/ui/GamePage.qml:133
+#: contents/ui/GamePage.qml:182
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "PARABÉNS!"
 
-#: contents/ui/GamePage.qml:134
+#: contents/ui/GamePage.qml:183
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
 msgstr "Você completou este %1 sudoku sem dicas ou ajuda usando %2 passos."
 
-#: contents/ui/GamePage.qml:375
+#: contents/ui/GamePage.qml:425
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Desfazer"
 
-#: contents/ui/GamePage.qml:384
+#: contents/ui/GamePage.qml:434
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Refazer"
 
-#: contents/ui/GamePage.qml:393
+#: contents/ui/GamePage.qml:443
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "Dica"
 
-#: contents/ui/GamePage.qml:399
+#: contents/ui/GamePage.qml:449
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Solucionar célula"
 
-#: contents/ui/GamePage.qml:404
+#: contents/ui/GamePage.qml:454
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "Definir marcas de lápis"
 
-#: contents/ui/GamePage.qml:449
+#: contents/ui/GamePage.qml:499
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "Lápis"
 
-#: contents/ui/GamePage.qml:457
+#: contents/ui/GamePage.qml:507
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "Apagar"
 
-#: contents/ui/GamePage.qml:465
+#: contents/ui/GamePage.qml:515
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "Jogo"
 
-#: contents/ui/GamePage.qml:471
+#: contents/ui/GamePage.qml:521
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "Reiniciar jogo"
 
-#: contents/ui/GamePage.qml:475
+#: contents/ui/GamePage.qml:525
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "Reiniciar jogo?"
 
-#: contents/ui/GamePage.qml:476 contents/ui/GamePage.qml:494
+#: contents/ui/GamePage.qml:526 contents/ui/GamePage.qml:544
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr ""
 "Você perderá todas as alterações feitas; a redefinição não pode ser desfeita."
 
-#: contents/ui/GamePage.qml:485
+#: contents/ui/GamePage.qml:535
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "Limpar marcas de lápis"
 
-#: contents/ui/GamePage.qml:489
+#: contents/ui/GamePage.qml:539
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Desistir"
 
-#: contents/ui/GamePage.qml:493
+#: contents/ui/GamePage.qml:543
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Desistir"
 
-#: contents/ui/GamePage.qml:503
+#: contents/ui/GamePage.qml:553
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Solucionar jogo"
 
-#: contents/ui/GamePage.qml:507
+#: contents/ui/GamePage.qml:557
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Solucionar jogo?"
 
-#: contents/ui/GamePage.qml:508
+#: contents/ui/GamePage.qml:558
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -173,17 +173,11 @@ msgstr ""
 "Você perderá todas as alterações que fez e isso não poderá ser desfeito. "
 "Você não consegue resolver o quebra-cabeça sozinho!"
 
-#: contents/ui/GamePage.qml:623
+#: contents/ui/GamePage.qml:644
 #, kde-format
 msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
 msgstr "Outro %1"
-
-#: contents/ui/GamePage.qml:627
-#, kde-format
-msgctxt "@action:button"
-msgid "Main Menu"
-msgstr "Menu principal"
 
 #: contents/ui/Import.qml:13
 #, kde-format
@@ -235,71 +229,49 @@ msgstr ""
 msgid "PuMoKu"
 msgstr "PuMoKu"
 
-#: contents/ui/Main.qml:42
+#: contents/ui/Main.qml:43
 #, kde-format
 msgctxt "@action:button"
 msgid "Give Up Active Game?"
 msgstr "Desistir do jogo atual?"
 
-#: contents/ui/Main.qml:43
+#: contents/ui/Main.qml:44
 #, kde-format
 msgid "Pumoku does not save your game yet. Closing the app means giving up."
 msgstr ""
 "O Pumoku ainda não salvou seu jogo. Fechar o aplicativo significa desistir."
 
-#: contents/ui/Main.qml:63
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Main Menu"
-msgstr "Menu principal"
-
-#: contents/ui/Main.qml:78
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Settings"
-msgstr "Configurações"
-
-#: contents/ui/Main.qml:83
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "About PuMoKu"
-msgstr "Sobre o PuMoKu"
-
-#: contents/ui/Main.qml:89
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Quit"
-msgstr "Sair"
-
-#: contents/ui/MainMenu.qml:12
+#: contents/ui/MainMenu.qml:15
 #, kde-format
 msgctxt "@title:window"
-msgid "Main Menu"
-msgstr "Menu principal"
+msgid "Pumoku Menu"
+msgstr ""
 
-#: contents/ui/MainMenu.qml:21
-#, kde-format
-msgctxt "@title"
-msgid "Welcome to PuMoKu"
-msgstr "Bem-vindo ao PuMoKu"
-
-#: contents/ui/MainMenu.qml:38
-#, kde-format
-msgctxt "@action:button"
-msgid "Solve a Sudoku"
+#: contents/ui/MainMenu.qml:34
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Solve a Sudoku"
+msgid "New Sudoku:"
 msgstr "Resolver um sudoku"
 
-#: contents/ui/MainMenu.qml:56
+#: contents/ui/MainMenu.qml:54
 #, kde-format
-msgctxt "@action:button"
-msgid "Continue…"
-msgstr "Continuar…"
+msgid "Import or enter:"
+msgstr ""
 
-#: contents/ui/MainMenu.qml:63
+#: contents/ui/MainMenu.qml:59
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Import Sudoku"
+msgctxt "@action:button"
+msgid "Import Sudoku …"
+msgstr "Importar sudoku"
+
+#: contents/ui/MainMenu.qml:66
 #, kde-format
 msgctxt "@action:button"
-msgid "Import…"
-msgstr "Importar…"
+msgid "Enter Sudoku …"
+msgstr ""
 
 #: contents/ui/Settings.qml:15
 #, kde-format
@@ -507,6 +479,42 @@ msgstr "O sudoku fornecido não possui uma solução única."
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "O sudoku fornecido não pode ser resolvido."
+
+#~ msgctxt "@action:button"
+#~ msgid "Main Menu"
+#~ msgstr "Menu principal"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Main Menu"
+#~ msgstr "Menu principal"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Settings"
+#~ msgstr "Configurações"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "About PuMoKu"
+#~ msgstr "Sobre o PuMoKu"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Quit"
+#~ msgstr "Sair"
+
+#~ msgctxt "@title:window"
+#~ msgid "Main Menu"
+#~ msgstr "Menu principal"
+
+#~ msgctxt "@title"
+#~ msgid "Welcome to PuMoKu"
+#~ msgstr "Bem-vindo ao PuMoKu"
+
+#~ msgctxt "@action:button"
+#~ msgid "Continue…"
+#~ msgstr "Continuar…"
+
+#~ msgctxt "@action:button"
+#~ msgid "Import…"
+#~ msgstr "Importar…"
 
 #~ msgid ""
 #~ "Giving up means that you loose any changes you have made, it can't be "

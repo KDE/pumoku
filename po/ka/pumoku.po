@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-04 00:41+0000\n"
+"POT-Creation-Date: 2025-12-09 00:40+0000\n"
 "PO-Revision-Date: 2025-11-26 03:21+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -18,154 +18,154 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.8\n"
 
-#: contents/ui/GamePage.qml:120
+#: contents/ui/GamePage.qml:169
 #, kde-format
 msgid "There is your solution"
 msgstr "ეს თქვენი გამოსავალია"
 
-#: contents/ui/GamePage.qml:121
+#: contents/ui/GamePage.qml:170
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "თქვენ დანებდით %1 ნაბიჯის შემდეგ."
 
-#: contents/ui/GamePage.qml:122
+#: contents/ui/GamePage.qml:171
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "ავტომატურად ამოიხსნა. მინიშნებები: %1."
 
-#: contents/ui/GamePage.qml:125 contents/ui/GamePage.qml:135
+#: contents/ui/GamePage.qml:174 contents/ui/GamePage.qml:184
 #, kde-format
 msgid "Well done!"
 msgstr "ყოჩაღ!"
 
-#: contents/ui/GamePage.qml:126
+#: contents/ui/GamePage.qml:175
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
 msgstr "თქვენ დაასრულეთ ეს %1 სუდოკუ (ცოტა დახმარებით) %2 ნაბიჯით."
 
-#: contents/ui/GamePage.qml:128
+#: contents/ui/GamePage.qml:177
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "გამოყენებულია ავტომატური ფანქრის კვლები."
 
-#: contents/ui/GamePage.qml:130
+#: contents/ui/GamePage.qml:179
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "მინიშნებები: %1."
 
-#: contents/ui/GamePage.qml:133
+#: contents/ui/GamePage.qml:182
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "გილოცავთ!!"
 
-#: contents/ui/GamePage.qml:134
+#: contents/ui/GamePage.qml:183
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
 msgstr "თქვენ დაასრულეთ ეს %1 სუდოკუ დახმარების გარეშე %2 ნაბიჯით."
 
-#: contents/ui/GamePage.qml:375
+#: contents/ui/GamePage.qml:425
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "დაბრუნება"
 
-#: contents/ui/GamePage.qml:384
+#: contents/ui/GamePage.qml:434
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "გამეორება"
 
-#: contents/ui/GamePage.qml:393
+#: contents/ui/GamePage.qml:443
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "მინიშნება"
 
-#: contents/ui/GamePage.qml:399
+#: contents/ui/GamePage.qml:449
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "უჯრედის ამოხსნა"
 
-#: contents/ui/GamePage.qml:404
+#: contents/ui/GamePage.qml:454
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "ფანქრის კვლების დაყენება"
 
-#: contents/ui/GamePage.qml:449
+#: contents/ui/GamePage.qml:499
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "ფანქარი"
 
-#: contents/ui/GamePage.qml:457
+#: contents/ui/GamePage.qml:507
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "წაშლა"
 
-#: contents/ui/GamePage.qml:465
+#: contents/ui/GamePage.qml:515
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "თამაში"
 
-#: contents/ui/GamePage.qml:471
+#: contents/ui/GamePage.qml:521
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "თამაშის გადატვირთვა"
 
-#: contents/ui/GamePage.qml:475
+#: contents/ui/GamePage.qml:525
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "გადავტვირთო თამაში?"
 
-#: contents/ui/GamePage.qml:476 contents/ui/GamePage.qml:494
+#: contents/ui/GamePage.qml:526 contents/ui/GamePage.qml:544
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr ""
 "თქვენ დაკარგავთ თქვენს მიერ განხორციელებულ ცვლილებებს. ეს ქმედება "
 "შეუქცევადია."
 
-#: contents/ui/GamePage.qml:485
+#: contents/ui/GamePage.qml:535
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "ფანქრის კვლების გასუფთავება"
 
-#: contents/ui/GamePage.qml:489
+#: contents/ui/GamePage.qml:539
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "დანებება"
 
-#: contents/ui/GamePage.qml:493
+#: contents/ui/GamePage.qml:543
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "ნებდებით?"
 
-#: contents/ui/GamePage.qml:503
+#: contents/ui/GamePage.qml:553
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "თამაშის ამოხსნა"
 
-#: contents/ui/GamePage.qml:507
+#: contents/ui/GamePage.qml:557
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "ამოიხსნას თამაში?"
 
-#: contents/ui/GamePage.qml:508
+#: contents/ui/GamePage.qml:558
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -174,17 +174,11 @@ msgstr ""
 "თქვენ კარგავთ თქვენს მიერ განხორციელებულ ცვლილებებს და ვერ გადაჭრით "
 "თავსატეხს დამოუკიდებლად!"
 
-#: contents/ui/GamePage.qml:623
+#: contents/ui/GamePage.qml:644
 #, kde-format
 msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
 msgstr "კიდევ ერთი %1"
-
-#: contents/ui/GamePage.qml:627
-#, kde-format
-msgctxt "@action:button"
-msgid "Main Menu"
-msgstr "მთავარი მენიუ"
 
 #: contents/ui/Import.qml:13
 #, kde-format
@@ -235,71 +229,49 @@ msgstr ""
 msgid "PuMoKu"
 msgstr "PuMoKu"
 
-#: contents/ui/Main.qml:42
+#: contents/ui/Main.qml:43
 #, kde-format
 msgctxt "@action:button"
 msgid "Give Up Active Game?"
 msgstr "უარს ამბობთ აქტიურ თამაშზე?"
 
-#: contents/ui/Main.qml:43
+#: contents/ui/Main.qml:44
 #, kde-format
 msgid "Pumoku does not save your game yet. Closing the app means giving up."
 msgstr ""
 "PuMoKu-ს თქვენი თამაში ჯერ არ შეუნახავს. აპის დახურვა ნიშნავს, რომ ნებდებით."
 
-#: contents/ui/Main.qml:63
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Main Menu"
-msgstr "მთავარი მენიუ"
-
-#: contents/ui/Main.qml:78
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Settings"
-msgstr "მორგება"
-
-#: contents/ui/Main.qml:83
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "About PuMoKu"
-msgstr "PuMoKu-ის შესახებ"
-
-#: contents/ui/Main.qml:89
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Quit"
-msgstr "გასვლა"
-
-#: contents/ui/MainMenu.qml:12
+#: contents/ui/MainMenu.qml:15
 #, kde-format
 msgctxt "@title:window"
-msgid "Main Menu"
-msgstr "მთავარი მენიუ"
+msgid "Pumoku Menu"
+msgstr ""
 
-#: contents/ui/MainMenu.qml:21
-#, kde-format
-msgctxt "@title"
-msgid "Welcome to PuMoKu"
-msgstr "კეთილი იყოს თქვენი მობრძანება PuMoKu-ში"
-
-#: contents/ui/MainMenu.qml:38
-#, kde-format
-msgctxt "@action:button"
-msgid "Solve a Sudoku"
+#: contents/ui/MainMenu.qml:34
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Solve a Sudoku"
+msgid "New Sudoku:"
 msgstr "სუდოკუს ამოხსნა"
 
-#: contents/ui/MainMenu.qml:56
+#: contents/ui/MainMenu.qml:54
 #, kde-format
-msgctxt "@action:button"
-msgid "Continue…"
-msgstr "გაგრძელება…"
+msgid "Import or enter:"
+msgstr ""
 
-#: contents/ui/MainMenu.qml:63
+#: contents/ui/MainMenu.qml:59
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Import Sudoku"
+msgctxt "@action:button"
+msgid "Import Sudoku …"
+msgstr "სუდოკუს შემოტანა"
+
+#: contents/ui/MainMenu.qml:66
 #, kde-format
 msgctxt "@action:button"
-msgid "Import…"
-msgstr "შემოტანა…"
+msgid "Enter Sudoku …"
+msgstr ""
 
 #: contents/ui/Settings.qml:15
 #, kde-format
@@ -508,6 +480,42 @@ msgstr "მოწოდებულ სუდოკუს უნიკალუ�
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "მოწოდებული სუდოკუ ამოხსნადი არაა."
+
+#~ msgctxt "@action:button"
+#~ msgid "Main Menu"
+#~ msgstr "მთავარი მენიუ"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Main Menu"
+#~ msgstr "მთავარი მენიუ"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Settings"
+#~ msgstr "მორგება"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "About PuMoKu"
+#~ msgstr "PuMoKu-ის შესახებ"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Quit"
+#~ msgstr "გასვლა"
+
+#~ msgctxt "@title:window"
+#~ msgid "Main Menu"
+#~ msgstr "მთავარი მენიუ"
+
+#~ msgctxt "@title"
+#~ msgid "Welcome to PuMoKu"
+#~ msgstr "კეთილი იყოს თქვენი მობრძანება PuMoKu-ში"
+
+#~ msgctxt "@action:button"
+#~ msgid "Continue…"
+#~ msgstr "გაგრძელება…"
+
+#~ msgctxt "@action:button"
+#~ msgid "Import…"
+#~ msgstr "შემოტანა…"
 
 #~ msgid ""
 #~ "Giving up means that you loose any changes you have made, it can't be "
