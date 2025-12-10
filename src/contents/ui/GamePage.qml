@@ -12,7 +12,6 @@ Kirigami.Page {
     id: gameBoard
     title: "PuMoKu: " + game.levelName
     padding: 0
-    // width: root.width
 
     actions: [
         Kirigami.Action {
@@ -482,8 +481,16 @@ Kirigami.Page {
                         id: hintsMenu
                         QQC2.MenuItem {
                             text: i18nc("@action:inmenu", "Solve Cell")
-                            onTriggered: game.solveCell(game.currentCell)
-                            enabled: game.currentCell > -1 && game.board[game.currentCell] === 0
+                            onTriggered: {
+                                if (game.currentCell > -1 && game.board[game.currentCell] === 0) {
+                                    if (message.visible) {
+                                        message.visible = false
+                                    }
+                                    game.solveCell(game.currentCell)
+                                } else {
+                                    message.visible = true
+                                }
+                            }
                         }
                         QQC2.MenuItem {
                             text: i18nc("@action:inmenu", "Set Pencilmarks")
@@ -682,5 +689,23 @@ Kirigami.Page {
                 }
             }
         }
+    }
+
+    header: Kirigami.InlineMessage {
+        id: message
+        position: Kirigami.InlineMessage.Position.Header
+        type: Kirigami.MessageType.Information
+        showCloseButton: true
+        text: i18n("Please select a valid cell to solve.")
+        actions: [
+            Kirigami.Action {
+                text: i18n("Solve")
+                visible: game.currentCell > -1 && game.board[game.currentCell] === 0
+                onTriggered: {
+                    game.solveCell(game.currentCell)
+                    message.visible = false
+                }
+            }
+        ]
     }
 }
