@@ -120,7 +120,6 @@ QtObject {
         let result = qqw.solve(sudoku);
         if (result === 1) {
             setGame(Qqw.sudoku, Qqw.solution)
-            root.setPage(gamePage);
         } else {
             return result;
         }
@@ -186,7 +185,6 @@ QtObject {
             currentRow = rowFromIndex(currentCell);
             currentColumn = colFromIndex(currentCell);
         }
-        applicationWindow().setPage(gamePage);
     }
 
     // reset game
