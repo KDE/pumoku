@@ -12,7 +12,7 @@ Kirigami.Page {
     id: gameBoard
     title: "PuMoKu: " + game.levelName
     padding: 0
-    width: root.width
+    // width: root.width
 
     actions: [
         Kirigami.Action {
@@ -562,7 +562,7 @@ Kirigami.Page {
                                 standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
                                 onAccepted: {
                                     game.reset();
-                                    if (Config.rest) timer.reset();
+                                    if (Config.reset_time) timer.reset();
                                 }
                             }
                         }
