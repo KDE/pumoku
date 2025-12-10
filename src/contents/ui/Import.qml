@@ -41,6 +41,11 @@ Kirigami.Page {
             width: parent.width
             text: ""
         }
+        QQC2.CheckBox{
+            id: saveCheck
+            text: i18nc("@button:title","Save current game")
+            visible: gamePage.hasGame
+        }
         RowLayout {
             width: parent.width
             spacing: Kirigami.Units.largeSpacing
@@ -67,8 +72,10 @@ Kirigami.Page {
                             importboard.push(parseInt(s[i]));
                         }
                         if (Qqw.solve(importboard) === 1) {
+                            if (gamePage.hasGame && saveCheck.checked) {
+                                gamePage.saveGame()
+                            }
                             gamePage.setGame(Qqw.sudoku, Qqw.solution);
-                            applicationWindow().setPage(gamePage);
                             applicationWindow().pageStack.layers.clear();
                         } else {
                             message.text = Qqw.message;

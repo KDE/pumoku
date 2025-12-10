@@ -13,6 +13,19 @@ PuMoKu is a classic, 9x9 pumoku solving game aimed at Plasma Mobile. It comes wi
 
 This project is in beta state. It compiles, play is functional, but will not save/load files, and some features are missing as of 2025/11/21.
 
+## Build and install
+
+```
+git clone https://invent.kde.org/alund/pumoku.git
+mkdir build
+cd build
+cmake ../pumoku
+make
+make install
+```
+
+You may skip the install step and just run /path/to/build/bin/pumoku
+
 ## Contributing
 
 Contributing are wellcome - code, patches, ideas, thoughts, translations. Please read the Notes.md file if you think about helping out.

@@ -66,7 +66,7 @@ QtObject {
     property int currentCell: -1
     property int currentRow: -1
     property int currentColumn: -1
-    property int currentBlock: -1    // BEGIN GAME
+    property int currentBlock: -1
 
 
     property list<int> digitCounters: []
@@ -145,19 +145,19 @@ QtObject {
     }
 
 
-    function save() {
-        FileManager.saveGame({
+    function saveData() {
+        return {
             "board": board, "solution": solution, "values": values, "pencilmarks": pencilMarks, "errors": errors,
             "givencount": givenCount, "level": level, "levelname": levelName, "hintstatus": hintStatus,
-            "hintcount": hintCount, "stepcount": stepCount, "elapsed": gameTimer.elapsed, "undopos": undoPos,
-            "undoStack": undoStack
-        })
+            "hintcount": hintCount, "stepcount": stepCount, "undopos": undoPos,
+            "undostack": undoStack, "currentCell": currentCell, "currentDigit": currentDigit
+        };
     }
 
     function load(data) {
         // FIXME check!
         clear();
-        bord = data.board;
+        board = data.board;
         solution = data.solution;
         values = data.values;
         pencilMarks = data.pencilmarks;
@@ -166,14 +166,27 @@ QtObject {
         level = data.level;
         levelName = data.levelname;
         hintStatus = data.hintstatus;
-        hineCount = data.hintcount;
+        hintCount = data.hintcount;
         stepCount = data.stepcount;
-        gameTimer.elapsed = data.elapsed - 1;
         undoPos = data.undopos;
-        updoStack = data.undostack;
+        undoStack = data.undostack;
         finished = false;
         loaded = true;
-        // applicationWindow().setPage(gamePage);
+        for (let i=0; i<81; i++) {
+            if (values[i]) {
+                valueCnt++;
+                digitCounters[values[i]]++;
+            }
+        }
+        if (data.currentDigit > 0) {
+            currentDigit = data.currentDigit;
+        } else if (data.currentCell > -1) {
+            currentCell = data.currentCell;
+            currentBlock = blockFromIndex(currentCell);
+            currentRow = rowFromIndex(currentCell);
+            currentColumn = colFromIndex(currentCell);
+        }
+        applicationWindow().setPage(gamePage);
     }
 
     // reset game
@@ -584,7 +597,7 @@ QtObject {
         // in the pencilmark cell (should I want to)
         // when looking a cell with this type of errer, the error will be > 0 and < errPencilMarkLogical (512)
         const err = type === errPencilMarkLogical ? 2**(val-1) : type;
-        // if type is errPencilMarkLogFIXME ical, only set error if mark is present (else remove).
+        // if type is errPencilMarkLogical, only set error if mark is present (else remove).
         // this is only checked for that type, not for errValueLogical
         // this allows to unset the mark if there is no error.
         // true if not a mark, or mark is set in cells pencilmarks

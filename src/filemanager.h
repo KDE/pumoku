@@ -6,20 +6,19 @@
 #ifndef FILEMANAGER_H
 #define FILEMANAGER_H
 
+#include <QByteArray>
 #include <QObject>
+#include <QVariant>
 #include <qqmlregistration.h>
 
 /**
  * file management for pumoku
- * - Save/load games
- * - Autosave a current game when quitting
- * - List available saved games  for continuation
- * - Delete games when finished
- * - Maintain a link to any current game
+ * - Save/load game json files
+ * - Delete game files
  *
  * Data is kept in QStandardDirs appdata directory
  *
- * Naming template for games: levelname_[number].json
+ * Naming template for games: levelname_[datetime].json
  */
 
 class FileManager : public QObject
@@ -31,13 +30,29 @@ class FileManager : public QObject
 public:
     explicit FileManager(QObject *parent = nullptr);
 
-    Q_INVOKABLE void saveGame(QVariantMap data);
+    /**
+     * Save game or return false
+     */
+    Q_INVOKABLE bool saveGame(const QString &name, const QVariantMap &data);
 
-    Q_INVOKABLE QVariantMap loadGame(QString path);
+    /**
+     * This overloaded fuction will generate a name like
+     * [levelname]_[datetime].json
+     */
+    Q_INVOKABLE bool saveGame(const QVariantMap &data);
 
-    Q_INVOKABLE bool deleteGame(QString path);
+    /**
+     * Load game and return it. If it fails, return an empy QVariantMap
+     */
+    Q_INVOKABLE QVariant loadGame(const QString &name);
 
-    Q_INVOKABLE QStringList listAvailableGames();
+    /**
+     * Delete stored game or return false
+     */
+    Q_INVOKABLE bool deleteGame(const QString &name);
+
+private:
+    QString m_appdatadir;
 };
 
 #endif

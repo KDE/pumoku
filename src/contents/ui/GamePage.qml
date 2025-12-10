@@ -36,13 +36,12 @@ Kirigami.Page {
             width: parent.width
             height: parent.height
             flat: true
-            // heightMode: HeightMode.AllwaysFill
             alignment: Qt.AlignCenter
             display: QQC2.Button.TextUnderIcon
             actions: [
             Kirigami.Action {
                 icon.name: "document-share-symbolic"
-                // onTriggered: root.pageStack.layers.push("qrc:/Settings.qml")
+                enabled: false
             },
             Kirigami.Action {
                 icon.name: "application-menu-symbolic"
@@ -81,11 +80,43 @@ Kirigami.Page {
     property bool showHighlight: true
     property bool showPencilMarks: false
 
+    function save() {
+        FileManager.saveGame({
+            "board": board, "solution": solution, "values": values, "pencilmarks": pencilMarks, "errors": errors,
+            "givencount": givenCount, "level": level, "levelname": levelName, "hintstatus": hintStatus,
+            "hintcount": hintCount, "stepcount": stepCount, "elapsed": gameTimer.elapsed, "undopos": undoPos,
+            "undoStack": undoStack
+        })
+    }
+
+
     function generateSudoku(difficulty, symmetry) {
         if (Qqw.generate(difficulty, symmetry)) {
             drawer.close();
             setGame(Qqw.sudoku, Qqw.solution);
         }
+    }
+
+    function saveGame(filename) {
+        let data = game.saveData();
+        data.elapsed = timer.elapsed;
+        if (filename) {
+            return FileManager.saveGame(filename, data);
+            root.savedGames++;
+        } else {
+            return FileManager.saveGame(data);
+        }
+    }
+
+    function loadGame(filename) {
+        let data = FileManager.loadGame(filename);
+        if (data) {
+            game.load(data);
+            timer.elapsed = data.elapsed;
+            drawer.close();
+            return true;
+        }
+        return false
     }
 
     function setGame(puzzle, solution) {

@@ -17,6 +17,7 @@ ecm_add_qml_module(pumoku_static
         contents/ui/DigitButton.qml
         contents/ui/Import.qml
         contents/ui/PumokuEngine.qml
+        contents/ui/PumokuListItem.qml
 )
 
 qt_add_resources(RESOURCES resources.qrc)
@@ -28,6 +29,10 @@ target_sources(
         qqwing.hpp
         qqw.cpp
         qqw.h
+        filemanager.h
+        filemanager.cpp
+        gamesmodel.h
+        gamesmodel.cpp
 )
 target_sources(pumoku_static PUBLIC ${RESOURCES})
 target_link_libraries(

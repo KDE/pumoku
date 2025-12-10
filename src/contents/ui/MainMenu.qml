@@ -14,15 +14,68 @@ Kirigami.ScrollablePage {
     property Kirigami.ApplicationWindow app: applicationWindow()
     title: i18nc("@title:window", "Pumoku Menu")
     globalToolBarStyle: gameLoaded ? Kirigami.ApplicationHeaderStyle.Titles : Kirigami.ApplicationHeaderStyle.None
+    verticalScrollBarInteractive: false
+    padding: 0
 
+    // saved games
+    GamesModel {
+        id: gamesModel
+    }
+
+    // prompt to save current game if any
+    function promptSave(levelOrIndex, filename) {
+        if (gamePage.hasGame) {
+            if (filename) savePrompt.filename = filename
+            savePrompt.levelOrIndex = levelOrIndex
+            savePrompt.open()
+        } else if (filename) {
+            loadFile(levelOrIndex, filename)
+        } else {
+            newGame(levelOrIndex)
+        }
+    }
+
+    function loadFile(index, filename) {
+        if (gamePage.loadGame(filename)) {
+            gamesModel.removeGame(filename, index)
+        } else {
+            console.log("Error!?: could not load saved game: " + filename)
+        }
+        app.pageStack.layers.pop()
+    }
+
+    function newGame(level) {
+        gamePage.generateSudoku(level, 0)
+        app.pageStack.layers.pop()
+    }
+
+     Kirigami.PromptDialog {
+        id: savePrompt
+        property int levelOrIndex: 0
+        property string filename: ""
+        title: i18n("Save game?")
+        subtitle: i18n("Would you like to save the current game, so it can be continued later?")
+        standardButtons: Kirigami.Dialog.Save | Kirigami.Dialog.Discard
+        onDiscarded: continueLoad()
+        onAccepted: {
+            gamePage.saveGame()
+            continueLoad()
+        }
+        function continueLoad() {
+            if (filename) { loadFile(levelOrIndex, filename) }
+            else { newGame(levelOrIndex) }
+        }
+    }
+
+    // UI
     ColumnLayout {
-        Layout.margins: Kirigami.Units.gridUnit * 3
+        // Layout.margins: Kirigami.Units.gridUnit * 3
         Image {
             Layout.alignment: Qt.AlignHCenter
             Layout.topMargin: Kirigami.Units.gridUnit
             Layout.bottomMargin: Kirigami.Units.gridUnit
             source: "qrc:/pumoku.svg"
-            width: gamePage.wideScreen ? parent.height/2 : parent.width/2
+            width: app.isWideScreen ? pumokuMenu.height/2 : pumokuMenu.width/2
             height: width
             sourceSize.width: width
             sourceSize.height: height
@@ -34,19 +87,17 @@ Kirigami.ScrollablePage {
                 text: i18n("New Sudoku:")
                 font.bold: true
                 padding: Kirigami.Units.mediumSpacing
+                leftPadding: Kirigami.Units.largeSpacing
             }
             ColumnLayout {
-                spacing:0
+                spacing: 1
                 Repeater {
                     model: 4
-                    delegate: QQC2.Button {
+                    delegate: PumokuListItem {
                         required property int index
-                        Layout.preferredWidth: pumokuMenu.width * 0.7
                         text: Qqw.difficultyNames[index+1]
-                        onClicked: {
-                            app.generateSudoku(index+1, 0)
-                            app.pageStack.layers.pop()
-                        }
+                        Layout.fillWidth: true
+                        onClicked: promptSave(index + 1)
                     }
                 }
             }
@@ -54,19 +105,41 @@ Kirigami.ScrollablePage {
                 text: i18n("Import or enter:")
                 font.bold: true
                 padding: Kirigami.Units.mediumSpacing
+                leftPadding: Kirigami.Units.largeSpacing
             }
-            QQC2.Button {
+            PumokuListItem {
                 text: i18nc("@action:button", "Import Sudoku …")
-                Layout.preferredWidth: pumokuMenu.width * 0.7
+                Layout.preferredWidth: pumokuMenu.width
                 onClicked: {
                     app.pageStack.layers.push("qrc:/Import.qml")
                 }
             }
-            QQC2.Button {
+            PumokuListItem {
                 text: i18nc("@action:button", "Enter Sudoku …")
-                Layout.preferredWidth: pumokuMenu.width * 0.7
-                enabled: false
+                Layout.preferredWidth: pumokuMenu.width
+                visible: false
                 onClicked: {
+                }
+            }
+            QQC2.Label {
+                text: i18nc("@action:button", "Continue:")
+                font.bold: true
+                padding: Kirigami.Units.mediumSpacing
+                leftPadding: Kirigami.Units.largeSpacing
+                visible: gamesModel.count > 0
+            }
+            ColumnLayout {
+                spacing:1
+                Repeater {
+                    model: gamesModel
+                    delegate: PumokuListItem {
+                        Layout.fillWidth: true
+                        required property int index
+                        required property string label
+                        required property string filename
+                        text: label
+                        onClicked: promptSave(index, filename)
+                    }
                 }
             }
         }

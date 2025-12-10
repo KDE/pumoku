@@ -24,39 +24,19 @@ Kirigami.ApplicationWindow {
     }
 
     Component.onCompleted: {
-        if(!gamePage.hasGame)
+        if (!gamePage.loadGame('current.json')) {
             pageStack.layers.push("qrc:/MainMenu.qml", {gameLoaded: false})
+        }
     }
 
     property bool acceptClose: false
     onClosing: (close) => {
-        if (gamePage.hasGame && !acceptClose) {
-            closePrompt.open();
-            close.accepted = false
+        if (gamePage.hasGame) {
+            gamePage.saveGame('current.json') || console.log('saving game failed');
+            close.accepted = true;
         } else {
-            close.accepted = true
+            FileManager.deleteGame("current.json");
         }
-    }
-
-    Kirigami.PromptDialog {
-        id: closePrompt
-        title: i18nc("@action:button", "Give Up Active Game?")
-        subtitle: i18n("Pumoku does not save your game yet. Closing the app means giving up.")
-        standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
-        onAccepted: {
-            acceptClose = true;
-            Qt.quit();
-        }
-
-    }
-
-    function setPage (page) {
-        pageStack.clear()
-        pageStack.push(page)
-    }
-
-    function generateSudoku(difficulty, symmmetry) {
-        gamePage.generateSudoku(difficulty, symmmetry)
     }
 
     GamePage {
