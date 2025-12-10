@@ -92,3 +92,5 @@ QBindable<int> GamesModel::bindableCount()
 {
     return QBindable<int>(&m_count);
 }
+
+#include "moc_gamesmodel.cpp"

@@ -100,3 +100,5 @@ bool FileManager::deleteGame(const QString &name)
     QFile file = QFile(dir.filePath(name));
     return file.remove();
 }
+
+#include "moc_filemanager.cpp"
