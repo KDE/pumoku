@@ -562,7 +562,7 @@ Kirigami.Page {
                                 standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
                                 onAccepted: {
                                     game.reset();
-                                    timer.reset();
+                                    if (Config.rest) timer.reset();
                                 }
                             }
                         }
