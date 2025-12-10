@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-09 00:40+0000\n"
-"PO-Revision-Date: 2025-11-26 03:21+0100\n"
+"PO-Revision-Date: 2025-12-09 09:09+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -245,33 +245,29 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Pumoku Menu"
-msgstr ""
+msgstr "Pumoku-ის მენიუ"
 
 #: contents/ui/MainMenu.qml:34
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Solve a Sudoku"
+#, kde-format
 msgid "New Sudoku:"
-msgstr "სუდოკუს ამოხსნა"
+msgstr "ახალი სუდოკუ:"
 
 #: contents/ui/MainMenu.qml:54
 #, kde-format
 msgid "Import or enter:"
-msgstr ""
+msgstr "შემოტანა ან შესვლა:"
 
 #: contents/ui/MainMenu.qml:59
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Import Sudoku"
+#, kde-format
 msgctxt "@action:button"
 msgid "Import Sudoku …"
-msgstr "სუდოკუს შემოტანა"
+msgstr "სუდოკუს შემოტანა …"
 
 #: contents/ui/MainMenu.qml:66
 #, kde-format
 msgctxt "@action:button"
 msgid "Enter Sudoku …"
-msgstr ""
+msgstr "სუდოკუში შესვლა …"
 
 #: contents/ui/Settings.qml:15
 #, kde-format

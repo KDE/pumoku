@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-09 00:40+0000\n"
-"PO-Revision-Date: 2025-11-26 09:38+0100\n"
+"PO-Revision-Date: 2025-12-09 06:42+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -242,33 +242,29 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Pumoku Menu"
-msgstr ""
+msgstr "Pumoku Meni"
 
 #: contents/ui/MainMenu.qml:34
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Solve a Sudoku"
+#, kde-format
 msgid "New Sudoku:"
-msgstr "Reši sudoku"
+msgstr "Novi Sudoku:"
 
 #: contents/ui/MainMenu.qml:54
 #, kde-format
 msgid "Import or enter:"
-msgstr ""
+msgstr "Uvozite ali vnesite:"
 
 #: contents/ui/MainMenu.qml:59
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Import Sudoku"
+#, kde-format
 msgctxt "@action:button"
 msgid "Import Sudoku …"
-msgstr "Uvozi sudoku"
+msgstr "Uvozi Sudoku …"
 
 #: contents/ui/MainMenu.qml:66
 #, kde-format
 msgctxt "@action:button"
 msgid "Enter Sudoku …"
-msgstr ""
+msgstr "Vnesite Sudoku …"
 
 #: contents/ui/Settings.qml:15
 #, kde-format

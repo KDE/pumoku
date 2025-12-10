@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-09 00:40+0000\n"
-"PO-Revision-Date: 2025-11-26 15:15+0100\n"
+"PO-Revision-Date: 2025-12-09 10:45+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -247,33 +247,29 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Pumoku Menu"
-msgstr ""
+msgstr "Pumoku-menu"
 
 #: contents/ui/MainMenu.qml:34
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Solve a Sudoku"
+#, kde-format
 msgid "New Sudoku:"
-msgstr "Los een Sudoku op"
+msgstr "Nieuwe Sudoku:"
 
 #: contents/ui/MainMenu.qml:54
 #, kde-format
 msgid "Import or enter:"
-msgstr ""
+msgstr "Importeer of voer in:"
 
 #: contents/ui/MainMenu.qml:59
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Import Sudoku"
+#, kde-format
 msgctxt "@action:button"
 msgid "Import Sudoku …"
-msgstr "Sudoku importeren"
+msgstr "Sudoku importeren…"
 
 #: contents/ui/MainMenu.qml:66
 #, kde-format
 msgctxt "@action:button"
 msgid "Enter Sudoku …"
-msgstr ""
+msgstr "Sudoku invoeren…"
 
 #: contents/ui/Settings.qml:15
 #, kde-format

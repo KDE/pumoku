@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-09 00:40+0000\n"
-"PO-Revision-Date: 2025-11-27 00:32+0100\n"
+"PO-Revision-Date: 2025-12-09 11:52+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -247,33 +247,29 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Pumoku Menu"
-msgstr ""
+msgstr "Menú de PuMoKu"
 
 #: contents/ui/MainMenu.qml:34
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Solve a Sudoku"
+#, kde-format
 msgid "New Sudoku:"
-msgstr "Resolver un sudoku"
+msgstr "Nuevo sudoku:"
 
 #: contents/ui/MainMenu.qml:54
 #, kde-format
 msgid "Import or enter:"
-msgstr ""
+msgstr "Importar o introducir:"
 
 #: contents/ui/MainMenu.qml:59
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Import Sudoku"
+#, kde-format
 msgctxt "@action:button"
 msgid "Import Sudoku …"
-msgstr "Importar sudoku"
+msgstr "Importar sudoku…"
 
 #: contents/ui/MainMenu.qml:66
 #, kde-format
 msgctxt "@action:button"
 msgid "Enter Sudoku …"
-msgstr ""
+msgstr "Introducir sudoku…"
 
 #: contents/ui/Settings.qml:15
 #, kde-format
@@ -480,39 +476,3 @@ msgstr "El sudoku proporcionado no tiene una única solución."
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "El sudoku proporcionado no se puede resolver."
-
-#~ msgctxt "@action:button"
-#~ msgid "Main Menu"
-#~ msgstr "Menú principal"
-
-#~ msgctxt "@action:inmenu"
-#~ msgid "Main Menu"
-#~ msgstr "Menú principal"
-
-#~ msgctxt "@action:inmenu"
-#~ msgid "Settings"
-#~ msgstr "Preferencias"
-
-#~ msgctxt "@action:inmenu"
-#~ msgid "About PuMoKu"
-#~ msgstr "Acerca de PuMoKu"
-
-#~ msgctxt "@action:inmenu"
-#~ msgid "Quit"
-#~ msgstr "Salir"
-
-#~ msgctxt "@title:window"
-#~ msgid "Main Menu"
-#~ msgstr "Menú principal"
-
-#~ msgctxt "@title"
-#~ msgid "Welcome to PuMoKu"
-#~ msgstr "Bienvenido a PuMoKu"
-
-#~ msgctxt "@action:button"
-#~ msgid "Continue…"
-#~ msgstr "Continuar…"
-
-#~ msgctxt "@action:button"
-#~ msgid "Import…"
-#~ msgstr "Importar…"
