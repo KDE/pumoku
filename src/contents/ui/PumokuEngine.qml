@@ -267,7 +267,9 @@ QtObject {
                     errors[index] |= errValue;
                 }
                 checkErrors(rowFromIndex(index),colFromIndex(index),blockFromIndex(index),index,values[index],errValueLogical);
-                checkErrorsBoard(errPencilMarkLogical);
+                if (!Config.cleanup_pencilmarks ) {
+                    checkErrorsBoard(errPencilMarkLogical);
+                }
                 updateDigitCounters();
                 break;
             case undoValueBoard :
@@ -352,6 +354,7 @@ QtObject {
     // the cell is part of.
     // returns count of changed marks // TODO consider returning an array of changed fields, for optimizing undo further.
     function cleanPencilMarks (row, col, block, bmindex, digit) {
+        if (!Config.cleanup_pencilmarks) return;
         const m = 2**(digit-1) // pencilmark bit for digit is 2^(zerobased value)
         const rb = row * 9; // row base bmindex
         const bb = blockBase[block]
@@ -450,6 +453,9 @@ QtObject {
                     undoStack[undoPos][2]=2;
                     addUndo(undoPMBoard,index,2,undodata,copyOfList(pencilMarks));
                 }
+            }
+            if (!Config.cleanup_pencilmarks) {
+                checkErrorsBoard(errPencilMarkLogical)
             }
             let errcnt = checkErrors(row, col, block, index, value, errValueLogical);
             valueCnt = valueCount();
