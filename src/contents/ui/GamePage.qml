@@ -52,7 +52,11 @@ Kirigami.Page {
                 checkable: true
                 checked: gameBoard.showPencilMarks
                 enabled: game.loaded && !game.finished
-                onTriggered: gameBoard.showPencilMarks = !gameBoard.showPencilMarks
+                onTriggered: {
+                    gameBoard.showPencilMarks = !gameBoard.showPencilMarks
+                    if (!gameBoard.showPencilMarks && btnPencilMarks.checked)
+                        btnPencilMarks.toggle()
+                }
             },
             Kirigami.Action {
                 icon.name: "flashlight-on-symbolic"
@@ -529,7 +533,7 @@ Kirigami.Page {
                     checkable: true
                     text: i18nc("@action:button", "Pencil")
                     icon.name: "open-for-editing-symbolic"
-                    onClicked: gameBoard.showPencilMarks = true
+                    onClicked: if (checked) gameBoard.showPencilMarks = true
                 }
                 QQC2.Button {
                 Layout.fillWidth: true
@@ -651,7 +655,7 @@ Kirigami.Page {
                     text: finishHeader
                 }
                 QQC2.Label {
-                    Layout.maximumWidth: parent.width - parent.spacing*2
+                    Layout.preferredWidth: parent.width - Kirigami.Units.largeSpacing*4
                     width: parent.width
                     Layout.alignment: Qt.AlignHCenter
                     wrapMode: Text.WordWrap
