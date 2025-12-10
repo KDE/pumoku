@@ -110,9 +110,12 @@
   <screenshots>
     <screenshot type="default">
       <caption>PuMoKu game</caption>
+      <caption xml:lang="ar">لعبة بوموكو</caption>
       <caption xml:lang="ca">Partida del PuMoKu</caption>
+      <caption xml:lang="ca-valencia">Partida de PuMoKu</caption>
       <caption xml:lang="es">Juego PuMoKu</caption>
       <caption xml:lang="ka">თამაში PuMoKu</caption>
+      <caption xml:lang="nl">PuMoKu-spel</caption>
       <caption xml:lang="pt-BR">Jogo PuMoKu</caption>
       <caption xml:lang="sl">Igra PuMoKu</caption>
       <caption xml:lang="uk">Гра PuMoKu</caption>
