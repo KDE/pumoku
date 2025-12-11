@@ -78,7 +78,7 @@ Kirigami.Page {
 
     property bool hasGame: game.loaded && !game.finished
     property bool gameLoaded: game.loaded
-    property bool numberKeyActive: false
+    property bool numberKeyActive: game.currentDigit > 0 && game.currentCell < 0
 
     property bool showHighlight: true
     property bool showPencilMarks: false
@@ -179,7 +179,6 @@ Kirigami.Page {
         } else {
             game.currentDigit = key;
         }
-        numberKeyActive = btn.checked;
         if (game.finished) finish();
     }
 
