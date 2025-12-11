@@ -83,16 +83,6 @@ Kirigami.Page {
     property bool showHighlight: true
     property bool showPencilMarks: false
 
-    function save() {
-        FileManager.saveGame({
-            "board": board, "solution": solution, "values": values, "pencilmarks": pencilMarks, "errors": errors,
-            "givencount": givenCount, "level": level, "levelname": levelName, "hintstatus": hintStatus,
-            "hintcount": hintCount, "stepcount": stepCount, "elapsed": gameTimer.elapsed, "undopos": undoPos,
-            "undoStack": undoStack
-        })
-    }
-
-
     function generateSudoku(difficulty, symmetry) {
         if (Qqw.generate(difficulty, symmetry)) {
             drawer.close();
@@ -105,7 +95,6 @@ Kirigami.Page {
         data.elapsed = timer.elapsed;
         if (filename) {
             return FileManager.saveGame(filename, data);
-            root.savedGames++;
         } else {
             return FileManager.saveGame(data);
         }
