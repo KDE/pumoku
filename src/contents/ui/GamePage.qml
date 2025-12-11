@@ -123,6 +123,9 @@ Kirigami.Page {
 
     function cellTapped(row, col, block, index) {
         if (!hasGame) return;
+        if (solveMessage.visible) {
+            game.currentDigit = 0;
+        }
         if (btnErase.checked) {
             if (game.erasable(index)) {
                 if (game.values[index]) {
@@ -131,7 +134,6 @@ Kirigami.Page {
                     game.setValue(index, row, col, block, 0, game.valueTMark);
                 }
             }
-            // return;
         } else if (btnPencilMarks.checked && numberKeyActive) {
             if (game.values[index] === 0) {
                 game.setValue(index, row, col, block, game.currentDigit, game.valueTMark)
@@ -475,12 +477,12 @@ Kirigami.Page {
                             text: i18nc("@action:inmenu", "Solve Cell")
                             onTriggered: {
                                 if (game.currentCell > -1 && game.board[game.currentCell] === 0) {
-                                    if (message.visible) {
-                                        message.visible = false
+                                    if (solveMessage.visible) {
+                                        solveMessage.visible = false
                                     }
                                     game.solveCell(game.currentCell)
                                 } else {
-                                    message.visible = true
+                                    solveMessage.visible = true
                                 }
                             }
                         }
@@ -684,7 +686,7 @@ Kirigami.Page {
     }
 
     header: Kirigami.InlineMessage {
-        id: message
+        id: solveMessage
         position: Kirigami.InlineMessage.Position.Header
         type: Kirigami.MessageType.Information
         showCloseButton: true
@@ -695,7 +697,7 @@ Kirigami.Page {
                 visible: game.currentCell > -1 && game.board[game.currentCell] === 0
                 onTriggered: {
                     game.solveCell(game.currentCell)
-                    message.visible = false
+                    solveMessage.visible = false
                 }
             }
         ]
