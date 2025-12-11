@@ -113,6 +113,7 @@ QtObject {
         valueCnt = 0;
         stepCount = [0,0,0,0,0,0];
         hintStatus = 0;
+        hintCount = 0;
         loaded = false;
     }
 
