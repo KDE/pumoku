@@ -30,6 +30,11 @@ bool FileManager::saveGame(const QVariantMap &data)
 bool FileManager::saveGame(const QString &name, const QVariantMap &data)
 {
     QDir dir(m_appdatadir);
+    if (!dir.exists()) {
+        dir.mkpath(m_appdatadir);
+        qInfo() << "created directory: " << m_appdatadir;
+    }
+
     QJsonObject obj = QJsonObject::fromVariantMap(data);
 
     // fix broken lists
@@ -79,6 +84,7 @@ bool FileManager::saveGame(const QString &name, const QVariantMap &data)
         file.write(QJsonDocument(obj).toJson(QJsonDocument::Compact));
         return true;
     }
+    qInfo() << "failed saving file: " << dir.filePath(name);
     return false;
 }
 
