@@ -47,7 +47,10 @@ FormCard.FormCardPage {
         FormCard.FormSwitchDelegate {
             text: i18nc("@option:check", "Clean up pencil marks when setting a cell value")
             checked: Config.cleanup_pencilmarks
-            onCheckedChanged: Config.cleanup_pencilmarks = checked
+            onCheckedChanged: {
+                Config.cleanup_pencilmarks = checked
+                gamePage.highlightConfigChanged()
+            }
         }
     }
 
@@ -90,7 +93,10 @@ FormCard.FormCardPage {
         FormCard.FormSwitchDelegate {
             text: i18nc("@option:check", "Logical errors in pencilmarks")
             checked: Config.logical_error_pencilmark
-            onCheckedChanged: Config.logical_error_pencilmark = checked
+            onCheckedChanged: {
+                Config.logical_error_pencilmark = checked
+                gamePage.highlightConfigChanged()
+            }
         }
 
         FormCard.FormDelegateSeparator {}

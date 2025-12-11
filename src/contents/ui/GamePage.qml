@@ -127,6 +127,10 @@ Kirigami.Page {
         timer.reset();
     }
 
+    function highlightConfigChanged() {
+        game.checkErrorsBoard(game.errPencilMarkLogical);
+    }
+
      // Event handlers FIXME move part of the code to game engine?
     property bool inputDigit: Config.input_method === "hybrid" || Config.input_method === "digitFirst"
     property bool inputCell: Config.input_method === "hybrid" || Config.input_method === "cellFirst"

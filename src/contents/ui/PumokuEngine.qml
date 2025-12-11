@@ -267,7 +267,7 @@ QtObject {
                     errors[index] |= errValue;
                 }
                 checkErrors(rowFromIndex(index),colFromIndex(index),blockFromIndex(index),index,values[index],errValueLogical);
-                if (!Config.cleanup_pencilmarks ) {
+                if (!Config.cleanup_pencilmarks || Config.logical_error_pencilmark) {
                     checkErrorsBoard(errPencilMarkLogical);
                 }
                 updateDigitCounters();
