@@ -120,20 +120,6 @@ Kirigami.Page {
         game.checkErrorsBoard(game.errPencilMarkLogical);
     }
 
-     // Event handlers FIXME move part of the code to game engine?
-    property bool inputDigit: Config.input_method === "hybrid" || Config.input_method === "digitFirst"
-    property bool inputCell: Config.input_method === "hybrid" || Config.input_method === "cellFirst"
-
-    function inputConfigChanged() {
-        if (Config.input_method === "digitFirst") {
-            game.currentCell = -1;
-            game.currentRow = -1;
-            game.currentColumn = -1;
-            game.currentBlock = -1;
-        } else if (Config.input_method === "cellFirst") {
-            game.currentDigit = 0
-        }
-    }
 
     function cellTapped(row, col, block, index) {
         if (!hasGame) return;
@@ -146,30 +132,28 @@ Kirigami.Page {
                 }
             }
             // return;
-        } else if (inputDigit && btnPencilMarks.checked && numberKeyActive) {
+        } else if (btnPencilMarks.checked && numberKeyActive) {
             if (game.values[index] === 0) {
                 game.setValue(index, row, col, block, game.currentDigit, game.valueTMark)
             }
-        } else if (inputDigit && numberKeyActive) {
+        } else if (numberKeyActive) {
             if (game.board[index] === 0) {
                 game.setValue(index, row, col, block, game.currentDigit, game.valueTValue);
             }
-        } else if (inputCell) {
-            if (game.currentCell !== index) {
+        } else if (game.currentCell !== index) {
                 // select cell
                 game.currentDigit = game.values[index];
                 game.currentCell = index;
                 game.currentRow = row;
                 game.currentColumn = col;
                 game.currentBlock = block;
-            } else {
-                // deselect cell
-                game.currentDigit = 0;
-                game.currentCell = -1;
-                game.currentRow = -1;
-                game.currentColumn = -1;
-                game.currentBlock = -1;
-            }
+        } else {
+            // deselect cell
+            game.currentDigit = 0;
+            game.currentCell = -1;
+            game.currentRow = -1;
+            game.currentColumn = -1;
+            game.currentBlock = -1;
         }
         if (game.finished) finish();
     }
@@ -177,15 +161,15 @@ Kirigami.Page {
     function numberKeyClicked(index, checked, btn) {
         if (!hasGame) return;
         const key = index + 1;
-        if (inputDigit && btn.checked && game.currentDigit == key) {
+        if (btn.checked && game.currentDigit == key) {
             // digit, cell mode, toggle
             game.currentDigit = 0;
-        } else if (inputCell && game.currentCell > -1 ) {
+        } else if (game.currentCell > -1 ) {
             // cell - digit mode
             const type = btnPencilMarks.checked ? game.valueTMark : game.valueTValue;
             game.setValue(game.currentCell, game.currentRow, game.currentColumn, game.currentBlock, key, type);
             game.currentDigit = 0;
-        } else if (inputDigit) {
+        } else {
             game.currentDigit = key;
         }
         if (game.finished) finish();

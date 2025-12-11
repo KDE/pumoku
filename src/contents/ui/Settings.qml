@@ -19,23 +19,6 @@ FormCard.FormCardPage {
     }
 
     FormCard.FormCard {
-        FormCard.FormComboBoxDelegate {
-            displayMode: FormCard.FormComboBoxDelegate.ComboBox
-            text: i18nc("@label:listbox", "Input method")
-            textRole: "text"
-            valueRole: "value"
-            model: [{text: i18nc("@item:inlistbox", "Hybrid"), value: "hybrid" },
-                    {text: i18nc("@item:inlistbox", "Digit, then cell"), value: "digitFirst"},
-                    {text: i18nc("@item:inlistbox", "Cell, then digit"), value: "cellFirst"} ]
-            currentIndex: Config.input_method === "hybrid" ? 0 : Config.input_method === "digitFirst" ? 1 : 2
-            onCurrentValueChanged: {
-                Config.input_method = currentValue
-                gamePage.inputConfigChanged()
-            }
-        }
-
-        FormCard.FormDelegateSeparator {}
-
         FormCard.FormSwitchDelegate {
             text: i18nc("@option:check", "Reset time with game")
             checked: Config.reset_time
