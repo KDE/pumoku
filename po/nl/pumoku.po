@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-11 00:41+0000\n"
-"PO-Revision-Date: 2025-12-09 10:45+0100\n"
+"POT-Creation-Date: 2025-12-12 00:40+0000\n"
+"PO-Revision-Date: 2025-12-11 13:04+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -17,156 +17,156 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 25.08.3\n"
 
-#: contents/ui/GamePage.qml:200
+#: contents/ui/GamePage.qml:197
 #, kde-format
 msgid "There is your solution"
 msgstr "Daar is uw oplossing"
 
-#: contents/ui/GamePage.qml:201
+#: contents/ui/GamePage.qml:198
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "U gaf op na  %1 stappen."
 
-#: contents/ui/GamePage.qml:202
+#: contents/ui/GamePage.qml:199
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "Automatisch opgelost. Tips: %1."
 
-#: contents/ui/GamePage.qml:205 contents/ui/GamePage.qml:215
+#: contents/ui/GamePage.qml:202 contents/ui/GamePage.qml:212
 #, kde-format
 msgid "Well done!"
 msgstr "Goed gedaan!"
 
-#: contents/ui/GamePage.qml:206
+#: contents/ui/GamePage.qml:203
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
 msgstr ""
 "U beëindigde deze %1 Suduko (met een beetje hulp) met gebruik van %2 stappen."
 
-#: contents/ui/GamePage.qml:208
+#: contents/ui/GamePage.qml:205
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "Automatische potloodmarkeringen gebruikt."
 
-#: contents/ui/GamePage.qml:210
+#: contents/ui/GamePage.qml:207
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "Tips: %1."
 
-#: contents/ui/GamePage.qml:213
+#: contents/ui/GamePage.qml:210
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "GEFELICITEERD!!"
 
-#: contents/ui/GamePage.qml:214
+#: contents/ui/GamePage.qml:211
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
 msgstr ""
 "U beëindigde deze %1 Suduko zonder tips of hulp met gebruik van %2 stappen."
 
-#: contents/ui/GamePage.qml:456
+#: contents/ui/GamePage.qml:453
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Ongedaan maken"
 
-#: contents/ui/GamePage.qml:465
+#: contents/ui/GamePage.qml:462
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Opnieuw"
 
-#: contents/ui/GamePage.qml:474
+#: contents/ui/GamePage.qml:471
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "Tip"
 
-#: contents/ui/GamePage.qml:480
+#: contents/ui/GamePage.qml:477
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Cel oplossen"
 
-#: contents/ui/GamePage.qml:485
+#: contents/ui/GamePage.qml:490
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "Potloodmarkering zetten"
 
-#: contents/ui/GamePage.qml:530
+#: contents/ui/GamePage.qml:535
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "Potlood"
 
-#: contents/ui/GamePage.qml:538
+#: contents/ui/GamePage.qml:543
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "Wissen"
 
-#: contents/ui/GamePage.qml:546
+#: contents/ui/GamePage.qml:551
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "Spel"
 
-#: contents/ui/GamePage.qml:552
+#: contents/ui/GamePage.qml:557
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "Spel resetten"
 
-#: contents/ui/GamePage.qml:556
+#: contents/ui/GamePage.qml:561
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "Spel resetten?"
 
-#: contents/ui/GamePage.qml:557 contents/ui/GamePage.qml:575
+#: contents/ui/GamePage.qml:562 contents/ui/GamePage.qml:580
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr ""
 "U zult elke wijziging die u hebt gemaakt verliezen, reset kan niet ongedaan "
 "gemaakt worden."
 
-#: contents/ui/GamePage.qml:566
+#: contents/ui/GamePage.qml:571
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "Potloodmarkeringen wissen"
 
-#: contents/ui/GamePage.qml:570
+#: contents/ui/GamePage.qml:575
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Opgeven"
 
-#: contents/ui/GamePage.qml:574
+#: contents/ui/GamePage.qml:579
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Opgeven?"
 
-#: contents/ui/GamePage.qml:584
+#: contents/ui/GamePage.qml:589
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Spel oplossen"
 
-#: contents/ui/GamePage.qml:588
+#: contents/ui/GamePage.qml:593
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Spel oplossen?"
 
-#: contents/ui/GamePage.qml:589
+#: contents/ui/GamePage.qml:594
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -175,11 +175,23 @@ msgstr ""
 "u zult elke wijziging die u hebt gemaakt verliezen, dit kan niet ongedaan "
 "worden gemakt. U kunt de puzzel niet zelfstandig oplossen!"
 
-#: contents/ui/GamePage.qml:675
+#: contents/ui/GamePage.qml:680
 #, kde-format
 msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
 msgstr "Nog een %1"
+
+#: contents/ui/GamePage.qml:693
+#, kde-format
+msgid "Please select a valid cell to solve."
+msgstr ""
+
+#: contents/ui/GamePage.qml:696
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Solve Cell"
+msgid "Solve"
+msgstr "Cel oplossen"
 
 #: contents/ui/Import.qml:13
 #, kde-format
@@ -209,7 +221,7 @@ msgstr ""
 #, kde-format
 msgctxt "@button:title"
 msgid "Save current game"
-msgstr ""
+msgstr "Huidige spel opslaan"
 
 #: contents/ui/Import.qml:54
 #, kde-format
@@ -243,16 +255,14 @@ msgid "Pumoku Menu"
 msgstr "Pumoku-menu"
 
 #: contents/ui/MainMenu.qml:56
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Solve Game?"
+#, kde-format
 msgid "Save game?"
-msgstr "Spel oplossen?"
+msgstr "Spel opslaan?"
 
 #: contents/ui/MainMenu.qml:57
 #, kde-format
 msgid "Would you like to save the current game, so it can be continued later?"
-msgstr ""
+msgstr "Wilt u het huidige spel opslaan, zodat het later door kan gaan?"
 
 #: contents/ui/MainMenu.qml:87
 #, kde-format
@@ -277,12 +287,10 @@ msgid "Enter Sudoku …"
 msgstr "Sudoku invoeren…"
 
 #: contents/ui/MainMenu.qml:125
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Continue…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Continue:"
-msgstr "Doorgaan…"
+msgstr "Doorgaan:"
 
 #: contents/ui/Settings.qml:15
 #, kde-format
@@ -296,85 +304,61 @@ msgctxt "@title"
 msgid "Game"
 msgstr "Spel"
 
-#: contents/ui/Settings.qml:24
-#, kde-format
-msgctxt "@label:listbox"
-msgid "Input method"
-msgstr "Invoermethode"
-
-#: contents/ui/Settings.qml:27
-#, kde-format
-msgctxt "@item:inlistbox"
-msgid "Hybrid"
-msgstr "Hybride"
-
-#: contents/ui/Settings.qml:28
-#, kde-format
-msgctxt "@item:inlistbox"
-msgid "Digit, then cell"
-msgstr "Cijfer, dan cel"
-
-#: contents/ui/Settings.qml:29
-#, kde-format
-msgctxt "@item:inlistbox"
-msgid "Cell, then digit"
-msgstr "Cel dan cijfer"
-
-#: contents/ui/Settings.qml:38
+#: contents/ui/Settings.qml:23
 #, kde-format
 msgctxt "@option:check"
 msgid "Reset time with game"
 msgstr "Tijd met spel resetten"
 
-#: contents/ui/Settings.qml:46
+#: contents/ui/Settings.qml:31
 #, kde-format
 msgctxt "@option:check"
 msgid "Clean up pencil marks when setting a cell value"
 msgstr "Potloodmarkeringen wissen bij zetten van een waarde in de cel"
 
-#: contents/ui/Settings.qml:53
+#: contents/ui/Settings.qml:41
 #, kde-format
 msgctxt "@title"
 msgid "Highlight"
 msgstr "Accentueren"
 
-#: contents/ui/Settings.qml:57
+#: contents/ui/Settings.qml:45
 #, kde-format
 msgctxt "@option:check"
 msgid "Houses of a selected cell"
 msgstr "Huizen van een geselecteerde cel"
 
-#: contents/ui/Settings.qml:65
+#: contents/ui/Settings.qml:53
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit"
 msgstr "Cellen met actief cijfer"
 
-#: contents/ui/Settings.qml:73
+#: contents/ui/Settings.qml:61
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit pencilmark"
 msgstr "Cellen met actief cijfer als potloodmarkering"
 
-#: contents/ui/Settings.qml:81
+#: contents/ui/Settings.qml:69
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in values"
 msgstr "Logische fouten in waarden"
 
-#: contents/ui/Settings.qml:89
+#: contents/ui/Settings.qml:77
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in pencilmarks"
 msgstr "Logische fouten in potloodmarkeringen"
 
-#: contents/ui/Settings.qml:97
+#: contents/ui/Settings.qml:88
 #, kde-format
 msgctxt "@option:check"
 msgid "Erasable cells with eraser active"
 msgstr "Wisbare cellen met actieve wisser"
 
-#: contents/ui/Settings.qml:105
+#: contents/ui/Settings.qml:96
 #, kde-format
 msgctxt "@option:check"
 msgid "Wrong values"
@@ -489,6 +473,22 @@ msgstr "De gegeven Sudoku heeft geen unieke oplossing."
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "De gegeven Sudoku is niet op te lossen."
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Input method"
+#~ msgstr "Invoermethode"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Hybrid"
+#~ msgstr "Hybride"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Digit, then cell"
+#~ msgstr "Cijfer, dan cel"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Cell, then digit"
+#~ msgstr "Cel dan cijfer"
 
 #~ msgctxt "@action:button"
 #~ msgid "Give Up Active Game?"

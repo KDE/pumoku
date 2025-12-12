@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-11 00:41+0000\n"
+"POT-Creation-Date: 2025-12-12 00:40+0000\n"
 "PO-Revision-Date: 2025-12-09 09:42+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -18,52 +18,52 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 23.04.3\n"
 
-#: contents/ui/GamePage.qml:200
+#: contents/ui/GamePage.qml:197
 #, kde-format
 msgid "There is your solution"
 msgstr "Є ваш розв'язок"
 
-#: contents/ui/GamePage.qml:201
+#: contents/ui/GamePage.qml:198
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "Ви здалися за %1 кроків."
 
-#: contents/ui/GamePage.qml:202
+#: contents/ui/GamePage.qml:199
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "Розв'язано автоматично. Підказки: %1."
 
-#: contents/ui/GamePage.qml:205 contents/ui/GamePage.qml:215
+#: contents/ui/GamePage.qml:202 contents/ui/GamePage.qml:212
 #, kde-format
 msgid "Well done!"
 msgstr "Добре!"
 
-#: contents/ui/GamePage.qml:206
+#: contents/ui/GamePage.qml:203
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
 msgstr ""
 "Вами завершено це судоку %1 (з певною допомогою) з використанням %2 кроків."
 
-#: contents/ui/GamePage.qml:208
+#: contents/ui/GamePage.qml:205
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "Використано автоматичні позначки олівцем."
 
-#: contents/ui/GamePage.qml:210
+#: contents/ui/GamePage.qml:207
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "Підказки: %1 ."
 
-#: contents/ui/GamePage.qml:213
+#: contents/ui/GamePage.qml:210
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "ВІТАЄМО!"
 
-#: contents/ui/GamePage.qml:214
+#: contents/ui/GamePage.qml:211
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
@@ -71,102 +71,102 @@ msgstr ""
 "Вами завершено це судоку %1 без підказок або допомоги з використанням %2 "
 "кроків."
 
-#: contents/ui/GamePage.qml:456
+#: contents/ui/GamePage.qml:453
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Скасувати"
 
-#: contents/ui/GamePage.qml:465
+#: contents/ui/GamePage.qml:462
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Повторити"
 
-#: contents/ui/GamePage.qml:474
+#: contents/ui/GamePage.qml:471
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "Підказка"
 
-#: contents/ui/GamePage.qml:480
+#: contents/ui/GamePage.qml:477
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Розв'язати комірку"
 
-#: contents/ui/GamePage.qml:485
+#: contents/ui/GamePage.qml:490
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "Встановити позначки олівцем"
 
-#: contents/ui/GamePage.qml:530
+#: contents/ui/GamePage.qml:535
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "Олівець"
 
-#: contents/ui/GamePage.qml:538
+#: contents/ui/GamePage.qml:543
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "Витерти"
 
-#: contents/ui/GamePage.qml:546
+#: contents/ui/GamePage.qml:551
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "Гра"
 
-#: contents/ui/GamePage.qml:552
+#: contents/ui/GamePage.qml:557
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "Відновити початковий стан гри"
 
-#: contents/ui/GamePage.qml:556
+#: contents/ui/GamePage.qml:561
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "Відновити початковий стан гри?"
 
-#: contents/ui/GamePage.qml:557 contents/ui/GamePage.qml:575
+#: contents/ui/GamePage.qml:562 contents/ui/GamePage.qml:580
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr "Ви втратите усі внесені зміни, скидання не можна буде скасувати."
 
-#: contents/ui/GamePage.qml:566
+#: contents/ui/GamePage.qml:571
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "Зняти позначки олівцем"
 
-#: contents/ui/GamePage.qml:570
+#: contents/ui/GamePage.qml:575
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Здатися"
 
-#: contents/ui/GamePage.qml:574
+#: contents/ui/GamePage.qml:579
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Здатися?"
 
-#: contents/ui/GamePage.qml:584
+#: contents/ui/GamePage.qml:589
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Розв'язати гру"
 
-#: contents/ui/GamePage.qml:588
+#: contents/ui/GamePage.qml:593
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Розв'язати гру?"
 
-#: contents/ui/GamePage.qml:589
+#: contents/ui/GamePage.qml:594
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -175,11 +175,23 @@ msgstr ""
 "Ви втратите усі внесені зміни, результати дії не можна буде скасувати. Ви не "
 "зможете виграти гру власноруч!"
 
-#: contents/ui/GamePage.qml:675
+#: contents/ui/GamePage.qml:680
 #, kde-format
 msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
 msgstr "Ще один %1"
+
+#: contents/ui/GamePage.qml:693
+#, kde-format
+msgid "Please select a valid cell to solve."
+msgstr ""
+
+#: contents/ui/GamePage.qml:696
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Solve Cell"
+msgid "Solve"
+msgstr "Розв'язати комірку"
 
 #: contents/ui/Import.qml:13
 #, kde-format
@@ -297,85 +309,61 @@ msgctxt "@title"
 msgid "Game"
 msgstr "Гра"
 
-#: contents/ui/Settings.qml:24
-#, kde-format
-msgctxt "@label:listbox"
-msgid "Input method"
-msgstr "Спосіб введення"
-
-#: contents/ui/Settings.qml:27
-#, kde-format
-msgctxt "@item:inlistbox"
-msgid "Hybrid"
-msgstr "Гібридне"
-
-#: contents/ui/Settings.qml:28
-#, kde-format
-msgctxt "@item:inlistbox"
-msgid "Digit, then cell"
-msgstr "Цифра, потім комірка"
-
-#: contents/ui/Settings.qml:29
-#, kde-format
-msgctxt "@item:inlistbox"
-msgid "Cell, then digit"
-msgstr "Комірка, потім цифра"
-
-#: contents/ui/Settings.qml:38
+#: contents/ui/Settings.qml:23
 #, kde-format
 msgctxt "@option:check"
 msgid "Reset time with game"
 msgstr "Скидати час зі зміною гри"
 
-#: contents/ui/Settings.qml:46
+#: contents/ui/Settings.qml:31
 #, kde-format
 msgctxt "@option:check"
 msgid "Clean up pencil marks when setting a cell value"
 msgstr "Знімати позначки олівцем при встановлення значення у комірці"
 
-#: contents/ui/Settings.qml:53
+#: contents/ui/Settings.qml:41
 #, kde-format
 msgctxt "@title"
 msgid "Highlight"
 msgstr "Підсвічування"
 
-#: contents/ui/Settings.qml:57
+#: contents/ui/Settings.qml:45
 #, kde-format
 msgctxt "@option:check"
 msgid "Houses of a selected cell"
 msgstr "Місця позначеної комірки"
 
-#: contents/ui/Settings.qml:65
+#: contents/ui/Settings.qml:53
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit"
 msgstr "Комірки з активною цифрою"
 
-#: contents/ui/Settings.qml:73
+#: contents/ui/Settings.qml:61
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit pencilmark"
 msgstr "Комірки з активною позначкою цифри олівцем"
 
-#: contents/ui/Settings.qml:81
+#: contents/ui/Settings.qml:69
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in values"
 msgstr "Логічні помилки у значеннях"
 
-#: contents/ui/Settings.qml:89
+#: contents/ui/Settings.qml:77
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in pencilmarks"
 msgstr "Логічні помилки у позначках олівцем"
 
-#: contents/ui/Settings.qml:97
+#: contents/ui/Settings.qml:88
 #, kde-format
 msgctxt "@option:check"
 msgid "Erasable cells with eraser active"
 msgstr "Придатні до витирання комірки із активною гумкою"
 
-#: contents/ui/Settings.qml:105
+#: contents/ui/Settings.qml:96
 #, kde-format
 msgctxt "@option:check"
 msgid "Wrong values"
@@ -490,6 +478,22 @@ msgstr "Надане судоку не має однозначного розв'
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "Надане судоку не можна розв'язати."
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Input method"
+#~ msgstr "Спосіб введення"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Hybrid"
+#~ msgstr "Гібридне"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Digit, then cell"
+#~ msgstr "Цифра, потім комірка"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Cell, then digit"
+#~ msgstr "Комірка, потім цифра"
 
 #~ msgctxt "@action:button"
 #~ msgid "Give Up Active Game?"

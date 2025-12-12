@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-11 00:41+0000\n"
+"POT-Creation-Date: 2025-12-12 00:40+0000\n"
 "PO-Revision-Date: 2025-11-26 09:10+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -17,152 +17,152 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 25.11.70\n"
 
-#: contents/ui/GamePage.qml:200
+#: contents/ui/GamePage.qml:197
 #, kde-format
 msgid "There is your solution"
 msgstr "İşte çözüm"
 
-#: contents/ui/GamePage.qml:201
+#: contents/ui/GamePage.qml:198
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "%1 adımdan sonra bıraktınız"
 
-#: contents/ui/GamePage.qml:202
+#: contents/ui/GamePage.qml:199
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "Kendiliğinden çözüldü. İpuçları: %1."
 
-#: contents/ui/GamePage.qml:205 contents/ui/GamePage.qml:215
+#: contents/ui/GamePage.qml:202 contents/ui/GamePage.qml:212
 #, kde-format
 msgid "Well done!"
 msgstr "Aferin!"
 
-#: contents/ui/GamePage.qml:206
+#: contents/ui/GamePage.qml:203
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
 msgstr "Bu %1 Sudoku’yu (biraz da yardımla) %2 adımda bitirdiniz."
 
-#: contents/ui/GamePage.qml:208
+#: contents/ui/GamePage.qml:205
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "Otomatik kalem imleri kullanıldı."
 
-#: contents/ui/GamePage.qml:210
+#: contents/ui/GamePage.qml:207
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "İpuçları: %1."
 
-#: contents/ui/GamePage.qml:213
+#: contents/ui/GamePage.qml:210
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "TEBRİKLER!"
 
-#: contents/ui/GamePage.qml:214
+#: contents/ui/GamePage.qml:211
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
 msgstr "Bu %1 Sudoku’yu ipucu veya yardım olmadan %2 adımda bitirdiniz."
 
-#: contents/ui/GamePage.qml:456
+#: contents/ui/GamePage.qml:453
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Geri Al"
 
-#: contents/ui/GamePage.qml:465
+#: contents/ui/GamePage.qml:462
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Yinele"
 
-#: contents/ui/GamePage.qml:474
+#: contents/ui/GamePage.qml:471
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "İpucu"
 
-#: contents/ui/GamePage.qml:480
+#: contents/ui/GamePage.qml:477
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Hücreyi Çöz"
 
-#: contents/ui/GamePage.qml:485
+#: contents/ui/GamePage.qml:490
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "Kalem İmleri Koy"
 
-#: contents/ui/GamePage.qml:530
+#: contents/ui/GamePage.qml:535
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "Kalem"
 
-#: contents/ui/GamePage.qml:538
+#: contents/ui/GamePage.qml:543
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "Silgi"
 
-#: contents/ui/GamePage.qml:546
+#: contents/ui/GamePage.qml:551
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "Oyun"
 
-#: contents/ui/GamePage.qml:552
+#: contents/ui/GamePage.qml:557
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "Oyunu Sıfırla"
 
-#: contents/ui/GamePage.qml:556
+#: contents/ui/GamePage.qml:561
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "Oyunu Sıfırla?"
 
-#: contents/ui/GamePage.qml:557 contents/ui/GamePage.qml:575
+#: contents/ui/GamePage.qml:562 contents/ui/GamePage.qml:580
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr "Yaptığınız herhangi bir değişiklik kaybolacak; bu, geri alınamaz."
 
-#: contents/ui/GamePage.qml:566
+#: contents/ui/GamePage.qml:571
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "Kalem İmlerini Temizle"
 
-#: contents/ui/GamePage.qml:570
+#: contents/ui/GamePage.qml:575
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Bırak"
 
-#: contents/ui/GamePage.qml:574
+#: contents/ui/GamePage.qml:579
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Oyunu Bırak?"
 
-#: contents/ui/GamePage.qml:584
+#: contents/ui/GamePage.qml:589
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Oyunu Çöz"
 
-#: contents/ui/GamePage.qml:588
+#: contents/ui/GamePage.qml:593
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Oyunu Çöz?"
 
-#: contents/ui/GamePage.qml:589
+#: contents/ui/GamePage.qml:594
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -171,11 +171,23 @@ msgstr ""
 "Yaptığınız herhangi bir değişiklik kaybolacak; bu, geri alınamaz. Oyunu "
 "kendi başınıza çözemiyorsunuz!"
 
-#: contents/ui/GamePage.qml:675
+#: contents/ui/GamePage.qml:680
 #, kde-format
 msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
 msgstr "Başka %1"
+
+#: contents/ui/GamePage.qml:693
+#, kde-format
+msgid "Please select a valid cell to solve."
+msgstr ""
+
+#: contents/ui/GamePage.qml:696
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Solve Cell"
+msgid "Solve"
+msgstr "Hücreyi Çöz"
 
 #: contents/ui/Import.qml:13
 #, kde-format
@@ -297,85 +309,61 @@ msgctxt "@title"
 msgid "Game"
 msgstr "Oyun"
 
-#: contents/ui/Settings.qml:24
-#, kde-format
-msgctxt "@label:listbox"
-msgid "Input method"
-msgstr "Giriş yöntemi"
-
-#: contents/ui/Settings.qml:27
-#, kde-format
-msgctxt "@item:inlistbox"
-msgid "Hybrid"
-msgstr "Hibrit"
-
-#: contents/ui/Settings.qml:28
-#, kde-format
-msgctxt "@item:inlistbox"
-msgid "Digit, then cell"
-msgstr "Rakam, sonra hücre"
-
-#: contents/ui/Settings.qml:29
-#, kde-format
-msgctxt "@item:inlistbox"
-msgid "Cell, then digit"
-msgstr "Hücre, sonra rakam"
-
-#: contents/ui/Settings.qml:38
+#: contents/ui/Settings.qml:23
 #, kde-format
 msgctxt "@option:check"
 msgid "Reset time with game"
 msgstr "Oyun ile zamanı sıfırla"
 
-#: contents/ui/Settings.qml:46
+#: contents/ui/Settings.qml:31
 #, kde-format
 msgctxt "@option:check"
 msgid "Clean up pencil marks when setting a cell value"
 msgstr "Hücre değeri ayarlarken kalem imlerini temizle"
 
-#: contents/ui/Settings.qml:53
+#: contents/ui/Settings.qml:41
 #, kde-format
 msgctxt "@title"
 msgid "Highlight"
 msgstr "Vurgu"
 
-#: contents/ui/Settings.qml:57
+#: contents/ui/Settings.qml:45
 #, kde-format
 msgctxt "@option:check"
 msgid "Houses of a selected cell"
 msgstr "Seçili hücrelerin yerleri"
 
-#: contents/ui/Settings.qml:65
+#: contents/ui/Settings.qml:53
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit"
 msgstr "Etkin rakamlı hücreler"
 
-#: contents/ui/Settings.qml:73
+#: contents/ui/Settings.qml:61
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit pencilmark"
 msgstr "Etkin kalem imli hücreler"
 
-#: contents/ui/Settings.qml:81
+#: contents/ui/Settings.qml:69
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in values"
 msgstr "Değerlerdeki mantık hataları"
 
-#: contents/ui/Settings.qml:89
+#: contents/ui/Settings.qml:77
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in pencilmarks"
 msgstr "Kalem imlerindeki mantık hataları"
 
-#: contents/ui/Settings.qml:97
+#: contents/ui/Settings.qml:88
 #, kde-format
 msgctxt "@option:check"
 msgid "Erasable cells with eraser active"
 msgstr "Silgi etkinken silinebilir hücreler"
 
-#: contents/ui/Settings.qml:105
+#: contents/ui/Settings.qml:96
 #, kde-format
 msgctxt "@option:check"
 msgid "Wrong values"
@@ -490,6 +478,22 @@ msgstr "Sağlanan Sudoku’nun benzersiz bir çözümü yok."
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "Sağlanan Sudoku çözülebilir değil."
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Input method"
+#~ msgstr "Giriş yöntemi"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Hybrid"
+#~ msgstr "Hibrit"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Digit, then cell"
+#~ msgstr "Rakam, sonra hücre"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Cell, then digit"
+#~ msgstr "Hücre, sonra rakam"
 
 #~ msgctxt "@action:button"
 #~ msgid "Give Up Active Game?"

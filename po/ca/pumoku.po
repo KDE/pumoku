@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-11 00:41+0000\n"
-"PO-Revision-Date: 2025-12-09 09:46+0100\n"
+"POT-Creation-Date: 2025-12-12 00:40+0000\n"
+"PO-Revision-Date: 2025-12-11 11:17+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -19,154 +19,154 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 25.04.0\n"
 
-#: contents/ui/GamePage.qml:200
+#: contents/ui/GamePage.qml:197
 #, kde-format
 msgid "There is your solution"
 msgstr "Aquesta és la solució"
 
-#: contents/ui/GamePage.qml:201
+#: contents/ui/GamePage.qml:198
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "Heu renunciat després de %1 passos."
 
-#: contents/ui/GamePage.qml:202
+#: contents/ui/GamePage.qml:199
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "S'ha resolt automàticament. Pistes: %1."
 
-#: contents/ui/GamePage.qml:205 contents/ui/GamePage.qml:215
+#: contents/ui/GamePage.qml:202 contents/ui/GamePage.qml:212
 #, kde-format
 msgid "Well done!"
 msgstr "Ben fet!"
 
-#: contents/ui/GamePage.qml:206
+#: contents/ui/GamePage.qml:203
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
 msgstr ""
 "Heu acabat aquest Sudoku %1 (amb una mica d'ajuda) fent servir %2 passos."
 
-#: contents/ui/GamePage.qml:208
+#: contents/ui/GamePage.qml:205
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "S'han utilitzat marques de llapis automàtiques."
 
-#: contents/ui/GamePage.qml:210
+#: contents/ui/GamePage.qml:207
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "Pistes: %1."
 
-#: contents/ui/GamePage.qml:213
+#: contents/ui/GamePage.qml:210
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "ENHORABONA!!"
 
-#: contents/ui/GamePage.qml:214
+#: contents/ui/GamePage.qml:211
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
 msgstr ""
 "Heu acabat aquest Sudoku %1 sense pistes ni ajuda fent servir %2 passos."
 
-#: contents/ui/GamePage.qml:456
+#: contents/ui/GamePage.qml:453
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Desfés"
 
-#: contents/ui/GamePage.qml:465
+#: contents/ui/GamePage.qml:462
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Refés"
 
-#: contents/ui/GamePage.qml:474
+#: contents/ui/GamePage.qml:471
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "Pista"
 
-#: contents/ui/GamePage.qml:480
+#: contents/ui/GamePage.qml:477
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Soluciona la cel·la"
 
-#: contents/ui/GamePage.qml:485
+#: contents/ui/GamePage.qml:490
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "Estableix les marques de llapis"
 
-#: contents/ui/GamePage.qml:530
+#: contents/ui/GamePage.qml:535
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "Llapis"
 
-#: contents/ui/GamePage.qml:538
+#: contents/ui/GamePage.qml:543
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "Esborra"
 
-#: contents/ui/GamePage.qml:546
+#: contents/ui/GamePage.qml:551
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "Partida"
 
-#: contents/ui/GamePage.qml:552
+#: contents/ui/GamePage.qml:557
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "Reinicia la partida"
 
-#: contents/ui/GamePage.qml:556
+#: contents/ui/GamePage.qml:561
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "Reinicio la partida?"
 
-#: contents/ui/GamePage.qml:557 contents/ui/GamePage.qml:575
+#: contents/ui/GamePage.qml:562 contents/ui/GamePage.qml:580
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr "Perdeu els canvis que heu fet, això no es pot desfer."
 
-#: contents/ui/GamePage.qml:566
+#: contents/ui/GamePage.qml:571
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "Neteja les marques de llapis"
 
-#: contents/ui/GamePage.qml:570
+#: contents/ui/GamePage.qml:575
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Renuncio"
 
-#: contents/ui/GamePage.qml:574
+#: contents/ui/GamePage.qml:579
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Renuncieu?"
 
-#: contents/ui/GamePage.qml:584
+#: contents/ui/GamePage.qml:589
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Resol la partida"
 
-#: contents/ui/GamePage.qml:588
+#: contents/ui/GamePage.qml:593
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Resolc la partida?"
 
-#: contents/ui/GamePage.qml:589
+#: contents/ui/GamePage.qml:594
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -175,11 +175,23 @@ msgstr ""
 "Perdreu qualsevol canvi que hàgiu fet, això no es pot desfer. No podreu "
 "resoldre el puzle pel vostre compte!"
 
-#: contents/ui/GamePage.qml:675
+#: contents/ui/GamePage.qml:680
 #, kde-format
 msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
 msgstr "Un altre %1"
+
+#: contents/ui/GamePage.qml:693
+#, kde-format
+msgid "Please select a valid cell to solve."
+msgstr ""
+
+#: contents/ui/GamePage.qml:696
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Solve Cell"
+msgid "Solve"
+msgstr "Soluciona la cel·la"
 
 #: contents/ui/Import.qml:13
 #, kde-format
@@ -210,7 +222,7 @@ msgstr ""
 #, kde-format
 msgctxt "@button:title"
 msgid "Save current game"
-msgstr ""
+msgstr "Desa la partida actual"
 
 #: contents/ui/Import.qml:54
 #, kde-format
@@ -244,16 +256,15 @@ msgid "Pumoku Menu"
 msgstr "Menú del Pumoku"
 
 #: contents/ui/MainMenu.qml:56
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Solve Game?"
+#, kde-format
 msgid "Save game?"
-msgstr "Resolc la partida?"
+msgstr "Deso la partida?"
 
 #: contents/ui/MainMenu.qml:57
 #, kde-format
 msgid "Would you like to save the current game, so it can be continued later?"
 msgstr ""
+"Voleu desar la partida actual de manera que es pugui continuar més tard?"
 
 #: contents/ui/MainMenu.qml:87
 #, kde-format
@@ -278,12 +289,10 @@ msgid "Enter Sudoku …"
 msgstr "Introduïu un Sudoku…"
 
 #: contents/ui/MainMenu.qml:125
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Continue…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Continue:"
-msgstr "Continua…"
+msgstr "Continua:"
 
 #: contents/ui/Settings.qml:15
 #, kde-format
@@ -297,85 +306,61 @@ msgctxt "@title"
 msgid "Game"
 msgstr "Partida"
 
-#: contents/ui/Settings.qml:24
-#, kde-format
-msgctxt "@label:listbox"
-msgid "Input method"
-msgstr "Mètode d'entrada"
-
-#: contents/ui/Settings.qml:27
-#, kde-format
-msgctxt "@item:inlistbox"
-msgid "Hybrid"
-msgstr "Híbrid"
-
-#: contents/ui/Settings.qml:28
-#, kde-format
-msgctxt "@item:inlistbox"
-msgid "Digit, then cell"
-msgstr "Dígit, després cel·la"
-
-#: contents/ui/Settings.qml:29
-#, kde-format
-msgctxt "@item:inlistbox"
-msgid "Cell, then digit"
-msgstr "Cel·la, després dígit"
-
-#: contents/ui/Settings.qml:38
+#: contents/ui/Settings.qml:23
 #, kde-format
 msgctxt "@option:check"
 msgid "Reset time with game"
 msgstr "Reinicia el temps amb la partida"
 
-#: contents/ui/Settings.qml:46
+#: contents/ui/Settings.qml:31
 #, kde-format
 msgctxt "@option:check"
 msgid "Clean up pencil marks when setting a cell value"
 msgstr "Neteja les marques de llapis quan s'estableixi un valor de cel·la"
 
-#: contents/ui/Settings.qml:53
+#: contents/ui/Settings.qml:41
 #, kde-format
 msgctxt "@title"
 msgid "Highlight"
 msgstr "Ressaltat"
 
-#: contents/ui/Settings.qml:57
+#: contents/ui/Settings.qml:45
 #, kde-format
 msgctxt "@option:check"
 msgid "Houses of a selected cell"
 msgstr "Cases d'una cel·la seleccionada"
 
-#: contents/ui/Settings.qml:65
+#: contents/ui/Settings.qml:53
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit"
 msgstr "Cel·les amb dígit actiu"
 
-#: contents/ui/Settings.qml:73
+#: contents/ui/Settings.qml:61
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit pencilmark"
 msgstr "Cel·les amb marca de llapis de dígit actiu"
 
-#: contents/ui/Settings.qml:81
+#: contents/ui/Settings.qml:69
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in values"
 msgstr "Errors lògics als valors"
 
-#: contents/ui/Settings.qml:89
+#: contents/ui/Settings.qml:77
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in pencilmarks"
 msgstr "Errors lògics a les marques de llapis"
 
-#: contents/ui/Settings.qml:97
+#: contents/ui/Settings.qml:88
 #, kde-format
 msgctxt "@option:check"
 msgid "Erasable cells with eraser active"
 msgstr "Cel·les esborrables amb la goma d'esborrar activa"
 
-#: contents/ui/Settings.qml:105
+#: contents/ui/Settings.qml:96
 #, kde-format
 msgctxt "@option:check"
 msgid "Wrong values"
@@ -490,6 +475,22 @@ msgstr "El Sudoku proporcionat no té una solució única."
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "El Sudoku proporcionat no es pot solucionar."
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Input method"
+#~ msgstr "Mètode d'entrada"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Hybrid"
+#~ msgstr "Híbrid"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Digit, then cell"
+#~ msgstr "Dígit, després cel·la"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Cell, then digit"
+#~ msgstr "Cel·la, després dígit"
 
 #~ msgctxt "@action:button"
 #~ msgid "Give Up Active Game?"
