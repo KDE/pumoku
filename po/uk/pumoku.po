@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-12 00:40+0000\n"
-"PO-Revision-Date: 2025-12-09 09:42+0200\n"
+"PO-Revision-Date: 2025-12-12 13:12+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -184,14 +184,12 @@ msgstr "Ще один %1"
 #: contents/ui/GamePage.qml:693
 #, kde-format
 msgid "Please select a valid cell to solve."
-msgstr ""
+msgstr "Будь ласка, виберіть коректну комірку."
 
 #: contents/ui/GamePage.qml:696
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Solve Cell"
+#, kde-format
 msgid "Solve"
-msgstr "Розв'язати комірку"
+msgstr "Розв'язати"
 
 #: contents/ui/Import.qml:13
 #, kde-format
@@ -222,7 +220,7 @@ msgstr ""
 #, kde-format
 msgctxt "@button:title"
 msgid "Save current game"
-msgstr ""
+msgstr "Зберегти поточну гру"
 
 #: contents/ui/Import.qml:54
 #, kde-format
@@ -256,16 +254,14 @@ msgid "Pumoku Menu"
 msgstr "Меню Pumoku"
 
 #: contents/ui/MainMenu.qml:56
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Solve Game?"
+#, kde-format
 msgid "Save game?"
-msgstr "Розв'язати гру?"
+msgstr "Зберегти гру?"
 
 #: contents/ui/MainMenu.qml:57
 #, kde-format
 msgid "Would you like to save the current game, so it can be continued later?"
-msgstr ""
+msgstr "Хочете зберегти поточну гру, щоб згодом її продовжити?"
 
 #: contents/ui/MainMenu.qml:87
 #, kde-format
@@ -290,12 +286,10 @@ msgid "Enter Sudoku …"
 msgstr "Ввести судоку…"
 
 #: contents/ui/MainMenu.qml:125
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Continue…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Continue:"
-msgstr "Продовжити…"
+msgstr "Продовжити:"
 
 #: contents/ui/Settings.qml:15
 #, kde-format

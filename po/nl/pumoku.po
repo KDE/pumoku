@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-12 00:40+0000\n"
-"PO-Revision-Date: 2025-12-11 13:04+0100\n"
+"PO-Revision-Date: 2025-12-12 12:04+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -184,14 +184,12 @@ msgstr "Nog een %1"
 #: contents/ui/GamePage.qml:693
 #, kde-format
 msgid "Please select a valid cell to solve."
-msgstr ""
+msgstr "Selecteer een geldige cel om op te lossen."
 
 #: contents/ui/GamePage.qml:696
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Solve Cell"
+#, kde-format
 msgid "Solve"
-msgstr "Cel oplossen"
+msgstr "Oplossen"
 
 #: contents/ui/Import.qml:13
 #, kde-format

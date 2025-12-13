@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-12 00:40+0000\n"
-"PO-Revision-Date: 2025-12-11 12:02+0100\n"
+"PO-Revision-Date: 2025-12-12 11:09+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -183,14 +183,12 @@ msgstr "Otro %1"
 #: contents/ui/GamePage.qml:693
 #, kde-format
 msgid "Please select a valid cell to solve."
-msgstr ""
+msgstr "Selecciona una celda válida para resolver."
 
 #: contents/ui/GamePage.qml:696
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Solve Cell"
+#, kde-format
 msgid "Solve"
-msgstr "Resolver celda"
+msgstr "Resolver"
 
 #: contents/ui/Import.qml:13
 #, kde-format
@@ -473,19 +471,3 @@ msgstr "El sudoku proporcionado no tiene una única solución."
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "El sudoku proporcionado no se puede resolver."
-
-#~ msgctxt "@label:listbox"
-#~ msgid "Input method"
-#~ msgstr "Método de entrada"
-
-#~ msgctxt "@item:inlistbox"
-#~ msgid "Hybrid"
-#~ msgstr "Híbrido"
-
-#~ msgctxt "@item:inlistbox"
-#~ msgid "Digit, then cell"
-#~ msgstr "Dígito, luego celda"
-
-#~ msgctxt "@item:inlistbox"
-#~ msgid "Cell, then digit"
-#~ msgstr "Celda, luego dígito"
