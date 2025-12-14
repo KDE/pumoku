@@ -13,6 +13,9 @@ Kirigami.Page {
     title: "PuMoKu: " + game.levelName
     padding: 0
 
+    // hack to make room for sudoku board on mobile phones in landscape orientation
+    globalToolBarStyle: wideScreen && ! tabletMode ? Kirigami.ApplicationHeaderStyle.None : Kirigami.ApplicationHeaderStyle.ToolBar
+
     actions: [
         Kirigami.Action {
             // text: i18nc("@action:inmenu", "About PuMoKu")
@@ -85,7 +88,6 @@ Kirigami.Page {
 
     function generateSudoku(difficulty, symmetry) {
         if (Qqw.generate(difficulty, symmetry)) {
-            drawer.close();
             setGame(Qqw.sudoku, Qqw.solution);
         }
     }
@@ -105,7 +107,6 @@ Kirigami.Page {
         if (data) {
             game.load(data);
             timer.elapsed = data.elapsed;
-            drawer.close();
             return true;
         }
         return false
@@ -214,7 +215,6 @@ Kirigami.Page {
 
         // save statistics data - time, level
         // play a sound?
-        drawer.open();
     }
 
     // UI
@@ -244,9 +244,9 @@ Kirigami.Page {
     // Game board
     Rectangle {
         id: boardContainer
-        width: wideScreen ? Math.min(gameBoard.pageHeight, 600) : Math.min(gameBoard.width, 600)
+        width: wideScreen ? Math.min(gameBoard.width - bottomContainer.minWidth, gameBoard.pageHeight, 600) : Math.min(gameBoard.pageHeight - bottomContainer.minHeight, gameBoard.width, 600)
         height: width
-        x: isWideScreen ?  Math.max((parent.width - width*2)/2, 0) : (parent.width - width)/2
+        x: isWideScreen ?  Math.max((parent.width - width - bottomContainer.width)/2, 0) : (parent.width - width)/2
         y: isWideScreen ? Math.max((gameBoard.pageHeight - height)/2, 0) : tabletMode ? (height*2) >= gameBoard.pageHeight ? 0 : (gameBoard.pageHeight - height*2)/2 : 0
         color: Kirigami.Theme.backgroundColor
         Rectangle {
@@ -373,12 +373,18 @@ Kirigami.Page {
     // button board
     Rectangle {
         id: bottomContainer
+        property real minHeight: bottomTitle.height + progressBar.height + buttonBoard.Layout.minimumHeight + bottomBar.height
+        property real minWidth: buttonBoard.Layout.minimumWidth
         enabled: game.loaded
         anchors.top: wideScreen ? boardContainer.top : boardContainer.bottom
         anchors.left: wideScreen ? boardContainer.right : boardContainer.left
-        width: wideScreen ? Math.min(applicationWindow().width - boardContainer.x - boardContainer.width, boardContainer.width) : boardContainer.width
+        width: wideScreen ? Math.min(gameBoard.width - boardContainer.width, Math.max(minWidth,boardContainer.width)) : boardContainer.width
         height: !wideScreen ? gamePage.pageHeight - boardContainer.height - boardContainer.y : tabletMode ? bgbd.height : boardContainer.height
         color: Kirigami.Theme.backgroundColor
+
+
+        // Hack to make room for the sudoku board on mobile in landscape orientation, part II.
+        // Global toolbar is hidden, display this instead.
         Rectangle {
             id: bottomTitle
             Kirigami.Theme.inherit: false
@@ -389,14 +395,16 @@ Kirigami.Page {
             visible: wideScreen && !tabletMode
 
             QQC2.ToolButton {
-                id: drawerBtn
+                id: drawerSettingsBtn
                 anchors.verticalCenter: parent.verticalCenter
-                icon.name: "menu_new-symbolic"
-                onClicked: { applicationWindow().globalDrawer.drawerOpen = true; }
+                anchors.right: parent.right
+                icon.name: "settings-configure-symbolic"
+                onClicked: { applicationWindow().pageStack.layers.push("qrc:/Settings.qml"); }
             }
 
             Kirigami.Heading {
-                anchors.left: drawerBtn.right
+                anchors.right: drawerSettingsBtn.left
+                anchors.left: parent.left
                 id: bottomHeading
                 padding: Kirigami.Units.mediumSpacing
                 level: 2
@@ -622,14 +630,13 @@ Kirigami.Page {
         Rectangle {
             id: drawer
             width: parent.width
-            // workaround for qml Layout preventing height property to be reliable.
-            height: bottomTitle.visible ? parent.height - bottomTitle.height : parent.height
+            height: Math.max(bottomTitle.visible ? parent.height - bottomTitle.height : parent.height, drawerContent.Layout.minimumHeight)
             z: 1
-            property bool isOpen: false
+            property bool isOpen: game.loaded && game.finished
             states: [
                 State {
                     name: "open"; when: drawer.isOpen
-                    PropertyChanges { target: drawer; y: bottomTitle.visible ? bottomTitle.height : 0; }
+                    PropertyChanges { target: drawer; y: Math.min(bottomTitle.visible ? bottomTitle.height : 0, bottomContainer.height-drawer.height); }
                 },
                 State {
                     name: "closed"; when: !drawer.isOpen
@@ -641,30 +648,27 @@ Kirigami.Page {
 
             TapHandler {} // QML will let the event drop through if not present.
 
-            function open() { isOpen = true; }
-            function close() { isOpen = false }
-
             color: finishColor
             ColumnLayout {
+                id: drawerContent
                 anchors.centerIn: parent
-                width: parent.width
                 Layout.margins: Kirigami.Units.mediumSpacing
                 // spacing: Kirigami.Units.largeSpacing
                 QQC2.Label {
                     Layout.alignment: Qt.AlignHCenter
                     font.pointSize: 20
                     text: finishHeader
+                    Layout.topMargin: Kirigami.Units.largeSpacing
                 }
                 QQC2.Label {
-                    Layout.preferredWidth: parent.width - Kirigami.Units.largeSpacing*4
-                    width: parent.width
+                    Layout.maximumWidth: drawer.width - Kirigami.Units.largeSpacing*4
                     Layout.alignment: Qt.AlignHCenter
                     wrapMode: Text.WordWrap
                     text: finishText
                 }
                 QQC2.Label {
                     Layout.alignment: Qt.AlignHCenter
-                    font.pointSize: 20
+                    font.pointSize: 18
                     text:  timer.stime
                 }
                 QQC2.Label {
@@ -675,10 +679,11 @@ Kirigami.Page {
                 RowLayout {
                     Layout.leftMargin: Kirigami.Units.mediumSpacing
                     Layout.rightMargin: Kirigami.Units.mediumSpacing
+                    Layout.bottomMargin: Kirigami.Units.largeSpacing
                     Layout.alignment: Qt.AlignHCenter
                     QQC2.Button  {
                         text: i18nc("@action:button, %1 is level name", "Another %1", game.levelName)
-                        onClicked: { generateSudoku(game.level, 0); drawer.close(); }
+                        onClicked: generateSudoku(game.level, 0)
                     }
                 }
             }

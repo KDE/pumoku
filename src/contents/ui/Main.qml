@@ -13,7 +13,7 @@ Kirigami.ApplicationWindow {
     controlsVisible: (gamePage.visible && isWideScreen && !gamePage.tabletMode) ? false : true
     title: i18n("PuMoKu")
 
-    minimumWidth: Kirigami.Units.gridUnit * 24
+    minimumWidth: Kirigami.Units.gridUnit * 20
     minimumHeight: minimumWidth
 
     width: 400
