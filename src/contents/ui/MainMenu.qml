@@ -76,7 +76,7 @@ Kirigami.ScrollablePage {
             Layout.bottomMargin: Kirigami.Units.gridUnit
             source: "qrc:/pumoku.svg"
             Layout.preferredWidth: app.isWideScreen ? pumokuMenu.height/2 : pumokuMenu.width/2
-            Layout.preferedHeight: width
+            Layout.preferredHeight: width
             sourceSize.width: width
             sourceSize.height: height
         }
