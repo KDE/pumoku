@@ -375,7 +375,7 @@ Kirigami.Page {
         id: bottomContainer
         property real minHeight: bottomTitle.height + progressBar.height + buttonBoard.Layout.minimumHeight + bottomBar.height
         property real minWidth: buttonBoard.Layout.minimumWidth
-        enabled: game.loaded && !drawer.isOpen
+        enabled: game.loaded
         anchors.top: wideScreen ? boardContainer.top : boardContainer.bottom
         anchors.left: wideScreen ? boardContainer.right : boardContainer.left
         width: wideScreen ? Math.min(gameBoard.width - boardContainer.width, Math.max(minWidth,boardContainer.width)) : boardContainer.width
@@ -646,7 +646,7 @@ Kirigami.Page {
 
             transitions: Transition { SmoothedAnimation { target: drawer; property: "y"; velocity: tabletMode ? 5000 : 3000 } }
 
-            TapHandler {} // QML will let the event drop through if not present.
+            TapHandler { grabPermissions:PointerHandler.TakeOverForbidden } // QML will let the event drop through if not present.
 
             color: finishColor
             ColumnLayout {
