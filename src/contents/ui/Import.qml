@@ -14,7 +14,6 @@ Kirigami.Page {
 
     ColumnLayout {
         width: parent.width
-        Layout.margins: Kirigami.Units.largeSpacing
         spacing: Kirigami.Units.largeSpacing
         QQC2.ScrollView {
             Layout.fillWidth: true
@@ -26,6 +25,7 @@ Kirigami.Page {
                 height: parent.height
                 font.family: "mono"
                 wrapMode: Text.Wrap
+                inputMethodHints: Qt.ImhPreferNumbers
             }
         }
         QQC2.Label {
@@ -38,7 +38,6 @@ Kirigami.Page {
             id: message
             type: Kirigami.MessageType.Error
             showCloseButton: true
-            width: parent.width
             text: ""
         }
         QQC2.CheckBox{

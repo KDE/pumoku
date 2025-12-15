@@ -19,7 +19,7 @@ Kirigami.Page {
     actions: [
         Kirigami.Action {
             // text: i18nc("@action:inmenu", "About PuMoKu")
-            icon.name: "help-about"
+            icon.name: "help-about-symbolic"
             onTriggered: root.pageStack.layers.push("qrc:/About.qml")
         },
         Kirigami.Action {
@@ -375,7 +375,7 @@ Kirigami.Page {
         id: bottomContainer
         property real minHeight: bottomTitle.height + progressBar.height + buttonBoard.Layout.minimumHeight + bottomBar.height
         property real minWidth: buttonBoard.Layout.minimumWidth
-        enabled: game.loaded
+        enabled: game.loaded && !drawer.isOpen
         anchors.top: wideScreen ? boardContainer.top : boardContainer.bottom
         anchors.left: wideScreen ? boardContainer.right : boardContainer.left
         width: wideScreen ? Math.min(gameBoard.width - boardContainer.width, Math.max(minWidth,boardContainer.width)) : boardContainer.width

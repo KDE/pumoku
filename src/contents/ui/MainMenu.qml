@@ -75,8 +75,8 @@ Kirigami.ScrollablePage {
             Layout.topMargin: Kirigami.Units.gridUnit
             Layout.bottomMargin: Kirigami.Units.gridUnit
             source: "qrc:/pumoku.svg"
-            width: app.isWideScreen ? pumokuMenu.height/2 : pumokuMenu.width/2
-            height: width
+            Layout.preferredWidth: app.isWideScreen ? pumokuMenu.height/2 : pumokuMenu.width/2
+            Layout.preferedHeight: width
             sourceSize.width: width
             sourceSize.height: height
         }
@@ -138,7 +138,7 @@ Kirigami.ScrollablePage {
                         required property string label
                         required property string filename
                         text: label
-                        onClicked: promptSave(index, filename)
+                        onClicked: pumokuMenu.promptSave(index, filename)
                     }
                 }
             }

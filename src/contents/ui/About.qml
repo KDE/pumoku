@@ -2,9 +2,9 @@
 // SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk>
 
 import org.kde.kirigamiaddons.formcard as FormCard
-import org.kde.coreaddons
+import org.kde.coreaddons as KCA
 import org.kde.pumoku
 
 FormCard.AboutPage {
-    aboutData: AboutData
+    aboutData: KCA.AboutData
 }

@@ -2,7 +2,7 @@
 // SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk>
 
 import QtQuick
-import QtQuick.Controls as QQC2
+// import QtQuick.Controls as QQC2
 import org.kde.kirigami as Kirigami
 import org.kde.pumoku
 import org.kde.config as Config
@@ -11,7 +11,6 @@ Kirigami.ApplicationWindow {
     id: root
     property bool isWideScreen: width > height
     controlsVisible: (gamePage.visible && isWideScreen && !gamePage.tabletMode) ? false : true
-    title: i18n("PuMoKu")
 
     minimumWidth: Kirigami.Units.gridUnit * 20
     minimumHeight: minimumWidth

@@ -53,9 +53,19 @@ target_include_directories(pumoku_static PRIVATE ${CMAKE_BINARY_DIR})
 if(ANDROID)
     kirigami_package_breeze_icons(ICONS
         list-add
-        help-about
+        help-about-symbolic
         application-exit
         applications-graphics
+        document-share-symbolic
+        application-menu-symbolic
+        open-for-editing-symbolic
+        flashlight-on-symbolic
+        settings-configure-symbolic
+        edit-undo-symbolic
+        edit-redo-symbolic
+        games-hint-symbolic
+        open-for-editing-symbolic
+        tool_eraser-symbolic
     )
 else()
     target_link_libraries(pumoku_static PUBLIC Qt::Widgets)
