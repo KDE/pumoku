@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-12 00:40+0000\n"
+"POT-Creation-Date: 2025-12-15 00:40+0000\n"
 "PO-Revision-Date: 2025-12-12 09:12+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -19,153 +19,153 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 25.04.0\n"
 
-#: contents/ui/GamePage.qml:197
+#: contents/ui/GamePage.qml:198
 #, kde-format
 msgid "There is your solution"
 msgstr "Esta és la solució"
 
-#: contents/ui/GamePage.qml:198
+#: contents/ui/GamePage.qml:199
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "Heu renunciat després de %1 passos."
 
-#: contents/ui/GamePage.qml:199
+#: contents/ui/GamePage.qml:200
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "S'ha resolt automàticament. Pistes: %1."
 
-#: contents/ui/GamePage.qml:202 contents/ui/GamePage.qml:212
+#: contents/ui/GamePage.qml:203 contents/ui/GamePage.qml:213
 #, kde-format
 msgid "Well done!"
 msgstr "Ben fet!"
 
-#: contents/ui/GamePage.qml:203
+#: contents/ui/GamePage.qml:204
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
 msgstr ""
 "Heu acabat este Sudoku %1 (amb una mica d'ajuda) fent servir %2 passos."
 
-#: contents/ui/GamePage.qml:205
+#: contents/ui/GamePage.qml:206
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "S'han utilitzat marques de llapis automàtiques."
 
-#: contents/ui/GamePage.qml:207
+#: contents/ui/GamePage.qml:208
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "Pistes: %1."
 
-#: contents/ui/GamePage.qml:210
+#: contents/ui/GamePage.qml:211
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "ENHORABONA!!"
 
-#: contents/ui/GamePage.qml:211
+#: contents/ui/GamePage.qml:212
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
 msgstr "Heu acabat este Sudoku %1 sense pistes ni ajuda fent servir %2 passos."
 
-#: contents/ui/GamePage.qml:453
+#: contents/ui/GamePage.qml:461
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Desfés"
 
-#: contents/ui/GamePage.qml:462
+#: contents/ui/GamePage.qml:470
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Refés"
 
-#: contents/ui/GamePage.qml:471
+#: contents/ui/GamePage.qml:479
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "Pista"
 
-#: contents/ui/GamePage.qml:477
+#: contents/ui/GamePage.qml:485
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Soluciona la cel·la"
 
-#: contents/ui/GamePage.qml:490
+#: contents/ui/GamePage.qml:498
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "Establix les marques de llapis"
 
-#: contents/ui/GamePage.qml:535
+#: contents/ui/GamePage.qml:543
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "Llapis"
 
-#: contents/ui/GamePage.qml:543
+#: contents/ui/GamePage.qml:551
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "Esborra"
 
-#: contents/ui/GamePage.qml:551
+#: contents/ui/GamePage.qml:559
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "Partida"
 
-#: contents/ui/GamePage.qml:557
+#: contents/ui/GamePage.qml:565
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "Reinicia la partida"
 
-#: contents/ui/GamePage.qml:561
+#: contents/ui/GamePage.qml:569
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "Voleu reiniciar la partida?"
 
-#: contents/ui/GamePage.qml:562 contents/ui/GamePage.qml:580
+#: contents/ui/GamePage.qml:570 contents/ui/GamePage.qml:588
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr "Perdeu els canvis que heu fet, açò no es pot desfer."
 
-#: contents/ui/GamePage.qml:571
+#: contents/ui/GamePage.qml:579
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "Neteja les marques de llapis"
 
-#: contents/ui/GamePage.qml:575
+#: contents/ui/GamePage.qml:583
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Renuncio"
 
-#: contents/ui/GamePage.qml:579
+#: contents/ui/GamePage.qml:587
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Renuncieu?"
 
-#: contents/ui/GamePage.qml:589
+#: contents/ui/GamePage.qml:597
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Resol la partida"
 
-#: contents/ui/GamePage.qml:593
+#: contents/ui/GamePage.qml:601
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Resolc la partida?"
 
-#: contents/ui/GamePage.qml:594
+#: contents/ui/GamePage.qml:602
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -174,18 +174,18 @@ msgstr ""
 "Perdreu qualsevol canvi que hàgeu fet, açò no es pot desfer. No podreu "
 "resoldre el puzle pel vostre compte!"
 
-#: contents/ui/GamePage.qml:680
+#: contents/ui/GamePage.qml:685
 #, kde-format
 msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
 msgstr "Un altre %1"
 
-#: contents/ui/GamePage.qml:693
+#: contents/ui/GamePage.qml:698
 #, kde-format
 msgid "Please select a valid cell to solve."
 msgstr "Trieu una cel·la vàlida a solucionar."
 
-#: contents/ui/GamePage.qml:696
+#: contents/ui/GamePage.qml:701
 #, kde-format
 msgid "Solve"
 msgstr "Soluciona"

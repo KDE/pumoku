@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-12 00:40+0000\n"
+"POT-Creation-Date: 2025-12-15 00:40+0000\n"
 "PO-Revision-Date: 2025-12-13 11:06+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -18,153 +18,153 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Lokalize 23.08.5\n"
 
-#: contents/ui/GamePage.qml:197
+#: contents/ui/GamePage.qml:198
 #, kde-format
 msgid "There is your solution"
 msgstr "ها هو الحل"
 
-#: contents/ui/GamePage.qml:198
+#: contents/ui/GamePage.qml:199
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "استسلمت بعد %1 خطوة."
 
-#: contents/ui/GamePage.qml:199
+#: contents/ui/GamePage.qml:200
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "أُحلت آليًا. تلميحات: %1."
 
-#: contents/ui/GamePage.qml:202 contents/ui/GamePage.qml:212
+#: contents/ui/GamePage.qml:203 contents/ui/GamePage.qml:213
 #, kde-format
 msgid "Well done!"
 msgstr "أحسنت عملًا!"
 
-#: contents/ui/GamePage.qml:203
+#: contents/ui/GamePage.qml:204
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
 msgstr "أنهيت هذا اللغز %1 سودوكو (بقليل من المساعدة) باستخدام %2 خطوات."
 
-#: contents/ui/GamePage.qml:205
+#: contents/ui/GamePage.qml:206
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "استخدمت علامات قلم رصاص آلي."
 
-#: contents/ui/GamePage.qml:207
+#: contents/ui/GamePage.qml:208
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "تلميحات: %1."
 
-#: contents/ui/GamePage.qml:210
+#: contents/ui/GamePage.qml:211
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "تَهَانِينَا!!"
 
-#: contents/ui/GamePage.qml:211
+#: contents/ui/GamePage.qml:212
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
 msgstr ""
 "أنهيت لعبة سودوكو هذه بنسبة %1 دون أي تلميحات أو مساعدة باستخدام %2 خطوات."
 
-#: contents/ui/GamePage.qml:453
+#: contents/ui/GamePage.qml:461
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "تراجع"
 
-#: contents/ui/GamePage.qml:462
+#: contents/ui/GamePage.qml:470
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "كرّر"
 
-#: contents/ui/GamePage.qml:471
+#: contents/ui/GamePage.qml:479
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "تلميح"
 
-#: contents/ui/GamePage.qml:477
+#: contents/ui/GamePage.qml:485
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "حلّ الخلية"
 
-#: contents/ui/GamePage.qml:490
+#: contents/ui/GamePage.qml:498
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "ضع علامات قلم رصاص"
 
-#: contents/ui/GamePage.qml:535
+#: contents/ui/GamePage.qml:543
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "قلم رصاص"
 
-#: contents/ui/GamePage.qml:543
+#: contents/ui/GamePage.qml:551
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "امسح"
 
-#: contents/ui/GamePage.qml:551
+#: contents/ui/GamePage.qml:559
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "لعبة جديدة"
 
-#: contents/ui/GamePage.qml:557
+#: contents/ui/GamePage.qml:565
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "صفّر اللعبة"
 
-#: contents/ui/GamePage.qml:561
+#: contents/ui/GamePage.qml:569
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "أأصفّر اللعبة؟"
 
-#: contents/ui/GamePage.qml:562 contents/ui/GamePage.qml:580
+#: contents/ui/GamePage.qml:570 contents/ui/GamePage.qml:588
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr "ستفقد أي تغييرات قمت بها، ولا يمكن التراجع عن ذلك."
 
-#: contents/ui/GamePage.qml:571
+#: contents/ui/GamePage.qml:579
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "امحُ علامات قلم رصاص"
 
-#: contents/ui/GamePage.qml:575
+#: contents/ui/GamePage.qml:583
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "استسلم"
 
-#: contents/ui/GamePage.qml:579
+#: contents/ui/GamePage.qml:587
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "استسلم؟"
 
-#: contents/ui/GamePage.qml:589
+#: contents/ui/GamePage.qml:597
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "حل اللعبة"
 
-#: contents/ui/GamePage.qml:593
+#: contents/ui/GamePage.qml:601
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "أأحل اللعبة؟"
 
-#: contents/ui/GamePage.qml:594
+#: contents/ui/GamePage.qml:602
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -172,18 +172,18 @@ msgid ""
 msgstr ""
 "ستفقد أي تغييرات قمت بها، ولا يمكن التراجع عن ذلك. لا يمكنك حل اللغز بنفسك!"
 
-#: contents/ui/GamePage.qml:680
+#: contents/ui/GamePage.qml:685
 #, kde-format
 msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
 msgstr "%1 آخر"
 
-#: contents/ui/GamePage.qml:693
+#: contents/ui/GamePage.qml:698
 #, kde-format
 msgid "Please select a valid cell to solve."
 msgstr "رجاءً اختر خلية صالحة لحلها."
 
-#: contents/ui/GamePage.qml:696
+#: contents/ui/GamePage.qml:701
 #, kde-format
 msgid "Solve"
 msgstr "حلّ"
