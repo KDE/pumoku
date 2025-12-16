@@ -190,32 +190,8 @@ QtObject {
 
     // reset game
     function reset() {
-        currentCell = -1;
-        currentRow = -1;
-        currentColumn = -1
-        currentBlock = -1;
-        digitCounters.length = 0;
-        digitCounters.length = 10;
-        givenCount = 0;
-        valueCnt = 0;
-        stepCount = [0,0,0,0,stepCount[4],0]; // ???
-        hintStatus = 0;
-        for (let i=0; i < 81; i++) {
-            values[i] = board[i];
-            pencilMarks[i] = 0;
-            errors[i] = 0;
-            if (board[i]) {
-                digitCounters[board[i]]++;
-                givenCount++;
-            }
-        }
-        undoStack = [];
-        undoPos = -1;
-        finished = false;
-        finishHeader = "";
-        finishText = "";
-        finishMsg = "";
-        finishColor = Kirigami.Theme.neutralBackgroundColor;
+        clear();
+        setGame(Qqw.sudoku, Qqw.solution);
     }
 
 
