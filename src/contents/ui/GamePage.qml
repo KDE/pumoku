@@ -26,7 +26,11 @@ Kirigami.Page {
             // text: i18nc("@action:inmenu", "Settings")
             icon.name: "settings-configure-symbolic"
             onTriggered: root.pageStack.layers.push("qrc:/Settings.qml")
-        }
+        },
+        Kirigami.Action {
+            icon.name: "application-menu-symbolic"
+            onTriggered: root.pageStack.layers.push("qrc:/MainMenu.qml", {gameLoaded: game.loaded})
+        },
     ]
 
     // custom bottom toolbar
@@ -44,10 +48,6 @@ Kirigami.Page {
             Kirigami.Action {
                 icon.name: "document-share-symbolic"
                 enabled: false
-            },
-            Kirigami.Action {
-                icon.name: "application-menu-symbolic"
-                onTriggered: root.pageStack.layers.push("qrc:/MainMenu.qml", {gameLoaded: game.loaded})
             },
             Kirigami.Action {
                 icon.name: "open-for-editing-symbolic"
