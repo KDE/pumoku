@@ -28,7 +28,6 @@ Kirigami.ApplicationWindow {
         }
     }
 
-    property bool acceptClose: false
     onClosing: (close) => {
         if (gamePage.hasGame) {
             gamePage.saveGame('current.json') || console.log('saving game failed');
@@ -36,6 +35,13 @@ Kirigami.ApplicationWindow {
         } else {
             FileManager.deleteGame("current.json");
         }
+    }
+
+    // some androids does not receive the closing event.
+    property int appState: Qt.platform === 'android' ? Application.state : 0
+    onAppStateChanged: {
+        if (state == Qt.ApplicationSuspended && gamePage.hasGame)
+            gamePage.saveGame('current.json');
     }
 
     GamePage {
