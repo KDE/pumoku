@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-15 00:40+0000\n"
-"PO-Revision-Date: 2025-12-11 09:26+0200\n"
+"POT-Creation-Date: 2025-12-16 06:49+0000\n"
+"PO-Revision-Date: 2025-12-14 14:41+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -181,14 +181,12 @@ msgstr "%1 נוסף"
 #: contents/ui/GamePage.qml:698
 #, kde-format
 msgid "Please select a valid cell to solve."
-msgstr ""
+msgstr "נא לבחור תא תקף לפתרון."
 
 #: contents/ui/GamePage.qml:701
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Solve Cell"
+#, kde-format
 msgid "Solve"
-msgstr "פתרון תא"
+msgstr "פתרון"
 
 #: contents/ui/Import.qml:13
 #, kde-format
@@ -214,34 +212,29 @@ msgstr ""
 "ירידות שורה ורווחים נמחקים בסתר, כדי לאפשר לך למלא שורה בקובץ עם רווחים "
 "כראות עיניך או עינייך."
 
-#: contents/ui/Import.qml:46
+#: contents/ui/Import.qml:45
 #, kde-format
 msgctxt "@button:title"
 msgid "Save current game"
 msgstr "שמירת המשחק הנוכחי"
 
-#: contents/ui/Import.qml:54
+#: contents/ui/Import.qml:53
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "ביטול"
 
-#: contents/ui/Import.qml:58
+#: contents/ui/Import.qml:57
 #, kde-format
 msgctxt "@action:button"
 msgid "Import"
 msgstr "ייבוא"
 
-#: contents/ui/Import.qml:67
+#: contents/ui/Import.qml:66
 #, kde-format
 msgid ""
 "The provided string is not exactly 81 characters after cleanup. Please amend."
 msgstr "המחרוזת שסופקה היא לא בדיוק 81 תווים לאחר הניקוי. נא לשפר."
-
-#: contents/ui/Main.qml:14
-#, kde-format
-msgid "PuMoKu"
-msgstr "PuMoKu"
 
 #: contents/ui/MainMenu.qml:15
 #, kde-format
@@ -287,73 +280,73 @@ msgctxt "@action:button"
 msgid "Continue:"
 msgstr "להמשיך:"
 
-#: contents/ui/Settings.qml:15
+#: contents/ui/Settings.qml:14
 #, kde-format
 msgctxt "@title:window"
 msgid "Settings"
 msgstr "הגדרות"
 
-#: contents/ui/Settings.qml:18
+#: contents/ui/Settings.qml:17
 #, kde-format
 msgctxt "@title"
 msgid "Game"
 msgstr "משחק"
 
-#: contents/ui/Settings.qml:23
+#: contents/ui/Settings.qml:22
 #, kde-format
 msgctxt "@option:check"
 msgid "Reset time with game"
 msgstr "לאפס את הזמן עם המשחק"
 
-#: contents/ui/Settings.qml:31
+#: contents/ui/Settings.qml:30
 #, kde-format
 msgctxt "@option:check"
 msgid "Clean up pencil marks when setting a cell value"
 msgstr "למחוק את סימוני העיפרון בעת הגדרת ערך לתא"
 
-#: contents/ui/Settings.qml:41
+#: contents/ui/Settings.qml:40
 #, kde-format
 msgctxt "@title"
 msgid "Highlight"
 msgstr "הדגשה"
 
-#: contents/ui/Settings.qml:45
+#: contents/ui/Settings.qml:44
 #, kde-format
 msgctxt "@option:check"
 msgid "Houses of a selected cell"
 msgstr "בתים של התא הנבחר"
 
-#: contents/ui/Settings.qml:53
+#: contents/ui/Settings.qml:52
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit"
 msgstr "תאים עם ספרה פעילה"
 
-#: contents/ui/Settings.qml:61
+#: contents/ui/Settings.qml:60
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit pencilmark"
 msgstr "תאים עם סימון עיפרון של הספרה הפעילה"
 
-#: contents/ui/Settings.qml:69
+#: contents/ui/Settings.qml:68
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in values"
 msgstr "שגיאות לוגיות בערכים"
 
-#: contents/ui/Settings.qml:77
+#: contents/ui/Settings.qml:76
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in pencilmarks"
 msgstr "שגיאות לוגיות בסימוני העיפרון"
 
-#: contents/ui/Settings.qml:88
+#: contents/ui/Settings.qml:87
 #, kde-format
 msgctxt "@option:check"
 msgid "Erasable cells with eraser active"
 msgstr "תאים שאפשר למחוק עם מחק פעיל"
 
-#: contents/ui/Settings.qml:96
+#: contents/ui/Settings.qml:95
 #, kde-format
 msgctxt "@option:check"
 msgid "Wrong values"
@@ -468,6 +461,9 @@ msgstr "לסודוקו שסופק אין פתרון ייחודי."
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "הסודוקו שסופק אינו פתיר."
+
+#~ msgid "PuMoKu"
+#~ msgstr "PuMoKu"
 
 #~ msgctxt "@label:listbox"
 #~ msgid "Input method"

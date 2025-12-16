@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-15 00:40+0000\n"
+"POT-Creation-Date: 2025-12-16 06:49+0000\n"
 "PO-Revision-Date: 2025-11-26 09:10+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -214,36 +214,31 @@ msgstr ""
 "Satır sonları ve boşluklar sessizce kaldırılır, böylece isteğe bağlı olarak "
 "boşluk bırakarak her satıra bir satır girebilirsiniz."
 
-#: contents/ui/Import.qml:46
+#: contents/ui/Import.qml:45
 #, kde-format
 msgctxt "@button:title"
 msgid "Save current game"
 msgstr ""
 
-#: contents/ui/Import.qml:54
+#: contents/ui/Import.qml:53
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "İptal"
 
-#: contents/ui/Import.qml:58
+#: contents/ui/Import.qml:57
 #, kde-format
 msgctxt "@action:button"
 msgid "Import"
 msgstr "İçe Aktar"
 
-#: contents/ui/Import.qml:67
+#: contents/ui/Import.qml:66
 #, kde-format
 msgid ""
 "The provided string is not exactly 81 characters after cleanup. Please amend."
 msgstr ""
 "Temizlikten sonrası bakıldığında, sağlanan dizi tam olarak 81 karakterden "
 "oluşmuyor. Lütfen düzeltin."
-
-#: contents/ui/Main.qml:14
-#, kde-format
-msgid "PuMoKu"
-msgstr "PuMoKu"
 
 #: contents/ui/MainMenu.qml:15
 #, kde-format
@@ -297,73 +292,73 @@ msgctxt "@action:button"
 msgid "Continue:"
 msgstr "Sürdür…"
 
-#: contents/ui/Settings.qml:15
+#: contents/ui/Settings.qml:14
 #, kde-format
 msgctxt "@title:window"
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: contents/ui/Settings.qml:18
+#: contents/ui/Settings.qml:17
 #, kde-format
 msgctxt "@title"
 msgid "Game"
 msgstr "Oyun"
 
-#: contents/ui/Settings.qml:23
+#: contents/ui/Settings.qml:22
 #, kde-format
 msgctxt "@option:check"
 msgid "Reset time with game"
 msgstr "Oyun ile zamanı sıfırla"
 
-#: contents/ui/Settings.qml:31
+#: contents/ui/Settings.qml:30
 #, kde-format
 msgctxt "@option:check"
 msgid "Clean up pencil marks when setting a cell value"
 msgstr "Hücre değeri ayarlarken kalem imlerini temizle"
 
-#: contents/ui/Settings.qml:41
+#: contents/ui/Settings.qml:40
 #, kde-format
 msgctxt "@title"
 msgid "Highlight"
 msgstr "Vurgu"
 
-#: contents/ui/Settings.qml:45
+#: contents/ui/Settings.qml:44
 #, kde-format
 msgctxt "@option:check"
 msgid "Houses of a selected cell"
 msgstr "Seçili hücrelerin yerleri"
 
-#: contents/ui/Settings.qml:53
+#: contents/ui/Settings.qml:52
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit"
 msgstr "Etkin rakamlı hücreler"
 
-#: contents/ui/Settings.qml:61
+#: contents/ui/Settings.qml:60
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit pencilmark"
 msgstr "Etkin kalem imli hücreler"
 
-#: contents/ui/Settings.qml:69
+#: contents/ui/Settings.qml:68
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in values"
 msgstr "Değerlerdeki mantık hataları"
 
-#: contents/ui/Settings.qml:77
+#: contents/ui/Settings.qml:76
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in pencilmarks"
 msgstr "Kalem imlerindeki mantık hataları"
 
-#: contents/ui/Settings.qml:88
+#: contents/ui/Settings.qml:87
 #, kde-format
 msgctxt "@option:check"
 msgid "Erasable cells with eraser active"
 msgstr "Silgi etkinken silinebilir hücreler"
 
-#: contents/ui/Settings.qml:96
+#: contents/ui/Settings.qml:95
 #, kde-format
 msgctxt "@option:check"
 msgid "Wrong values"
@@ -478,6 +473,9 @@ msgstr "Sağlanan Sudoku’nun benzersiz bir çözümü yok."
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "Sağlanan Sudoku çözülebilir değil."
+
+#~ msgid "PuMoKu"
+#~ msgstr "PuMoKu"
 
 #~ msgctxt "@label:listbox"
 #~ msgid "Input method"

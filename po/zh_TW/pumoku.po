@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-15 00:40+0000\n"
+"POT-Creation-Date: 2025-12-16 06:49+0000\n"
 "PO-Revision-Date: 2025-11-24 17:32+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -240,27 +240,27 @@ msgstr ""
 "\n"
 "換行和空格會被忽略，所以您可以一列方格用一行字輸入或是加上空格。"
 
-#: contents/ui/Import.qml:46
+#: contents/ui/Import.qml:45
 #, kde-format
 msgctxt "@button:title"
 msgid "Save current game"
 msgstr ""
 
-#: contents/ui/Import.qml:54
+#: contents/ui/Import.qml:53
 #, fuzzy, kde-format
 #| msgid "Cancel"
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "取消"
 
-#: contents/ui/Import.qml:58
+#: contents/ui/Import.qml:57
 #, fuzzy, kde-format
 #| msgid "Import"
 msgctxt "@action:button"
 msgid "Import"
 msgstr "匯入"
 
-#: contents/ui/Import.qml:67
+#: contents/ui/Import.qml:66
 #, fuzzy, kde-format
 #| msgid ""
 #| "The provided string is not exactly 81 characters after cleanup. Please "
@@ -268,11 +268,6 @@ msgstr "匯入"
 msgid ""
 "The provided string is not exactly 81 characters after cleanup. Please amend."
 msgstr "指定的字串長度在清理之後並不是 81 個字元長。請修正它。"
-
-#: contents/ui/Main.qml:14
-#, kde-format
-msgid "PuMoKu"
-msgstr "PuMoKu"
 
 #: contents/ui/MainMenu.qml:15
 #, kde-format
@@ -322,83 +317,83 @@ msgctxt "@action:button"
 msgid "Continue:"
 msgstr "繼續 ..."
 
-#: contents/ui/Settings.qml:15
+#: contents/ui/Settings.qml:14
 #, kde-format
 msgctxt "@title:window"
 msgid "Settings"
 msgstr "設定"
 
-#: contents/ui/Settings.qml:18
+#: contents/ui/Settings.qml:17
 #, fuzzy, kde-format
 #| msgid "Game"
 msgctxt "@title"
 msgid "Game"
 msgstr "遊戲"
 
-#: contents/ui/Settings.qml:23
+#: contents/ui/Settings.qml:22
 #, fuzzy, kde-format
 #| msgid "Reset time with game"
 msgctxt "@option:check"
 msgid "Reset time with game"
 msgstr "重設遊戲時也重設時間"
 
-#: contents/ui/Settings.qml:31
+#: contents/ui/Settings.qml:30
 #, fuzzy, kde-format
 #| msgid "Clean up pencil marks when setting a cell value"
 msgctxt "@option:check"
 msgid "Clean up pencil marks when setting a cell value"
 msgstr "設定方格值時清理鉛筆標記"
 
-#: contents/ui/Settings.qml:41
+#: contents/ui/Settings.qml:40
 #, fuzzy, kde-format
 #| msgid "Highlight"
 msgctxt "@title"
 msgid "Highlight"
 msgstr "突顯"
 
-#: contents/ui/Settings.qml:45
+#: contents/ui/Settings.qml:44
 #, fuzzy, kde-format
 #| msgid "Houses of a selected cell"
 msgctxt "@option:check"
 msgid "Houses of a selected cell"
 msgstr "所選方格的直行、橫列與粗線宮"
 
-#: contents/ui/Settings.qml:53
+#: contents/ui/Settings.qml:52
 #, fuzzy, kde-format
 #| msgid "Cells with active digit"
 msgctxt "@option:check"
 msgid "Cells with active digit"
 msgstr "有作用數的方格"
 
-#: contents/ui/Settings.qml:61
+#: contents/ui/Settings.qml:60
 #, fuzzy, kde-format
 #| msgid "Cells with active digit pencilmark"
 msgctxt "@option:check"
 msgid "Cells with active digit pencilmark"
 msgstr "有作用數鉛筆標記的方格"
 
-#: contents/ui/Settings.qml:69
+#: contents/ui/Settings.qml:68
 #, fuzzy, kde-format
 #| msgid "Logical errors in values"
 msgctxt "@option:check"
 msgid "Logical errors in values"
 msgstr "數值的邏輯錯誤"
 
-#: contents/ui/Settings.qml:77
+#: contents/ui/Settings.qml:76
 #, fuzzy, kde-format
 #| msgid "Logical errors in pencilmarks"
 msgctxt "@option:check"
 msgid "Logical errors in pencilmarks"
 msgstr "鉛筆標記的邏輯錯誤"
 
-#: contents/ui/Settings.qml:88
+#: contents/ui/Settings.qml:87
 #, fuzzy, kde-format
 #| msgid "Erasable cells with eraser active"
 msgctxt "@option:check"
 msgid "Erasable cells with eraser active"
 msgstr "橡皮擦作用中且可以抹除的方格"
 
-#: contents/ui/Settings.qml:96
+#: contents/ui/Settings.qml:95
 #, fuzzy, kde-format
 #| msgid "Wrong values"
 msgctxt "@option:check"
@@ -519,6 +514,9 @@ msgstr "提供的數獨有超過一種解法。"
 #| msgid "The provided sudoku is not solvable"
 msgid "The provided Sudoku is not solvable."
 msgstr "提供的數獨不可解"
+
+#~ msgid "PuMoKu"
+#~ msgstr "PuMoKu"
 
 #, fuzzy
 #~| msgid "Input method"
