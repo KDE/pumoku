@@ -379,7 +379,8 @@ Kirigami.Page {
         anchors.top: wideScreen ? boardContainer.top : boardContainer.bottom
         anchors.left: wideScreen ? boardContainer.right : boardContainer.left
         width: wideScreen ? Math.min(gameBoard.width - boardContainer.width, Math.max(minWidth,boardContainer.width)) : boardContainer.width
-        height: !wideScreen ? gamePage.pageHeight - boardContainer.height - boardContainer.y : tabletMode ? bgbd.height : boardContainer.height
+        height: !wideScreen ? tabletMode ? Math.min(gamePage.pageHeight - boardContainer.height - boardContainer.y, boardContainer.height)
+            : gamePage.pageHeight - boardContainer.height - boardContainer.y : tabletMode ? bgbd.height : boardContainer.height
         color: Kirigami.Theme.backgroundColor
 
 
