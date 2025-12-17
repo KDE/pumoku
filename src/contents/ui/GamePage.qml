@@ -496,6 +496,20 @@ Kirigami.Page {
                             }
                         }
                         QQC2.MenuItem {
+                            text: i18nc("@action:inmenu", "Solve Game")
+                            onTriggered: { solvePrompt.open() }
+                            Kirigami.PromptDialog {
+                                id: solvePrompt
+                                title: i18nc("@title:window", "Solve Game?")
+                                subtitle: i18n("You will lose any changes you have made, this cannot be undone. You can’t solve the puzzle on your own!")
+                                standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
+                                onAccepted: {
+                                    game.solve();
+                                    finish();
+                                }
+                            }
+                        }
+                        QQC2.MenuItem {
                             text: i18nc("@action:inmenu", "Set Pencilmarks")
                             onTriggered: {
                                 game.generatePencilMarks()
@@ -594,22 +608,7 @@ Kirigami.Page {
                                 }
                             }
                         }
-                        QQC2.MenuItem {
-                            text: i18nc("@action:inmenu", "Solve Game")
-                            onTriggered: { solvePrompt.open() }
-                            Kirigami.PromptDialog {
-                                id: solvePrompt
-                                title: i18nc("@title:window", "Solve Game?")
-                                subtitle: i18n("You will lose any changes you have made, this cannot be undone. You can’t solve the puzzle on your own!")
-                                standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
-                                onAccepted: {
-                                    game.solve();
-                                    finish();
-                                }
-                            }
-                        }
                     }
-
                 }
             }
         }
