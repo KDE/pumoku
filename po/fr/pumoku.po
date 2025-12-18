@@ -1,163 +1,164 @@
 # SPDX-FileCopyrightText: 2025 Xavier Besnard <xavier.besnard@kde.org>
+# SPDX-FileCopyrightText: 2025 Thomas Vergnaud <thomas.vergnaud@mailo.eu>
 msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-16 06:49+0000\n"
-"PO-Revision-Date: 2025-11-24 16:32+0100\n"
-"Last-Translator: KDE Francophone <kde-francophone@kde.org>\n"
+"PO-Revision-Date: 2025-12-17 09:48+0100\n"
+"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.11.80\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #: contents/ui/GamePage.qml:198
 #, kde-format
 msgid "There is your solution"
-msgstr ""
+msgstr "Il y a votre solution"
 
 #: contents/ui/GamePage.qml:199
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
-msgstr ""
+msgstr "Vous avez renoncé après %1 étapes."
 
 #: contents/ui/GamePage.qml:200
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
-msgstr ""
+msgstr "Résolu automatiquement. Astuces : %1."
 
 #: contents/ui/GamePage.qml:203 contents/ui/GamePage.qml:213
 #, kde-format
 msgid "Well done!"
-msgstr ""
+msgstr "Bien joué !"
 
 #: contents/ui/GamePage.qml:204
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
-msgstr ""
+msgstr "Vous avez terminé ce %1 sudoku (avec un peu d'aide) en %2 étapes."
 
 #: contents/ui/GamePage.qml:206
 #, kde-format
 msgid "Auto pencilmarks used."
-msgstr ""
+msgstr "Marques automatiques utilisées."
 
 #: contents/ui/GamePage.qml:208
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
-msgstr ""
+msgstr "Astuces : %1."
 
 #: contents/ui/GamePage.qml:211
 #, kde-format
 msgid "CONGRATULATIONS!!"
-msgstr ""
+msgstr "FÉLICITATIONS !!"
 
 #: contents/ui/GamePage.qml:212
 #, kde-format
 msgctxt "%1 is level name, %2 is step count"
 msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
-msgstr ""
+msgstr "Vous avez terminé ce %1 sudoku sans aucun indice ou aide en %2 étapes."
 
 #: contents/ui/GamePage.qml:461
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
-msgstr ""
+msgstr "Annuler"
 
 #: contents/ui/GamePage.qml:470
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
-msgstr ""
+msgstr "Refaire"
 
 #: contents/ui/GamePage.qml:479
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
-msgstr ""
+msgstr "Astuce"
 
 #: contents/ui/GamePage.qml:485
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
-msgstr ""
+msgstr "Résoudre la cellule"
 
 #: contents/ui/GamePage.qml:498
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
-msgstr ""
+msgstr "Mettre des marques"
 
 #: contents/ui/GamePage.qml:543
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
-msgstr ""
+msgstr "Crayon"
 
 #: contents/ui/GamePage.qml:551
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
-msgstr ""
+msgstr "Effacer"
 
 #: contents/ui/GamePage.qml:559
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
-msgstr ""
+msgstr "Jeu"
 
 #: contents/ui/GamePage.qml:565
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
-msgstr ""
+msgstr "Réinitialiser le jeu"
 
 #: contents/ui/GamePage.qml:569
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
-msgstr ""
+msgstr "Réinitialiser le jeu ?"
 
 #: contents/ui/GamePage.qml:570 contents/ui/GamePage.qml:588
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
-msgstr ""
+msgstr "Vous perdez toutes vos modifications, cela ne peut pas être annulé."
 
 #: contents/ui/GamePage.qml:579
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
-msgstr ""
+msgstr "Effacer les marques"
 
 #: contents/ui/GamePage.qml:583
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
-msgstr ""
+msgstr "Abandonner"
 
 #: contents/ui/GamePage.qml:587
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
-msgstr ""
+msgstr "Abandonner ?"
 
 #: contents/ui/GamePage.qml:597
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
-msgstr ""
+msgstr "Résoudre la partie"
 
 #: contents/ui/GamePage.qml:601
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
-msgstr ""
+msgstr "Résoudre la partie ?"
 
 #: contents/ui/GamePage.qml:602
 #, kde-format
@@ -165,28 +166,30 @@ msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
 "solve the puzzle on your own!"
 msgstr ""
+"vous perdez toutes vos modifications, cela ne peut pas être annulé. Vous ne "
+"pouvez pas résoudre le puzzle par vous-même !"
 
 #: contents/ui/GamePage.qml:685
 #, kde-format
 msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
-msgstr ""
+msgstr "Un autre %1"
 
 #: contents/ui/GamePage.qml:698
 #, kde-format
 msgid "Please select a valid cell to solve."
-msgstr ""
+msgstr "Veuillez sélectionner une cellule valide à résoudre."
 
 #: contents/ui/GamePage.qml:701
 #, kde-format
 msgid "Solve"
-msgstr ""
+msgstr "Résoudre"
 
 #: contents/ui/Import.qml:13
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Sudoku"
-msgstr ""
+msgstr "Importer un sudoku"
 
 #: contents/ui/Import.qml:35
 #, kde-format
@@ -199,253 +202,263 @@ msgid ""
 "Line breaks and spaces are silently removed, so that you can enter one row "
 "per-line with some optional whitespace."
 msgstr ""
+"Entrez ou collez une chaîne de 81 caractères. 1-9 pour les cellules données, "
+"un caractère non numérique (sauf l'espace) ou 0 correspondra aux cellules "
+"vides. PuMoKu vérifiera que le sudoku est soluble et calculera le niveau.\n"
+"\n"
+"Les sauts de ligne et les espaces sont supprimés, de sorte que vous pouvez "
+"entrer une rangée par ligne avec des espaces en option."
 
 #: contents/ui/Import.qml:45
 #, kde-format
 msgctxt "@button:title"
 msgid "Save current game"
-msgstr ""
+msgstr "Enregistrer la partie en cours"
 
 #: contents/ui/Import.qml:53
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 #: contents/ui/Import.qml:57
 #, kde-format
 msgctxt "@action:button"
 msgid "Import"
-msgstr ""
+msgstr "Importer"
 
 #: contents/ui/Import.qml:66
 #, kde-format
 msgid ""
 "The provided string is not exactly 81 characters after cleanup. Please amend."
 msgstr ""
+"La chaîne fournie ne contient pas exactement 81 caractères après nettoyage. "
+"Veuillez corriger."
 
 #: contents/ui/MainMenu.qml:15
 #, kde-format
 msgctxt "@title:window"
 msgid "Pumoku Menu"
-msgstr ""
+msgstr "Menu Pumoku"
 
 #: contents/ui/MainMenu.qml:56
 #, kde-format
 msgid "Save game?"
-msgstr ""
+msgstr "Enregistrer la partie ?"
 
 #: contents/ui/MainMenu.qml:57
 #, kde-format
 msgid "Would you like to save the current game, so it can be continued later?"
 msgstr ""
+"Souhaitez-vous sauvegarder la partie en cours afin de la continuer plus "
+"tard ?"
 
 #: contents/ui/MainMenu.qml:87
 #, kde-format
 msgid "New Sudoku:"
-msgstr ""
+msgstr "Nouveau sudoku :"
 
 #: contents/ui/MainMenu.qml:105
 #, kde-format
 msgid "Import or enter:"
-msgstr ""
+msgstr "Importer ou saisir :"
 
 #: contents/ui/MainMenu.qml:111
 #, kde-format
 msgctxt "@action:button"
 msgid "Import Sudoku …"
-msgstr ""
+msgstr "Importer un sudoku…"
 
 #: contents/ui/MainMenu.qml:118
 #, kde-format
 msgctxt "@action:button"
 msgid "Enter Sudoku …"
-msgstr ""
+msgstr "Saisir un sudoku…"
 
 #: contents/ui/MainMenu.qml:125
 #, kde-format
 msgctxt "@action:button"
 msgid "Continue:"
-msgstr ""
+msgstr "Continuer :"
 
 #: contents/ui/Settings.qml:14
 #, kde-format
 msgctxt "@title:window"
 msgid "Settings"
-msgstr ""
+msgstr "Réglages"
 
 #: contents/ui/Settings.qml:17
 #, kde-format
 msgctxt "@title"
 msgid "Game"
-msgstr ""
+msgstr "Partie"
 
 #: contents/ui/Settings.qml:22
 #, kde-format
 msgctxt "@option:check"
 msgid "Reset time with game"
-msgstr ""
+msgstr "Réinitialiser le temps de la partie"
 
 #: contents/ui/Settings.qml:30
 #, kde-format
 msgctxt "@option:check"
 msgid "Clean up pencil marks when setting a cell value"
-msgstr ""
+msgstr "Nettoyer les marques lors de la saisie d'une valeur de cellule"
 
 #: contents/ui/Settings.qml:40
 #, kde-format
 msgctxt "@title"
 msgid "Highlight"
-msgstr ""
+msgstr "Surligner"
 
 #: contents/ui/Settings.qml:44
 #, kde-format
 msgctxt "@option:check"
 msgid "Houses of a selected cell"
-msgstr ""
+msgstr "Maisons d'une cellule sélectionnée"
 
 #: contents/ui/Settings.qml:52
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit"
-msgstr ""
+msgstr "Cellules avec chiffre actif"
 
 #: contents/ui/Settings.qml:60
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit pencilmark"
-msgstr ""
+msgstr "Cellules avec marque active"
 
 #: contents/ui/Settings.qml:68
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in values"
-msgstr ""
+msgstr "Erreurs de logique dans les valeurs"
 
 #: contents/ui/Settings.qml:76
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in pencilmarks"
-msgstr ""
+msgstr "Erreurs de logique dans les marques"
 
 #: contents/ui/Settings.qml:87
 #, kde-format
 msgctxt "@option:check"
 msgid "Erasable cells with eraser active"
-msgstr ""
+msgstr "Cellules effaçables avec gomme active"
 
 #: contents/ui/Settings.qml:95
 #, kde-format
 msgctxt "@option:check"
 msgid "Wrong values"
-msgstr ""
+msgstr "Mauvaises valeurs"
 
 #: main.cpp:75
 #, kde-format
 msgctxt "@title"
 msgid "PuMoKu"
-msgstr ""
+msgstr "PuMoKu"
 
 #: main.cpp:79 main.cpp:93
 #, kde-format
 msgid "PuMoKu is a classic Sudoku game, aimed for Plasma Mobile"
-msgstr ""
+msgstr "PuMoKu est un jeu de sudoku classique à destination de Plasma mobile"
 
 #: main.cpp:83
 #, kde-format
 msgid "© 2025 KDE Developers"
-msgstr ""
+msgstr "© 2025 les développeurs KDE"
 
 #: main.cpp:84
 #, kde-format
 msgctxt "@info:credit"
 msgid "Anders Lund"
-msgstr ""
+msgstr "Anders Lund"
 
 #: main.cpp:84
 #, kde-format
 msgctxt "@info:credit"
 msgid "Maintainer"
-msgstr ""
+msgstr "Mainteneur"
 
 #: main.cpp:85
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Thomas Vergnaud"
 
 #: main.cpp:85
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "thomas.vergnaud@mailo.eu"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "UNKNOWN"
-msgstr ""
+msgstr "INCONNU"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "Simple"
-msgstr ""
+msgstr "Simple"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "Easy"
-msgstr ""
+msgstr "Facile"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "Intermediate"
-msgstr ""
+msgstr "Intermédiaire"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "Expert"
-msgstr ""
+msgstr "Expert"
 
 #: qqw.cpp:12
 #, kde-format
 msgid "None"
-msgstr ""
+msgstr "Aucune"
 
 #: qqw.cpp:12
 #, kde-format
 msgid "Rotate 90°"
-msgstr ""
+msgstr "Pivoter à 90°"
 
 #: qqw.cpp:12
 #, kde-format
 msgid "Rotate 180°"
-msgstr ""
+msgstr "Pivoter à 180°"
 
 #: qqw.cpp:12
 #, kde-format
 msgid "Mirror"
-msgstr ""
+msgstr "Miroir"
 
 #: qqw.cpp:12
 #, kde-format
 msgid "Flip"
-msgstr ""
+msgstr "Retournement"
 
 #: qqw.cpp:12
 #, kde-format
 msgid "Random"
-msgstr ""
+msgstr "Aléatoire"
 
 #: qqw.cpp:74
 #, kde-format
 msgid "Looking good. Difficulty:"
-msgstr ""
+msgstr "Ça semble correct. Difficulté :"
 
 #: qqw.cpp:77
 #, kde-format
 msgid "The provided Sudoku does not have a unique solution."
-msgstr ""
+msgstr "Le sudoku fourni n'a pas de solution unique."
 
 #: qqw.cpp:81
 #, kde-format
 msgid "The provided Sudoku is not solvable."
-msgstr ""
+msgstr "Le sudoku fourni n'est pas soluble."
