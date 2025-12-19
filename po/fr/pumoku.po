@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-16 06:49+0000\n"
-"PO-Revision-Date: 2025-12-17 09:48+0100\n"
+"PO-Revision-Date: 2025-12-17 13:19+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -57,7 +57,7 @@ msgstr "Astuces : %1."
 #: contents/ui/GamePage.qml:211
 #, kde-format
 msgid "CONGRATULATIONS!!"
-msgstr "FÉLICITATIONS !!"
+msgstr "FÉLICITATIONS !"
 
 #: contents/ui/GamePage.qml:212
 #, kde-format
@@ -128,7 +128,9 @@ msgstr "Réinitialiser le jeu ?"
 #: contents/ui/GamePage.qml:570 contents/ui/GamePage.qml:588
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
-msgstr "Vous perdez toutes vos modifications, cela ne peut pas être annulé."
+msgstr ""
+"Vous perdez toutes vos modifications. Il est impossible d'annuler cette "
+"action."
 
 #: contents/ui/GamePage.qml:579
 #, kde-format
@@ -166,8 +168,8 @@ msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
 "solve the puzzle on your own!"
 msgstr ""
-"vous perdez toutes vos modifications, cela ne peut pas être annulé. Vous ne "
-"pouvez pas résoudre le puzzle par vous-même !"
+"vous perdez toutes vos modifications. Il est impossible d'annuler cette "
+"action. Vous ne pouvez pas résoudre le puzzle par vous-même !"
 
 #: contents/ui/GamePage.qml:685
 #, kde-format
@@ -178,7 +180,7 @@ msgstr "Un autre %1"
 #: contents/ui/GamePage.qml:698
 #, kde-format
 msgid "Please select a valid cell to solve."
-msgstr "Veuillez sélectionner une cellule valide à résoudre."
+msgstr "Veuillez sélectionner une cellule valable à résoudre."
 
 #: contents/ui/GamePage.qml:701
 #, kde-format
@@ -202,12 +204,13 @@ msgid ""
 "Line breaks and spaces are silently removed, so that you can enter one row "
 "per-line with some optional whitespace."
 msgstr ""
-"Entrez ou collez une chaîne de 81 caractères. 1-9 pour les cellules données, "
-"un caractère non numérique (sauf l'espace) ou 0 correspondra aux cellules "
-"vides. PuMoKu vérifiera que le sudoku est soluble et calculera le niveau.\n"
+"Veuillez saisir ou coller une chaîne de 81 caractères. 1-9 pour les cellules "
+"données, un caractère non numérique (sauf l'espace) ou 0 correspondra aux "
+"cellules vides. PuMoKu vérifiera que le sudoku peut être résolu et calculera "
+"le niveau.\n"
 "\n"
 "Les sauts de ligne et les espaces sont supprimés, de sorte que vous pouvez "
-"entrer une rangée par ligne avec des espaces en option."
+"saisir une rangée par ligne avec des espaces en option."
 
 #: contents/ui/Import.qml:45
 #, kde-format
@@ -250,8 +253,7 @@ msgstr "Enregistrer la partie ?"
 #, kde-format
 msgid "Would you like to save the current game, so it can be continued later?"
 msgstr ""
-"Souhaitez-vous sauvegarder la partie en cours afin de la continuer plus "
-"tard ?"
+"Voulez-vous enregistrer la partie en cours afin de la continuer plus tard ?"
 
 #: contents/ui/MainMenu.qml:87
 #, kde-format

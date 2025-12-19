@@ -7,20 +7,20 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-16 06:49+0000\n"
-"PO-Revision-Date: 2025-11-26 09:10+0300\n"
-"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"PO-Revision-Date: 2025-12-18 15:45+0300\n"
+"Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.11.70\n"
+"X-Generator: Lokalize 25.08.2\n"
 
 #: contents/ui/GamePage.qml:198
 #, kde-format
 msgid "There is your solution"
-msgstr "İşte çözüm"
+msgstr "İşte çözümünüz"
 
 #: contents/ui/GamePage.qml:199
 #, kde-format
@@ -180,14 +180,12 @@ msgstr "Başka %1"
 #: contents/ui/GamePage.qml:698
 #, kde-format
 msgid "Please select a valid cell to solve."
-msgstr ""
+msgstr "Lütfen çözmek için geçerli bir hücre seçin."
 
 #: contents/ui/GamePage.qml:701
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Solve Cell"
+#, kde-format
 msgid "Solve"
-msgstr "Hücreyi Çöz"
+msgstr "Çöz"
 
 #: contents/ui/Import.qml:13
 #, kde-format
@@ -218,7 +216,7 @@ msgstr ""
 #, kde-format
 msgctxt "@button:title"
 msgid "Save current game"
-msgstr ""
+msgstr "Geçerli Oyunu Kaydet"
 
 #: contents/ui/Import.qml:53
 #, kde-format
@@ -244,53 +242,45 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Pumoku Menu"
-msgstr ""
+msgstr "PuMoKu Menüsü"
 
 #: contents/ui/MainMenu.qml:56
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Solve Game?"
+#, kde-format
 msgid "Save game?"
-msgstr "Oyunu Çöz?"
+msgstr "Oyunu Kaydet?"
 
 #: contents/ui/MainMenu.qml:57
 #, kde-format
 msgid "Would you like to save the current game, so it can be continued later?"
-msgstr ""
+msgstr "Daha sonra sürdürmek için geçerli oyunu kaydetmek ister misiniz?"
 
 #: contents/ui/MainMenu.qml:87
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Solve a Sudoku"
+#, kde-format
 msgid "New Sudoku:"
-msgstr "Sudoku Çöz"
+msgstr "Yeni Sudoku:"
 
 #: contents/ui/MainMenu.qml:105
 #, kde-format
 msgid "Import or enter:"
-msgstr ""
+msgstr "İçe aktar veya gir:"
 
 #: contents/ui/MainMenu.qml:111
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Import Sudoku"
+#, kde-format
 msgctxt "@action:button"
 msgid "Import Sudoku …"
-msgstr "Sudoku İçe Aktar"
+msgstr "Sudoku İçe Aktar…"
 
 #: contents/ui/MainMenu.qml:118
 #, kde-format
 msgctxt "@action:button"
 msgid "Enter Sudoku …"
-msgstr ""
+msgstr "Sudoku Gir…"
 
 #: contents/ui/MainMenu.qml:125
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Continue…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Continue:"
-msgstr "Sürdür…"
+msgstr "Sürdür:"
 
 #: contents/ui/Settings.qml:14
 #, kde-format
