@@ -32,7 +32,7 @@ Kirigami.Page {
         Kirigami.Action {
             icon.name: "application-menu-symbolic"
             onTriggered: root.pageStack.layers.push("qrc:/MainMenu.qml", {gameLoaded: game.loaded})
-        },
+        }
     ]
 
     // custom bottom toolbar
