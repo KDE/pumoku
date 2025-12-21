@@ -1,0 +1,469 @@
+# Translation for pumoku.po to Euskara/Basque (eu).
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the pumoku package.
+# KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>.
+#
+# Translators:
+# SPDX-FileCopyrightText: 2025 Iñigo Salvador Azurmendi <xalba@ni.eus>
+msgid ""
+msgstr ""
+"Project-Id-Version: pumoku\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-12-20 00:39+0000\n"
+"PO-Revision-Date: 2025-12-20 09:42+0100\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 25.12.0\n"
+
+#: contents/ui/GamePage.qml:200
+#, kde-format
+msgid "There is your solution"
+msgstr "Hor dago zure ebazpena"
+
+#: contents/ui/GamePage.qml:201
+#, kde-format
+msgctxt "%1 is step count"
+msgid "You gave in after %1 steps."
+msgstr "%1 urrats ondoren amore eman duzu."
+
+#: contents/ui/GamePage.qml:202
+#, kde-format
+msgctxt "%1 is hint count"
+msgid "Automatically solved. Hints: %1."
+msgstr "Automatikoki ebatzia. Argibideak: %1."
+
+#: contents/ui/GamePage.qml:205 contents/ui/GamePage.qml:215
+#, kde-format
+msgid "Well done!"
+msgstr "Ondo egina!"
+
+#: contents/ui/GamePage.qml:206
+#, kde-format
+msgctxt "%1 is level name, %2 is step count"
+msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
+msgstr "%1 Sudoku hau (laguntza pixka batekin) %2 urratsetan ebatzi duzu."
+
+#: contents/ui/GamePage.qml:208
+#, kde-format
+msgid "Auto pencilmarks used."
+msgstr "Arkatz-ohar automatikoak erabili dira."
+
+#: contents/ui/GamePage.qml:210
+#, kde-format
+msgctxt "%1 is hint count"
+msgid "Hints: %1."
+msgstr "Argibideak: %1."
+
+#: contents/ui/GamePage.qml:213
+#, kde-format
+msgid "CONGRATULATIONS!!"
+msgstr "ZORIONAK!!"
+
+#: contents/ui/GamePage.qml:214
+#, kde-format
+msgctxt "%1 is level name, %2 is step count"
+msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
+msgstr ""
+"%1 Sudoku hau argibiderik edo laguntzarik gabe %2 urratsetan ebatzi duzu."
+
+#: contents/ui/GamePage.qml:464
+#, kde-format
+msgctxt "@action:button"
+msgid "Undo"
+msgstr "Desegin"
+
+#: contents/ui/GamePage.qml:473
+#, kde-format
+msgctxt "@action:button"
+msgid "Redo"
+msgstr "Berregin"
+
+#: contents/ui/GamePage.qml:482
+#, kde-format
+msgctxt "@action:button"
+msgid "Hint"
+msgstr "Argibidea"
+
+#: contents/ui/GamePage.qml:488
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Solve Cell"
+msgstr "Gelaxka ebatzi"
+
+#: contents/ui/GamePage.qml:501
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Solve Game"
+msgstr "Jokoa ebatzi"
+
+#: contents/ui/GamePage.qml:505
+#, kde-format
+msgctxt "@title:window"
+msgid "Solve Game?"
+msgstr "Jokoa ebatzi?"
+
+#: contents/ui/GamePage.qml:506
+#, kde-format
+msgid ""
+"You will lose any changes you have made, this cannot be undone. You can’t "
+"solve the puzzle on your own!"
+msgstr ""
+"Egindako aldaketak galduko dituzu, ez du atzera bueltarik. Ezin duzu zeure "
+"kabuz buru-hausgarria ebatzi!"
+
+#: contents/ui/GamePage.qml:515
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Set Pencilmarks"
+msgstr "Ezarri Arkatz-oharrak"
+
+#: contents/ui/GamePage.qml:560
+#, kde-format
+msgctxt "@action:button"
+msgid "Pencil"
+msgstr "Arkatza"
+
+#: contents/ui/GamePage.qml:568
+#, kde-format
+msgctxt "@action:button"
+msgid "Erase"
+msgstr "Ezabatu"
+
+#: contents/ui/GamePage.qml:576
+#, kde-format
+msgctxt "@action:button"
+msgid "Game"
+msgstr "Jokoa"
+
+#: contents/ui/GamePage.qml:582
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Reset Game"
+msgstr "Jokoa berrezarri"
+
+#: contents/ui/GamePage.qml:586
+#, kde-format
+msgctxt "@title:window"
+msgid "Reset Game?"
+msgstr "Jokoa berrezarri?"
+
+#: contents/ui/GamePage.qml:587 contents/ui/GamePage.qml:605
+#, kde-format
+msgid "You will lose any changes you have made, this cannot be undone."
+msgstr "Egindako aldaketak galduko dituzu, ez du atzera bueltarik."
+
+#: contents/ui/GamePage.qml:596
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Clear Pencilmarks"
+msgstr "Garbitu arkatz-oharrak"
+
+#: contents/ui/GamePage.qml:600
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Give Up"
+msgstr "Amore eman"
+
+#: contents/ui/GamePage.qml:604
+#, kde-format
+msgctxt "@title:window"
+msgid "Give Up?"
+msgstr "Amore eman?"
+
+#: contents/ui/GamePage.qml:687
+#, kde-format
+msgctxt "@action:button, %1 is level name"
+msgid "Another %1"
+msgstr "Beste %1 bat"
+
+#: contents/ui/GamePage.qml:700
+#, kde-format
+msgid "Please select a valid cell to solve."
+msgstr "Mesedez, hautatu ebazteko balio duen gelaxka bat."
+
+#: contents/ui/GamePage.qml:703
+#, kde-format
+msgid "Solve"
+msgstr "Ebatzi"
+
+#: contents/ui/Import.qml:13
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Sudoku"
+msgstr "Inportatu Sudoku"
+
+#: contents/ui/Import.qml:35
+#, kde-format
+msgctxt "Use en dash for number range"
+msgid ""
+"Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
+"single non-numeric character except space will do for blanks cells. PuMoKu "
+"will check that the Sudoku is solvable and calculate the level.\n"
+"\n"
+"Line breaks and spaces are silently removed, so that you can enter one row "
+"per-line with some optional whitespace."
+msgstr ""
+"Sartu edo itsatsi 81 karaktereko kate bat. 1–9 emandako gelaxketarako, 0 edo "
+"zenbakia ez den edozein karaktere zuriunea izan ezik gelaxka hutsetarako. "
+"PuMoKuk Sudokua ebatz daitekeen aztertuko eta maila kalkulatuko du.\n"
+"\n"
+"Lerro-jauziak eta zuriuneak ezer esan gabe kenduko dira, lerroko errenkada "
+"bat, nahi dituzun zuriuneekin, sartu ahal izan dezazun."
+
+#: contents/ui/Import.qml:45
+#, kde-format
+msgctxt "@button:title"
+msgid "Save current game"
+msgstr "Gorde uneko jokoa"
+
+#: contents/ui/Import.qml:53
+#, kde-format
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Utzi"
+
+#: contents/ui/Import.qml:57
+#, kde-format
+msgctxt "@action:button"
+msgid "Import"
+msgstr "Inportatu"
+
+#: contents/ui/Import.qml:66
+#, kde-format
+msgid ""
+"The provided string is not exactly 81 characters after cleanup. Please amend."
+msgstr ""
+"Emandako katea, garbitu ondoren, ez da zehazki 81 karakterekoa. Zuzendu "
+"mesedez."
+
+#: contents/ui/MainMenu.qml:15
+#, kde-format
+msgctxt "@title:window"
+msgid "Pumoku Menu"
+msgstr "Pumoku Menua"
+
+#: contents/ui/MainMenu.qml:56
+#, kde-format
+msgid "Save game?"
+msgstr "Jokoa gorde?"
+
+#: contents/ui/MainMenu.qml:57
+#, kde-format
+msgid "Would you like to save the current game, so it can be continued later?"
+msgstr "Uneko jokoa geroago jokatu ahal izateko gorde nahi duzu?"
+
+#: contents/ui/MainMenu.qml:87
+#, kde-format
+msgid "New Sudoku:"
+msgstr "Sudoku berria:"
+
+#: contents/ui/MainMenu.qml:105
+#, kde-format
+msgid "Import or enter:"
+msgstr "Inportatu edo sartu:"
+
+#: contents/ui/MainMenu.qml:111
+#, kde-format
+msgctxt "@action:button"
+msgid "Import Sudoku …"
+msgstr "Inportatu Sudoku …"
+
+#: contents/ui/MainMenu.qml:118
+#, kde-format
+msgctxt "@action:button"
+msgid "Enter Sudoku …"
+msgstr "Sartu Sudoku …"
+
+#: contents/ui/MainMenu.qml:125
+#, kde-format
+msgctxt "@action:button"
+msgid "Continue:"
+msgstr "Jarraitu:"
+
+#: contents/ui/Settings.qml:14
+#, kde-format
+msgctxt "@title:window"
+msgid "Settings"
+msgstr "Ezarpenak"
+
+#: contents/ui/Settings.qml:17
+#, kde-format
+msgctxt "@title"
+msgid "Game"
+msgstr "Jokoa"
+
+#: contents/ui/Settings.qml:22
+#, kde-format
+msgctxt "@option:check"
+msgid "Reset time with game"
+msgstr "Jokoarekin denbora berrezarri"
+
+#: contents/ui/Settings.qml:30
+#, kde-format
+msgctxt "@option:check"
+msgid "Clean up pencil marks when setting a cell value"
+msgstr "Garbitu arkatz-markak gelaxka bateko balioa ezartzean"
+
+#: contents/ui/Settings.qml:40
+#, kde-format
+msgctxt "@title"
+msgid "Highlight"
+msgstr "Nabarmendu"
+
+#: contents/ui/Settings.qml:44
+#, kde-format
+msgctxt "@option:check"
+msgid "Houses of a selected cell"
+msgstr "Hautatutako gelaxkaren multzoak"
+
+#: contents/ui/Settings.qml:52
+#, kde-format
+msgctxt "@option:check"
+msgid "Cells with active digit"
+msgstr "Digitu aktiboa duten gelaxkak"
+
+#: contents/ui/Settings.qml:60
+#, kde-format
+msgctxt "@option:check"
+msgid "Cells with active digit pencilmark"
+msgstr "Hautatutako digitua arkatz-ohar gisa duten gelaxkak"
+
+#: contents/ui/Settings.qml:68
+#, kde-format
+msgctxt "@option:check"
+msgid "Logical errors in values"
+msgstr "Akats logikoak balioetan"
+
+#: contents/ui/Settings.qml:76
+#, kde-format
+msgctxt "@option:check"
+msgid "Logical errors in pencilmarks"
+msgstr "Arkatz-marketan akats logikoak"
+
+#: contents/ui/Settings.qml:87
+#, kde-format
+msgctxt "@option:check"
+msgid "Erasable cells with eraser active"
+msgstr "Ezabatzekoa aktibo duten gelaxka ezabagarriak"
+
+#: contents/ui/Settings.qml:95
+#, kde-format
+msgctxt "@option:check"
+msgid "Wrong values"
+msgstr "Balio okerrak"
+
+#: main.cpp:75
+#, kde-format
+msgctxt "@title"
+msgid "PuMoKu"
+msgstr "PuMoKu"
+
+#: main.cpp:79 main.cpp:93
+#, kde-format
+msgid "PuMoKu is a classic Sudoku game, aimed for Plasma Mobile"
+msgstr ""
+"PuMoKu Plasma Mugikorrerako pentsatuta dagoen Sudoko joko klasiko bat da"
+
+#: main.cpp:83
+#, kde-format
+msgid "© 2025 KDE Developers"
+msgstr "© 2025 KDE Garatzaileak"
+
+#: main.cpp:84
+#, kde-format
+msgctxt "@info:credit"
+msgid "Anders Lund"
+msgstr "Anders Lund"
+
+#: main.cpp:84
+#, kde-format
+msgctxt "@info:credit"
+msgid "Maintainer"
+msgstr "Mantentzailea"
+
+#: main.cpp:85
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Iñigo Salvador Azurmendi"
+
+#: main.cpp:85
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "xalba@ni.eus"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "UNKNOWN"
+msgstr "EZEZAGUNA"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Simple"
+msgstr "Sinplea"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Easy"
+msgstr "Erraza"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Intermediate"
+msgstr "Tartekoa"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Expert"
+msgstr "Aditua"
+
+#: qqw.cpp:12
+#, kde-format
+msgid "None"
+msgstr "Bat ere ez"
+
+#: qqw.cpp:12
+#, kde-format
+msgid "Rotate 90°"
+msgstr "Biratu 90º"
+
+#: qqw.cpp:12
+#, kde-format
+msgid "Rotate 180°"
+msgstr "Biratu 180°"
+
+#: qqw.cpp:12
+#, kde-format
+msgid "Mirror"
+msgstr "Ispilatu"
+
+#: qqw.cpp:12
+#, kde-format
+msgid "Flip"
+msgstr "Irauli"
+
+#: qqw.cpp:12
+#, kde-format
+msgid "Random"
+msgstr "Ausazkoa"
+
+#: qqw.cpp:74
+#, kde-format
+msgid "Looking good. Difficulty:"
+msgstr "Itxura ona du. Zailtasuna:"
+
+#: qqw.cpp:77
+#, kde-format
+msgid "The provided Sudoku does not have a unique solution."
+msgstr "Eskainitako Sudokuak ez du ebazpen bakarra."
+
+#: qqw.cpp:81
+#, kde-format
+msgid "The provided Sudoku is not solvable."
+msgstr "Emandako Sudokua ezin da ebatzi."
