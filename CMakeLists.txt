@@ -8,7 +8,7 @@ project(pumoku VERSION 0.1)
 include(FeatureSummary)
 
 set(QT6_MIN_VERSION 6.5.0)
-set(KF6_MIN_VERSION 6.0.0)
+set(KF6_MIN_VERSION 6.8.0)
 
 find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
 
@@ -65,6 +65,7 @@ include(ECMSetupVersion)
 include(ECMFindQmlModule)
 include(ECMAddAndroidApk)
 include(ECMQmlModule)
+include(ECMDeprecationSettings)
 if(NOT ANDROID)
     include(KDEGitCommitHooks)
     include(KDEClangFormat)
@@ -116,6 +117,7 @@ if(TARGET KF6::Crash)
 endif()
 
 kde_enable_exceptions()
+ecm_set_disabled_deprecation_versions(QT 6.11.0  KF 6.21.0)
 add_subdirectory(src)
 add_subdirectory(icons)
 
