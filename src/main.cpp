@@ -25,6 +25,7 @@
 #include "version-pumoku.h"
 #include <KAboutData>
 #include <KLocalizedContext>
+#include <KLocalizedQmlContext>
 #include <KLocalizedString>
 #include <QCommandLineParser>
 
@@ -100,7 +101,7 @@ int main(int argc, char *argv[])
 
     qmlRegisterSingletonInstance("org.kde.pumoku.private", 1, 0, "Config", PuMoKuConfig::self());
     QObject::connect(&app, &QCoreApplication::aboutToQuit, PuMoKuConfig::self(), &PuMoKuConfig::save);
-    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+    engine.rootContext()->setContextObject(new KLocalizedQmlContext(&engine));
     engine.loadFromModule("org.kde.pumoku", u"Main");
 
     if (engine.rootObjects().isEmpty()) {
