@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-20 00:39+0000\n"
-"PO-Revision-Date: 2025-11-26 14:11+0100\n"
+"PO-Revision-Date: 2025-12-12 14:51+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -184,14 +184,12 @@ msgstr "Un altro %1"
 #: contents/ui/GamePage.qml:700
 #, kde-format
 msgid "Please select a valid cell to solve."
-msgstr ""
+msgstr "Seleziona una cella valida da risolvere."
 
 #: contents/ui/GamePage.qml:703
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Solve Cell"
+#, kde-format
 msgid "Solve"
-msgstr "Risolvi la cella"
+msgstr "Risolvi"
 
 #: contents/ui/Import.qml:13
 #, kde-format
@@ -222,7 +220,7 @@ msgstr ""
 #, kde-format
 msgctxt "@button:title"
 msgid "Save current game"
-msgstr ""
+msgstr "Salva la partita attuale"
 
 #: contents/ui/Import.qml:53
 #, kde-format
@@ -248,53 +246,45 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Pumoku Menu"
-msgstr ""
+msgstr "Menu di Pumoku"
 
 #: contents/ui/MainMenu.qml:56
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Solve Game?"
+#, kde-format
 msgid "Save game?"
-msgstr "Vuoi risolvere la partita?"
+msgstr "Vuoi salvare la partita?"
 
 #: contents/ui/MainMenu.qml:57
 #, kde-format
 msgid "Would you like to save the current game, so it can be continued later?"
-msgstr ""
+msgstr "Vuoi salvare la partita in corso per poterla continuare in seguito?"
 
 #: contents/ui/MainMenu.qml:87
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Solve a Sudoku"
+#, kde-format
 msgid "New Sudoku:"
-msgstr "Risolvi un Sudoku"
+msgstr "Nuovo Sudoku:"
 
 #: contents/ui/MainMenu.qml:105
 #, kde-format
 msgid "Import or enter:"
-msgstr ""
+msgstr "Importa o inserisci:"
 
 #: contents/ui/MainMenu.qml:111
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Import Sudoku"
+#, kde-format
 msgctxt "@action:button"
 msgid "Import Sudoku …"
-msgstr "Importa Sudoku"
+msgstr "Importa Sudoku …"
 
 #: contents/ui/MainMenu.qml:118
 #, kde-format
 msgctxt "@action:button"
 msgid "Enter Sudoku …"
-msgstr ""
+msgstr "Inserisci Sudoku…"
 
 #: contents/ui/MainMenu.qml:125
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Continue…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Continue:"
-msgstr "Continua…"
+msgstr "Continua:"
 
 #: contents/ui/Settings.qml:14
 #, kde-format
