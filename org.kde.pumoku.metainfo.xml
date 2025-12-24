@@ -23,6 +23,7 @@
   <name xml:lang="sl">PuMoKu</name>
   <name xml:lang="tr">PuMoKu</name>
   <name xml:lang="uk">PuMoKu</name>
+  <name xml:lang="zh-TW">PuMoKu</name>
   <summary>A classic 9 × 9 sudoku game</summary>
   <summary xml:lang="ar">لعبة سودوكو كلاسيكية 9 × 9</summary>
   <summary xml:lang="ca">Un joc de Sudoku 9 x 9 clàssic</summary>
@@ -38,6 +39,7 @@
   <summary xml:lang="sl">Klasična igra sudoku 9x9</summary>
   <summary xml:lang="tr">Klasik 9 × 9 Sudoku oyunu</summary>
   <summary xml:lang="uk">Класична гра судоку 9x9</summary>
+  <summary xml:lang="zh-TW">經典 9 × 9 數獨遊戲</summary>
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-3.0</project_license>
   <url type="homepage">https://apps.kde.org/pumoku/</url>
@@ -68,6 +70,7 @@
     <p xml:lang="sl">PuMoKu je klasična igra reševanja sudoku velikosti 9x9, namenjena za Plasma Mobile. Ponuja prilagodljive možnosti označevanja in metode vnosa (na dotik), celoten nabor ukazov za razveljavitev in še več.</p>
     <p xml:lang="tr">PuMoKu, Plasma Cep için tasarlanmış, klasik 9 × 9 Sudoku çözme oyunudur. Esnek vurgu ve (dokunmatik) giriş seçenekleri, tam geri alma desteği ve çok daha fazlasıyla gelir.</p>
     <p xml:lang="uk">PuMoKu — класична гра у судоку 9x9, яку призначено для мобільної Плазми. У ній передбачено гнучкі можливості з підсвічування і (сенсорні) способи введення, повний стос скасування дій та додаткові можливості.</p>
+    <p xml:lang="zh-TW">PuMoKu 是一個設計給 Plasma 行動用的經典 9 × 9 數獨遊戲。它提供有彈性的突顯選項與輸入方法（包含觸控）、完整復原功能等等。</p>
     <ul>
       <li>Input methods: Cell first, Number first or Hybrid</li>
       <li xml:lang="ar">طرق الإدخال: الخلية أولاً، الرقم أولاً أو مختلط</li>
@@ -129,12 +132,14 @@
       <caption xml:lang="eu">PuMoKu jokoa</caption>
       <caption xml:lang="fr">PuMoKu</caption>
       <caption xml:lang="he">משחק PuMoKu</caption>
+      <caption xml:lang="it">Gioco PuMoKu</caption>
       <caption xml:lang="ka">თამაში PuMoKu</caption>
       <caption xml:lang="nl">PuMoKu-spel</caption>
       <caption xml:lang="pt-BR">Jogo PuMoKu</caption>
       <caption xml:lang="sl">Igra PuMoKu</caption>
       <caption xml:lang="tr">PuMoKu oyunu</caption>
       <caption xml:lang="uk">Гра PuMoKu</caption>
+      <caption xml:lang="zh-TW">PuMoKu 遊戲</caption>
       <image>https://cdn.kde.org/screenshots/pumoku/pumoku.png</image>
     </screenshot>
   </screenshots>
