@@ -37,11 +37,11 @@ FormCard.FormCardPage {
     }
 
     FormCard.FormHeader {
-        title: i18nc("@title", "Highlight")
+        title: i18nc("@title of a section describing which kind of cells should be highlighted", "Highlight")
     }
     FormCard.FormCard {
         FormCard.FormSwitchDelegate {
-            text: i18nc("@option:check", "Houses of a selected cell")
+            text: i18nc("@option:check describing which kind of cells should be highlighted", "Houses of a selected cell")
             checked: Config.houses
             onCheckedChanged: Config.houses = checked
         }
@@ -49,7 +49,7 @@ FormCard.FormCardPage {
         FormCard.FormDelegateSeparator {}
 
         FormCard.FormSwitchDelegate {
-            text: i18nc("@option:check", "Cells with active digit")
+            text: i18nc("@option:check describing which kind of cells should be highlighted", "Cells with active digit")
             checked: Config.digit_value
             onCheckedChanged: Config.digit_value = checked
         }
@@ -57,7 +57,7 @@ FormCard.FormCardPage {
         FormCard.FormDelegateSeparator {}
 
         FormCard.FormSwitchDelegate {
-            text: i18nc("@option:check", "Cells with active digit pencilmark")
+            text: i18nc("@option:check describing which kind of cells should be highlighted", "Cells with active digit pencilmark")
             checked: Config.digit_pencilmark
             onCheckedChanged: Config.digit_pencilmark = checked
         }
@@ -65,7 +65,7 @@ FormCard.FormCardPage {
         FormCard.FormDelegateSeparator {}
 
         FormCard.FormSwitchDelegate {
-            text: i18nc("@option:check", "Logical errors in values")
+            text: i18nc("@option:check describing which kind of cells should be highlighted", "Logical errors in values")
             checked: Config.logical_error_value
             onCheckedChanged: Config.logical_error_value = checked
         }
@@ -73,7 +73,7 @@ FormCard.FormCardPage {
         FormCard.FormDelegateSeparator {}
 
         FormCard.FormSwitchDelegate {
-            text: i18nc("@option:check", "Logical errors in pencilmarks")
+            text: i18nc("@option:check describing which kind of cells should be highlighted", "Logical errors in pencilmarks")
             checked: Config.logical_error_pencilmark
             onCheckedChanged: {
                 Config.logical_error_pencilmark = checked
@@ -84,7 +84,7 @@ FormCard.FormCardPage {
         FormCard.FormDelegateSeparator {}
 
         FormCard.FormSwitchDelegate {
-            text: i18nc("@option:check", "Erasable cells with eraser active")
+            text: i18nc("@option:check describing which kind of cells should be highlighted", "Erasable cells with eraser active")
             checked: Config.erasable
             onCheckedChanged: Config.erasable = checked
         }
@@ -92,7 +92,7 @@ FormCard.FormCardPage {
         FormCard.FormDelegateSeparator {}
 
         FormCard.FormSwitchDelegate {
-            text: i18nc("@option:check", "Wrong values")
+            text: i18nc("@option:check describing which kind of cells should be highlighted", "Wrong values")
             checked: Config.error_value
             onCheckedChanged: Config.error_value = checked
         }
