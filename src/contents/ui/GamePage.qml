@@ -203,7 +203,7 @@ Kirigami.Page {
         } else if (game.hintCount || game.hintStatus & game.hintStatusUsedAutoPM) {
             finishColor = Kirigami.Theme.neutralBackgroundColor;
             finishHeader = i18n("Well done!");
-            finishText = i18nc("%1 is level name, %2 is step count", "You finished this %1 Sudoku (with a bit of help) using %2 steps.", game.levelName, stepcount);
+            finishText = i18nc("%1 is level difficulty, %2 is step count", "You completed this Sudoku at difficulty “%1” in %2 steps, with a bit of help.", game.levelName, stepcount);
             if (game.hintStatus & game.hintStatusUsedAutoPM) {
                 finishMsg = i18n("Auto pencilmarks used.") + " ";
             }
@@ -211,7 +211,7 @@ Kirigami.Page {
         } else {
             finishColor = Kirigami.Theme.positiveBackgroundColor;
             finishHeader = i18n("CONGRATULATIONS!!");
-            finishText = i18nc("%1 is level name, %2 is step count", "You finished this %1 Sudoku with no hints or help using %2 steps.", game.levelName, stepcount);
+            finishText = i18nc("%1 is level difficulty, %2 is step count", "You completed this Sudoku at difficulty “%1” in %2 steps, with no hints or help.", game.levelName, stepcount);
             finishMsg = i18n("Well done!")
         }
 
@@ -684,7 +684,7 @@ Kirigami.Page {
                     Layout.bottomMargin: Kirigami.Units.largeSpacing
                     Layout.alignment: Qt.AlignHCenter
                     QQC2.Button  {
-                        text: i18nc("@action:button, %1 is level name", "Another %1", game.levelName)
+                        text: i18nc("@action:button, %1 is level difficulty", "Play “%1” again", game.levelName)
                         onClicked: generateSudoku(game.level, 0)
                     }
                 }
