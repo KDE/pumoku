@@ -15,6 +15,7 @@
   <name xml:lang="de">PuMoKu</name>
   <name xml:lang="es">PuMoKu</name>
   <name xml:lang="eu">PuMoKu</name>
+  <name xml:lang="fi">PuMoKu</name>
   <name xml:lang="fr">PuMoKu</name>
   <name xml:lang="he">PuMoKu</name>
   <name xml:lang="it">PuMoKu</name>
@@ -32,6 +33,7 @@
   <summary xml:lang="de">Ein klassisches 9 × 9-Sudoku-Spiel</summary>
   <summary xml:lang="es">El clásico juego sudoku de 9×9</summary>
   <summary xml:lang="eu">9 × 9ko sudoku joko klasikoa</summary>
+  <summary xml:lang="fi">Perinteinen 9 × 9 sudokupeli</summary>
   <summary xml:lang="fr">Un jeu de sudoku 9×9 classique</summary>
   <summary xml:lang="he">משחק סודוקו קלסי 9 × 9</summary>
   <summary xml:lang="it">Un classico gioco di Sudoku 9x9</summary>
@@ -64,6 +66,7 @@
     <p xml:lang="de">PuMoKu ist ein für Plasma Mobile optimiertes, klassisches 9 × 9-Sudoku-Spiel. Es bietet flexible Hervorhebungsmöglichkeiten und (Touch-)Eingabemethoden, die Möglichkeit, alle Schritte rückgängig zu machen und vieles mehr.</p>
     <p xml:lang="es">PuMoKu es el clásico juego de resolver sudokus de 9×9 para Plasma Móvil. Dispone de funciones de resaltado flexible y métodos de entrada (táctiles), completa pila de deshacer movimientos y mucho más.</p>
     <p xml:lang="eu">PuMoKu Plama Mugikorrerako pentsatuta dagoen 9 × 9ko Sudokuak ebazteko joko klasiko bat da. Nabarmentzeko aukera eta (ukimen) sarrera metodo malguak, pila osoa desegin eta gehiago dakar.</p>
+    <p xml:lang="fi">PuMoKu on Plasma Mobileen tarkoitettu perinteinen 9 × 9 sudokunratkaisupeli. Siinä on joustavat korostusominaisuudet ja (kosketus-) syöttämismenetelmät, täysi kumoamismahdollisuus ynnä muuta.</p>
     <p xml:lang="fr">PuMoKu est un jeu de résolution de sudoku 9×9 classique destiné à Plasma Mobile. Il est livré avec des options de surbrillance flexibles et des méthodes d'entrée (tactiles), une pile complète d'annulation de coups et plus encore.</p>
     <p xml:lang="he">PoMuKu הוא משחק חידת סודוקו בגודל 9 × 9 שמיועד לפלזמה לניידים. יש לו אפשרויות הדגשה גמישות ושיטות קלט (מגע), מערך הסגות מלא ועוד.</p>
     <p xml:lang="it">PuMoKu è un classico gioco di risoluzione di Sudoku 9x9, pensato per Plasma Mobile. Offre opzioni di evidenziazione flessibili e metodi di input (tocco), una pila completa di annullamenti e altro.</p>
@@ -82,6 +85,7 @@
       <li xml:lang="de">Eingabemethoden: Zelle zuerst, Zahl zuerst oder hybrid</li>
       <li xml:lang="es">Métodos de entrada: celda primero, número primero o híbrido</li>
       <li xml:lang="eu">Sarrerako metodoak: Gelaxka aurrena, Zenbakia aurrena edo Hibridoa</li>
+      <li xml:lang="fi">Syöttämismenetelmät: solu ensin, numero ensin tai hybridi</li>
       <li xml:lang="fr">Méthodes de saisie : cellule en premier, nombre en premier ou hybride</li>
       <li xml:lang="he">שיטות קלט: תא קודם, מספר קודם או משולב</li>
       <li xml:lang="it">Metodi di input: prima cella, prima numero o ibrido</li>
@@ -99,6 +103,7 @@
       <li xml:lang="de">Eingebauter Sudoku-Generator</li>
       <li xml:lang="es">Generador de sudokus integrado</li>
       <li xml:lang="eu">Sudoku sortzailean barnean eraikia</li>
+      <li xml:lang="fi">Sisään rakennettu sudokunluoja</li>
       <li xml:lang="fr">Générateur de sudoku intégré</li>
       <li xml:lang="he">מחולל סודוקו מובנה</li>
       <li xml:lang="it">Generatore di sudoku integrato</li>
@@ -116,6 +121,7 @@
       <li xml:lang="de">Automatisches Rückgängigmachen, wenn die gleiche Aktion wiederholt wird</li>
       <li xml:lang="es">Deshacer automáticamente cuando se repite la misma acción</li>
       <li xml:lang="eu">Automatikoki desegin ekintza bera errepikatzen denean</li>
+      <li xml:lang="fi">Automaattinen kumoaminen saman toiminnon toistuttua</li>
       <li xml:lang="fr">Annulation automatique lorsque la même action est répétée</li>
       <li xml:lang="he">הסגה אוטומטית כשפעולה מסוימת חוזרת על עצמה</li>
       <li xml:lang="it">Annullamento automatico quando la stessa azione viene ripetuta</li>
@@ -137,6 +143,7 @@
       <caption xml:lang="de">PuMoKu-Spiel</caption>
       <caption xml:lang="es">Juego PuMoKu</caption>
       <caption xml:lang="eu">PuMoKu jokoa</caption>
+      <caption xml:lang="fi">PuMoKu-peli</caption>
       <caption xml:lang="fr">PuMoKu</caption>
       <caption xml:lang="he">משחק PuMoKu</caption>
       <caption xml:lang="it">Gioco PuMoKu</caption>
