@@ -467,6 +467,3 @@ msgstr "El Sudoku proporcionat no té una solució única."
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "El Sudoku proporcionat no es pot solucionar."
-
-#~ msgid "PuMoKu"
-#~ msgstr "PuMoKu"
