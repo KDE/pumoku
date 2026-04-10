@@ -1,0 +1,464 @@
+# Slovak translations for pumoku package.
+# Copyright (C) 2026 This file is copyright:
+# This file is distributed under the same license as the pumoku package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pumoku\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-01-07 00:41+0000\n"
+"PO-Revision-Date: 2026-01-07 00:41+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: contents/ui/GamePage.qml:200
+#, kde-format
+msgid "There is your solution"
+msgstr "Tu je vaše riešenie"
+
+#: contents/ui/GamePage.qml:201
+#, kde-format
+msgctxt "%1 is step count"
+msgid "You gave in after %1 steps."
+msgstr "Vzdali ste sa po %1 krokoch."
+
+#: contents/ui/GamePage.qml:202
+#, kde-format
+msgctxt "%1 is hint count"
+msgid "Automatically solved. Hints: %1."
+msgstr "Automaticky vyriešené. Nápovedy: %1."
+
+#: contents/ui/GamePage.qml:205 contents/ui/GamePage.qml:215
+#, kde-format
+msgid "Well done!"
+msgstr "Výborne!"
+
+#: contents/ui/GamePage.qml:206
+#, kde-format
+msgctxt "%1 is level name, %2 is step count"
+msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
+msgstr "Dokončili ste toto %1 sudoku (s trochou pomoci) pomocou %2 krokov."
+
+#: contents/ui/GamePage.qml:208
+#, kde-format
+msgid "Auto pencilmarks used."
+msgstr "Boli použité automatické ceruzkové značky."
+
+#: contents/ui/GamePage.qml:210
+#, kde-format
+msgctxt "%1 is hint count"
+msgid "Hints: %1."
+msgstr "Nápovedy: %1."
+
+#: contents/ui/GamePage.qml:213
+#, kde-format
+msgid "CONGRATULATIONS!!"
+msgstr "GRATULUJEME!!"
+
+#: contents/ui/GamePage.qml:214
+#, kde-format
+msgctxt "%1 is level name, %2 is step count"
+msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
+msgstr ""
+"Dokončili ste toto %1 sudoku bez nápovedy alebo pomoci pomocou %2 krokov."
+
+#: contents/ui/GamePage.qml:464
+#, kde-format
+msgctxt "@action:button"
+msgid "Undo"
+msgstr "Späť"
+
+#: contents/ui/GamePage.qml:473
+#, kde-format
+msgctxt "@action:button"
+msgid "Redo"
+msgstr "Znova"
+
+#: contents/ui/GamePage.qml:482
+#, kde-format
+msgctxt "@action:button"
+msgid "Hint"
+msgstr "&Pokyn"
+
+#: contents/ui/GamePage.qml:488
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Solve Cell"
+msgstr "Vyriešiť bunku"
+
+#: contents/ui/GamePage.qml:501
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Solve Game"
+msgstr "Vyriešiť hru"
+
+#: contents/ui/GamePage.qml:505
+#, kde-format
+msgctxt "@title:window"
+msgid "Solve Game?"
+msgstr "Vyriešiť hru?"
+
+#: contents/ui/GamePage.qml:506
+#, kde-format
+msgid ""
+"You will lose any changes you have made, this cannot be undone. You can’t "
+"solve the puzzle on your own!"
+msgstr ""
+"Stratíte všetky vykonané zmeny, toto sa nedá vrátiť. Nedokážete vyriešiť "
+"hlavolam sami!"
+
+#: contents/ui/GamePage.qml:515
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Set Pencilmarks"
+msgstr "Nastaviť ceruzkové značky"
+
+#: contents/ui/GamePage.qml:560
+#, kde-format
+msgctxt "@action:button"
+msgid "Pencil"
+msgstr "Ceruzka"
+
+#: contents/ui/GamePage.qml:568
+#, kde-format
+msgctxt "@action:button"
+msgid "Erase"
+msgstr "Mazať"
+
+#: contents/ui/GamePage.qml:576
+#, kde-format
+msgctxt "@action:button"
+msgid "Game"
+msgstr "Hra"
+
+#: contents/ui/GamePage.qml:582
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Reset Game"
+msgstr "Reštartovať hru?"
+
+#: contents/ui/GamePage.qml:586
+#, kde-format
+msgctxt "@title:window"
+msgid "Reset Game?"
+msgstr "Resetovať hru?"
+
+#: contents/ui/GamePage.qml:587 contents/ui/GamePage.qml:605
+#, kde-format
+msgid "You will lose any changes you have made, this cannot be undone."
+msgstr "Stratíte všetky vykonané zmeny, toto sa nedá vrátiť."
+
+#: contents/ui/GamePage.qml:596
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Clear Pencilmarks"
+msgstr "Vyčistiť ceruzkové značky"
+
+#: contents/ui/GamePage.qml:600
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Give Up"
+msgstr "Vzdať sa"
+
+#: contents/ui/GamePage.qml:604
+#, kde-format
+msgctxt "@title:window"
+msgid "Give Up?"
+msgstr "Vzdať sa?"
+
+#: contents/ui/GamePage.qml:687
+#, kde-format
+msgctxt "@action:button, %1 is level name"
+msgid "Another %1"
+msgstr "Ďalšie %1"
+
+#: contents/ui/GamePage.qml:700
+#, kde-format
+msgid "Please select a valid cell to solve."
+msgstr "Vyberte prosím platnú bunku na vyriešenie."
+
+#: contents/ui/GamePage.qml:703
+#, kde-format
+msgid "Solve"
+msgstr "Vyriešiť"
+
+#: contents/ui/Import.qml:13
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Sudoku"
+msgstr "Importovať sudoku"
+
+#: contents/ui/Import.qml:35
+#, kde-format
+msgctxt "Use en dash for number range"
+msgid ""
+"Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
+"single non-numeric character except space will do for blanks cells. PuMoKu "
+"will check that the Sudoku is solvable and calculate the level.\n"
+"\n"
+"Line breaks and spaces are silently removed, so that you can enter one row "
+"per-line with some optional whitespace."
+msgstr ""
+"Zadajte alebo prilepte reťazec 81 znakov. 1–9 pre zadané bunky, 0 alebo "
+"akýkoľvek jeden nečíselný znak okrem medzery pre prázdne bunky. PuMoKu "
+"skontroluje, či je sudoku riešiteľné a vypočíta úroveň.\n"
+"\n"
+"Zlomy riadkov a medzery sa potichu odstránia, takže môžete zadať jeden "
+"riadok na riadok s nejakým voliteľným prázdnym priestorom."
+
+#: contents/ui/Import.qml:45
+#, kde-format
+msgctxt "@button:title"
+msgid "Save current game"
+msgstr "Uložiť aktuálnu hru"
+
+#: contents/ui/Import.qml:53
+#, kde-format
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: contents/ui/Import.qml:57
+#, kde-format
+msgctxt "@action:button"
+msgid "Import"
+msgstr "Importovať"
+
+#: contents/ui/Import.qml:66
+#, kde-format
+msgid ""
+"The provided string is not exactly 81 characters after cleanup. Please amend."
+msgstr ""
+"Poskytnutý reťazec po vyčistení nemá presne 81 znakov. Opravte ho prosím."
+
+#: contents/ui/MainMenu.qml:15
+#, kde-format
+msgctxt "@title:window"
+msgid "Pumoku Menu"
+msgstr "Ponuka Pumoku"
+
+#: contents/ui/MainMenu.qml:56
+#, kde-format
+msgid "Save game?"
+msgstr "Uložiť hru?"
+
+#: contents/ui/MainMenu.qml:57
+#, kde-format
+msgid "Would you like to save the current game, so it can be continued later?"
+msgstr "Chcete uložiť aktuálnu hru, aby sa dala neskôr pokračovať?"
+
+#: contents/ui/MainMenu.qml:87
+#, kde-format
+msgid "New Sudoku:"
+msgstr "Nové sudoku:"
+
+#: contents/ui/MainMenu.qml:105
+#, kde-format
+msgid "Import or enter:"
+msgstr "Importovať alebo zadať:"
+
+#: contents/ui/MainMenu.qml:111
+#, kde-format
+msgctxt "@action:button"
+msgid "Import Sudoku …"
+msgstr "Importovať sudoku …"
+
+#: contents/ui/MainMenu.qml:118
+#, kde-format
+msgctxt "@action:button"
+msgid "Enter Sudoku …"
+msgstr "Zadať sudoku …"
+
+#: contents/ui/MainMenu.qml:125
+#, kde-format
+msgctxt "@action:button"
+msgid "Continue:"
+msgstr "Pokračovať:"
+
+#: contents/ui/Settings.qml:14
+#, kde-format
+msgctxt "@title:window"
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: contents/ui/Settings.qml:17
+#, kde-format
+msgctxt "@title"
+msgid "Game"
+msgstr "Hra"
+
+#: contents/ui/Settings.qml:22
+#, kde-format
+msgctxt "@option:check"
+msgid "Reset time with game"
+msgstr "Resetovať čas s hrou"
+
+#: contents/ui/Settings.qml:30
+#, kde-format
+msgctxt "@option:check"
+msgid "Clean up pencil marks when setting a cell value"
+msgstr "Vyčistiť ceruzkové značky pri nastavení hodnoty bunky"
+
+#: contents/ui/Settings.qml:40
+#, kde-format
+msgctxt "@title"
+msgid "Highlight"
+msgstr "Zvýraznenie"
+
+#: contents/ui/Settings.qml:44
+#, kde-format
+msgctxt "@option:check"
+msgid "Houses of a selected cell"
+msgstr "Bloky vybranej bunky"
+
+#: contents/ui/Settings.qml:52
+#, kde-format
+msgctxt "@option:check"
+msgid "Cells with active digit"
+msgstr "Bunky s aktívnou číslicou"
+
+#: contents/ui/Settings.qml:60
+#, kde-format
+msgctxt "@option:check"
+msgid "Cells with active digit pencilmark"
+msgstr "Bunky s ceruzkovou značkou aktívnej číslice"
+
+#: contents/ui/Settings.qml:68
+#, kde-format
+msgctxt "@option:check"
+msgid "Logical errors in values"
+msgstr "Logické chyby v hodnotách"
+
+#: contents/ui/Settings.qml:76
+#, kde-format
+msgctxt "@option:check"
+msgid "Logical errors in pencilmarks"
+msgstr "Logické chyby v ceruzkových značkách"
+
+#: contents/ui/Settings.qml:87
+#, kde-format
+msgctxt "@option:check"
+msgid "Erasable cells with eraser active"
+msgstr "Vymazateľné bunky s aktívnou gumou"
+
+#: contents/ui/Settings.qml:95
+#, kde-format
+msgctxt "@option:check"
+msgid "Wrong values"
+msgstr "Nesprávne hodnoty"
+
+#: main.cpp:76
+#, kde-format
+msgctxt "@title"
+msgid "PuMoKu"
+msgstr "PuMoKu"
+
+#: main.cpp:80 main.cpp:94
+#, kde-format
+msgid "PuMoKu is a classic Sudoku game, aimed for Plasma Mobile"
+msgstr "PuMoKu je klasická hra sudoku, zameraná na Plasma Mobile"
+
+#: main.cpp:84
+#, kde-format
+msgid "© 2025 KDE Developers"
+msgstr "© 2025 Vývojári KDE"
+
+#: main.cpp:85
+#, kde-format
+msgctxt "@info:credit"
+msgid "Anders Lund"
+msgstr "Anders Lund"
+
+#: main.cpp:85
+#, kde-format
+msgctxt "@info:credit"
+msgid "Maintainer"
+msgstr "Správca"
+
+#: main.cpp:86
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Roman Paholík"
+
+#: main.cpp:86
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "wizzardsk@gmail.com"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "UNKNOWN"
+msgstr "NEZNÁME"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Simple"
+msgstr "Jednoduchý"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Easy"
+msgstr "Jednoduchá"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Intermediate"
+msgstr "Stredná hodnota"
+
+#: qqw.cpp:11
+#, kde-format
+msgid "Expert"
+msgstr "Expert"
+
+#: qqw.cpp:12
+#, kde-format
+msgid "None"
+msgstr "Žiadna"
+
+#: qqw.cpp:12
+#, kde-format
+msgid "Rotate 90°"
+msgstr "Otočiť 180°"
+
+#: qqw.cpp:12
+#, kde-format
+msgid "Rotate 180°"
+msgstr "Otočené o 180 stupňov"
+
+#: qqw.cpp:12
+#, kde-format
+msgid "Mirror"
+msgstr "Zrkadliť"
+
+#: qqw.cpp:12
+#, kde-format
+msgid "Flip"
+msgstr "Prevrátiť"
+
+#: qqw.cpp:12
+#, kde-format
+msgid "Random"
+msgstr "Náhodné"
+
+#: qqw.cpp:74
+#, kde-format
+msgid "Looking good. Difficulty:"
+msgstr "Vyzerá dobre. Obtiažnosť:"
+
+#: qqw.cpp:77
+#, kde-format
+msgid "The provided Sudoku does not have a unique solution."
+msgstr "Poskytnuté sudoku nemá jedinečné riešenie."
+
+#: qqw.cpp:81
+#, kde-format
+msgid "The provided Sudoku is not solvable."
+msgstr "Poskytnuté sudoku nie je riešiteľné."
