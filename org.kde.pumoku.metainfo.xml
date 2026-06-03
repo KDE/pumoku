@@ -26,6 +26,7 @@
   <name xml:lang="sk">PuMoKu</name>
   <name xml:lang="sl">PuMoKu</name>
   <name xml:lang="tr">PuMoKu</name>
+  <name xml:lang="ug">PuMoKu</name>
   <name xml:lang="uk">PuMoKu</name>
   <name xml:lang="zh-TW">PuMoKu</name>
   <summary>A classic 9 × 9 sudoku game</summary>
@@ -46,6 +47,7 @@
   <summary xml:lang="sk">Klasická hra sudoku 9 × 9</summary>
   <summary xml:lang="sl">Klasična igra sudoku 9x9</summary>
   <summary xml:lang="tr">Klasik 9 × 9 Sudoku oyunu</summary>
+  <summary xml:lang="ug">ئەنئەنىۋى 9×9 شەكىلدىكى Sudoku ئويۇنى</summary>
   <summary xml:lang="uk">Класична гра судоку 9x9</summary>
   <summary xml:lang="zh-TW">經典 9 × 9 數獨遊戲</summary>
   <metadata_license>FSFAP</metadata_license>
