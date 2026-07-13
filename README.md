@@ -16,7 +16,7 @@ This project is in beta state. It compiles, play is functional, but will not sav
 ## Build and install
 
 ```
-git clone https://invent.kde.org/alund/pumoku.git
+git clone https://invent.kde.org/games/pumoku.git
 mkdir build
 cd build
 cmake ../pumoku
@@ -30,7 +30,7 @@ You may skip the install step and just run /path/to/build/bin/pumoku
 
 Contributing are wellcome - code, patches, ideas, thoughts, translations. Please read the Notes.md file if you think about helping out.
 
-Code is kept in https://invent.kde.org/alund/pumoku/
+Code is kept in https://invent.kde.org/games/pumoku/
 
 The [KDE Community Code](https://kde.org/code-of-conduct) of Conduct is applied.
 
