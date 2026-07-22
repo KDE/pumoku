@@ -13,7 +13,6 @@ set(KF6_MIN_VERSION 6.8.0)
 find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
 
 set(CMAKE_MODULE_PATH
-    ${CMAKE_MODULE_PATH}
     ${ECM_MODULE_PATH}
 )
 
@@ -105,7 +104,7 @@ find_package(
 )
 
 if(NOT ANDROID)
-    find_package(KF6 ${KF_MIN_VERSION} OPTIONAL_COMPONENTS Crash)
+    find_package(KF6 ${KF6_MIN_VERSION} OPTIONAL_COMPONENTS Crash)
 endif()
 
 qt_policy(SET QTP0001 NEW)
