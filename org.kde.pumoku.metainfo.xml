@@ -89,7 +89,7 @@
     <p xml:lang="zh-TW">PuMoKu 是一個設計給 Plasma 行動用的經典 9 × 9 數獨遊戲。它提供有彈性的突顯選項與輸入方法（包含觸控）、完整復原功能等等。</p>
     <ul>
       <li>Input methods: Cell first, Number first or Hybrid</li>
-      <li xml:lang="ar">طرق الإدخال: الخلية أولاً، الرقم أولاً أو مختلط</li>
+      <li xml:lang="ar">طرق الإدخال: الخلية أولًا، الرقم أولًا أو مختلط</li>
       <li xml:lang="ca">Mètode d'entrada: primera cel·la, primer nombre o híbrid</li>
       <li xml:lang="ca-valencia">Mètode d'entrada: primera cel·la, primer nombre o híbrid</li>
       <li xml:lang="cs">Způsoby zadávání: nejprve buňka, nejprve číslo nebo hybridní</li>
