@@ -166,7 +166,7 @@ msgstr "Neteja les marques de llapis"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
-msgstr "Renuncio"
+msgstr "Renuncie"
 
 #: contents/ui/GamePage.qml:604
 #, kde-format
