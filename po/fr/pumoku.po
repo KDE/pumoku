@@ -5,15 +5,15 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-07 00:41+0000\n"
-"PO-Revision-Date: 2025-12-17 13:19+0100\n"
-"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
-"Language-Team: French <French <kde-francophone@kde.org>>\n"
+"PO-Revision-Date: 2025-12-16 22:48+0100\n"
+"Last-Translator: Thomas Vergnaud <thomas.vergnaud@mailo.eu>\n"
+"Language-Team: French <kde-francophone@kde.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.0\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #: contents/ui/GamePage.qml:200
 #, kde-format
@@ -21,7 +21,9 @@ msgid "There is your solution"
 msgstr "Il y a votre solution"
 
 #: contents/ui/GamePage.qml:201
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "%1 is step count"
+#| msgid "You gave in after %1 steps."
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "Vous avez renoncé après %1 étapes."
@@ -57,7 +59,7 @@ msgstr "Astuces : %1."
 #: contents/ui/GamePage.qml:213
 #, kde-format
 msgid "CONGRATULATIONS!!"
-msgstr "FÉLICITATIONS !"
+msgstr "FÉLICITATIONS !!"
 
 #: contents/ui/GamePage.qml:214
 #, kde-format
@@ -107,8 +109,8 @@ msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
 "solve the puzzle on your own!"
 msgstr ""
-"vous perdez toutes vos modifications. Il est impossible d'annuler cette "
-"action. Vous ne pouvez pas résoudre le puzzle par vous-même !"
+"vous perdez toutes vos modifications, cela ne peut pas être annulé. Vous ne "
+"pouvez pas résoudre le puzzle par vous-même !"
 
 #: contents/ui/GamePage.qml:515
 #, kde-format
@@ -149,9 +151,7 @@ msgstr "Réinitialiser le jeu ?"
 #: contents/ui/GamePage.qml:587 contents/ui/GamePage.qml:605
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
-msgstr ""
-"Vous perdez toutes vos modifications. Il est impossible d'annuler cette "
-"action."
+msgstr "Vous perdez toutes vos modifications, cela ne peut pas être annulé."
 
 #: contents/ui/GamePage.qml:596
 #, kde-format
@@ -180,7 +180,7 @@ msgstr "Un autre %1"
 #: contents/ui/GamePage.qml:700
 #, kde-format
 msgid "Please select a valid cell to solve."
-msgstr "Veuillez sélectionner une cellule valable à résoudre."
+msgstr "Veuillez sélectionner une cellule valide à résoudre."
 
 #: contents/ui/GamePage.qml:703
 #, kde-format
@@ -204,13 +204,12 @@ msgid ""
 "Line breaks and spaces are silently removed, so that you can enter one row "
 "per-line with some optional whitespace."
 msgstr ""
-"Veuillez saisir ou coller une chaine de 81 caractères. 1-9 pour les cellules "
-"données, un caractère non numérique (sauf l'espace) ou 0 correspondra aux "
-"cellules vides. PuMoKu vérifiera que le sudoku peut être résolu et calculera "
-"le niveau.\n"
+"Entrez ou collez une chaîne de 81 caractères. 1-9 pour les cellules données, "
+"un caractère non numérique (sauf l'espace) ou 0 correspondra aux cellules "
+"vides. PuMoKu vérifiera que le sudoku est soluble et calculera le niveau.\n"
 "\n"
 "Les sauts de ligne et les espaces sont supprimés, de sorte que vous pouvez "
-"saisir une rangée par ligne avec des espaces en option."
+"entrer une rangée par ligne avec des espaces en option."
 
 #: contents/ui/Import.qml:45
 #, kde-format
@@ -235,7 +234,7 @@ msgstr "Importer"
 msgid ""
 "The provided string is not exactly 81 characters after cleanup. Please amend."
 msgstr ""
-"La chaine fournie ne contient pas exactement 81 caractères après nettoyage. "
+"La chaîne fournie ne contient pas exactement 81 caractères après nettoyage. "
 "Veuillez corriger."
 
 #: contents/ui/MainMenu.qml:15
@@ -253,7 +252,8 @@ msgstr "Enregistrer la partie ?"
 #, kde-format
 msgid "Would you like to save the current game, so it can be continued later?"
 msgstr ""
-"Voulez-vous enregistrer la partie en cours afin de la continuer plus tard ?"
+"Souhaitez-vous sauvegarder la partie en cours afin de la continuer plus "
+"tard ?"
 
 #: contents/ui/MainMenu.qml:87
 #, kde-format
