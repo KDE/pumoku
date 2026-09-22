@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-07 00:41+0000\n"
-"PO-Revision-Date: 2026-06-01 18:34-0400\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -139,7 +139,7 @@ msgstr "ئويۇن"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
-msgstr ""
+msgstr "ئويۇننى ئەسلىگە قايتۇر"
 
 #: contents/ui/GamePage.qml:586
 #, kde-format
@@ -348,7 +348,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title"
 msgid "PuMoKu"
-msgstr "PuMoKu"
+msgstr ""
 
 #: main.cpp:80 main.cpp:94
 #, kde-format
@@ -364,7 +364,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:credit"
 msgid "Anders Lund"
-msgstr "Anders Lund"
+msgstr ""
 
 #: main.cpp:85
 #, kde-format
