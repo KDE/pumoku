@@ -11,13 +11,13 @@ Dependencies:
     'frameworks/kconfig': '@latest-kf6'
     'frameworks/kcolorscheme': '@latest-kf6'
     'frameworks/kiconthemes': '@latest-kf6'
-    'frameworks/purpose': '@latest-kf6'
     'libraries/kirigami-addons': '@latest-kf6'
 
  - 'on': ['Linux', 'FreeBSD', 'Windows']
    'require':
     'frameworks/kcrash': '@latest-kf6'
     'frameworks/qqc2-desktop-style': '@latest-kf6'
+    'frameworks/purpose': '@latest-kf6'
 
  - 'on': ['Linux', 'FreeBSD']
    'require':
