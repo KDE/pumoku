@@ -11,6 +11,7 @@ Dependencies:
     'frameworks/kconfig': '@latest-kf6'
     'frameworks/kcolorscheme': '@latest-kf6'
     'frameworks/kiconthemes': '@latest-kf6'
+    'frameworks/purpose': '@latest-kf6'
     'libraries/kirigami-addons': '@latest-kf6'
 
  - 'on': ['Linux', 'FreeBSD', 'Windows']
