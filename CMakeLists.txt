@@ -105,6 +105,7 @@ find_package(
 
 if(NOT ANDROID)
     find_package(KF6 ${KF6_MIN_VERSION} OPTIONAL_COMPONENTS Crash)
+    find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS Purpose)
 endif()
 
 qt_policy(SET QTP0001 NEW)

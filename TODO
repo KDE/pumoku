@@ -9,13 +9,13 @@
 
     [x] Separate logic from UI: Mostly done, at least by a blank line. Split GameBoard.qml file? See below item.
     [] Componentify some more! => game cell, number key, etc.
-    [] => put game in a component/file of its own (C++!!)
+    [-] => put game in a component/file of its own (C++!!)
     [] => put game board in a component/file
-    [] => put button board in a component/file
-    [] => make qqwing generate hints
-    [] hints - solve one cell (from solution)
+    [N] => put button board in a component/file NO?
+    [] make qqwing generate hints
+    [x] hints - solve one cell (from solution)
     [-] hints UI design, that allows for stepped hint procedure: tip, more info, fix
-    [] hints - check values (from solution) => step 1 number/ok, step 2 => show, step 3 => fix
+    [x] hints - check values (from solution) => show | reset game | scroll back
     [] hints - textual tips about a next step, using solving analysis, potential 2-3 steps? These should come (partially) from qqwing?
     [] hints - coloring feature (color cells to aid finding a solution). Check with Enjoy Sudoku
     [] bookmark feature: A state to go back to, either in undo tree or a saved state.
@@ -25,23 +25,23 @@
         => Should there be support for multiple marks? How to identify them - mark 1, 2, ...
         => UI - either the game menu, or a button in the footer?
         => setBookmark(), goToBookmark(index?), updateBookmark(index=newest)?
-    [-] save/load games to/from file
-    [] => autosave active, unfinished game, and reload it at start + start at game page.
-    [] => autosave unfinished game, when a new game is started
-    [] => provide a list of saved games to load
+    [x] save/load games to/from file
+    [x] => autosave active, unfinished game, and reload it at start + start at game page.
+    [x] => autosave unfinished game, when a new game is started - NO - ask!
+    [x] => provide a list of saved games to load
     [] enter game: by setting numbers in a blank field, pressing finish and having it checked (can be solved)
-    [] main/new game page
+    [x] main/new game page
     [-] help - see Notes.md, a lot can be used.
-    [-] icon
+    [x] icon
     [x] Desktop file
     [] statistics: A database of date, level, time, and page to render. Check at finish if there is a new record, maybe some rendering of time level?
     [] => Different buttonboard layout? Use Loaders to load appropriate layout, for entering fame fx
-    [] turn highlight on/off easily (button on game ui)
-    [] turn pm display on/off easily (button on game ui)
-    [] Share sudokus
-    [] => sudokuexchange.com/play/?s=
+    [x] turn highlight on/off easily (button on game ui)
+    [x] turn pm display on/off easily (button on game ui)
+    [-] Share sudokus
+    [x] => sudokuexchange.com/play/?s=
     [] => share string (0100240 ...)
-    [] => share ascii or graphics
+    [] => share ascii or graphics?
     [-] game information after finish, optional (button on finish ui): givens/missing, calculated solve steps, time, steps conunters, hint count, resets
     [] implement more solving techniques in the solvern (sample list from enjoy sudoku)
     [] => naked quad

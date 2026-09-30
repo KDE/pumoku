@@ -14,14 +14,9 @@ Controls.Button {
     checkable: true
     required property real progress
     property bool showProgress: true
+    property bool isDarkTheme: Kirigami.Theme.backgroundColor.hslLightness < 0.3
 
-    implicitWidth: Math.max(implicitBackgroundWidth + leftInset + rightInset,
-                            implicitContentWidth + leftPadding + rightPadding)
-    implicitHeight: Math.max(implicitBackgroundHeight + topInset + bottomInset,
-                            implicitContentHeight + topPadding + bottomPadding)
     padding: 6
-    horizontalPadding: padding + 2
-    // font.pixelSize: height*0.5
 
     background: Rectangle {
         implicitWidth: 40
@@ -32,22 +27,22 @@ Controls.Button {
         Kirigami.Theme.inherit: false
         Kirigami.Theme.colorSet: Kirigami.Theme.View
 
-        color: progress == 1 ? Kirigami.Theme.positiveBackgroundColor : button.down || button.checked || button.highlighted ? Qt.rgba(Kirigami.Theme.highlightColor.r, Kirigami.Theme.highlightColor.g, Kirigami.Theme.highlightColor.b, 0.3) : Kirigami.Theme.alternateBackgroundColor
+        color: button.progress == 1 ? Kirigami.Theme.positiveBackgroundColor : button.down || button.checked || button.highlighted ? Qt.rgba(Kirigami.Theme.highlightColor.r, Kirigami.Theme.highlightColor.g, Kirigami.Theme.highlightColor.b, 0.3) : Kirigami.Theme.alternateBackgroundColor
 
         border.color: button.down || button.checked || button.visualFocus ? Kirigami.Theme.focusColor : Qt.rgba(Kirigami.Theme.textColor.r, Kirigami.Theme.textColor.g, Kirigami.Theme.textColor.b, 0.3)
-        border.width: 1//button.visualFocus ? 2 : 1
+        border.width: Kirigami.Settings.isMobile ? 2 : 1
 
         radius: Kirigami.Units.smallSpacing
         Rectangle {
-            visible: showProgress && progress < 1
-            height: parent.height-2
+            visible:  button.showProgress && button.progress < 1
+            height: parent.height-parent.border.width*2
             anchors.left: parent.left
             anchors.verticalCenter: parent.verticalCenter
             anchors.margins: 1
             topLeftRadius: parent.radius
             bottomLeftRadius: parent.radius
             width: (parent.width-2)*button.progress
-            color: parent.color.darker(1.1)
+            color: isDarkTheme ? parent.color.lighter(1.8) : parent.color.darker(1.1)
         }
     }
     contentItem: Controls.Label {

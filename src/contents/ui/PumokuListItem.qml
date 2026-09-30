@@ -17,6 +17,6 @@ QQC2.ItemDelegate {
         horizontalAlignment: Qt.AlignHCenter
     }
     background: Rectangle {
-        color: parent.hovered ? Kirigami.Theme.hoverColor : Kirigami.Theme.backgroundColor
+        color: parent.hovered && !Kirigami.Settings.isMobile ? Kirigami.Theme.hoverColor : Kirigami.Theme.backgroundColor
     }
 }

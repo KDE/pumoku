@@ -75,6 +75,8 @@ QtObject {
     property bool finished: true
     property bool loaded: false
 
+    signal isFinished()
+
     Component.onCompleted: {
         clear();
     }
@@ -104,11 +106,6 @@ QtObject {
         currentBlock = -1;
         currentDigit = 0;
 
-        finishHeader = "";
-        finishText = "";
-        finishMsg = "";
-        finishColor = Kirigami.Theme.neutralBackgroundColor;
-
         givenCount = 0;
         valueCnt = 0;
         stepCount = [0,0,0,0,0,0];
@@ -126,8 +123,9 @@ QtObject {
         }
     }
 
+    signal gameLoaded()
     // int list args
-    function setGame(puzzle,solved) {
+    function setGame(puzzle,solved, lvl) {
         clear();
         let hasSolution = solved.length === 81;
         for (let i=0; i < 81; i++) {
@@ -138,10 +136,11 @@ QtObject {
             if (hasSolution) { solution[i] = solved[i]; }
             if (board[i]) { digitCounters[board[i]]++; }
         }
-        level = Qqw.difficulty;
+        level = lvl || Qqw.difficulty;
         levelName = Qqw.difficultyNames[level];
         finished = false;
         loaded = true;
+        gameLoaded()
     }
 
 
@@ -188,10 +187,20 @@ QtObject {
         }
     }
 
+    function asString() {
+        let r = "";
+        board.forEach((v) => r += v  || "0");
+        // console.log(r)
+        return r;
+    }
+
     // reset game
     function reset() {
+        let brd = copyOfList(board);
+        let sltn = copyOfList(solution);
+        let lvl = level;
         clear();
-        setGame(Qqw.sudoku, Qqw.solution);
+        setGame(brd, sltn, lvl);
     }
 
 
@@ -233,6 +242,10 @@ QtObject {
             return;
         }
         if (isUndo) { stepCount[2]++; } else { stepCount[3]++; }
+        // update last* props for implicit undo
+        lastIndex = undoStack[undoPos][1];
+        lastType = 0; // invalidate
+        lastVal = 0; // invalidate
         switch (undoStack[undoPos][0]) {
             case undoValueCell :
                 let index = undoStack[undoPos][1];
@@ -248,6 +261,8 @@ QtObject {
                     checkErrorsBoard(errPencilMarkLogical);
                 }
                 updateDigitCounters();
+                lastType = valueTValue;
+                lastVal = values[index];
                 break;
             case undoValueBoard :
                 undoStack[undoPos][isUndo?3:4].forEach((value,index)=>{values[index] = value});
@@ -262,6 +277,8 @@ QtObject {
                 const val = (Math.log(Math.abs(undoStack[undoPos][3] - undoStack[undoPos][4]))/Math.log(2))+1;
                 index = undoStack[undoPos][1];
                 checkErrors(rowFromIndex(index),colFromIndex(index),blockFromIndex(index),index,val,errPencilMarkLogical);
+                lastType = valueTMark;
+                lastVal = val;
                 break;
             case undoPMBoard :
                 undoStack[undoPos][isUndo?3:4].forEach((value,index)=>{pencilMarks[index] = value})
@@ -535,6 +552,7 @@ QtObject {
         // for(let i=0;i<5;i++)
         //     stepcnt += stepCount[i];
         finished  = true;
+        isFinished();
     }
 
     // help and hints

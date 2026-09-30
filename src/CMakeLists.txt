@@ -8,6 +8,11 @@ add_library(pumoku_static STATIC)
 ecm_add_qml_module(pumoku_static
     URI org.kde.pumoku
     GENERATE_PLUGIN_SOURCE
+)
+
+qt_add_resources(RESOURCES resources.qrc)
+
+qt_target_qml_sources(pumoku_static
     QML_FILES
         contents/ui/Main.qml
         contents/ui/GamePage.qml
@@ -18,9 +23,20 @@ ecm_add_qml_module(pumoku_static
         contents/ui/Import.qml
         contents/ui/PumokuEngine.qml
         contents/ui/PumokuListItem.qml
+        contents/ui/FinishDialog.qml
+        contents/ui/CheckBoardDialog.qml
+        contents/ui/ShareDialog.qml
+        contents/ui/ShareAction.qml
+        # contents/ui/ShareMenu.qml
 )
 
-qt_add_resources(RESOURCES resources.qrc)
+if(NOT ANDROID)
+    qt_target_qml_sources(pumoku_static
+        QML_FILES
+        contents/ui/ShareMenu.qml
+    )
+endif()
+
 
 target_sources(
     pumoku_static
@@ -35,8 +51,8 @@ target_sources(
         gamesmodel.cpp
 )
 target_sources(pumoku_static PUBLIC ${RESOURCES})
-target_link_libraries(
-    pumoku_static
+
+target_link_libraries ( pumoku_static
     PUBLIC
         Qt6::Core
         Qt6::Gui
@@ -50,6 +66,11 @@ target_link_libraries(
         KF6::ConfigCore
         KF6::ConfigGui
 )
+
+if (NOT ANDROID)
+    target_link_libraries(pumoku_static PUBLIC KF6::Purpose Qt6::Widgets)
+endif()
+
 target_include_directories(pumoku_static PRIVATE ${CMAKE_BINARY_DIR})
 if(ANDROID)
     kirigami_package_breeze_icons(ICONS
@@ -68,8 +89,6 @@ if(ANDROID)
         open-for-editing-symbolic
         tool_eraser-symbolic
     )
-else()
-    target_link_libraries(pumoku_static PUBLIC Qt::Widgets)
 endif()
 
 kconfig_add_kcfg_files(pumoku_static GENERATE_MOC pumokuconfig.kcfgc)

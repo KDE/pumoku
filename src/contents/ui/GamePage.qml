@@ -15,23 +15,22 @@ Kirigami.Page {
     title: "PuMoKu: " + game.levelName
     padding: 0
 
-    // hack to make room for sudoku board on mobile phones in landscape orientation
-    globalToolBarStyle: wideScreen && ! tabletMode ? Kirigami.ApplicationHeaderStyle.None : Kirigami.ApplicationHeaderStyle.ToolBar
+    required property Kirigami.ApplicationWindow app
 
     actions: [
         Kirigami.Action {
             // text: i18nc("@action:inmenu", "About PuMoKu")
             icon.name: "help-about-symbolic"
-            onTriggered: root.pageStack.layers.push("qrc:/About.qml")
+            onTriggered: gameBoard.app.pageStack.layers.push("qrc:/About.qml")
         },
         Kirigami.Action {
             // text: i18nc("@action:inmenu", "Settings")
             icon.name: "settings-configure-symbolic"
-            onTriggered: root.pageStack.layers.push("qrc:/Settings.qml")
+            onTriggered: gameBoard.app.pageStack.layers.push("qrc:/Settings.qml")
         },
         Kirigami.Action {
             icon.name: "application-menu-symbolic"
-            onTriggered: root.pageStack.layers.push("qrc:/MainMenu.qml", {gameLoaded: game.loaded})
+            onTriggered: gameBoard.app.pageStack.layers.push("qrc:/MainMenu.qml", {gameLoaded: game.loaded})
         }
     ]
 
@@ -47,9 +46,14 @@ Kirigami.Page {
             alignment: Qt.AlignCenter
             display: QQC2.Button.TextUnderIcon
             actions: [
-            Kirigami.Action {
+            ShareAction {
+                visible: Qt.platform.os != "android"
                 icon.name: "document-share-symbolic"
-                enabled: false
+                enabled: gameBoard.hasGame || game.finished
+                inputData: {
+                    "urls": ["https://sudokuexchange.com/play/?s=" + game.asString()],
+                    "title": i18n("Play at sudokuexchange.com")
+                }
             },
             Kirigami.Action {
                 icon.name: "open-for-editing-symbolic"
@@ -76,10 +80,20 @@ Kirigami.Page {
 
     PumokuEngine {
         id: game
+        onIsFinished: () => {
+            drawerLoader.source = "qrc:/FinishDialog.qml"
+            drawer.isOpen = true
+        }
+        onGameLoaded: () => {
+            if (drawer.isOpen) {
+                drawer.isOpen = false
+                drawerLoader.source = ""
+            }
+        }
     }
 
-    property bool wideScreen: applicationWindow().isWideScreen
-    property bool tabletMode: (wideScreen && applicationWindow().height > 600) || (!wideScreen && width > 600)
+    property bool wideScreen: app.isWideScreen
+    property bool tabletMode: (wideScreen && app.height > 600) || (!wideScreen && width > 600)
 
     property bool hasGame: game.loaded && !game.finished
     property bool gameLoaded: game.loaded
@@ -88,10 +102,15 @@ Kirigami.Page {
     property bool showHighlight: true
     property bool showPencilMarks: false
 
+    property bool tmp_err_value: false
+    // for progressbars using either color.lighter() or color.darker()
+    property bool isDarkTheme: Kirigami.Theme.backgroundColor.hslLightness < 0.3
+
     function generateSudoku(difficulty, symmetry) {
         if (Qqw.generate(difficulty, symmetry)) {
-            setGame(Qqw.sudoku, Qqw.solution);
+            game.setGame(Qqw.sudoku, Qqw.solution);
         }
+        timer.reset();
     }
 
     function saveGame(filename) {
@@ -114,18 +133,13 @@ Kirigami.Page {
         return false
     }
 
-    function setGame(puzzle, solution) {
-        game.setGame(puzzle, solution);
-        timer.reset();
-    }
-
     function highlightConfigChanged() {
         game.checkErrorsBoard(game.errPencilMarkLogical);
     }
 
 
     function cellTapped(row, col, block, index) {
-        if (!hasGame) return;
+        if (!hasGame||drawer.isOpen) return;
         if (solveMessage.visible) {
             game.currentDigit = 0;
         }
@@ -160,7 +174,6 @@ Kirigami.Page {
             game.currentColumn = -1;
             game.currentBlock = -1;
         }
-        if (game.finished) finish();
     }
 
     function numberKeyClicked(index, checked, btn) {
@@ -177,53 +190,21 @@ Kirigami.Page {
         } else {
             game.currentDigit = key;
         }
-        if (game.finished) finish();
+        // if (game.finished) finish();
     }
 
     function eraseClicked() {
-        if (game.currentCell > -1 && game.erasable(currentCell)) {
+        if (game.currentCell > -1 && game.erasable(game.currentCell)) {
             game.setValue(game.currentCell, game.currentRow, game.currentColumn, game.currentBlock, 0, game.valueTValue);
             btnErase.toggle();
         }
-    }
-
-    property string finishHeader: ""
-    property string finishText: ""
-    property string finishMsg: ""
-    property color finishColor: Kirigami.Theme.backgroundColor
-
-    function finish() {
-        let stepcount = 0;
-        game.stepCount.forEach((value) => stepcount += value )
-        if (game.hintStatus & game.hintStatusAutoSolved) {
-            finishColor = Kirigami.Theme.alternateBackgroundColor;
-            finishHeader = i18n("There is your solution")
-            finishText = i18nc("%1 is step count", "You gave in after %1 steps.", stepcount);
-            finishMsg = i18nc("%1 is hint count", "Automatically solved. Hints: %1.", game.hintCount);
-        } else if (game.hintCount || game.hintStatus & game.hintStatusUsedAutoPM) {
-            finishColor = Kirigami.Theme.neutralBackgroundColor;
-            finishHeader = i18n("Well done!");
-            finishText = i18nc("%1 is level name, %2 is step count", "You finished this %1 Sudoku (with a bit of help) using %2 steps.", game.levelName, stepcount);
-            if (game.hintStatus & game.hintStatusUsedAutoPM) {
-                finishMsg = i18n("Auto pencilmarks used.") + " ";
-            }
-            finishMsg += i18nc("%1 is hint count", "Hints: %1.", game.hintCount);
-        } else {
-            finishColor = Kirigami.Theme.positiveBackgroundColor;
-            finishHeader = i18n("CONGRATULATIONS!!");
-            finishText = i18nc("%1 is level name, %2 is step count", "You finished this %1 Sudoku with no hints or help using %2 steps.", game.levelName, stepcount);
-            finishMsg = i18n("Well done!")
-        }
-
-        // save statistics data - time, level
-        // play a sound?
     }
 
     // UI
 
     Timer {
         id: timer
-        running: applicationWindow().active && gamePage.isCurrentPage && game.loaded && !game.finished
+        running: gameBoard.app.active && gameBoard.isCurrentPage && game.loaded && !game.finished
         repeat: true
         interval: 1000
 
@@ -246,10 +227,10 @@ Kirigami.Page {
     // Game board
     Rectangle {
         id: boardContainer
-        width: wideScreen ? Math.min(gameBoard.width - bottomContainer.minWidth, gameBoard.pageHeight, 600) : Math.min(gameBoard.pageHeight - bottomContainer.minHeight, gameBoard.width, 600)
+        width: gameBoard.wideScreen ? Math.min(gameBoard.width - bottomContainer.minWidth, gameBoard.pageHeight, 600) : Math.min(gameBoard.pageHeight - bottomContainer.minHeight, gameBoard.width, 600)
         height: width
-        x: isWideScreen ?  Math.max((parent.width - width - bottomContainer.width)/2, 0) : (parent.width - width)/2
-        y: isWideScreen ? Math.max((gameBoard.pageHeight - height)/2, 0) : tabletMode ? (height*2) >= gameBoard.pageHeight ? 0 : (gameBoard.pageHeight - height*2)/2 : 0
+        x: gameBoard.wideScreen ?  Math.max((parent.width - width - bottomContainer.width)/2, 0) : (parent.width - width)/2
+        y: gameBoard.wideScreen ? Math.max((gameBoard.pageHeight - height)/2, 0) : gameBoard.tabletMode ? (height*2) >= gameBoard.pageHeight ? 0 : (gameBoard.pageHeight - height*2)/2 : 0
         color: Kirigami.Theme.backgroundColor
         Rectangle {
             id: bgbd
@@ -312,7 +293,7 @@ Kirigami.Page {
                                            (gameBoard.showPencilMarks && Config.logical_error_pencilmark && game.errors[bmidx] > 0 && game.errors[bmidx] < game.errPencilMarkLogical)  ?
                                         Kirigami.Theme.negativeBackgroundColor :
                                         // value errors
-                                        (Config.error_value && (game.errors[bmidx] & game.errValue) === game.errValue) ? Kirigami.Theme.visitedLinkBackgroundColor :
+                                        ((Config.error_value || tmp_err_value) && (game.errors[bmidx] & game.errValue) === game.errValue) ? Kirigami.Theme.visitedLinkBackgroundColor :
                                         // erasable cells while erase button is checked
                                         btnErase.checked && Config.erasable && game.board[bmidx] === 0 && (game.values[bmidx] > 0 || game.pencilMarks[bmidx] > 0) ?
                                         Kirigami.Theme.neutralBackgroundColor :
@@ -327,7 +308,7 @@ Kirigami.Page {
                                         Kirigami.Theme.activeBackgroundColor :
                                         Config.alternateBlockBackgrounds && parent.index%2 == 0 ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
                                         } else {
-                                            bmidx == game.currentCell ? Kirigami.Theme.highlightColor : Config.alternateBlockBackgrounds && parent.index%2 == 0 ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
+                                            bmidx == game.currentCell ? Kirigami.Theme.highlightColor : Config.alternateBlockBackgrounds && index%2 == 0 ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
                                         }
 
                                     }
@@ -338,7 +319,7 @@ Kirigami.Page {
                                         font.pixelSize: parent.width*0.8
                                         font.bold: game.values[bmidx] === game.board[parent.bmidx]
                                     }
-                                    TapHandler { onTapped: cellTapped(rowIndex, columnIndex, parent.parent.index, bmidx); }
+                                    TapHandler { onTapped: gameBoard.cellTapped(rowIndex, columnIndex, parent.parent.index, bmidx); }
                                     // pencil marks
                                     Rectangle {
                                         anchors.fill: parent
@@ -378,11 +359,13 @@ Kirigami.Page {
         property real minHeight: bottomTitle.height + progressBar.height + buttonBoard.Layout.minimumHeight + bottomBar.height
         property real minWidth: buttonBoard.Layout.minimumWidth
         enabled: game.loaded
-        anchors.top: wideScreen ? boardContainer.top : boardContainer.bottom
-        anchors.left: wideScreen ? boardContainer.right : boardContainer.left
-        width: wideScreen ? Math.min(gameBoard.width - boardContainer.width, Math.max(minWidth,boardContainer.width)) : boardContainer.width
-        height: !wideScreen ? tabletMode ? Math.min(gamePage.pageHeight - boardContainer.height - boardContainer.y, boardContainer.height)
-            : gamePage.pageHeight - boardContainer.height - boardContainer.y : tabletMode ? bgbd.height : boardContainer.height
+        anchors.top: gameBoard.wideScreen ? boardContainer.top : boardContainer.bottom
+        anchors.left: gameBoard.wideScreen ? boardContainer.right : boardContainer.left
+
+        width: gameBoard.wideScreen ? Math.min(gameBoard.width - boardContainer.width, Math.max(minWidth,boardContainer.width)) : boardContainer.width
+
+        height: !gameBoard.wideScreen ? gameBoard.tabletMode ? Math.min(gameBoard.pageHeight - boardContainer.height - boardContainer.y, boardContainer.height)
+            : gameBoard.pageHeight - boardContainer.height - boardContainer.y : gameBoard.tabletMode ? bgbd.height : boardContainer.height
         color: Kirigami.Theme.backgroundColor
 
 
@@ -395,14 +378,14 @@ Kirigami.Page {
             color: Kirigami.Theme.backgroundColor
             width: parent.width
             height: bottomHeading.height + 1
-            visible: wideScreen && !tabletMode
+            visible: gameBoard.wideScreen && !gameBoard.tabletMode
 
             QQC2.ToolButton {
                 id: drawerSettingsBtn
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.right: parent.right
                 icon.name: "settings-configure-symbolic"
-                onClicked: { applicationWindow().pageStack.layers.push("qrc:/Settings.qml"); }
+                onClicked: { gameBoard.app.pageStack.layers.push("qrc:/Settings.qml"); }
             }
 
             Kirigami.Heading {
@@ -422,7 +405,7 @@ Kirigami.Page {
         }
         Rectangle {
             id: progressBar
-            width: tabletMode ? parent.width - 2*Kirigami.Units.largeSpacing : parent.width
+            width: gameBoard.tabletMode ? parent.width - 2*Kirigami.Units.largeSpacing : parent.width
             anchors.top: bottomTitle.visible ? bottomTitle.bottom : parent.top
             anchors.horizontalCenter: parent.horizontalCenter
             height: Kirigami.Units.largeSpacing
@@ -433,14 +416,14 @@ Kirigami.Page {
                 height: parent.height
                 anchors.left: parent.left
                 width: parent.sW*game.givenCount
-                color: Kirigami.Theme.positiveBackgroundColor.darker(1.2)
+                color: gameBoard.isDarkTheme ? Kirigami.Theme.positiveBackgroundColor.lighter(2.5) : Kirigami.Theme.positiveBackgroundColor.darker(1.2)
             }
             Rectangle {
                 id: progressSolved
                 height: parent.height
                 anchors.left: progressGivens.right
                 width: parent.sW*(game.valueCnt - game.givenCount)
-                color: Kirigami.Theme.positiveBackgroundColor.darker(1.1)
+                color: gameBoard.isDarkTheme ? Kirigami.Theme.positiveBackgroundColor.lighter(1.9) : Kirigami.Theme.positiveBackgroundColor.darker(1.1)
             }
 
         }
@@ -453,37 +436,46 @@ Kirigami.Page {
 
             // undo/redo/hint
             ColumnLayout {
-                Layout.topMargin: Kirigami.Units.largeSpacing
+                Layout.topMargin: Kirigami.Units.mediumSpacing
                 Layout.leftMargin: Kirigami.Units.largeSpacing
-                Layout.fillWidth: true
-                Layout.fillHeight: true
                 Layout.minimumWidth: implicitWidth
                 QQC2.Button {
-                Layout.fillWidth: true
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
                     id: btnUndo
+                    enabled: !drawer.isOpen && game.undoPos > -1;
                     text: i18nc("@action:button", "Undo")
                     // text: "Fortryd"
                     icon.name: "edit-undo-symbolic"
                     onClicked: game.undo();
-                    enabled: game.undoPos > -1;
                 }
                 QQC2.Button {
                     Layout.fillWidth: true
+                    Layout.fillHeight: true
                     id: btnRedo
+                    enabled: !drawer.isOpen && game.undoPos < game.undoStack.length-1
                     text: i18nc("@action:button", "Redo")
                     // text: "Gendan"
                     icon.name: "edit-redo-symbolic"
                     onClicked: game.redo();
-                    enabled: game.undoPos < game.undoStack.length-1
                 }
                 QQC2.Button {
                     Layout.fillWidth: true
+                    Layout.fillHeight: true
                     id: btnHint
+                    enabled:  !drawer.isOpen
                     text: i18nc("@action:button", "Hint")
                     icon.name: "games-hint-symbolic"
                     onClicked: hintsMenu.open()
                     QQC2.Menu {
                         id: hintsMenu
+                        QQC2.MenuItem {
+                            text: i18nc("@action:inmenu", "Check board")
+                            onTriggered: {
+                                drawerLoader.source = "qrc:/CheckBoardDialog.qml"
+                                game.hintCount++
+                            }
+                        }
                         QQC2.MenuItem {
                             text: i18nc("@action:inmenu", "Solve Cell")
                             onTriggered: {
@@ -507,7 +499,7 @@ Kirigami.Page {
                                 standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
                                 onAccepted: {
                                     game.solve();
-                                    finish();
+                                    // game.finish();
                                 }
                             }
                         }
@@ -520,7 +512,6 @@ Kirigami.Page {
                         }
                     }
                 }
-
             }
             // number keys
             GridLayout {
@@ -543,36 +534,41 @@ Kirigami.Page {
                         Layout.preferredHeight: implicitHeight
                         //autoExclusive: true
                         text: value
-                        onClicked: { numberKeyClicked(index, checked, this) }
+                        onClicked: { gameBoard.numberKeyClicked(index, checked, this) }
                     }
                 }
             }
 
             ColumnLayout {
                 Layout.rightMargin: Kirigami.Units.largeSpacing
-                Layout.topMargin: Kirigami.Units.largeSpacing
-                Layout.fillWidth: true
+                Layout.topMargin: Kirigami.Units.mediumSpacing
                 Layout.minimumWidth: implicitWidth
                 QQC2.Button {
-                Layout.fillWidth: true
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
                     id: btnPencilMarks
+                    enabled:  !drawer.isOpen
                     checkable: true
                     text: i18nc("@action:button", "Pencil")
                     icon.name: "open-for-editing-symbolic"
                     onClicked: if (checked) gameBoard.showPencilMarks = true
                 }
                 QQC2.Button {
-                Layout.fillWidth: true
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
                     id: btnErase
+                    enabled:  !drawer.isOpen
                     checkable: true
                     text: i18nc("@action:button", "Erase")
                     // text: "Visk ud"
                     icon.name: "tool_eraser-symbolic"
-                    onClicked: eraseClicked();
+                    onClicked: gameBoard.eraseClicked();
                 }
                 QQC2.Button {
-                Layout.fillWidth: true
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
                     id: btnGame
+                    enabled:  !drawer.isOpen
                     text: i18nc("@action:button", "Game")
                     icon.name: "application-menu-symbolic"
                     onClicked: gameMenu.open()
@@ -606,7 +602,7 @@ Kirigami.Page {
                                 standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
                                 onAccepted: {
                                     game.clear();
-                                    applicationWindow().pageStack.layers.push("qml:/MainMenu.qml", {gameLoaded: false})
+                                    gameBoard.app.pageStack.layers.push("qrc:/MainMenu.qml", {gameLoaded: false})
                                 }
                             }
                         }
@@ -632,9 +628,9 @@ Kirigami.Page {
         Rectangle {
             id: drawer
             width: parent.width
-            height: Math.max(bottomTitle.visible ? parent.height - bottomTitle.height : parent.height, drawerContent.Layout.minimumHeight)
+            height: parent.height - bottomTitle.height
             z: 1
-            property bool isOpen: game.loaded && game.finished
+            property bool isOpen: false
             states: [
                 State {
                     name: "open"; when: drawer.isOpen
@@ -642,53 +638,17 @@ Kirigami.Page {
                 },
                 State {
                     name: "closed"; when: !drawer.isOpen
-                    PropertyChanges { target: drawer; y: applicationWindow().height }
+                    PropertyChanges { target: drawer; y: gameBoard.height }
                 }
             ]
 
-            transitions: Transition { SmoothedAnimation { target: drawer; property: "y"; velocity: tabletMode ? 5000 : 3000 } }
+            transitions: Transition { SmoothedAnimation { target: drawer; property: "y"; velocity: gameBoard.tabletMode ? 5000 : 3000 } }
 
-            TapHandler { grabPermissions:PointerHandler.TakeOverForbidden } // QML will let the event drop through if not present.
-
-            color: finishColor
-            ColumnLayout {
-                id: drawerContent
-                anchors.centerIn: parent
-                Layout.margins: Kirigami.Units.mediumSpacing
-                // spacing: Kirigami.Units.largeSpacing
-                QQC2.Label {
-                    Layout.alignment: Qt.AlignHCenter
-                    font.pointSize: 20
-                    text: finishHeader
-                    Layout.topMargin: Kirigami.Units.largeSpacing
-                }
-                QQC2.Label {
-                    Layout.maximumWidth: drawer.width - Kirigami.Units.largeSpacing*4
-                    Layout.alignment: Qt.AlignHCenter
-                    wrapMode: Text.WordWrap
-                    text: finishText
-                }
-                QQC2.Label {
-                    Layout.alignment: Qt.AlignHCenter
-                    font.pointSize: 18
-                    text:  timer.stime
-                }
-                QQC2.Label {
-                    visible: finishMsg.length
-                    Layout.alignment: Qt.AlignHCenter
-                    text: finishMsg
-                }
-                RowLayout {
-                    Layout.leftMargin: Kirigami.Units.mediumSpacing
-                    Layout.rightMargin: Kirigami.Units.mediumSpacing
-                    Layout.bottomMargin: Kirigami.Units.largeSpacing
-                    Layout.alignment: Qt.AlignHCenter
-                    QQC2.Button  {
-                        text: i18nc("@action:button, %1 is level name", "Another %1", game.levelName)
-                        onClicked: generateSudoku(game.level, 0)
-                    }
-                }
+            Loader {
+                id: drawerLoader
+                onLoaded: drawer.isOpen = true
             }
+
         }
     }
 

@@ -46,6 +46,7 @@ Kirigami.ApplicationWindow {
 
     GamePage {
         id: gamePage
+        app: root
     }
 
     pageStack {
