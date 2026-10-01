@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-07 00:41+0000\n"
+"POT-Creation-Date: 2026-10-01 00:42+0000\n"
 "PO-Revision-Date: 2025-12-20 09:42+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -20,94 +20,140 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 25.12.0\n"
 
-#: contents/ui/GamePage.qml:200
+#: contents/ui/CheckBoardDialog.qml:79
+#, kde-format
+msgid "All is good!"
+msgstr ""
+
+#: contents/ui/CheckBoardDialog.qml:80
+#, kde-format
+msgid "There are some errors."
+msgstr ""
+
+#: contents/ui/CheckBoardDialog.qml:81
+#, kde-format
+msgid "Check board: "
+msgstr ""
+
+#: contents/ui/CheckBoardDialog.qml:81
+#, kde-format
+msgid "There is an error."
+msgstr ""
+
+#: contents/ui/FinishDialog.qml:48
+#, kde-format
+msgctxt "@action:button, %1 is level name"
+msgid "Another %1"
+msgstr "Beste %1 bat"
+
+#: contents/ui/FinishDialog.qml:64
 #, kde-format
 msgid "There is your solution"
 msgstr "Hor dago zure ebazpena"
 
-#: contents/ui/GamePage.qml:201
+#: contents/ui/FinishDialog.qml:65
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "%1 urrats ondoren amore eman duzu."
 
-#: contents/ui/GamePage.qml:202
+#: contents/ui/FinishDialog.qml:66
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "Automatikoki ebatzia. Argibideak: %1."
 
-#: contents/ui/GamePage.qml:205 contents/ui/GamePage.qml:215
+#: contents/ui/FinishDialog.qml:69 contents/ui/FinishDialog.qml:79
 #, kde-format
 msgid "Well done!"
 msgstr "Ondo egina!"
 
-#: contents/ui/GamePage.qml:206
-#, kde-format
-msgctxt "%1 is level name, %2 is step count"
-msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
+#: contents/ui/FinishDialog.qml:70
+#, fuzzy, kde-format
+#| msgctxt "%1 is level name, %2 is step count"
+#| msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
+msgctxt "%1 is step count"
+msgid "You solved this sudoku (with a bit of help) in %1 steps."
 msgstr "%1 Sudoku hau (laguntza pixka batekin) %2 urratsetan ebatzi duzu."
 
-#: contents/ui/GamePage.qml:208
+#: contents/ui/FinishDialog.qml:72
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "Arkatz-ohar automatikoak erabili dira."
 
-#: contents/ui/GamePage.qml:210
+#: contents/ui/FinishDialog.qml:74
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "Argibideak: %1."
 
-#: contents/ui/GamePage.qml:213
+#: contents/ui/FinishDialog.qml:77
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "ZORIONAK!!"
 
-#: contents/ui/GamePage.qml:214
+#: contents/ui/FinishDialog.qml:77
 #, kde-format
-msgctxt "%1 is level name, %2 is step count"
-msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
+msgid "PURE PERFECTION!!"
+msgstr ""
+
+#: contents/ui/FinishDialog.qml:78
+#, fuzzy, kde-format
+#| msgctxt "%1 is level name, %2 is step count"
+#| msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
+msgctxt "%1 is step count"
+msgid "You solved this sudoku with no hints or help in %1 steps."
 msgstr ""
 "%1 Sudoku hau argibiderik edo laguntzarik gabe %2 urratsetan ebatzi duzu."
 
-#: contents/ui/GamePage.qml:464
+#: contents/ui/GamePage.qml:55
+#, kde-format
+msgid "Play at sudokuexchange.com"
+msgstr ""
+
+#: contents/ui/GamePage.qml:447
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Desegin"
 
-#: contents/ui/GamePage.qml:473
+#: contents/ui/GamePage.qml:457
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Berregin"
 
-#: contents/ui/GamePage.qml:482
+#: contents/ui/GamePage.qml:467
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "Argibidea"
 
-#: contents/ui/GamePage.qml:488
+#: contents/ui/GamePage.qml:473
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Check board"
+msgstr ""
+
+#: contents/ui/GamePage.qml:480
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Gelaxka ebatzi"
 
-#: contents/ui/GamePage.qml:501
+#: contents/ui/GamePage.qml:493
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Jokoa ebatzi"
 
-#: contents/ui/GamePage.qml:505
+#: contents/ui/GamePage.qml:497
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Jokoa ebatzi?"
 
-#: contents/ui/GamePage.qml:506
+#: contents/ui/GamePage.qml:498
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -116,77 +162,71 @@ msgstr ""
 "Egindako aldaketak galduko dituzu, ez du atzera bueltarik. Ezin duzu zeure "
 "kabuz buru-hausgarria ebatzi!"
 
-#: contents/ui/GamePage.qml:515
+#: contents/ui/GamePage.qml:507
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "Ezarri Arkatz-oharrak"
 
-#: contents/ui/GamePage.qml:560
+#: contents/ui/GamePage.qml:552
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "Arkatza"
 
-#: contents/ui/GamePage.qml:568
+#: contents/ui/GamePage.qml:562
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "Ezabatu"
 
-#: contents/ui/GamePage.qml:576
+#: contents/ui/GamePage.qml:572
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "Jokoa"
 
-#: contents/ui/GamePage.qml:582
+#: contents/ui/GamePage.qml:578
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "Jokoa berrezarri"
 
-#: contents/ui/GamePage.qml:586
+#: contents/ui/GamePage.qml:582
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "Jokoa berrezarri?"
 
-#: contents/ui/GamePage.qml:587 contents/ui/GamePage.qml:605
+#: contents/ui/GamePage.qml:583 contents/ui/GamePage.qml:601
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr "Egindako aldaketak galduko dituzu, ez du atzera bueltarik."
 
-#: contents/ui/GamePage.qml:596
+#: contents/ui/GamePage.qml:592
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "Garbitu arkatz-oharrak"
 
-#: contents/ui/GamePage.qml:600
+#: contents/ui/GamePage.qml:596
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Amore eman"
 
-#: contents/ui/GamePage.qml:604
+#: contents/ui/GamePage.qml:600
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Amore eman?"
 
-#: contents/ui/GamePage.qml:687
-#, kde-format
-msgctxt "@action:button, %1 is level name"
-msgid "Another %1"
-msgstr "Beste %1 bat"
-
-#: contents/ui/GamePage.qml:700
+#: contents/ui/GamePage.qml:660
 #, kde-format
 msgid "Please select a valid cell to solve."
 msgstr "Mesedez, hautatu ebazteko balio duen gelaxka bat."
 
-#: contents/ui/GamePage.qml:703
+#: contents/ui/GamePage.qml:663
 #, kde-format
 msgid "Solve"
 msgstr "Ebatzi"
@@ -356,6 +396,12 @@ msgstr "Ezabatzekoa aktibo duten gelaxka ezabagarriak"
 msgctxt "@option:check"
 msgid "Wrong values"
 msgstr "Balio okerrak"
+
+#: contents/ui/ShareAction.qml:29
+#, kde-format
+msgctxt "@title:menu"
+msgid "Share sudokuexchange.com link"
+msgstr ""
 
 #: main.cpp:76
 #, kde-format

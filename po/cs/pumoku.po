@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-07 00:41+0000\n"
+"POT-Creation-Date: 2026-10-01 00:42+0000\n"
 "PO-Revision-Date: 2026-04-20 10:34+0200\n"
 "Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: \n"
@@ -18,93 +18,139 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Poedit 3.8\n"
 
-#: contents/ui/GamePage.qml:200
+#: contents/ui/CheckBoardDialog.qml:79
+#, kde-format
+msgid "All is good!"
+msgstr ""
+
+#: contents/ui/CheckBoardDialog.qml:80
+#, kde-format
+msgid "There are some errors."
+msgstr ""
+
+#: contents/ui/CheckBoardDialog.qml:81
+#, kde-format
+msgid "Check board: "
+msgstr ""
+
+#: contents/ui/CheckBoardDialog.qml:81
+#, kde-format
+msgid "There is an error."
+msgstr ""
+
+#: contents/ui/FinishDialog.qml:48
+#, kde-format
+msgctxt "@action:button, %1 is level name"
+msgid "Another %1"
+msgstr "Další %1"
+
+#: contents/ui/FinishDialog.qml:64
 #, kde-format
 msgid "There is your solution"
 msgstr "Tady je vaše řešení"
 
-#: contents/ui/GamePage.qml:201
+#: contents/ui/FinishDialog.qml:65
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "Vzdali jste to po %1 krocích."
 
-#: contents/ui/GamePage.qml:202
+#: contents/ui/FinishDialog.qml:66
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "Vyřešeno automaticky. Tipů: %1."
 
-#: contents/ui/GamePage.qml:205 contents/ui/GamePage.qml:215
+#: contents/ui/FinishDialog.qml:69 contents/ui/FinishDialog.qml:79
 #, kde-format
 msgid "Well done!"
 msgstr "Skvělá práce!"
 
-#: contents/ui/GamePage.qml:206
-#, kde-format
-msgctxt "%1 is level name, %2 is step count"
-msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
+#: contents/ui/FinishDialog.qml:70
+#, fuzzy, kde-format
+#| msgctxt "%1 is level name, %2 is step count"
+#| msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
+msgctxt "%1 is step count"
+msgid "You solved this sudoku (with a bit of help) in %1 steps."
 msgstr "Toto sudoku %1 jste (s malou pomocí) vyřešili za %2 kroků."
 
-#: contents/ui/GamePage.qml:208
+#: contents/ui/FinishDialog.qml:72
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "Byly použity automatické značky tužkou."
 
-#: contents/ui/GamePage.qml:210
+#: contents/ui/FinishDialog.qml:74
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "Tipů: %1."
 
-#: contents/ui/GamePage.qml:213
+#: contents/ui/FinishDialog.qml:77
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "Blahopřejeme!"
 
-#: contents/ui/GamePage.qml:214
+#: contents/ui/FinishDialog.qml:77
 #, kde-format
-msgctxt "%1 is level name, %2 is step count"
-msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
+msgid "PURE PERFECTION!!"
+msgstr ""
+
+#: contents/ui/FinishDialog.qml:78
+#, fuzzy, kde-format
+#| msgctxt "%1 is level name, %2 is step count"
+#| msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
+msgctxt "%1 is step count"
+msgid "You solved this sudoku with no hints or help in %1 steps."
 msgstr "Toto sudoku %1 jste vyřešili bez nápovědy nebo pomoci v %2 krocích."
 
-#: contents/ui/GamePage.qml:464
+#: contents/ui/GamePage.qml:55
+#, kde-format
+msgid "Play at sudokuexchange.com"
+msgstr ""
+
+#: contents/ui/GamePage.qml:447
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Zpět"
 
-#: contents/ui/GamePage.qml:473
+#: contents/ui/GamePage.qml:457
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Znovu"
 
-#: contents/ui/GamePage.qml:482
+#: contents/ui/GamePage.qml:467
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "Rada"
 
-#: contents/ui/GamePage.qml:488
+#: contents/ui/GamePage.qml:473
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Check board"
+msgstr ""
+
+#: contents/ui/GamePage.qml:480
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Vyřešit buňku"
 
-#: contents/ui/GamePage.qml:501
+#: contents/ui/GamePage.qml:493
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Vyřešit hru"
 
-#: contents/ui/GamePage.qml:505
+#: contents/ui/GamePage.qml:497
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Vyřešit hru?"
 
-#: contents/ui/GamePage.qml:506
+#: contents/ui/GamePage.qml:498
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -113,77 +159,71 @@ msgstr ""
 "Ztratíte všechny provedené změny a tento krok nelze vrátit zpět. Tuto "
 "hádanku nedokážete vyřešit sami!"
 
-#: contents/ui/GamePage.qml:515
+#: contents/ui/GamePage.qml:507
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "Nastavit značky tužkou"
 
-#: contents/ui/GamePage.qml:560
+#: contents/ui/GamePage.qml:552
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "Tužka"
 
-#: contents/ui/GamePage.qml:568
+#: contents/ui/GamePage.qml:562
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "Smazat"
 
-#: contents/ui/GamePage.qml:576
+#: contents/ui/GamePage.qml:572
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "Hra"
 
-#: contents/ui/GamePage.qml:582
+#: contents/ui/GamePage.qml:578
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "Restartovat hru"
 
-#: contents/ui/GamePage.qml:586
+#: contents/ui/GamePage.qml:582
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "Restartovat hru?"
 
-#: contents/ui/GamePage.qml:587 contents/ui/GamePage.qml:605
+#: contents/ui/GamePage.qml:583 contents/ui/GamePage.qml:601
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr "Ztratíte všechny provedené změny; tento úkon nelze vrátit zpět."
 
-#: contents/ui/GamePage.qml:596
+#: contents/ui/GamePage.qml:592
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "Vymazat značky tužkou"
 
-#: contents/ui/GamePage.qml:600
+#: contents/ui/GamePage.qml:596
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Vzdát se"
 
-#: contents/ui/GamePage.qml:604
+#: contents/ui/GamePage.qml:600
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Vzdát se?"
 
-#: contents/ui/GamePage.qml:687
-#, kde-format
-msgctxt "@action:button, %1 is level name"
-msgid "Another %1"
-msgstr "Další %1"
-
-#: contents/ui/GamePage.qml:700
+#: contents/ui/GamePage.qml:660
 #, kde-format
 msgid "Please select a valid cell to solve."
 msgstr "Vyberte prosím platnou buňku, kterou chcete vyřešit."
 
-#: contents/ui/GamePage.qml:703
+#: contents/ui/GamePage.qml:663
 #, kde-format
 msgid "Solve"
 msgstr "Vyřešit"
@@ -351,6 +391,12 @@ msgstr "Vymazatelné buňky pomocí funkce gumy"
 msgctxt "@option:check"
 msgid "Wrong values"
 msgstr "Nesprávné hodnoty"
+
+#: contents/ui/ShareAction.qml:29
+#, kde-format
+msgctxt "@title:menu"
+msgid "Share sudokuexchange.com link"
+msgstr ""
 
 #: main.cpp:76
 #, kde-format
