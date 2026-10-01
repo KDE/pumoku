@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-01 00:42+0000\n"
-"PO-Revision-Date: 2025-12-12 07:24+0100\n"
+"PO-Revision-Date: 2026-10-01 07:37+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -13,27 +13,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: contents/ui/CheckBoardDialog.qml:79
 #, kde-format
 msgid "All is good!"
-msgstr ""
+msgstr "Vse je dobro!"
 
 #: contents/ui/CheckBoardDialog.qml:80
 #, kde-format
 msgid "There are some errors."
-msgstr ""
+msgstr "Je nekaj napak."
 
 #: contents/ui/CheckBoardDialog.qml:81
 #, kde-format
 msgid "Check board: "
-msgstr ""
+msgstr "Igralna deska: "
 
 #: contents/ui/CheckBoardDialog.qml:81
 #, kde-format
 msgid "There is an error."
-msgstr ""
+msgstr "Obstaja napaka."
 
 #: contents/ui/FinishDialog.qml:48
 #, kde-format
@@ -64,12 +64,10 @@ msgid "Well done!"
 msgstr "Odlično narejeno!"
 
 #: contents/ui/FinishDialog.qml:70
-#, fuzzy, kde-format
-#| msgctxt "%1 is level name, %2 is step count"
-#| msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
+#, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku (with a bit of help) in %1 steps."
-msgstr "Končali ste ta %1 Sudoku (z malo pomoči) v %2 korakih."
+msgstr "Končali ste ta sudoku (z malo pomoči) v %1 korakih."
 
 #: contents/ui/FinishDialog.qml:72
 #, kde-format
@@ -90,20 +88,18 @@ msgstr "ČESTITKE!!"
 #: contents/ui/FinishDialog.qml:77
 #, kde-format
 msgid "PURE PERFECTION!!"
-msgstr ""
+msgstr "ČISTA PERFEKCIJA!"
 
 #: contents/ui/FinishDialog.qml:78
-#, fuzzy, kde-format
-#| msgctxt "%1 is level name, %2 is step count"
-#| msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
+#, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku with no hints or help in %1 steps."
-msgstr "Končali ste ta %1 Sudoku brez namigov ali pomoči v %2 korakih."
+msgstr "Končali ste ta sudoku brez namigov ali pomoči v %1 korakih."
 
 #: contents/ui/GamePage.qml:55
 #, kde-format
 msgid "Play at sudokuexchange.com"
-msgstr ""
+msgstr "Igrajte pri sudokuexchange.com"
 
 #: contents/ui/GamePage.qml:447
 #, kde-format
@@ -127,7 +123,7 @@ msgstr "Namig"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
-msgstr ""
+msgstr "Igralna deska"
 
 #: contents/ui/GamePage.qml:480
 #, kde-format
@@ -397,7 +393,7 @@ msgstr "Napačne vrednosti"
 #, kde-format
 msgctxt "@title:menu"
 msgid "Share sudokuexchange.com link"
-msgstr ""
+msgstr "Deli povezavo na sudokuexchange.com"
 
 #: main.cpp:76
 #, kde-format

@@ -1,15 +1,15 @@
 # Translation of pumoku.po to Catalan
-# Copyright (C) 2025 This_file_is_part_of_KDE
+# Copyright (C) 2025-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2025 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2025-2026 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-01 00:42+0000\n"
-"PO-Revision-Date: 2025-12-12 09:12+0100\n"
+"PO-Revision-Date: 2026-10-01 09:38+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -22,22 +22,22 @@ msgstr ""
 #: contents/ui/CheckBoardDialog.qml:79
 #, kde-format
 msgid "All is good!"
-msgstr ""
+msgstr "Tot està bé!"
 
 #: contents/ui/CheckBoardDialog.qml:80
 #, kde-format
 msgid "There are some errors."
-msgstr ""
+msgstr "Hi ha alguns errors."
 
 #: contents/ui/CheckBoardDialog.qml:81
 #, kde-format
 msgid "Check board: "
-msgstr ""
+msgstr "Comprovació del tauler: "
 
 #: contents/ui/CheckBoardDialog.qml:81
 #, kde-format
 msgid "There is an error."
-msgstr ""
+msgstr "Hi ha un error."
 
 #: contents/ui/FinishDialog.qml:48
 #, kde-format
@@ -68,13 +68,10 @@ msgid "Well done!"
 msgstr "Ben fet!"
 
 #: contents/ui/FinishDialog.qml:70
-#, fuzzy, kde-format
-#| msgctxt "%1 is level name, %2 is step count"
-#| msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
+#, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku (with a bit of help) in %1 steps."
-msgstr ""
-"Heu acabat aquest Sudoku %1 (amb una mica d'ajuda) fent servir %2 passos."
+msgstr "Heu solucionat aquest sudoku (amb una mica d'ajuda) en %1 passos."
 
 #: contents/ui/FinishDialog.qml:72
 #, kde-format
@@ -95,21 +92,18 @@ msgstr "ENHORABONA!!"
 #: contents/ui/FinishDialog.qml:77
 #, kde-format
 msgid "PURE PERFECTION!!"
-msgstr ""
+msgstr "SIMPLEMENT PERFECTE!"
 
 #: contents/ui/FinishDialog.qml:78
-#, fuzzy, kde-format
-#| msgctxt "%1 is level name, %2 is step count"
-#| msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
+#, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku with no hints or help in %1 steps."
-msgstr ""
-"Heu acabat aquest Sudoku %1 sense pistes ni ajuda fent servir %2 passos."
+msgstr "Heu acabat aquest sudoku sense pistes ni ajuda en %1 passos."
 
 #: contents/ui/GamePage.qml:55
 #, kde-format
 msgid "Play at sudokuexchange.com"
-msgstr ""
+msgstr "Juga a sudokuexchange.com"
 
 #: contents/ui/GamePage.qml:447
 #, kde-format
@@ -133,7 +127,7 @@ msgstr "Pista"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
-msgstr ""
+msgstr "Comprova el tauler"
 
 #: contents/ui/GamePage.qml:480
 #, kde-format
@@ -403,7 +397,7 @@ msgstr "Valors erronis"
 #, kde-format
 msgctxt "@title:menu"
 msgid "Share sudokuexchange.com link"
-msgstr ""
+msgstr "Comparteix l'enllaç a sudokuexchange.com"
 
 #: main.cpp:76
 #, kde-format

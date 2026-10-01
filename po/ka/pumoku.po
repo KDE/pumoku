@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-01 00:42+0000\n"
-"PO-Revision-Date: 2025-12-12 05:34+0100\n"
+"PO-Revision-Date: 2026-10-01 05:54+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,27 +16,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: contents/ui/CheckBoardDialog.qml:79
 #, kde-format
 msgid "All is good!"
-msgstr ""
+msgstr "ყველაფერი კარგადაა!"
 
 #: contents/ui/CheckBoardDialog.qml:80
 #, kde-format
 msgid "There are some errors."
-msgstr ""
+msgstr "აღმოჩენილია რამდენიმე შეცდომა."
 
 #: contents/ui/CheckBoardDialog.qml:81
 #, kde-format
 msgid "Check board: "
-msgstr ""
+msgstr "დაფის შემოწმება: "
 
 #: contents/ui/CheckBoardDialog.qml:81
 #, kde-format
 msgid "There is an error."
-msgstr ""
+msgstr "აღმოჩენილია შეცდომა."
 
 #: contents/ui/FinishDialog.qml:48
 #, kde-format
@@ -67,12 +67,10 @@ msgid "Well done!"
 msgstr "ყოჩაღ!"
 
 #: contents/ui/FinishDialog.qml:70
-#, fuzzy, kde-format
-#| msgctxt "%1 is level name, %2 is step count"
-#| msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
+#, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku (with a bit of help) in %1 steps."
-msgstr "თქვენ დაასრულეთ ეს %1 სუდოკუ (ცოტა დახმარებით) %2 ნაბიჯით."
+msgstr "თქვენ დაასრულეთ ეს სუდოკუ (ცოტა დახმარებით) %1 ნაბიჯში."
 
 #: contents/ui/FinishDialog.qml:72
 #, kde-format
@@ -93,20 +91,18 @@ msgstr "გილოცავთ!!"
 #: contents/ui/FinishDialog.qml:77
 #, kde-format
 msgid "PURE PERFECTION!!"
-msgstr ""
+msgstr "აბსოლუტური სრულყოფილება!!"
 
 #: contents/ui/FinishDialog.qml:78
-#, fuzzy, kde-format
-#| msgctxt "%1 is level name, %2 is step count"
-#| msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
+#, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku with no hints or help in %1 steps."
-msgstr "თქვენ დაასრულეთ ეს %1 სუდოკუ დახმარების გარეშე %2 ნაბიჯით."
+msgstr "თქვენ დაასრულეთ ეს სუდოკუ დახმარების გარეშე %1 ნაბიჯში."
 
 #: contents/ui/GamePage.qml:55
 #, kde-format
 msgid "Play at sudokuexchange.com"
-msgstr ""
+msgstr "ითამაშეთ sudokuexchange.com-ზე"
 
 #: contents/ui/GamePage.qml:447
 #, kde-format
@@ -130,7 +126,7 @@ msgstr "მინიშნება"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
-msgstr ""
+msgstr "დაფის შემოწმება"
 
 #: contents/ui/GamePage.qml:480
 #, kde-format
@@ -400,7 +396,7 @@ msgstr "არასწორი მნიშვნელობები"
 #, kde-format
 msgctxt "@title:menu"
 msgid "Share sudokuexchange.com link"
-msgstr ""
+msgstr "sudokuexchange.com-ის ბმულის გაზიარება"
 
 #: main.cpp:76
 #, kde-format

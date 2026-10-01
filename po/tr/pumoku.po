@@ -1,41 +1,41 @@
 # Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the pumoku package.
 #
-# SPDX-FileCopyrightText: 2025 Emir SARI <emir_sari@îcloud.com>
+# SPDX-FileCopyrightText: 2025-2026 Emir SARI <emir_sari@îcloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-01 00:42+0000\n"
-"PO-Revision-Date: 2025-12-18 15:45+0300\n"
-"Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
+"PO-Revision-Date: 2026-10-01 20:11+0300\n"
+"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.08.2\n"
+"X-Generator: Lokalize 26.08.0\n"
 
 #: contents/ui/CheckBoardDialog.qml:79
 #, kde-format
 msgid "All is good!"
-msgstr ""
+msgstr "Her şey yolunda!"
 
 #: contents/ui/CheckBoardDialog.qml:80
 #, kde-format
 msgid "There are some errors."
-msgstr ""
+msgstr "Birkaç tane hata var."
 
 #: contents/ui/CheckBoardDialog.qml:81
 #, kde-format
 msgid "Check board: "
-msgstr ""
+msgstr "Tahta: "
 
 #: contents/ui/CheckBoardDialog.qml:81
 #, kde-format
 msgid "There is an error."
-msgstr ""
+msgstr "Bir hata var."
 
 #: contents/ui/FinishDialog.qml:48
 #, kde-format
@@ -66,12 +66,10 @@ msgid "Well done!"
 msgstr "Aferin!"
 
 #: contents/ui/FinishDialog.qml:70
-#, fuzzy, kde-format
-#| msgctxt "%1 is level name, %2 is step count"
-#| msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
+#, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku (with a bit of help) in %1 steps."
-msgstr "Bu %1 Sudoku’yu (biraz da yardımla) %2 adımda bitirdiniz."
+msgstr "Bu Sudoku’yu (biraz da yardımla) %1 adımda bitirdiniz."
 
 #: contents/ui/FinishDialog.qml:72
 #, kde-format
@@ -92,20 +90,18 @@ msgstr "TEBRİKLER!"
 #: contents/ui/FinishDialog.qml:77
 #, kde-format
 msgid "PURE PERFECTION!!"
-msgstr ""
+msgstr "FEVKALÂDE!"
 
 #: contents/ui/FinishDialog.qml:78
-#, fuzzy, kde-format
-#| msgctxt "%1 is level name, %2 is step count"
-#| msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
+#, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku with no hints or help in %1 steps."
-msgstr "Bu %1 Sudoku’yu ipucu veya yardım olmadan %2 adımda bitirdiniz."
+msgstr "Bu Sudoku’yu ipucu veya yardım olmadan %1 adımda bitirdiniz."
 
 #: contents/ui/GamePage.qml:55
 #, kde-format
 msgid "Play at sudokuexchange.com"
-msgstr ""
+msgstr "sudokuexchange.com Üzerinde Oyna"
 
 #: contents/ui/GamePage.qml:447
 #, kde-format
@@ -129,7 +125,7 @@ msgstr "İpucu"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
-msgstr ""
+msgstr "Tahtayı Kontrol Et"
 
 #: contents/ui/GamePage.qml:480
 #, kde-format
@@ -398,7 +394,7 @@ msgstr "Yanlış değerler"
 #, kde-format
 msgctxt "@title:menu"
 msgid "Share sudokuexchange.com link"
-msgstr ""
+msgstr "sudokuexchange.com Bağlantısı Paylaş"
 
 #: main.cpp:76
 #, kde-format
