@@ -2,41 +2,42 @@
 # This file is distributed under the same license as the pumoku package.
 # SPDX-FileCopyrightText: 2026 Vít Pelčák <vit@pelcak.org>
 # SPDX-FileCopyrightText: 2026 Libor Filípek <filipek.libor@protonmail.com>
+# SPDX-FileCopyrightText: 2026 Libor Filipek <libor.filipek@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-01 00:42+0000\n"
-"PO-Revision-Date: 2026-04-20 10:34+0200\n"
-"Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2026-10-01 12:34+0200\n"
+"Last-Translator: Libor Filipek <libor.filipek@gmail.com>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Lokalize 26.08.1\n"
 
 #: contents/ui/CheckBoardDialog.qml:79
 #, kde-format
 msgid "All is good!"
-msgstr ""
+msgstr "Všechno je v pořádku!"
 
 #: contents/ui/CheckBoardDialog.qml:80
 #, kde-format
 msgid "There are some errors."
-msgstr ""
+msgstr "Objevilo se několik chyb."
 
 #: contents/ui/CheckBoardDialog.qml:81
 #, kde-format
 msgid "Check board: "
-msgstr ""
+msgstr "Kontrola desky:"
 
 #: contents/ui/CheckBoardDialog.qml:81
 #, kde-format
 msgid "There is an error."
-msgstr ""
+msgstr "Došlo k chybě."
 
 #: contents/ui/FinishDialog.qml:48
 #, kde-format
@@ -67,12 +68,10 @@ msgid "Well done!"
 msgstr "Skvělá práce!"
 
 #: contents/ui/FinishDialog.qml:70
-#, fuzzy, kde-format
-#| msgctxt "%1 is level name, %2 is step count"
-#| msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
+#, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku (with a bit of help) in %1 steps."
-msgstr "Toto sudoku %1 jste (s malou pomocí) vyřešili za %2 kroků."
+msgstr "Toto sudoku jste vyřešili (s malou pomocí) v %1 krocích."
 
 #: contents/ui/FinishDialog.qml:72
 #, kde-format
@@ -88,25 +87,23 @@ msgstr "Tipů: %1."
 #: contents/ui/FinishDialog.qml:77
 #, kde-format
 msgid "CONGRATULATIONS!!"
-msgstr "Blahopřejeme!"
+msgstr "Blahopřejeme!!"
 
 #: contents/ui/FinishDialog.qml:77
 #, kde-format
 msgid "PURE PERFECTION!!"
-msgstr ""
+msgstr "Naprostá dokonalost!!"
 
 #: contents/ui/FinishDialog.qml:78
-#, fuzzy, kde-format
-#| msgctxt "%1 is level name, %2 is step count"
-#| msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
+#, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku with no hints or help in %1 steps."
-msgstr "Toto sudoku %1 jste vyřešili bez nápovědy nebo pomoci v %2 krocích."
+msgstr "Toto sudoku jste vyřešili bez nápovědy a pomoci v %1 krocích."
 
 #: contents/ui/GamePage.qml:55
 #, kde-format
 msgid "Play at sudokuexchange.com"
-msgstr ""
+msgstr "Zahrajte si na sudokuexchange.com"
 
 #: contents/ui/GamePage.qml:447
 #, kde-format
@@ -130,7 +127,7 @@ msgstr "Rada"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
-msgstr ""
+msgstr "Kontrola desky"
 
 #: contents/ui/GamePage.qml:480
 #, kde-format
@@ -396,7 +393,7 @@ msgstr "Nesprávné hodnoty"
 #, kde-format
 msgctxt "@title:menu"
 msgid "Share sudokuexchange.com link"
-msgstr ""
+msgstr "Sdílet odkaz na sudokuexchange.com"
 
 #: main.cpp:76
 #, kde-format
