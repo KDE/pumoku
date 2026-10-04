@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-01 00:42+0000\n"
-"PO-Revision-Date: 2026-06-06 15:09+0200\n"
+"PO-Revision-Date: 2026-10-03 23:05+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -20,33 +20,33 @@ msgstr ""
 #: contents/ui/CheckBoardDialog.qml:79
 #, kde-format
 msgid "All is good!"
-msgstr ""
+msgstr "모두 좋습니다!"
 
 #: contents/ui/CheckBoardDialog.qml:80
 #, kde-format
 msgid "There are some errors."
-msgstr ""
+msgstr "일부 오류가 있습니다."
 
 #: contents/ui/CheckBoardDialog.qml:81
 #, kde-format
 msgid "Check board: "
-msgstr ""
+msgstr "보드 확인: "
 
 #: contents/ui/CheckBoardDialog.qml:81
 #, kde-format
 msgid "There is an error."
-msgstr ""
+msgstr "오류가 있습니다."
 
 #: contents/ui/FinishDialog.qml:48
 #, kde-format
 msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
-msgstr ""
+msgstr "다른 %1"
 
 #: contents/ui/FinishDialog.qml:64
 #, kde-format
 msgid "There is your solution"
-msgstr ""
+msgstr "내 해답입니다"
 
 #: contents/ui/FinishDialog.qml:65
 #, kde-format
@@ -58,7 +58,7 @@ msgstr "%1회 후 포기했습니다."
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
-msgstr ""
+msgstr "자동으로 해결했습니다. 힌트: %1개."
 
 #: contents/ui/FinishDialog.qml:69 contents/ui/FinishDialog.qml:79
 #, kde-format
@@ -69,81 +69,81 @@ msgstr "잘 하셨습니다!"
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku (with a bit of help) in %1 steps."
-msgstr ""
+msgstr "이 스도쿠(힌트 사용)를 %1단계에 해결했습니다."
 
 #: contents/ui/FinishDialog.qml:72
 #, kde-format
 msgid "Auto pencilmarks used."
-msgstr ""
+msgstr "자동 연필 마크를 사용했습니다."
 
 #: contents/ui/FinishDialog.qml:74
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
-msgstr ""
+msgstr "힌트: %1개."
 
 #: contents/ui/FinishDialog.qml:77
 #, kde-format
 msgid "CONGRATULATIONS!!"
-msgstr ""
+msgstr "축하합니다!!"
 
 #: contents/ui/FinishDialog.qml:77
 #, kde-format
 msgid "PURE PERFECTION!!"
-msgstr ""
+msgstr "완벽합니다!!"
 
 #: contents/ui/FinishDialog.qml:78
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku with no hints or help in %1 steps."
-msgstr ""
+msgstr "이 스도쿠를 힌트나 도움 없이 %1단계에 해결했습니다."
 
 #: contents/ui/GamePage.qml:55
 #, kde-format
 msgid "Play at sudokuexchange.com"
-msgstr ""
+msgstr "sudokuexchange.com에서 플레이"
 
 #: contents/ui/GamePage.qml:447
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
-msgstr ""
+msgstr "실행 취소"
 
 #: contents/ui/GamePage.qml:457
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
-msgstr ""
+msgstr "다시 실행"
 
 #: contents/ui/GamePage.qml:467
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
-msgstr ""
+msgstr "힌트"
 
 #: contents/ui/GamePage.qml:473
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
-msgstr ""
+msgstr "보드 확인"
 
 #: contents/ui/GamePage.qml:480
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
-msgstr ""
+msgstr "셀 해결"
 
 #: contents/ui/GamePage.qml:493
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
-msgstr ""
+msgstr "게임 해결"
 
 #: contents/ui/GamePage.qml:497
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
-msgstr ""
+msgstr "게임을 해결하시겠습니까?"
 
 #: contents/ui/GamePage.qml:498
 #, kde-format
@@ -151,81 +151,83 @@ msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
 "solve the puzzle on your own!"
 msgstr ""
+"변경 사항을 모두 잃어버리게 되며, 실행 취소할 수 없습니다. 직접 퍼즐을 해결"
+"할 수 없게 됩니다!"
 
 #: contents/ui/GamePage.qml:507
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
-msgstr ""
+msgstr "연필 마크 설정"
 
 #: contents/ui/GamePage.qml:552
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
-msgstr ""
+msgstr "연필"
 
 #: contents/ui/GamePage.qml:562
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
-msgstr ""
+msgstr "지우기"
 
 #: contents/ui/GamePage.qml:572
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
-msgstr ""
+msgstr "게임"
 
 #: contents/ui/GamePage.qml:578
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
-msgstr ""
+msgstr "게임 초기화"
 
 #: contents/ui/GamePage.qml:582
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
-msgstr ""
+msgstr "게임을 초기화하시겠습니까?"
 
 #: contents/ui/GamePage.qml:583 contents/ui/GamePage.qml:601
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
-msgstr ""
+msgstr "변경 사항을 모두 잃어버리게 되며, 실행 취소할 수 없습니다."
 
 #: contents/ui/GamePage.qml:592
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
-msgstr ""
+msgstr "연필 마크 지우기"
 
 #: contents/ui/GamePage.qml:596
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
-msgstr ""
+msgstr "포기하기"
 
 #: contents/ui/GamePage.qml:600
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
-msgstr ""
+msgstr "포기하시겠습니까?"
 
 #: contents/ui/GamePage.qml:660
 #, kde-format
 msgid "Please select a valid cell to solve."
-msgstr ""
+msgstr "해결할 올바른 셀을 선택하십시오."
 
 #: contents/ui/GamePage.qml:663
 #, kde-format
 msgid "Solve"
-msgstr ""
+msgstr "해결"
 
 #: contents/ui/Import.qml:13
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Sudoku"
-msgstr ""
+msgstr "스도쿠 가져오기"
 
 #: contents/ui/Import.qml:35
 #, kde-format
@@ -238,259 +240,265 @@ msgid ""
 "Line breaks and spaces are silently removed, so that you can enter one row "
 "per-line with some optional whitespace."
 msgstr ""
+"81글자 문자열을 입력하거나 붙여넣으십시오. 각각 셀은 1–9 사이의 값을 가지며, "
+"0이나 공백과 숫자가 아닌 임의의 문자를 입력하면 해당 셀을 비워 둡니다. PuMoKu"
+"에서는 해당 스도쿠를 해결할 수 있는지 확인하며 레벨을 계산합니다.\n"
+"\n"
+"줄 바꿈과 공백 문자는 없는 것으로 취급되며, 한 줄마다 스도쿠의 한 줄을 입력"
+"할 수 있으며, 추가적으로 공백을 입력할 수도 있습니다."
 
 #: contents/ui/Import.qml:45
 #, kde-format
 msgctxt "@button:title"
 msgid "Save current game"
-msgstr ""
+msgstr "현재 게임 저장하기"
 
 #: contents/ui/Import.qml:53
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr ""
+msgstr "취소"
 
 #: contents/ui/Import.qml:57
 #, kde-format
 msgctxt "@action:button"
 msgid "Import"
-msgstr ""
+msgstr "가져오기"
 
 #: contents/ui/Import.qml:66
 #, kde-format
 msgid ""
 "The provided string is not exactly 81 characters after cleanup. Please amend."
-msgstr ""
+msgstr "지정한 문자열 정리 이후 정확히 81글자가 아닙니다. 값을 덧붙이십시오."
 
 #: contents/ui/MainMenu.qml:15
 #, kde-format
 msgctxt "@title:window"
 msgid "Pumoku Menu"
-msgstr ""
+msgstr "Pumoku 메뉴"
 
 #: contents/ui/MainMenu.qml:56
 #, kde-format
 msgid "Save game?"
-msgstr ""
+msgstr "게임 저장?"
 
 #: contents/ui/MainMenu.qml:57
 #, kde-format
 msgid "Would you like to save the current game, so it can be continued later?"
-msgstr ""
+msgstr "현재 게임을 저장하여 나중에 계속 진행하시겠습니까?"
 
 #: contents/ui/MainMenu.qml:87
 #, kde-format
 msgid "New Sudoku:"
-msgstr ""
+msgstr "새 스도쿠:"
 
 #: contents/ui/MainMenu.qml:105
 #, kde-format
 msgid "Import or enter:"
-msgstr ""
+msgstr "가져오기 또는 입력:"
 
 #: contents/ui/MainMenu.qml:111
 #, kde-format
 msgctxt "@action:button"
 msgid "Import Sudoku …"
-msgstr ""
+msgstr "스도쿠 가져오기…"
 
 #: contents/ui/MainMenu.qml:118
 #, kde-format
 msgctxt "@action:button"
 msgid "Enter Sudoku …"
-msgstr ""
+msgstr "스도쿠 입력…"
 
 #: contents/ui/MainMenu.qml:125
 #, kde-format
 msgctxt "@action:button"
 msgid "Continue:"
-msgstr ""
+msgstr "계속:"
 
 #: contents/ui/Settings.qml:14
 #, kde-format
 msgctxt "@title:window"
 msgid "Settings"
-msgstr ""
+msgstr "설정"
 
 #: contents/ui/Settings.qml:17
 #, kde-format
 msgctxt "@title"
 msgid "Game"
-msgstr ""
+msgstr "게임"
 
 #: contents/ui/Settings.qml:22
 #, kde-format
 msgctxt "@option:check"
 msgid "Reset time with game"
-msgstr ""
+msgstr "게임 시간 초기화"
 
 #: contents/ui/Settings.qml:30
 #, kde-format
 msgctxt "@option:check"
 msgid "Clean up pencil marks when setting a cell value"
-msgstr ""
+msgstr "셀 값을 설정할 때 연필 마크 지우기"
 
 #: contents/ui/Settings.qml:40
 #, kde-format
 msgctxt "@title"
 msgid "Highlight"
-msgstr ""
+msgstr "강조"
 
 #: contents/ui/Settings.qml:44
 #, kde-format
 msgctxt "@option:check"
 msgid "Houses of a selected cell"
-msgstr ""
+msgstr "선택한 셀의 외곽선"
 
 #: contents/ui/Settings.qml:52
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit"
-msgstr ""
+msgstr "활성 자릿수가 있는 셀"
 
 #: contents/ui/Settings.qml:60
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit pencilmark"
-msgstr ""
+msgstr "활성 자릿수 연필 마크가 있는 셀"
 
 #: contents/ui/Settings.qml:68
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in values"
-msgstr ""
+msgstr "값의 논리적 오류"
 
 #: contents/ui/Settings.qml:76
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in pencilmarks"
-msgstr ""
+msgstr "연필 마크의 논리적 오류"
 
 #: contents/ui/Settings.qml:87
 #, kde-format
 msgctxt "@option:check"
 msgid "Erasable cells with eraser active"
-msgstr ""
+msgstr "지우개 활성 상태에서의 지울 수 있는 셀"
 
 #: contents/ui/Settings.qml:95
 #, kde-format
 msgctxt "@option:check"
 msgid "Wrong values"
-msgstr ""
+msgstr "잘못된 값"
 
 #: contents/ui/ShareAction.qml:29
 #, kde-format
 msgctxt "@title:menu"
 msgid "Share sudokuexchange.com link"
-msgstr ""
+msgstr "sudokuexchange.com 링크 공유"
 
 #: main.cpp:76
 #, kde-format
 msgctxt "@title"
 msgid "PuMoKu"
-msgstr ""
+msgstr "PuMoKu"
 
 #: main.cpp:80 main.cpp:94
 #, kde-format
 msgid "PuMoKu is a classic Sudoku game, aimed for Plasma Mobile"
-msgstr ""
+msgstr "PuMoKu는 Plasma 모바일을 위한 고전 스도쿠 게임입니다"
 
 #: main.cpp:84
 #, kde-format
 msgid "© 2025 KDE Developers"
-msgstr ""
+msgstr "© 2025 KDE Developers"
 
 #: main.cpp:85
 #, kde-format
 msgctxt "@info:credit"
 msgid "Anders Lund"
-msgstr ""
+msgstr "Anders Lund"
 
 #: main.cpp:85
 #, kde-format
 msgctxt "@info:credit"
 msgid "Maintainer"
-msgstr ""
+msgstr "관리자"
 
 #: main.cpp:86
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "박신조"
 
 #: main.cpp:86
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "kde@peremen.name"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "UNKNOWN"
-msgstr ""
+msgstr "알 수 없음"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "Simple"
-msgstr ""
+msgstr "간단함"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "Easy"
-msgstr ""
+msgstr "쉬움"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "Intermediate"
-msgstr ""
+msgstr "중간"
 
 #: qqw.cpp:11
 #, kde-format
 msgid "Expert"
-msgstr ""
+msgstr "전문가"
 
 #: qqw.cpp:12
 #, kde-format
 msgid "None"
-msgstr ""
+msgstr "없음"
 
 #: qqw.cpp:12
 #, kde-format
 msgid "Rotate 90°"
-msgstr ""
+msgstr "90° 회전"
 
 #: qqw.cpp:12
 #, kde-format
 msgid "Rotate 180°"
-msgstr ""
+msgstr "180° 회전"
 
 #: qqw.cpp:12
 #, kde-format
 msgid "Mirror"
-msgstr ""
+msgstr "반전"
 
 #: qqw.cpp:12
 #, kde-format
 msgid "Flip"
-msgstr ""
+msgstr "뒤집기"
 
 #: qqw.cpp:12
 #, kde-format
 msgid "Random"
-msgstr ""
+msgstr "무작위"
 
 #: qqw.cpp:74
 #, kde-format
 msgid "Looking good. Difficulty:"
-msgstr ""
+msgstr "좋아 보입니다. 난이도:"
 
 #: qqw.cpp:77
 #, kde-format
 msgid "The provided Sudoku does not have a unique solution."
-msgstr ""
+msgstr "지정한 스도쿠에 유일한 해답이 없습니다."
 
 #: qqw.cpp:81
 #, kde-format
 msgid "The provided Sudoku is not solvable."
-msgstr ""
+msgstr "지정한 스도쿠는 해결할 수 없습니다."
