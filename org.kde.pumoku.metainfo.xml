@@ -26,6 +26,10 @@
   <name xml:lang="pt-BR">PuMoKu</name>
   <name xml:lang="sk">PuMoKu</name>
   <name xml:lang="sl">PuMoKu</name>
+  <name xml:lang="sr">PuMoKu</name>
+  <name xml:lang="sr-Latn">PuMoKu</name>
+  <name xml:lang="sr-ijekavian">PuMoKu</name>
+  <name xml:lang="sr-ijekavianlatin">PuMoKu</name>
   <name xml:lang="tr">PuMoKu</name>
   <name xml:lang="uk">PuMoKu</name>
   <name xml:lang="zh-TW">PuMoKu</name>
@@ -47,6 +51,10 @@
   <summary xml:lang="pt-BR">Um clássico jogo de Sudoku 9x9</summary>
   <summary xml:lang="sk">Klasická hra sudoku 9 × 9</summary>
   <summary xml:lang="sl">Klasična igra sudoku 9x9</summary>
+  <summary xml:lang="sr">Класична игра судоку 9 × 9</summary>
+  <summary xml:lang="sr-Latn">Klasična igra sudoku 9 × 9</summary>
+  <summary xml:lang="sr-ijekavian">Класична игра судоку 9 × 9</summary>
+  <summary xml:lang="sr-ijekavianlatin">Klasična igra sudoku 9 × 9</summary>
   <summary xml:lang="tr">Klasik 9 × 9 Sudoku oyunu</summary>
   <summary xml:lang="ug">ئەنئەنىۋى 9×9 شەكىلدىكى Sudoku ئويۇنى</summary>
   <summary xml:lang="uk">Класична гра судоку 9x9</summary>
@@ -84,6 +92,10 @@
     <p xml:lang="pt-BR">PuMoKu é um jogo clássico de resolução de pumoku 9x9 para dispositivos Plasma Mobile. Ele oferece opções flexíveis de destaque de texto e métodos de entrada (por toque), funcionalidade completa de desfazer e muito mais.</p>
     <p xml:lang="sk">PuMoKu je klasická hra sudoku 9 × 9 zameraná na Plasma Mobile. Prichádza s flexibilnými možnosťami zvýrazňovania a metódami (dotykového) vstupu, plným zásobníkom vrátenia a ďalšími funkciami.</p>
     <p xml:lang="sl">PuMoKu je klasična igra reševanja sudoku velikosti 9x9, namenjena za Plasma Mobile. Ponuja prilagodljive možnosti označevanja in metode vnosa (na dotik), celoten nabor ukazov za razveljavitev in še več.</p>
+    <p xml:lang="sr">PuMoKu је класична игра решавања судокуа 9 × 9, намењена мобилној Плазми. Има прилагодљиве могућности истицања и начине уноса (и додиром), потпуно опозивање и још много тога.</p>
+    <p xml:lang="sr-Latn">PuMoKu je klasična igra rešavanja sudokua 9 × 9, namenjena mobilnoj Plasmi. Ima prilagodljive mogućnosti isticanja i načine unosa (i dodirom), potpuno opozivanje i još mnogo toga.</p>
+    <p xml:lang="sr-ijekavian">PuMoKu је класична игра рјешавања судокуа 9 × 9, намијењена мобилној Плазми. Има прилагодљиве могућности истицања и начине уноса (и додиром), потпуно опозивање и још много тога.</p>
+    <p xml:lang="sr-ijekavianlatin">PuMoKu je klasična igra rješavanja sudokua 9 × 9, namijenjena mobilnoj Plasmi. Ima prilagodljive mogućnosti isticanja i načine unosa (i dodirom), potpuno opozivanje i još mnogo toga.</p>
     <p xml:lang="tr">PuMoKu, Plasma Cep için tasarlanmış, klasik 9 × 9 Sudoku çözme oyunudur. Esnek vurgu ve (dokunmatik) giriş seçenekleri, tam geri alma desteği ve çok daha fazlasıyla gelir.</p>
     <p xml:lang="uk">PuMoKu — класична гра у судоку 9x9, яку призначено для мобільної Плазми. У ній передбачено гнучкі можливості з підсвічування і (сенсорні) способи введення, повний стос скасування дій та додаткові можливості.</p>
     <p xml:lang="zh-TW">PuMoKu 是一個設計給 Plasma 行動用的經典 9 × 9 數獨遊戲。它提供有彈性的突顯選項與輸入方法（包含觸控）、完整復原功能等等。</p>
@@ -106,6 +118,10 @@
       <li xml:lang="pt-BR">Métodos de entrada: Célula primeiro, Número primeiro ou Híbrido</li>
       <li xml:lang="sk">Metódy vstupu: Najskôr bunka, Najskôr číslo alebo Hybridná</li>
       <li xml:lang="sl">Načini vnosa: Najprej celica, Najprej številka ali Hibrid</li>
+      <li xml:lang="sr">Начини уноса: прво ћелија, прво број или мешовито</li>
+      <li xml:lang="sr-Latn">Načini unosa: prvo ćelija, prvo broj ili mešovito</li>
+      <li xml:lang="sr-ijekavian">Начини уноса: прво ћелија, прво број или мјешовито</li>
+      <li xml:lang="sr-ijekavianlatin">Načini unosa: prvo ćelija, prvo broj ili mješovito</li>
       <li xml:lang="tr">Giriş yöntemleri: Önce hücre, sayı veya hibrit</li>
       <li xml:lang="uk">Способи введення: спочатку комірка, спочатку число або гібридний</li>
       <li xml:lang="zh-TW">輸入方法：先方格、先數字還是混合</li>
@@ -127,6 +143,10 @@
       <li xml:lang="pt-BR">Gerador de sudoku integrado</li>
       <li xml:lang="sk">Vstavaný generátor sudoku</li>
       <li xml:lang="sl">Vgrajen generator sudokujev</li>
+      <li xml:lang="sr">Уграђен генератор слагалица судоку</li>
+      <li xml:lang="sr-Latn">Ugrađen generator slagalica sudoku</li>
+      <li xml:lang="sr-ijekavian">Уграђен генератор слагалица судоку</li>
+      <li xml:lang="sr-ijekavianlatin">Ugrađen generator slagalica sudoku</li>
       <li xml:lang="tr">Yerleşik Sudoku üreteci</li>
       <li xml:lang="uk">Створено у засобі створення судоку</li>
       <li xml:lang="zh-TW">內建數獨產生器</li>
@@ -148,6 +168,10 @@
       <li xml:lang="pt-BR">Desfazer automaticamente quando a mesma ação é repetida</li>
       <li xml:lang="sk">Automatické vrátenie pri opakovaní rovnakej akcie</li>
       <li xml:lang="sl">Samodejna razveljavitev, ko se isto dejanje ponovi</li>
+      <li xml:lang="sr">Аутоматско опозивање при понављању исте радње</li>
+      <li xml:lang="sr-Latn">Automatsko opozivanje pri ponavljanju iste radnje</li>
+      <li xml:lang="sr-ijekavian">Аутоматско опозивање при понављању исте радње</li>
+      <li xml:lang="sr-ijekavianlatin">Automatsko opozivanje pri ponavljanju iste radnje</li>
       <li xml:lang="tr">Aynı eylem yinelendiğinde kendiliğinden geri alma</li>
       <li xml:lang="uk">Автоматичне скасування, якщо повторюється та сама дія</li>
       <li xml:lang="zh-TW">重複同樣動作時自動復原</li>
@@ -173,6 +197,10 @@
       <caption xml:lang="pt-BR">Jogo PuMoKu</caption>
       <caption xml:lang="sk">Hra PuMoKu</caption>
       <caption xml:lang="sl">Igra PuMoKu</caption>
+      <caption xml:lang="sr">Игра у PuMoKu</caption>
+      <caption xml:lang="sr-Latn">Igra u PuMoKu</caption>
+      <caption xml:lang="sr-ijekavian">Игра у PuMoKu</caption>
+      <caption xml:lang="sr-ijekavianlatin">Igra u PuMoKu</caption>
       <caption xml:lang="tr">PuMoKu oyunu</caption>
       <caption xml:lang="uk">Гра PuMoKu</caption>
       <caption xml:lang="zh-TW">PuMoKu 遊戲</caption>
