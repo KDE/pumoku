@@ -24,6 +24,7 @@
   <name xml:lang="ko">PuMoKu</name>
   <name xml:lang="nl">PuMoKu</name>
   <name xml:lang="pt-BR">PuMoKu</name>
+  <name xml:lang="ru">PuMoKu</name>
   <name xml:lang="sk">PuMoKu</name>
   <name xml:lang="sl">PuMoKu</name>
   <name xml:lang="sr">PuMoKu</name>
@@ -49,6 +50,7 @@
   <summary xml:lang="ko">고전 9 × 9 스도쿠 게임</summary>
   <summary xml:lang="nl">Een klassiek 9 x 9 sudoku spel</summary>
   <summary xml:lang="pt-BR">Um clássico jogo de Sudoku 9x9</summary>
+  <summary xml:lang="ru">Классическая игра судоку 9 × 9</summary>
   <summary xml:lang="sk">Klasická hra sudoku 9 × 9</summary>
   <summary xml:lang="sl">Klasična igra sudoku 9x9</summary>
   <summary xml:lang="sr">Класична игра судоку 9 × 9</summary>
@@ -90,6 +92,7 @@
     <p xml:lang="ko">PuMoKu는 Plasma 모바일을 위한 고전 9 × 9 스도쿠 게임입니다. 다양한 강조 및 터치 입력 방식, 무제한 실행 취소 등의 기능을 지원합니다.</p>
     <p xml:lang="nl">PuMoKu is een klassiek, 9 x 9 pumoku oplosspel gericht op Plasma Mobiel. Het komt met flexibele accentueringsopties en (aanraak) invoermethoden, stapel voor volledig ongedaan maken en meer.</p>
     <p xml:lang="pt-BR">PuMoKu é um jogo clássico de resolução de pumoku 9x9 para dispositivos Plasma Mobile. Ele oferece opções flexíveis de destaque de texto e métodos de entrada (por toque), funcionalidade completa de desfazer e muito mais.</p>
+    <p xml:lang="ru">PuMoKu — классическая игра судоку 9 × 9, рассчитанная на Plasma Mobile. В ней гибкие параметры подсветки и способы ввода (в том числе касанием), полный журнал отмены и многое другое.</p>
     <p xml:lang="sk">PuMoKu je klasická hra sudoku 9 × 9 zameraná na Plasma Mobile. Prichádza s flexibilnými možnosťami zvýrazňovania a metódami (dotykového) vstupu, plným zásobníkom vrátenia a ďalšími funkciami.</p>
     <p xml:lang="sl">PuMoKu je klasična igra reševanja sudoku velikosti 9x9, namenjena za Plasma Mobile. Ponuja prilagodljive možnosti označevanja in metode vnosa (na dotik), celoten nabor ukazov za razveljavitev in še več.</p>
     <p xml:lang="sr">PuMoKu је класична игра решавања судокуа 9 × 9, намењена мобилној Плазми. Има прилагодљиве могућности истицања и начине уноса (и додиром), потпуно опозивање и још много тога.</p>
@@ -116,6 +119,7 @@
       <li xml:lang="ko">입력 방식: 셀 우선, 숫자 우선, 하이브리드</li>
       <li xml:lang="nl">Invoermethoden: cel eerst, getal eerst of hybride</li>
       <li xml:lang="pt-BR">Métodos de entrada: Célula primeiro, Número primeiro ou Híbrido</li>
+      <li xml:lang="ru">Способы ввода: сначала ячейка, сначала цифра или смешанный</li>
       <li xml:lang="sk">Metódy vstupu: Najskôr bunka, Najskôr číslo alebo Hybridná</li>
       <li xml:lang="sl">Načini vnosa: Najprej celica, Najprej številka ali Hibrid</li>
       <li xml:lang="sr">Начини уноса: прво ћелија, прво број или мешовито</li>
@@ -141,6 +145,7 @@
       <li xml:lang="ko">내장 스도쿠 생성기</li>
       <li xml:lang="nl">Ingebouwde sudoku generator</li>
       <li xml:lang="pt-BR">Gerador de sudoku integrado</li>
+      <li xml:lang="ru">Встроенный генератор судоку</li>
       <li xml:lang="sk">Vstavaný generátor sudoku</li>
       <li xml:lang="sl">Vgrajen generator sudokujev</li>
       <li xml:lang="sr">Уграђен генератор слагалица судоку</li>
@@ -166,6 +171,7 @@
       <li xml:lang="ko">같은 동작을 반복했을 때 자동으로 실행 취소</li>
       <li xml:lang="nl">Automatisch ongedaan maken wanneer dezelfde actie wordt herhaald</li>
       <li xml:lang="pt-BR">Desfazer automaticamente quando a mesma ação é repetida</li>
+      <li xml:lang="ru">Автоматическая отмена при повторении того же действия</li>
       <li xml:lang="sk">Automatické vrátenie pri opakovaní rovnakej akcie</li>
       <li xml:lang="sl">Samodejna razveljavitev, ko se isto dejanje ponovi</li>
       <li xml:lang="sr">Аутоматско опозивање при понављању исте радње</li>
@@ -195,6 +201,7 @@
       <caption xml:lang="ko">PuMoKu 게임</caption>
       <caption xml:lang="nl">PuMoKu-spel</caption>
       <caption xml:lang="pt-BR">Jogo PuMoKu</caption>
+      <caption xml:lang="ru">Игра PuMoKu</caption>
       <caption xml:lang="sk">Hra PuMoKu</caption>
       <caption xml:lang="sl">Igra PuMoKu</caption>
       <caption xml:lang="sr">Игра у PuMoKu</caption>
