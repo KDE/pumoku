@@ -628,7 +628,7 @@ Kirigami.Page {
         Rectangle {
             id: drawer
             width: parent.width
-            height: parent.height - bottomTitle.height
+            height: parent.height - (bottomTitle.visible ? bottomTitle.height : 0) - (!game.finished ? timerDisplay.height : 0)
             z: 1
             property bool isOpen: false
             states: [
@@ -648,7 +648,6 @@ Kirigami.Page {
                 id: drawerLoader
                 onLoaded: drawer.isOpen = true
             }
-
         }
     }
 
