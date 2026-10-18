@@ -48,6 +48,7 @@ Kirigami.Page {
             actions: [
             ShareAction {
                 visible: Qt.platform.os != "android"
+                text: i18nc("@action:intoolbar", "Share")
                 icon.name: "document-share-symbolic"
                 enabled: gameBoard.hasGame || game.finished
                 inputData: {
@@ -56,6 +57,7 @@ Kirigami.Page {
                 }
             },
             Kirigami.Action {
+                text: i18nc("@action:intoolbar, toggle pencilmarks display in sudoku board", "Pencilmarks")
                 icon.name: "open-for-editing-symbolic"
                 checkable: true
                 checked: gameBoard.showPencilMarks
@@ -67,6 +69,7 @@ Kirigami.Page {
                 }
             },
             Kirigami.Action {
+                text: i18nc("@intoolbar, toggle highlight display in sudoku board", "Highlight")
                 icon.name: "flashlight-on-symbolic"
                 checkable: true
                 checked: gameBoard.showHighlight
