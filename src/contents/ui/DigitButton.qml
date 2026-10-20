@@ -42,7 +42,7 @@ Controls.Button {
             topLeftRadius: parent.radius
             bottomLeftRadius: parent.radius
             width: (parent.width-2)*button.progress
-            color: isDarkTheme ? parent.color.lighter(1.8) : parent.color.darker(1.1)
+            color: button.isDarkTheme ? parent.color.lighter(1.8) : parent.color.darker(1.1)
         }
     }
     contentItem: Controls.Label {

@@ -1,14 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 // SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk>
 
-pragma ComponentBehavior: Bound
-
 import QtQuick
 import QtQuick.Controls as QQC2
 import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
+import org.kde.ki18n
 import org.kde.pumoku
 import org.kde.pumoku.private
+
+pragma ComponentBehavior: Bound
 
 Kirigami.Page {
     id: gameBoard
@@ -16,21 +17,22 @@ Kirigami.Page {
     padding: 0
 
     required property Kirigami.ApplicationWindow app
+    property bool wideScreen: app.width > app.height
 
     actions: [
         Kirigami.Action {
-            // text: i18nc("@action:inmenu", "About PuMoKu")
+            // text: KI18n.i18nc("@action:inmenu", "About PuMoKu")
             icon.name: "help-about-symbolic"
             onTriggered: gameBoard.app.pageStack.layers.push("qrc:/About.qml")
         },
         Kirigami.Action {
-            // text: i18nc("@action:inmenu", "Settings")
+            // text: KI18n.i18nc("@action:inmenu", "Settings")
             icon.name: "settings-configure-symbolic"
             onTriggered: gameBoard.app.pageStack.layers.push("qrc:/Settings.qml")
         },
         Kirigami.Action {
             icon.name: "application-menu-symbolic"
-            onTriggered: gameBoard.app.pageStack.layers.push("qrc:/MainMenu.qml", {gameLoaded: game.loaded})
+            onTriggered: gameBoard.app.pageStack.layers.push("qrc:/MainMenu.qml", {"gameLoaded": game.loaded, "gp": gameBoard})
         }
     ]
 
@@ -48,16 +50,17 @@ Kirigami.Page {
             actions: [
             ShareAction {
                 visible: Qt.platform.os != "android"
-                text: i18nc("@action:intoolbar", "Share")
+                app: gameBoard.app
+                text: KI18n.i18nc("@action:intoolbar", "Share")
                 icon.name: "document-share-symbolic"
                 enabled: gameBoard.hasGame || game.finished
                 inputData: {
                     "urls": ["https://sudokuexchange.com/play/?s=" + game.asString()],
-                    "title": i18n("Play at sudokuexchange.com")
+                    "title": KI18n.i18n("Play at sudokuexchange.com")
                 }
             },
             Kirigami.Action {
-                text: i18nc("@action:intoolbar, toggle pencilmarks display in sudoku board", "Pencilmarks")
+                text: KI18n.i18nc("@action:intoolbar, toggle pencilmarks display in sudoku board", "Pencilmarks")
                 icon.name: "open-for-editing-symbolic"
                 checkable: true
                 checked: gameBoard.showPencilMarks
@@ -69,7 +72,7 @@ Kirigami.Page {
                 }
             },
             Kirigami.Action {
-                text: i18nc("@intoolbar, toggle highlight display in sudoku board", "Highlight")
+                text: KI18n.i18nc("@intoolbar, toggle highlight display in sudoku board", "Highlight")
                 icon.name: "flashlight-on-symbolic"
                 checkable: true
                 checked: gameBoard.showHighlight
@@ -84,7 +87,7 @@ Kirigami.Page {
     PumokuEngine {
         id: game
         onIsFinished: () => {
-            drawerLoader.source = "qrc:/FinishDialog.qml"
+            drawerLoader.setSource("qrc:/FinishDialog.qml", {"gp": gameBoard, "game": game})
             drawer.isOpen = true
         }
         onGameLoaded: () => {
@@ -95,7 +98,6 @@ Kirigami.Page {
         }
     }
 
-    property bool wideScreen: app.isWideScreen
     property bool tabletMode: (wideScreen && app.height > 600) || (!wideScreen && width > 600)
 
     property bool hasGame: game.loaded && !game.finished
@@ -203,8 +205,7 @@ Kirigami.Page {
         }
     }
 
-    // UI
-
+    property string stime: timer.stime
     Timer {
         id: timer
         running: gameBoard.app.active && gameBoard.isCurrentPage && game.loaded && !game.finished
@@ -227,6 +228,7 @@ Kirigami.Page {
         }
     }
 
+    // --- UI ---
     // Game board
     Rectangle {
         id: boardContainer
@@ -447,7 +449,7 @@ Kirigami.Page {
                     Layout.fillHeight: true
                     id: btnUndo
                     enabled: !drawer.isOpen && game.undoPos > -1;
-                    text: i18nc("@action:button", "Undo")
+                    text: KI18n.i18nc("@action:button", "Undo")
                     // text: "Fortryd"
                     icon.name: "edit-undo-symbolic"
                     onClicked: game.undo();
@@ -457,7 +459,7 @@ Kirigami.Page {
                     Layout.fillHeight: true
                     id: btnRedo
                     enabled: !drawer.isOpen && game.undoPos < game.undoStack.length-1
-                    text: i18nc("@action:button", "Redo")
+                    text: KI18n.i18nc("@action:button", "Redo")
                     // text: "Gendan"
                     icon.name: "edit-redo-symbolic"
                     onClicked: game.redo();
@@ -467,20 +469,20 @@ Kirigami.Page {
                     Layout.fillHeight: true
                     id: btnHint
                     enabled:  !drawer.isOpen
-                    text: i18nc("@action:button", "Hint")
+                    text: KI18n.i18nc("@action:button", "Hint")
                     icon.name: "games-hint-symbolic"
                     onClicked: hintsMenu.open()
                     QQC2.Menu {
                         id: hintsMenu
                         QQC2.MenuItem {
-                            text: i18nc("@action:inmenu", "Check board")
+                            text: KI18n.i18nc("@action:inmenu", "Check board")
                             onTriggered: {
                                 drawerLoader.source = "qrc:/CheckBoardDialog.qml"
                                 game.hintCount++
                             }
                         }
                         QQC2.MenuItem {
-                            text: i18nc("@action:inmenu", "Solve Cell")
+                            text: KI18n.i18nc("@action:inmenu", "Solve Cell")
                             onTriggered: {
                                 if (game.currentCell > -1 && game.board[game.currentCell] === 0) {
                                     if (solveMessage.visible) {
@@ -493,12 +495,12 @@ Kirigami.Page {
                             }
                         }
                         QQC2.MenuItem {
-                            text: i18nc("@action:inmenu", "Solve Game")
+                            text: KI18n.i18nc("@action:inmenu", "Solve Game")
                             onTriggered: { solvePrompt.open() }
                             Kirigami.PromptDialog {
                                 id: solvePrompt
-                                title: i18nc("@title:window", "Solve Game?")
-                                subtitle: i18n("You will lose any changes you have made, this cannot be undone. You can’t solve the puzzle on your own!")
+                                title: KI18n.i18nc("@title:window", "Solve Game?")
+                                subtitle: KI18n.i18n("You will lose any changes you have made, this cannot be undone. You can’t solve the puzzle on your own!")
                                 standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
                                 onAccepted: {
                                     game.solve();
@@ -507,7 +509,7 @@ Kirigami.Page {
                             }
                         }
                         QQC2.MenuItem {
-                            text: i18nc("@action:inmenu", "Set Pencilmarks")
+                            text: KI18n.i18nc("@action:inmenu", "Set Pencilmarks")
                             onTriggered: {
                                 game.generatePencilMarks()
                                 gameBoard.showPencilMarks = true
@@ -552,7 +554,7 @@ Kirigami.Page {
                     id: btnPencilMarks
                     enabled:  !drawer.isOpen
                     checkable: true
-                    text: i18nc("@action:button", "Pencil")
+                    text: KI18n.i18nc("@action:button", "Pencil")
                     icon.name: "open-for-editing-symbolic"
                     onClicked: if (checked) gameBoard.showPencilMarks = true
                 }
@@ -562,7 +564,7 @@ Kirigami.Page {
                     id: btnErase
                     enabled:  !drawer.isOpen
                     checkable: true
-                    text: i18nc("@action:button", "Erase")
+                    text: KI18n.i18nc("@action:button", "Erase")
                     // text: "Visk ud"
                     icon.name: "tool_eraser-symbolic"
                     onClicked: gameBoard.eraseClicked();
@@ -572,18 +574,18 @@ Kirigami.Page {
                     Layout.fillHeight: true
                     id: btnGame
                     enabled:  !drawer.isOpen
-                    text: i18nc("@action:button", "Game")
+                    text: KI18n.i18nc("@action:button", "Game")
                     icon.name: "application-menu-symbolic"
                     onClicked: gameMenu.open()
                     QQC2.Menu {
                         id: gameMenu
                         QQC2.MenuItem {
-                            text: i18nc("@action:inmenu", "Reset Game")
+                            text: KI18n.i18nc("@action:inmenu", "Reset Game")
                             onTriggered: { resetPrompt.open() }
                             Kirigami.PromptDialog {
                                 id: resetPrompt
-                                title: i18nc("@title:window", "Reset Game?")
-                                subtitle: i18n("You will lose any changes you have made, this cannot be undone.")
+                                title: KI18n.i18nc("@title:window", "Reset Game?")
+                                subtitle: KI18n.i18n("You will lose any changes you have made, this cannot be undone.")
                                 standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
                                 onAccepted: {
                                     game.reset();
@@ -592,16 +594,16 @@ Kirigami.Page {
                             }
                         }
                         QQC2.MenuItem {
-                            text: i18nc("@action:inmenu", "Clear Pencilmarks")
+                            text: KI18n.i18nc("@action:inmenu", "Clear Pencilmarks")
                             onTriggered: game.clearPencilMarks()
                         }
                         QQC2.MenuItem {
-                            text: i18nc("@action:inmenu", "Give Up")
+                            text: KI18n.i18nc("@action:inmenu", "Give Up")
                             onTriggered: { giveupPrompt.open() }
                             Kirigami.PromptDialog {
                                 id: giveupPrompt
-                                title: i18nc("@title:window", "Give Up?")
-                                subtitle: i18n("You will lose any changes you have made, this cannot be undone.")
+                                title: KI18n.i18nc("@title:window", "Give Up?")
+                                subtitle: KI18n.i18n("You will lose any changes you have made, this cannot be undone.")
                                 standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
                                 onAccepted: {
                                     game.clear();
@@ -648,6 +650,7 @@ Kirigami.Page {
             transitions: Transition { SmoothedAnimation { target: drawer; property: "y"; velocity: gameBoard.tabletMode ? 5000 : 3000 } }
 
             Loader {
+                anchors.fill: parent
                 id: drawerLoader
                 onLoaded: drawer.isOpen = true
             }
@@ -659,10 +662,10 @@ Kirigami.Page {
         position: Kirigami.InlineMessage.Position.Header
         type: Kirigami.MessageType.Information
         showCloseButton: true
-        text: i18n("Please select a valid cell to solve.")
+        text: KI18n.i18n("Please select a valid cell to solve.")
         actions: [
             Kirigami.Action {
-                text: i18n("Solve")
+                text: KI18n.i18n("Solve")
                 visible: game.currentCell > -1 && game.board[game.currentCell] === 0
                 onTriggered: {
                     game.solveCell(game.currentCell)

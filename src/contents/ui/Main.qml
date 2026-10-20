@@ -2,7 +2,6 @@
 // SPDX-FileCopyrightText: 2024 Anders Lund <anders@alweb.dk>
 
 import QtQuick
-// import QtQuick.Controls as QQC2
 import org.kde.kirigami as Kirigami
 import org.kde.pumoku
 import org.kde.config as Config
@@ -19,12 +18,12 @@ Kirigami.ApplicationWindow {
     height: 800
 
     Config.WindowStateSaver {
-	configGroupName: 'main'
+        configGroupName: 'main'
     }
 
     Component.onCompleted: {
         if (!gamePage.loadGame('current.json')) {
-            pageStack.layers.push("qrc:/MainMenu.qml", {gameLoaded: false})
+            pageStack.layers.push("qrc:/MainMenu.qml", {"gameLoaded": false, "gp": gamePage})
         }
     }
 

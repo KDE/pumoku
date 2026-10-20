@@ -5,6 +5,7 @@ pragma ComponentBehavior: Bound
 
 import QtQml.Models
 import QtQuick
+import org.kde.ki18n
 import org.kde.purpose as Purpose
 import org.kde.kirigami as Kirigami
 
@@ -15,7 +16,7 @@ import org.kde.kirigami as Kirigami
  */
 Kirigami.Action {
     id: shareAction
-    property Kirigami.ApplicationWindow app: applicationWindow()
+    required property Kirigami.ApplicationWindow app
 
     // text: i18nc("@action Share link to play current game on sudokuexchange.com", "Share")
     icon.name: "emblem-shared-symbolic"
@@ -25,8 +26,8 @@ Kirigami.Action {
         const shareMenuComponent = Qt.createComponent("org.kde.pumoku", "ShareMenu");
         const menu = shareMenuComponent.createObject(app.overlay, {
             inputData: shareAction.inputData,
-            applicationWindow: app,
-            title: i18nc("@title:menu", "Share sudokuexchange.com link")
+            app: shareAction.app,
+            title: KI18n.i18nc("@title:menu", "Share sudokuexchange.com link")
         }) as ShareMenu;
         menu.popup();
     }

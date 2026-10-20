@@ -4,6 +4,7 @@
 import QtQuick
 import QtQuick.Controls as QQC2
 import QtQuick.Layouts
+import org.kde.ki18n
 import org.kde.kirigami as Kirigami
 import org.kde.pumoku as Pumoku
 
@@ -33,17 +34,17 @@ Rectangle {
             Layout.alignment: Qt.AlignRight
             visible: errcount
             QQC2.Button {
-                text: "Show me"
+                text: KI18n.i18nc("@action:button", "Show me")
                 onClicked: gameBoard.tmp_err_value = !gameBoard.tmp_err_value
                 checkable: true
                 checked: gameBoard.tmp_err_value
             }
             QQC2.Button {
-                text: "Scroll back"
+                text: KI18n.i18nc("@action:button, undo recursively", "Scroll back")
                 onClicked: scrollBack()
             }
             QQC2.Button {
-                text: "Reset game"
+                text: KI18n.i18nc("@action:button", "Reset game")
                 onClicked: {
                     game.reset()
                     drawer.isOpen = false;
@@ -57,7 +58,7 @@ Rectangle {
             Layout.fillWidth: true
             Layout.alignment: Qt.AlignRight
             QQC2.Button {
-                text: "Close"
+                text: KI18n.i18nc("@action:button", "Close")
                 onClicked: {
                     drawer.isOpen = false;
                     gameBoard.tmp_err_value = false;

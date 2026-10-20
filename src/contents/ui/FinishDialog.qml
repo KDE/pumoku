@@ -4,14 +4,19 @@
 import QtQuick
 import QtQuick.Controls as QQC2
 import QtQuick.Layouts
+import org.kde.ki18n
 import org.kde.kirigami as Kirigami
 import org.kde.pumoku
-import org.kde.pumoku.private
 
+pragma ComponentBehavior: Bound
 
 Rectangle {
-    width: drawer.width
-    height: drawer.height
+    id: root
+    width: parent.width
+    height: parent.height
+
+    required property GamePage gp
+    required property PumokuEngine game
 
     ColumnLayout {
         id: drawerContent
@@ -32,7 +37,7 @@ Rectangle {
         QQC2.Label {
             Layout.alignment: Qt.AlignHCenter
             font.pointSize: 18
-            text: timer.stime
+            text: root.gp.stime
         }
         QQC2.Label {
             id: l_msg
@@ -45,9 +50,9 @@ Rectangle {
             Layout.bottomMargin: Kirigami.Units.largeSpacing
             Layout.alignment: Qt.AlignHCenter
             QQC2.Button  {
-                text: i18nc("@action:button, %1 is level name", "Another %1", game.levelName)
+                text: KI18n.i18nc("@action:button, %1 is level name", "Another %1", root.game.levelName)
                 onClicked: {
-                    gameBoard.generateSudoku(game.level, 0)
+                    root.gp.generateSudoku(root.game.level, 0)
                 }
             }
         }
@@ -61,22 +66,22 @@ Rectangle {
 
         if (game.hintStatus & game.hintStatusAutoSolved) {
             color = Kirigami.Theme.alternateBackgroundColor;
-            l_header.text = i18n("There is your solution")
-            l_text.text = i18nc("%1 is step count", "You gave in after %1 steps.", stepcount);
-            l_msg.text = i18nc("%1 is hint count", "Automatically solved. Hints: %1.", game.hintCount);
+            l_header.text = KI18n.i18n("There is your solution")
+            l_text.text = KI18n.i18nc("%1 is step count", "You gave in after %1 steps.", stepcount);
+            l_msg.text = KI18n.i18nc("%1 is hint count", "Automatically solved. Hints: %1.", game.hintCount);
         } else if (game.hintCount || game.hintStatus & game.hintStatusUsedAutoPM) {
             color = Kirigami.Theme.neutralBackgroundColor;
-            l_header.text = i18n("Well done!");
-            l_text.text = i18nc("%1 is step count", "You solved this sudoku (with a bit of help) in %1 steps.", stepcount);
+            l_header.text = KI18n.i18n("Well done!");
+            l_text.text = KI18n.i18nc("%1 is step count", "You solved this sudoku (with a bit of help) in %1 steps.", stepcount);
             if (game.hintStatus & game.hintStatusUsedAutoPM) {
-                l_msg.text = i18n("Auto pencilmarks used.") + " ";
+                l_msg.text = KI18n.i18n("Auto pencilmarks used.") + " ";
             }
-            l_msg.text += i18nc("%1 is hint count", "Hints: %1.", game.hintCount);
+            l_msg.text += KI18n.i18nc("%1 is hint count", "Hints: %1.", game.hintCount);
         } else {
             color = Kirigami.Theme.positiveBackgroundColor;
-            l_header.text = stepcount > 81 - game.givenCount ? i18n("CONGRATULATIONS!!") : i18n("PURE PERFECTION!!");
-            l_text.text = i18nc("%1 is step count", "You solved this sudoku with no hints or help in %1 steps.", stepcount);
-            l_msg.text = i18n("Well done!")
+            l_header.text = stepcount > 18 - game.givenCount ? KI18n.i18n("CONGRATULATIONS!!") : KI18n.i18n("PURE PERFECTION!!");
+            l_text.text = KI18n.i18nc("%1 is step count", "You solved this sudoku with no hints or help in %1 steps.", stepcount);
+            l_msg.text = KI18n.i18n("Well done!")
         }
     }
 }
