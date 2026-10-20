@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-01 00:42+0000\n"
+"POT-Creation-Date: 2026-10-20 00:50+0000\n"
 "PO-Revision-Date: 2025-12-20 09:42+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -106,54 +106,76 @@ msgid "You solved this sudoku with no hints or help in %1 steps."
 msgstr ""
 "%1 Sudoku hau argibiderik edo laguntzarik gabe %2 urratsetan ebatzi duzu."
 
-#: contents/ui/GamePage.qml:55
+#: contents/ui/GamePage.qml:51
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Share"
+msgstr ""
+
+#: contents/ui/GamePage.qml:56
 #, kde-format
 msgid "Play at sudokuexchange.com"
 msgstr ""
 
-#: contents/ui/GamePage.qml:447
+#: contents/ui/GamePage.qml:60
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Set Pencilmarks"
+msgctxt "@action:intoolbar, toggle pencilmarks display in sudoku board"
+msgid "Pencilmarks"
+msgstr "Ezarri Arkatz-oharrak"
+
+#: contents/ui/GamePage.qml:72
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Highlight"
+msgctxt "@intoolbar, toggle highlight display in sudoku board"
+msgid "Highlight"
+msgstr "Nabarmendu"
+
+#: contents/ui/GamePage.qml:450
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Desegin"
 
-#: contents/ui/GamePage.qml:457
+#: contents/ui/GamePage.qml:460
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Berregin"
 
-#: contents/ui/GamePage.qml:467
+#: contents/ui/GamePage.qml:470
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "Argibidea"
 
-#: contents/ui/GamePage.qml:473
+#: contents/ui/GamePage.qml:476
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
 msgstr ""
 
-#: contents/ui/GamePage.qml:480
+#: contents/ui/GamePage.qml:483
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Gelaxka ebatzi"
 
-#: contents/ui/GamePage.qml:493
+#: contents/ui/GamePage.qml:496
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Jokoa ebatzi"
 
-#: contents/ui/GamePage.qml:497
+#: contents/ui/GamePage.qml:500
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Jokoa ebatzi?"
 
-#: contents/ui/GamePage.qml:498
+#: contents/ui/GamePage.qml:501
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -162,71 +184,71 @@ msgstr ""
 "Egindako aldaketak galduko dituzu, ez du atzera bueltarik. Ezin duzu zeure "
 "kabuz buru-hausgarria ebatzi!"
 
-#: contents/ui/GamePage.qml:507
+#: contents/ui/GamePage.qml:510
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "Ezarri Arkatz-oharrak"
 
-#: contents/ui/GamePage.qml:552
+#: contents/ui/GamePage.qml:555
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "Arkatza"
 
-#: contents/ui/GamePage.qml:562
+#: contents/ui/GamePage.qml:565
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "Ezabatu"
 
-#: contents/ui/GamePage.qml:572
+#: contents/ui/GamePage.qml:575
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "Jokoa"
 
-#: contents/ui/GamePage.qml:578
+#: contents/ui/GamePage.qml:581
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "Jokoa berrezarri"
 
-#: contents/ui/GamePage.qml:582
+#: contents/ui/GamePage.qml:585
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "Jokoa berrezarri?"
 
-#: contents/ui/GamePage.qml:583 contents/ui/GamePage.qml:601
+#: contents/ui/GamePage.qml:586 contents/ui/GamePage.qml:604
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr "Egindako aldaketak galduko dituzu, ez du atzera bueltarik."
 
-#: contents/ui/GamePage.qml:592
+#: contents/ui/GamePage.qml:595
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "Garbitu arkatz-oharrak"
 
-#: contents/ui/GamePage.qml:596
+#: contents/ui/GamePage.qml:599
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Amore eman"
 
-#: contents/ui/GamePage.qml:600
+#: contents/ui/GamePage.qml:603
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Amore eman?"
 
-#: contents/ui/GamePage.qml:660
+#: contents/ui/GamePage.qml:662
 #, kde-format
 msgid "Please select a valid cell to solve."
 msgstr "Mesedez, hautatu ebazteko balio duen gelaxka bat."
 
-#: contents/ui/GamePage.qml:663
+#: contents/ui/GamePage.qml:665
 #, kde-format
 msgid "Solve"
 msgstr "Ebatzi"

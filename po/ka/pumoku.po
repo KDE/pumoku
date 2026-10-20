@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-01 00:42+0000\n"
+"POT-Creation-Date: 2026-10-20 00:50+0000\n"
 "PO-Revision-Date: 2026-10-01 05:54+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -99,54 +99,76 @@ msgctxt "%1 is step count"
 msgid "You solved this sudoku with no hints or help in %1 steps."
 msgstr "თქვენ დაასრულეთ ეს სუდოკუ დახმარების გარეშე %1 ნაბიჯში."
 
-#: contents/ui/GamePage.qml:55
+#: contents/ui/GamePage.qml:51
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Share"
+msgstr ""
+
+#: contents/ui/GamePage.qml:56
 #, kde-format
 msgid "Play at sudokuexchange.com"
 msgstr "ითამაშეთ sudokuexchange.com-ზე"
 
-#: contents/ui/GamePage.qml:447
+#: contents/ui/GamePage.qml:60
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Set Pencilmarks"
+msgctxt "@action:intoolbar, toggle pencilmarks display in sudoku board"
+msgid "Pencilmarks"
+msgstr "ფანქრის კვლების დაყენება"
+
+#: contents/ui/GamePage.qml:72
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Highlight"
+msgctxt "@intoolbar, toggle highlight display in sudoku board"
+msgid "Highlight"
+msgstr "გამოკვეთა"
+
+#: contents/ui/GamePage.qml:450
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "დაბრუნება"
 
-#: contents/ui/GamePage.qml:457
+#: contents/ui/GamePage.qml:460
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "გამეორება"
 
-#: contents/ui/GamePage.qml:467
+#: contents/ui/GamePage.qml:470
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "მინიშნება"
 
-#: contents/ui/GamePage.qml:473
+#: contents/ui/GamePage.qml:476
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
 msgstr "დაფის შემოწმება"
 
-#: contents/ui/GamePage.qml:480
+#: contents/ui/GamePage.qml:483
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "უჯრედის ამოხსნა"
 
-#: contents/ui/GamePage.qml:493
+#: contents/ui/GamePage.qml:496
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "თამაშის ამოხსნა"
 
-#: contents/ui/GamePage.qml:497
+#: contents/ui/GamePage.qml:500
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "ამოიხსნას თამაში?"
 
-#: contents/ui/GamePage.qml:498
+#: contents/ui/GamePage.qml:501
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -155,73 +177,73 @@ msgstr ""
 "თქვენ კარგავთ თქვენს მიერ განხორციელებულ ცვლილებებს და ვერ გადაჭრით "
 "თავსატეხს დამოუკიდებლად!"
 
-#: contents/ui/GamePage.qml:507
+#: contents/ui/GamePage.qml:510
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "ფანქრის კვლების დაყენება"
 
-#: contents/ui/GamePage.qml:552
+#: contents/ui/GamePage.qml:555
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "ფანქარი"
 
-#: contents/ui/GamePage.qml:562
+#: contents/ui/GamePage.qml:565
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "წაშლა"
 
-#: contents/ui/GamePage.qml:572
+#: contents/ui/GamePage.qml:575
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "თამაში"
 
-#: contents/ui/GamePage.qml:578
+#: contents/ui/GamePage.qml:581
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "თამაშის გადატვირთვა"
 
-#: contents/ui/GamePage.qml:582
+#: contents/ui/GamePage.qml:585
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "გადავტვირთო თამაში?"
 
-#: contents/ui/GamePage.qml:583 contents/ui/GamePage.qml:601
+#: contents/ui/GamePage.qml:586 contents/ui/GamePage.qml:604
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr ""
 "თქვენ დაკარგავთ თქვენს მიერ განხორციელებულ ცვლილებებს. ეს ქმედება "
 "შეუქცევადია."
 
-#: contents/ui/GamePage.qml:592
+#: contents/ui/GamePage.qml:595
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "ფანქრის კვლების გასუფთავება"
 
-#: contents/ui/GamePage.qml:596
+#: contents/ui/GamePage.qml:599
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "დანებება"
 
-#: contents/ui/GamePage.qml:600
+#: contents/ui/GamePage.qml:603
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "ნებდებით?"
 
-#: contents/ui/GamePage.qml:660
+#: contents/ui/GamePage.qml:662
 #, kde-format
 msgid "Please select a valid cell to solve."
 msgstr "აირჩიეთ სწორი უჯრედი ამოსახსნელად."
 
-#: contents/ui/GamePage.qml:663
+#: contents/ui/GamePage.qml:665
 #, kde-format
 msgid "Solve"
 msgstr "ამოხსნა"

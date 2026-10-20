@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-01 00:42+0000\n"
+"POT-Creation-Date: 2026-10-20 00:50+0000\n"
 "PO-Revision-Date: 2026-09-21 09:29+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: fr\n"
@@ -100,54 +100,76 @@ msgctxt "%1 is step count"
 msgid "You solved this sudoku with no hints or help in %1 steps."
 msgstr "Vous avez terminé ce %1 sudoku sans aucun indice ou aide en %2 étapes."
 
-#: contents/ui/GamePage.qml:55
+#: contents/ui/GamePage.qml:51
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Share"
+msgstr ""
+
+#: contents/ui/GamePage.qml:56
 #, kde-format
 msgid "Play at sudokuexchange.com"
 msgstr ""
 
-#: contents/ui/GamePage.qml:447
+#: contents/ui/GamePage.qml:60
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Set Pencilmarks"
+msgctxt "@action:intoolbar, toggle pencilmarks display in sudoku board"
+msgid "Pencilmarks"
+msgstr "Mettre des marques"
+
+#: contents/ui/GamePage.qml:72
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Highlight"
+msgctxt "@intoolbar, toggle highlight display in sudoku board"
+msgid "Highlight"
+msgstr "Surligner"
+
+#: contents/ui/GamePage.qml:450
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Annuler"
 
-#: contents/ui/GamePage.qml:457
+#: contents/ui/GamePage.qml:460
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Refaire"
 
-#: contents/ui/GamePage.qml:467
+#: contents/ui/GamePage.qml:470
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "Astuce"
 
-#: contents/ui/GamePage.qml:473
+#: contents/ui/GamePage.qml:476
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
 msgstr ""
 
-#: contents/ui/GamePage.qml:480
+#: contents/ui/GamePage.qml:483
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Résoudre la cellule"
 
-#: contents/ui/GamePage.qml:493
+#: contents/ui/GamePage.qml:496
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Résoudre la partie"
 
-#: contents/ui/GamePage.qml:497
+#: contents/ui/GamePage.qml:500
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Résoudre la partie ?"
 
-#: contents/ui/GamePage.qml:498
+#: contents/ui/GamePage.qml:501
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -156,71 +178,71 @@ msgstr ""
 "vous perdez toutes vos modifications, cela ne peut pas être annulé. Vous ne "
 "pouvez pas résoudre le puzzle par vous-même !"
 
-#: contents/ui/GamePage.qml:507
+#: contents/ui/GamePage.qml:510
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "Mettre des marques"
 
-#: contents/ui/GamePage.qml:552
+#: contents/ui/GamePage.qml:555
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "Crayon"
 
-#: contents/ui/GamePage.qml:562
+#: contents/ui/GamePage.qml:565
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "Effacer"
 
-#: contents/ui/GamePage.qml:572
+#: contents/ui/GamePage.qml:575
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "Jeu"
 
-#: contents/ui/GamePage.qml:578
+#: contents/ui/GamePage.qml:581
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "Réinitialiser le jeu"
 
-#: contents/ui/GamePage.qml:582
+#: contents/ui/GamePage.qml:585
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "Réinitialiser le jeu ?"
 
-#: contents/ui/GamePage.qml:583 contents/ui/GamePage.qml:601
+#: contents/ui/GamePage.qml:586 contents/ui/GamePage.qml:604
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr "Vous perdez toutes vos modifications, cela ne peut pas être annulé."
 
-#: contents/ui/GamePage.qml:592
+#: contents/ui/GamePage.qml:595
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "Effacer les marques"
 
-#: contents/ui/GamePage.qml:596
+#: contents/ui/GamePage.qml:599
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Abandonner"
 
-#: contents/ui/GamePage.qml:600
+#: contents/ui/GamePage.qml:603
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Abandonner ?"
 
-#: contents/ui/GamePage.qml:660
+#: contents/ui/GamePage.qml:662
 #, kde-format
 msgid "Please select a valid cell to solve."
 msgstr "Veuillez sélectionner une cellule valide à résoudre."
 
-#: contents/ui/GamePage.qml:663
+#: contents/ui/GamePage.qml:665
 #, kde-format
 msgid "Solve"
 msgstr "Résoudre"
