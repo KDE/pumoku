@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-20 00:50+0000\n"
+"POT-Creation-Date: 2026-10-21 00:48+0000\n"
 "PO-Revision-Date: 2025-12-13 11:06+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -18,55 +18,81 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Lokalize 23.08.5\n"
 
-#: contents/ui/CheckBoardDialog.qml:79
+#: contents/ui/CheckBoardDialog.qml:37
 #, kde-format
-msgid "All is good!"
+msgctxt "@action:button"
+msgid "Show me"
+msgstr ""
+
+#: contents/ui/CheckBoardDialog.qml:43
+#, kde-format
+msgctxt "@action:button, undo recursively"
+msgid "Scroll back"
+msgstr ""
+
+#: contents/ui/CheckBoardDialog.qml:47
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Reset Game"
+msgctxt "@action:button"
+msgid "Reset game"
+msgstr "صفّر اللعبة"
+
+#: contents/ui/CheckBoardDialog.qml:61
+#, kde-format
+msgctxt "@action:button"
+msgid "Close"
 msgstr ""
 
 #: contents/ui/CheckBoardDialog.qml:80
 #, kde-format
-msgid "There are some errors."
+msgid "All is good!"
 msgstr ""
 
 #: contents/ui/CheckBoardDialog.qml:81
+#, kde-format
+msgid "There are some errors."
+msgstr ""
+
+#: contents/ui/CheckBoardDialog.qml:82
 #, kde-format
 msgid "Check board: "
 msgstr ""
 
-#: contents/ui/CheckBoardDialog.qml:81
+#: contents/ui/CheckBoardDialog.qml:82
 #, kde-format
 msgid "There is an error."
 msgstr ""
 
-#: contents/ui/FinishDialog.qml:48
+#: contents/ui/FinishDialog.qml:53
 #, kde-format
 msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
 msgstr "%1 آخر"
 
-#: contents/ui/FinishDialog.qml:64
+#: contents/ui/FinishDialog.qml:69
 #, kde-format
 msgid "There is your solution"
 msgstr "ها هو الحل"
 
-#: contents/ui/FinishDialog.qml:65
+#: contents/ui/FinishDialog.qml:70
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "استسلمت بعد %1 خطوة."
 
-#: contents/ui/FinishDialog.qml:66
+#: contents/ui/FinishDialog.qml:71
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "أُحلت آليًا. تلميحات: %1."
 
-#: contents/ui/FinishDialog.qml:69 contents/ui/FinishDialog.qml:79
+#: contents/ui/FinishDialog.qml:74 contents/ui/FinishDialog.qml:84
 #, kde-format
 msgid "Well done!"
 msgstr "أحسنت عملًا!"
 
-#: contents/ui/FinishDialog.qml:70
+#: contents/ui/FinishDialog.qml:75
 #, fuzzy, kde-format
 #| msgctxt "%1 is level name, %2 is step count"
 #| msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
@@ -74,28 +100,28 @@ msgctxt "%1 is step count"
 msgid "You solved this sudoku (with a bit of help) in %1 steps."
 msgstr "أنهيت هذا اللغز %1 سودوكو (بقليل من المساعدة) باستخدام %2 خطوات."
 
-#: contents/ui/FinishDialog.qml:72
+#: contents/ui/FinishDialog.qml:77
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "استخدمت علامات قلم رصاص آلي."
 
-#: contents/ui/FinishDialog.qml:74
+#: contents/ui/FinishDialog.qml:79
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "تلميحات: %1."
 
-#: contents/ui/FinishDialog.qml:77
+#: contents/ui/FinishDialog.qml:82
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "تَهَانِينَا!!"
 
-#: contents/ui/FinishDialog.qml:77
+#: contents/ui/FinishDialog.qml:82
 #, kde-format
 msgid "PURE PERFECTION!!"
 msgstr ""
 
-#: contents/ui/FinishDialog.qml:78
+#: contents/ui/FinishDialog.qml:83
 #, fuzzy, kde-format
 #| msgctxt "%1 is level name, %2 is step count"
 #| msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
@@ -104,18 +130,18 @@ msgid "You solved this sudoku with no hints or help in %1 steps."
 msgstr ""
 "أنهيت لعبة سودوكو هذه بنسبة %1 دون أي تلميحات أو مساعدة باستخدام %2 خطوات."
 
-#: contents/ui/GamePage.qml:51
+#: contents/ui/GamePage.qml:54
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Share"
 msgstr ""
 
-#: contents/ui/GamePage.qml:56
+#: contents/ui/GamePage.qml:59
 #, kde-format
 msgid "Play at sudokuexchange.com"
 msgstr ""
 
-#: contents/ui/GamePage.qml:60
+#: contents/ui/GamePage.qml:63
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu"
 #| msgid "Set Pencilmarks"
@@ -123,7 +149,7 @@ msgctxt "@action:intoolbar, toggle pencilmarks display in sudoku board"
 msgid "Pencilmarks"
 msgstr "ضع علامات قلم رصاص"
 
-#: contents/ui/GamePage.qml:72
+#: contents/ui/GamePage.qml:75
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Highlight"
@@ -131,49 +157,49 @@ msgctxt "@intoolbar, toggle highlight display in sudoku board"
 msgid "Highlight"
 msgstr "الإبراز"
 
-#: contents/ui/GamePage.qml:450
+#: contents/ui/GamePage.qml:452
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "تراجع"
 
-#: contents/ui/GamePage.qml:460
+#: contents/ui/GamePage.qml:462
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "كرّر"
 
-#: contents/ui/GamePage.qml:470
+#: contents/ui/GamePage.qml:472
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "تلميح"
 
-#: contents/ui/GamePage.qml:476
+#: contents/ui/GamePage.qml:478
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
 msgstr ""
 
-#: contents/ui/GamePage.qml:483
+#: contents/ui/GamePage.qml:485
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "حلّ الخلية"
 
-#: contents/ui/GamePage.qml:496
+#: contents/ui/GamePage.qml:498
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "حل اللعبة"
 
-#: contents/ui/GamePage.qml:500
+#: contents/ui/GamePage.qml:502
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "أأحل اللعبة؟"
 
-#: contents/ui/GamePage.qml:501
+#: contents/ui/GamePage.qml:503
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -181,82 +207,82 @@ msgid ""
 msgstr ""
 "ستفقد أي تغييرات قمت بها، ولا يمكن التراجع عن ذلك. لا يمكنك حل اللغز بنفسك!"
 
-#: contents/ui/GamePage.qml:510
+#: contents/ui/GamePage.qml:512
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "ضع علامات قلم رصاص"
 
-#: contents/ui/GamePage.qml:555
+#: contents/ui/GamePage.qml:557
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "قلم رصاص"
 
-#: contents/ui/GamePage.qml:565
+#: contents/ui/GamePage.qml:567
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "امسح"
 
-#: contents/ui/GamePage.qml:575
+#: contents/ui/GamePage.qml:577
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "لعبة جديدة"
 
-#: contents/ui/GamePage.qml:581
+#: contents/ui/GamePage.qml:583
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "صفّر اللعبة"
 
-#: contents/ui/GamePage.qml:585
+#: contents/ui/GamePage.qml:587
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "أأصفّر اللعبة؟"
 
-#: contents/ui/GamePage.qml:586 contents/ui/GamePage.qml:604
+#: contents/ui/GamePage.qml:588 contents/ui/GamePage.qml:606
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr "ستفقد أي تغييرات قمت بها، ولا يمكن التراجع عن ذلك."
 
-#: contents/ui/GamePage.qml:595
+#: contents/ui/GamePage.qml:597
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "امحُ علامات قلم رصاص"
 
-#: contents/ui/GamePage.qml:599
+#: contents/ui/GamePage.qml:601
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "استسلم"
 
-#: contents/ui/GamePage.qml:603
+#: contents/ui/GamePage.qml:605
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "استسلم؟"
 
-#: contents/ui/GamePage.qml:662
+#: contents/ui/GamePage.qml:665
 #, kde-format
 msgid "Please select a valid cell to solve."
 msgstr "رجاءً اختر خلية صالحة لحلها."
 
-#: contents/ui/GamePage.qml:665
+#: contents/ui/GamePage.qml:668
 #, kde-format
 msgid "Solve"
 msgstr "حلّ"
 
-#: contents/ui/Import.qml:13
+#: contents/ui/Import.qml:14
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Sudoku"
 msgstr "استيراد سودوكو"
 
-#: contents/ui/Import.qml:35
+#: contents/ui/Import.qml:36
 #, kde-format
 msgctxt "Use en dash for number range"
 msgid ""
@@ -274,147 +300,147 @@ msgstr ""
 "تحذف فواصل الأسطر والمسافات آليًا، بحيث يمكنك إدخال صف واحد في كل سطر مع بعض "
 "المسافات البيضاء الاختيارية."
 
-#: contents/ui/Import.qml:45
+#: contents/ui/Import.qml:46
 #, kde-format
 msgctxt "@button:title"
 msgid "Save current game"
 msgstr "احفظ اللعبة الحالية"
 
-#: contents/ui/Import.qml:53
+#: contents/ui/Import.qml:54
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "ألغِ"
 
-#: contents/ui/Import.qml:57
+#: contents/ui/Import.qml:58
 #, kde-format
 msgctxt "@action:button"
 msgid "Import"
 msgstr "استورد"
 
-#: contents/ui/Import.qml:66
+#: contents/ui/Import.qml:67
 #, kde-format
 msgid ""
 "The provided string is not exactly 81 characters after cleanup. Please amend."
 msgstr "السلسلة المقدمة لا تحتوي على 81 حرفًا بالضبط بعد التنظيف. يرجى تعديلها."
 
-#: contents/ui/MainMenu.qml:15
+#: contents/ui/MainMenu.qml:20
 #, kde-format
 msgctxt "@title:window"
 msgid "Pumoku Menu"
 msgstr "قائمة بوموكو"
 
-#: contents/ui/MainMenu.qml:56
+#: contents/ui/MainMenu.qml:61
 #, kde-format
 msgid "Save game?"
 msgstr "احفظ لعبة؟"
 
-#: contents/ui/MainMenu.qml:57
+#: contents/ui/MainMenu.qml:62
 #, kde-format
 msgid "Would you like to save the current game, so it can be continued later?"
 msgstr "هل ترغب في حفظ اللعبة الحالية حتى تتمكن من متابعتها لاحقًا؟"
 
-#: contents/ui/MainMenu.qml:87
+#: contents/ui/MainMenu.qml:92
 #, kde-format
 msgid "New Sudoku:"
 msgstr "سودوكو جديد:"
 
-#: contents/ui/MainMenu.qml:105
+#: contents/ui/MainMenu.qml:110
 #, kde-format
 msgid "Import or enter:"
 msgstr "استورد أو أدخل:"
 
-#: contents/ui/MainMenu.qml:111
+#: contents/ui/MainMenu.qml:116
 #, kde-format
 msgctxt "@action:button"
 msgid "Import Sudoku …"
 msgstr "استورد سودوكو …"
 
-#: contents/ui/MainMenu.qml:118
+#: contents/ui/MainMenu.qml:123
 #, kde-format
 msgctxt "@action:button"
 msgid "Enter Sudoku …"
 msgstr "ادخل سودوكو…"
 
-#: contents/ui/MainMenu.qml:125
+#: contents/ui/MainMenu.qml:130
 #, kde-format
 msgctxt "@action:button"
 msgid "Continue:"
 msgstr "تابع:"
 
-#: contents/ui/Settings.qml:14
+#: contents/ui/Settings.qml:12
 #, kde-format
 msgctxt "@title:window"
 msgid "Settings"
 msgstr "إعدادات"
 
-#: contents/ui/Settings.qml:17
+#: contents/ui/Settings.qml:15
 #, kde-format
 msgctxt "@title"
 msgid "Game"
 msgstr "لعبة"
 
-#: contents/ui/Settings.qml:22
+#: contents/ui/Settings.qml:20
 #, kde-format
 msgctxt "@option:check"
 msgid "Reset time with game"
 msgstr "صفّر الوقت مع اللعبة"
 
-#: contents/ui/Settings.qml:30
+#: contents/ui/Settings.qml:28
 #, kde-format
 msgctxt "@option:check"
 msgid "Clean up pencil marks when setting a cell value"
 msgstr "امسح علامات القلم الرصاص عند تعيين قيمة الخلية"
 
-#: contents/ui/Settings.qml:40
+#: contents/ui/Settings.qml:38
 #, kde-format
 msgctxt "@title"
 msgid "Highlight"
 msgstr "الإبراز"
 
-#: contents/ui/Settings.qml:44
+#: contents/ui/Settings.qml:42
 #, kde-format
 msgctxt "@option:check"
 msgid "Houses of a selected cell"
 msgstr "منازل خلية محددة"
 
-#: contents/ui/Settings.qml:52
+#: contents/ui/Settings.qml:50
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit"
 msgstr "الخلايا ذات الرقم النشط"
 
-#: contents/ui/Settings.qml:60
+#: contents/ui/Settings.qml:58
 #, kde-format
 msgctxt "@option:check"
 msgid "Cells with active digit pencilmark"
 msgstr "خلايا ذات علامات قلم رصاص رقمية نشطة"
 
-#: contents/ui/Settings.qml:68
+#: contents/ui/Settings.qml:66
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in values"
 msgstr "أخطاء منطقية في القيم"
 
-#: contents/ui/Settings.qml:76
+#: contents/ui/Settings.qml:74
 #, kde-format
 msgctxt "@option:check"
 msgid "Logical errors in pencilmarks"
 msgstr "أخطاء منطقية في علامات القلم الرصاص"
 
-#: contents/ui/Settings.qml:87
+#: contents/ui/Settings.qml:85
 #, kde-format
 msgctxt "@option:check"
 msgid "Erasable cells with eraser active"
 msgstr "خلايا قابلة للمسح مع ممحاة نشطة"
 
-#: contents/ui/Settings.qml:95
+#: contents/ui/Settings.qml:93
 #, kde-format
 msgctxt "@option:check"
 msgid "Wrong values"
 msgstr "قيم خاطئة"
 
-#: contents/ui/ShareAction.qml:29
+#: contents/ui/ShareAction.qml:30
 #, kde-format
 msgctxt "@title:menu"
 msgid "Share sudokuexchange.com link"
