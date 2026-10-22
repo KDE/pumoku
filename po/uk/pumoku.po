@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-21 00:48+0000\n"
-"PO-Revision-Date: 2026-10-20 09:15+0300\n"
+"PO-Revision-Date: 2026-10-21 14:48+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -22,18 +22,16 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Show me"
-msgstr ""
+msgstr "Покажи"
 
 #: contents/ui/CheckBoardDialog.qml:43
 #, kde-format
 msgctxt "@action:button, undo recursively"
 msgid "Scroll back"
-msgstr ""
+msgstr "Гортати назад"
 
 #: contents/ui/CheckBoardDialog.qml:47
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Reset Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "Reset game"
 msgstr "Відновити початковий стан гри"
@@ -42,7 +40,7 @@ msgstr "Відновити початковий стан гри"
 #, kde-format
 msgctxt "@action:button"
 msgid "Close"
-msgstr ""
+msgstr "Закрити"
 
 #: contents/ui/CheckBoardDialog.qml:80
 #, kde-format

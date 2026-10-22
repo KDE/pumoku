@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-21 00:48+0000\n"
-"PO-Revision-Date: 2026-10-20 06:13+0200\n"
+"PO-Revision-Date: 2026-10-21 08:02+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -22,27 +22,25 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Show me"
-msgstr ""
+msgstr "მაჩვენე"
 
 #: contents/ui/CheckBoardDialog.qml:43
 #, kde-format
 msgctxt "@action:button, undo recursively"
 msgid "Scroll back"
-msgstr ""
+msgstr "უკან გადახვევა"
 
 #: contents/ui/CheckBoardDialog.qml:47
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Reset Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "Reset game"
-msgstr "თამაშის გადატვირთვა"
+msgstr "თამაშის ჩამოყრა"
 
 #: contents/ui/CheckBoardDialog.qml:61
 #, kde-format
 msgctxt "@action:button"
 msgid "Close"
-msgstr ""
+msgstr "დახურვა"
 
 #: contents/ui/CheckBoardDialog.qml:80
 #, kde-format

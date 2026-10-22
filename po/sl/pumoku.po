@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-21 00:48+0000\n"
-"PO-Revision-Date: 2026-10-20 12:27+0200\n"
+"PO-Revision-Date: 2026-10-21 07:12+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -19,18 +19,16 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Show me"
-msgstr ""
+msgstr "Pokaži mi"
 
 #: contents/ui/CheckBoardDialog.qml:43
 #, kde-format
 msgctxt "@action:button, undo recursively"
 msgid "Scroll back"
-msgstr ""
+msgstr "Pomakni se nazaj"
 
 #: contents/ui/CheckBoardDialog.qml:47
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Reset Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "Reset game"
 msgstr "Ponastavi igro"
@@ -39,7 +37,7 @@ msgstr "Ponastavi igro"
 #, kde-format
 msgctxt "@action:button"
 msgid "Close"
-msgstr ""
+msgstr "Zapri"
 
 #: contents/ui/CheckBoardDialog.qml:80
 #, kde-format
