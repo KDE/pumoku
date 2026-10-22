@@ -507,20 +507,6 @@ Kirigami.Page {
                             }
                         }
                         QQC2.MenuItem {
-                            text: KI18n.i18nc("@action:inmenu", "Solve Game")
-                            onTriggered: { solvePrompt.open() }
-                            Kirigami.PromptDialog {
-                                id: solvePrompt
-                                title: KI18n.i18nc("@title:window", "Solve Game?")
-                                subtitle: KI18n.i18n("You will lose any changes you have made, this cannot be undone. You can’t solve the puzzle on your own!")
-                                standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
-                                onAccepted: {
-                                    game.solve();
-                                    // game.finish();
-                                }
-                            }
-                        }
-                        QQC2.MenuItem {
                             text: KI18n.i18nc("@action:inmenu", "Set Pencilmarks")
                             onTriggered: {
                                 game.generatePencilMarks()
@@ -592,6 +578,10 @@ Kirigami.Page {
                     QQC2.Menu {
                         id: gameMenu
                         QQC2.MenuItem {
+                            text: KI18n.i18nc("@action:inmenu", "Clear Pencilmarks")
+                            onTriggered: game.clearPencilMarks()
+                        }
+                        QQC2.MenuItem {
                             text: KI18n.i18nc("@action:inmenu", "Reset Game")
                             onTriggered: { resetPrompt.open() }
                             Kirigami.PromptDialog {
@@ -606,8 +596,18 @@ Kirigami.Page {
                             }
                         }
                         QQC2.MenuItem {
-                            text: KI18n.i18nc("@action:inmenu", "Clear Pencilmarks")
-                            onTriggered: game.clearPencilMarks()
+                            text: KI18n.i18nc("@action:inmenu", "Solve Game")
+                            onTriggered: { solvePrompt.open() }
+                            Kirigami.PromptDialog {
+                                id: solvePrompt
+                                title: KI18n.i18nc("@title:window", "Solve Game?")
+                                subtitle: KI18n.i18n("You will lose any changes you have made, this cannot be undone. You can’t solve the puzzle on your own!")
+                                standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
+                                onAccepted: {
+                                    game.solve();
+                                    // game.finish();
+                                }
+                            }
                         }
                         QQC2.MenuItem {
                             text: KI18n.i18nc("@action:inmenu", "Give Up")
