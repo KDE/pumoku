@@ -77,9 +77,8 @@ Rectangle {
     }
 
     function msg() {
-        if (errcount < 1) return i18n("All is good!");
-        else if (errcount > 1) return i18n("There are some errors.");
-        else return i18n("Check board: ") + i18n("There is an error.");
+        if (errcount < 1) return KI18n.i18n("All is good!");
+        else return KI18n.i18np("There is an error", "There are some errors.", errcount);
     }
 
     function scrollBack() {
