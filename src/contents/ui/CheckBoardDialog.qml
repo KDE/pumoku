@@ -6,50 +6,53 @@ import QtQuick.Controls as QQC2
 import QtQuick.Layouts
 import org.kde.ki18n
 import org.kde.kirigami as Kirigami
-import org.kde.pumoku as Pumoku
+import org.kde.pumoku
+import org.kde.pumoku.private
 
 // Check Board feature (hints menu)
 // Check the board for value errors, and offer actions if there are any:
 // Show, Scroll/step back, Reset game
 
 Rectangle {
-    width: drawer.width
-    height: drawer.height
+    id: root
+    width: parent.width
+    height: parent.height
+    required property GamePage gp
+    required property PumokuEngine game
     color: Kirigami.Theme.backgroundColor
 
     property int errcount: 0
 
     ColumnLayout {
-        width: drawer.width
+        width: parent.width
         Layout.margins: Kirigami.Units.largeSpacing
 
         QQC2.Label {
             id: checkmsg
-            text: msg()
+            text: root.msg()
             Layout.margins: Kirigami.Units.mediumSpacing
         }
         RowLayout {
             Layout.margins: Kirigami.Units.mediumSpacing
             Layout.fillWidth: true
             Layout.alignment: Qt.AlignRight
-            visible: errcount
+            visible: root.errcount
             QQC2.Button {
                 text: KI18n.i18nc("@action:button", "Show me")
-                onClicked: gameBoard.tmp_err_value = !gameBoard.tmp_err_value
+                onClicked: root.gp.tmp_err_value = !root.gp.tmp_err_value
                 checkable: true
-                checked: gameBoard.tmp_err_value
+                checked: root.gp.tmp_err_value
             }
             QQC2.Button {
                 text: KI18n.i18nc("@action:button, undo recursively", "Scroll back")
-                onClicked: scrollBack()
+                onClicked: root.scrollBack()
             }
             QQC2.Button {
                 text: KI18n.i18nc("@action:button", "Reset game")
                 onClicked: {
-                    game.reset()
-                    drawer.isOpen = false;
-                    gameBoard.tmp_err_value = false;
-                    drawerLoader.source = "";
+                    root.gp.resetGame()
+                    root.gp.tmp_err_value = false;
+                    root.gp.closeDrawer();
                 }
             }
         }
@@ -60,9 +63,8 @@ Rectangle {
             QQC2.Button {
                 text: KI18n.i18nc("@action:button", "Close")
                 onClicked: {
-                    drawer.isOpen = false;
-                    gameBoard.tmp_err_value = false;
-                    drawerLoader.source = "";
+                    root.gp.closeDrawer()
+                    root.gp.tmp_err_value = false;
                 }
             }
         }

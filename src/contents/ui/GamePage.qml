@@ -205,6 +205,18 @@ Kirigami.Page {
         }
     }
 
+    function closeDrawer() {
+        drawer.isOpen = false;
+        drawerLoader.source = "";
+    }
+
+    function resetGame() {
+        game.reset()
+        console.log(Config.reset_time)
+        if (Config.reset_time) {
+            timer.reset()
+        }
+    }
     property string stime: timer.stime
     Timer {
         id: timer
@@ -477,7 +489,7 @@ Kirigami.Page {
                         QQC2.MenuItem {
                             text: KI18n.i18nc("@action:inmenu", "Check board")
                             onTriggered: {
-                                drawerLoader.source = "qrc:/CheckBoardDialog.qml"
+                                drawerLoader.setSource("qrc:/CheckBoardDialog.qml", {"gp": gameBoard, "game": game})
                                 game.hintCount++
                             }
                         }
@@ -620,6 +632,7 @@ Kirigami.Page {
             anchors.bottom: bottomContainer.bottom
             anchors.margins: Kirigami.Units.mediumSpacing
             width: bottomContainer.width
+            height: childrenRect.height
             color: Kirigami.Theme.backgroundColor
             QQC2.Label {
                 anchors.bottom: parent.bottom
@@ -633,22 +646,13 @@ Kirigami.Page {
         Rectangle {
             id: drawer
             width: parent.width
-            height: parent.height - (bottomTitle.visible ? bottomTitle.height : 0) - (!game.finished ? timerDisplay.height : 0)
+            anchors.top : isOpen ? bottomContainer.top : bottomContainer.bottom
+            anchors.bottom: isOpen ? (game.finished ? bottomContainer.bottom : bottomBar.top): bottomContainer.bottom
+            anchors.bottomMargin : isOpen ? 0 : bottomContainer.height
+            anchors.topMargin : bottomTitle.visible ? bottomTitle.height : 0
             z: 1
             property bool isOpen: false
-            states: [
-                State {
-                    name: "open"; when: drawer.isOpen
-                    PropertyChanges { target: drawer; y: Math.min(bottomTitle.visible ? bottomTitle.height : 0, bottomContainer.height-drawer.height); }
-                },
-                State {
-                    name: "closed"; when: !drawer.isOpen
-                    PropertyChanges { target: drawer; y: gameBoard.height }
-                }
-            ]
-
             transitions: Transition { SmoothedAnimation { target: drawer; property: "y"; velocity: gameBoard.tabletMode ? 5000 : 3000 } }
-
             Loader {
                 anchors.fill: parent
                 id: drawerLoader
