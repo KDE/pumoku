@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-21 00:48+0000\n"
+"POT-Creation-Date: 2026-10-23 00:46+0000\n"
 "PO-Revision-Date: 2026-10-01 09:12+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -18,19 +18,19 @@ msgstr ""
 "n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Lokalize 26.08.0\n"
 
-#: contents/ui/CheckBoardDialog.qml:37
+#: contents/ui/CheckBoardDialog.qml:41
 #, kde-format
 msgctxt "@action:button"
 msgid "Show me"
 msgstr ""
 
-#: contents/ui/CheckBoardDialog.qml:43
+#: contents/ui/CheckBoardDialog.qml:47
 #, kde-format
 msgctxt "@action:button, undo recursively"
 msgid "Scroll back"
 msgstr ""
 
-#: contents/ui/CheckBoardDialog.qml:47
+#: contents/ui/CheckBoardDialog.qml:51
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu"
 #| msgid "Reset Game"
@@ -38,31 +38,26 @@ msgctxt "@action:button"
 msgid "Reset game"
 msgstr "איפוס משחק"
 
-#: contents/ui/CheckBoardDialog.qml:61
+#: contents/ui/CheckBoardDialog.qml:64
 #, kde-format
 msgctxt "@action:button"
 msgid "Close"
 msgstr ""
 
-#: contents/ui/CheckBoardDialog.qml:80
+#: contents/ui/CheckBoardDialog.qml:82
 #, kde-format
 msgid "All is good!"
 msgstr "הכול בסדר!"
 
-#: contents/ui/CheckBoardDialog.qml:81
-#, kde-format
-msgid "There are some errors."
-msgstr "יש כמה שגיאות."
-
-#: contents/ui/CheckBoardDialog.qml:82
-#, kde-format
-msgid "Check board: "
-msgstr "נא לבדוק את הלוח: "
-
-#: contents/ui/CheckBoardDialog.qml:82
-#, kde-format
-msgid "There is an error."
-msgstr "יש שגיאה."
+#: contents/ui/CheckBoardDialog.qml:83
+#, fuzzy, kde-format
+#| msgid "There is an error."
+msgid "There is an error"
+msgid_plural "There are some errors."
+msgstr[0] "יש שגיאה."
+msgstr[1] "יש שגיאה."
+msgstr[2] "יש שגיאה."
+msgstr[3] "יש שגיאה."
 
 #: contents/ui/FinishDialog.qml:53
 #, kde-format
@@ -152,49 +147,96 @@ msgctxt "@intoolbar, toggle highlight display in sudoku board"
 msgid "Highlight"
 msgstr "הדגשה"
 
-#: contents/ui/GamePage.qml:452
+#: contents/ui/GamePage.qml:464
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "הסגה"
 
-#: contents/ui/GamePage.qml:462
+#: contents/ui/GamePage.qml:474
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "ביצוע מחדש"
 
-#: contents/ui/GamePage.qml:472
+#: contents/ui/GamePage.qml:484
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "רמז"
 
-#: contents/ui/GamePage.qml:478
+#: contents/ui/GamePage.qml:490
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
 msgstr "לבדוק את הלוח"
 
-#: contents/ui/GamePage.qml:485
+#: contents/ui/GamePage.qml:497
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "פתרון תא"
 
-#: contents/ui/GamePage.qml:498
+#: contents/ui/GamePage.qml:510
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Set Pencilmarks"
+msgstr "הגדרת סימון בעיפרון"
+
+#: contents/ui/GamePage.qml:555
+#, kde-format
+msgctxt "@action:button"
+msgid "Pencil"
+msgstr "עיפרון"
+
+#: contents/ui/GamePage.qml:565
+#, kde-format
+msgctxt "@action:button"
+msgid "Erase"
+msgstr "מחיקה"
+
+#: contents/ui/GamePage.qml:575
+#, kde-format
+msgctxt "@action:button"
+msgid "Game"
+msgstr "משחק"
+
+#: contents/ui/GamePage.qml:581
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Clear Pencilmarks"
+msgstr "מחיקת סימוני עיפרון"
+
+#: contents/ui/GamePage.qml:585
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Reset Game"
+msgstr "איפוס משחק"
+
+#: contents/ui/GamePage.qml:589
+#, kde-format
+msgctxt "@title:window"
+msgid "Reset Game?"
+msgstr "לאפס את המשחק?"
+
+#: contents/ui/GamePage.qml:590 contents/ui/GamePage.qml:618
+#, kde-format
+msgid "You will lose any changes you have made, this cannot be undone."
+msgstr "כל השינויים שערכת יאבדו, זאת פעולה בלתי הפיכה."
+
+#: contents/ui/GamePage.qml:599
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "פתרון המשחק"
 
-#: contents/ui/GamePage.qml:502
+#: contents/ui/GamePage.qml:603
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "לפתור את המשחק?"
 
-#: contents/ui/GamePage.qml:503
+#: contents/ui/GamePage.qml:604
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -203,71 +245,24 @@ msgstr ""
 "כל השינויים שביצעת יאבדו, התהליך הזה הוא בלתי הפיך. לא תהיה לך אפשרות לפתור "
 "את החידה בעצמך!"
 
-#: contents/ui/GamePage.qml:512
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Set Pencilmarks"
-msgstr "הגדרת סימון בעיפרון"
-
-#: contents/ui/GamePage.qml:557
-#, kde-format
-msgctxt "@action:button"
-msgid "Pencil"
-msgstr "עיפרון"
-
-#: contents/ui/GamePage.qml:567
-#, kde-format
-msgctxt "@action:button"
-msgid "Erase"
-msgstr "מחיקה"
-
-#: contents/ui/GamePage.qml:577
-#, kde-format
-msgctxt "@action:button"
-msgid "Game"
-msgstr "משחק"
-
-#: contents/ui/GamePage.qml:583
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Reset Game"
-msgstr "איפוס משחק"
-
-#: contents/ui/GamePage.qml:587
-#, kde-format
-msgctxt "@title:window"
-msgid "Reset Game?"
-msgstr "לאפס את המשחק?"
-
-#: contents/ui/GamePage.qml:588 contents/ui/GamePage.qml:606
-#, kde-format
-msgid "You will lose any changes you have made, this cannot be undone."
-msgstr "כל השינויים שערכת יאבדו, זאת פעולה בלתי הפיכה."
-
-#: contents/ui/GamePage.qml:597
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Clear Pencilmarks"
-msgstr "מחיקת סימוני עיפרון"
-
-#: contents/ui/GamePage.qml:601
+#: contents/ui/GamePage.qml:613
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "כניעה"
 
-#: contents/ui/GamePage.qml:605
+#: contents/ui/GamePage.qml:617
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "להיכנע?"
 
-#: contents/ui/GamePage.qml:665
+#: contents/ui/GamePage.qml:669
 #, kde-format
 msgid "Please select a valid cell to solve."
 msgstr "נא לבחור תא תקף לפתרון."
 
-#: contents/ui/GamePage.qml:668
+#: contents/ui/GamePage.qml:672
 #, kde-format
 msgid "Solve"
 msgstr "פתרון"
@@ -551,6 +546,12 @@ msgstr "לסודוקו שסופק אין פתרון ייחודי."
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "הסודוקו שסופק אינו פתיר."
+
+#~ msgid "There are some errors."
+#~ msgstr "יש כמה שגיאות."
+
+#~ msgid "Check board: "
+#~ msgstr "נא לבדוק את הלוח: "
 
 #~ msgid "PuMoKu"
 #~ msgstr "PuMoKu"

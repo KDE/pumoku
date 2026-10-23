@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-21 00:48+0000\n"
+"POT-Creation-Date: 2026-10-23 00:46+0000\n"
 "PO-Revision-Date: 2026-10-21 14:48+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -18,49 +18,44 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 25.12.1\n"
 
-#: contents/ui/CheckBoardDialog.qml:37
+#: contents/ui/CheckBoardDialog.qml:41
 #, kde-format
 msgctxt "@action:button"
 msgid "Show me"
 msgstr "Покажи"
 
-#: contents/ui/CheckBoardDialog.qml:43
+#: contents/ui/CheckBoardDialog.qml:47
 #, kde-format
 msgctxt "@action:button, undo recursively"
 msgid "Scroll back"
 msgstr "Гортати назад"
 
-#: contents/ui/CheckBoardDialog.qml:47
+#: contents/ui/CheckBoardDialog.qml:51
 #, kde-format
 msgctxt "@action:button"
 msgid "Reset game"
 msgstr "Відновити початковий стан гри"
 
-#: contents/ui/CheckBoardDialog.qml:61
+#: contents/ui/CheckBoardDialog.qml:64
 #, kde-format
 msgctxt "@action:button"
 msgid "Close"
 msgstr "Закрити"
 
-#: contents/ui/CheckBoardDialog.qml:80
+#: contents/ui/CheckBoardDialog.qml:82
 #, kde-format
 msgid "All is good!"
 msgstr "Усе добре!"
 
-#: contents/ui/CheckBoardDialog.qml:81
-#, kde-format
-msgid "There are some errors."
-msgstr "Сталися якісь помилки."
-
-#: contents/ui/CheckBoardDialog.qml:82
-#, kde-format
-msgid "Check board: "
-msgstr "Шахова дошка: "
-
-#: contents/ui/CheckBoardDialog.qml:82
-#, kde-format
-msgid "There is an error."
-msgstr "Була помилка."
+#: contents/ui/CheckBoardDialog.qml:83
+#, fuzzy, kde-format
+#| msgid "There is an error."
+msgid "There is an error"
+msgid_plural "There are some errors."
+msgstr[0] "Була помилка."
+msgstr[1] "Була помилка."
+msgstr[2] "Була помилка."
+msgstr[3] "Була помилка."
 
 #: contents/ui/FinishDialog.qml:53
 #, kde-format
@@ -149,49 +144,96 @@ msgctxt "@intoolbar, toggle highlight display in sudoku board"
 msgid "Highlight"
 msgstr "Підсвічування"
 
-#: contents/ui/GamePage.qml:452
+#: contents/ui/GamePage.qml:464
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Скасувати"
 
-#: contents/ui/GamePage.qml:462
+#: contents/ui/GamePage.qml:474
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Повторити"
 
-#: contents/ui/GamePage.qml:472
+#: contents/ui/GamePage.qml:484
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "Підказка"
 
-#: contents/ui/GamePage.qml:478
+#: contents/ui/GamePage.qml:490
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
 msgstr "Шахова дошка"
 
-#: contents/ui/GamePage.qml:485
+#: contents/ui/GamePage.qml:497
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Розв'язати комірку"
 
-#: contents/ui/GamePage.qml:498
+#: contents/ui/GamePage.qml:510
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Set Pencilmarks"
+msgstr "Встановити позначки олівцем"
+
+#: contents/ui/GamePage.qml:555
+#, kde-format
+msgctxt "@action:button"
+msgid "Pencil"
+msgstr "Олівець"
+
+#: contents/ui/GamePage.qml:565
+#, kde-format
+msgctxt "@action:button"
+msgid "Erase"
+msgstr "Витерти"
+
+#: contents/ui/GamePage.qml:575
+#, kde-format
+msgctxt "@action:button"
+msgid "Game"
+msgstr "Гра"
+
+#: contents/ui/GamePage.qml:581
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Clear Pencilmarks"
+msgstr "Зняти позначки олівцем"
+
+#: contents/ui/GamePage.qml:585
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Reset Game"
+msgstr "Відновити початковий стан гри"
+
+#: contents/ui/GamePage.qml:589
+#, kde-format
+msgctxt "@title:window"
+msgid "Reset Game?"
+msgstr "Відновити початковий стан гри?"
+
+#: contents/ui/GamePage.qml:590 contents/ui/GamePage.qml:618
+#, kde-format
+msgid "You will lose any changes you have made, this cannot be undone."
+msgstr "Ви втратите усі внесені зміни, скидання не можна буде скасувати."
+
+#: contents/ui/GamePage.qml:599
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Розв'язати гру"
 
-#: contents/ui/GamePage.qml:502
+#: contents/ui/GamePage.qml:603
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Розв'язати гру?"
 
-#: contents/ui/GamePage.qml:503
+#: contents/ui/GamePage.qml:604
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -200,71 +242,24 @@ msgstr ""
 "Ви втратите усі внесені зміни, результати дії не можна буде скасувати. Ви не "
 "зможете виграти гру власноруч!"
 
-#: contents/ui/GamePage.qml:512
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Set Pencilmarks"
-msgstr "Встановити позначки олівцем"
-
-#: contents/ui/GamePage.qml:557
-#, kde-format
-msgctxt "@action:button"
-msgid "Pencil"
-msgstr "Олівець"
-
-#: contents/ui/GamePage.qml:567
-#, kde-format
-msgctxt "@action:button"
-msgid "Erase"
-msgstr "Витерти"
-
-#: contents/ui/GamePage.qml:577
-#, kde-format
-msgctxt "@action:button"
-msgid "Game"
-msgstr "Гра"
-
-#: contents/ui/GamePage.qml:583
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Reset Game"
-msgstr "Відновити початковий стан гри"
-
-#: contents/ui/GamePage.qml:587
-#, kde-format
-msgctxt "@title:window"
-msgid "Reset Game?"
-msgstr "Відновити початковий стан гри?"
-
-#: contents/ui/GamePage.qml:588 contents/ui/GamePage.qml:606
-#, kde-format
-msgid "You will lose any changes you have made, this cannot be undone."
-msgstr "Ви втратите усі внесені зміни, скидання не можна буде скасувати."
-
-#: contents/ui/GamePage.qml:597
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Clear Pencilmarks"
-msgstr "Зняти позначки олівцем"
-
-#: contents/ui/GamePage.qml:601
+#: contents/ui/GamePage.qml:613
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Здатися"
 
-#: contents/ui/GamePage.qml:605
+#: contents/ui/GamePage.qml:617
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Здатися?"
 
-#: contents/ui/GamePage.qml:665
+#: contents/ui/GamePage.qml:669
 #, kde-format
 msgid "Please select a valid cell to solve."
 msgstr "Будь ласка, виберіть коректну комірку."
 
-#: contents/ui/GamePage.qml:668
+#: contents/ui/GamePage.qml:672
 #, kde-format
 msgid "Solve"
 msgstr "Розв'язати"
@@ -551,6 +546,12 @@ msgstr "Надане судоку не має однозначного розв'
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "Надане судоку не можна розв'язати."
+
+#~ msgid "There are some errors."
+#~ msgstr "Сталися якісь помилки."
+
+#~ msgid "Check board: "
+#~ msgstr "Шахова дошка: "
 
 #~ msgid "PuMoKu"
 #~ msgstr "PuMoKu"

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-21 00:48+0000\n"
-"PO-Revision-Date: 2026-10-01 17:39+0200\n"
+"POT-Creation-Date: 2026-10-23 00:46+0000\n"
+"PO-Revision-Date: 2026-10-21 15:46+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,53 +15,44 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 26.08.1\n"
+"X-Generator: Poedit 3.10\n"
 
-#: contents/ui/CheckBoardDialog.qml:37
+#: contents/ui/CheckBoardDialog.qml:41
 #, kde-format
 msgctxt "@action:button"
 msgid "Show me"
-msgstr ""
+msgstr "Mostrami"
 
-#: contents/ui/CheckBoardDialog.qml:43
+#: contents/ui/CheckBoardDialog.qml:47
 #, kde-format
 msgctxt "@action:button, undo recursively"
 msgid "Scroll back"
-msgstr ""
+msgstr "Scorri all'indietro"
 
-#: contents/ui/CheckBoardDialog.qml:47
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Reset Game"
+#: contents/ui/CheckBoardDialog.qml:51
+#, kde-format
 msgctxt "@action:button"
 msgid "Reset game"
 msgstr "Ripristina la partita"
 
-#: contents/ui/CheckBoardDialog.qml:61
+#: contents/ui/CheckBoardDialog.qml:64
 #, kde-format
 msgctxt "@action:button"
 msgid "Close"
-msgstr ""
+msgstr "Chiudi"
 
-#: contents/ui/CheckBoardDialog.qml:80
+#: contents/ui/CheckBoardDialog.qml:82
 #, kde-format
 msgid "All is good!"
 msgstr "Tutto regolare!"
 
-#: contents/ui/CheckBoardDialog.qml:81
-#, kde-format
-msgid "There are some errors."
-msgstr "Ci sono alcuni errori."
-
-#: contents/ui/CheckBoardDialog.qml:82
-#, kde-format
-msgid "Check board: "
-msgstr "Controlla la griglia:"
-
-#: contents/ui/CheckBoardDialog.qml:82
-#, kde-format
-msgid "There is an error."
-msgstr "C'è un errore."
+#: contents/ui/CheckBoardDialog.qml:83
+#, fuzzy, kde-format
+#| msgid "There is an error."
+msgid "There is an error"
+msgid_plural "There are some errors."
+msgstr[0] "C'è un errore."
+msgstr[1] "C'è un errore."
 
 #: contents/ui/FinishDialog.qml:53
 #, kde-format
@@ -128,7 +119,7 @@ msgstr "Hai risolto questo sudoku senza suggerimenti né aiuti in %1 passaggi."
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Share"
-msgstr ""
+msgstr "Condividi"
 
 #: contents/ui/GamePage.qml:59
 #, kde-format
@@ -136,64 +127,108 @@ msgid "Play at sudokuexchange.com"
 msgstr "Gioca su sudokuexchange.com"
 
 #: contents/ui/GamePage.qml:63
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Set Pencilmarks"
+#, kde-format
 msgctxt "@action:intoolbar, toggle pencilmarks display in sudoku board"
 msgid "Pencilmarks"
-msgstr "Imposta segni a matita"
+msgstr "Segni a matita"
 
 #: contents/ui/GamePage.qml:75
-#, fuzzy, kde-format
-#| msgctxt "@title"
-#| msgid "Highlight"
+#, kde-format
 msgctxt "@intoolbar, toggle highlight display in sudoku board"
 msgid "Highlight"
 msgstr "Evidenzia"
 
-#: contents/ui/GamePage.qml:452
+#: contents/ui/GamePage.qml:464
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Annulla"
 
-#: contents/ui/GamePage.qml:462
+#: contents/ui/GamePage.qml:474
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Rifai"
 
-#: contents/ui/GamePage.qml:472
+#: contents/ui/GamePage.qml:484
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "Suggerimento"
 
-#: contents/ui/GamePage.qml:478
+#: contents/ui/GamePage.qml:490
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
 msgstr "Controlla la griglia"
 
-#: contents/ui/GamePage.qml:485
+#: contents/ui/GamePage.qml:497
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Risolvi la cella"
 
-#: contents/ui/GamePage.qml:498
+#: contents/ui/GamePage.qml:510
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Set Pencilmarks"
+msgstr "Imposta segni a matita"
+
+#: contents/ui/GamePage.qml:555
+#, kde-format
+msgctxt "@action:button"
+msgid "Pencil"
+msgstr "Matita"
+
+#: contents/ui/GamePage.qml:565
+#, kde-format
+msgctxt "@action:button"
+msgid "Erase"
+msgstr "Cancella"
+
+#: contents/ui/GamePage.qml:575
+#, kde-format
+msgctxt "@action:button"
+msgid "Game"
+msgstr "Partita"
+
+#: contents/ui/GamePage.qml:581
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Clear Pencilmarks"
+msgstr "Cancella segni a matita"
+
+#: contents/ui/GamePage.qml:585
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Reset Game"
+msgstr "Ripristina la partita"
+
+#: contents/ui/GamePage.qml:589
+#, kde-format
+msgctxt "@title:window"
+msgid "Reset Game?"
+msgstr "Vuoi ripristinare la partita?"
+
+#: contents/ui/GamePage.qml:590 contents/ui/GamePage.qml:618
+#, kde-format
+msgid "You will lose any changes you have made, this cannot be undone."
+msgstr ""
+"Tutte le modifiche apportate andranno perse, questo può essere annullato."
+
+#: contents/ui/GamePage.qml:599
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Risolvi partita"
 
-#: contents/ui/GamePage.qml:502
+#: contents/ui/GamePage.qml:603
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Vuoi risolvere la partita?"
 
-#: contents/ui/GamePage.qml:503
+#: contents/ui/GamePage.qml:604
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -202,72 +237,24 @@ msgstr ""
 "Perderai tutte le modifiche apportate, questo non può essere annullato. Non "
 "potrai risolvere il rompicapo da solo!"
 
-#: contents/ui/GamePage.qml:512
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Set Pencilmarks"
-msgstr "Imposta segni a matita"
-
-#: contents/ui/GamePage.qml:557
-#, kde-format
-msgctxt "@action:button"
-msgid "Pencil"
-msgstr "Matita"
-
-#: contents/ui/GamePage.qml:567
-#, kde-format
-msgctxt "@action:button"
-msgid "Erase"
-msgstr "Cancella"
-
-#: contents/ui/GamePage.qml:577
-#, kde-format
-msgctxt "@action:button"
-msgid "Game"
-msgstr "Partita"
-
-#: contents/ui/GamePage.qml:583
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Reset Game"
-msgstr "Ripristina la partita"
-
-#: contents/ui/GamePage.qml:587
-#, kde-format
-msgctxt "@title:window"
-msgid "Reset Game?"
-msgstr "Vuoi ripristinare la partita?"
-
-#: contents/ui/GamePage.qml:588 contents/ui/GamePage.qml:606
-#, kde-format
-msgid "You will lose any changes you have made, this cannot be undone."
-msgstr ""
-"Tutte le modifiche apportate andranno perse, questo può essere annullato."
-
-#: contents/ui/GamePage.qml:597
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Clear Pencilmarks"
-msgstr "Cancella segni a matita"
-
-#: contents/ui/GamePage.qml:601
+#: contents/ui/GamePage.qml:613
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Rinucia"
 
-#: contents/ui/GamePage.qml:605
+#: contents/ui/GamePage.qml:617
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Vuoi rinunciare?"
 
-#: contents/ui/GamePage.qml:665
+#: contents/ui/GamePage.qml:669
 #, kde-format
 msgid "Please select a valid cell to solve."
 msgstr "Seleziona una cella valida da risolvere."
 
-#: contents/ui/GamePage.qml:668
+#: contents/ui/GamePage.qml:672
 #, kde-format
 msgid "Solve"
 msgstr "Risolvi"
@@ -554,6 +541,12 @@ msgstr "Il Sudoku fornito non ha una soluzione univoca."
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "Il Sudoku fornito non è risolvibile."
+
+#~ msgid "There are some errors."
+#~ msgstr "Ci sono alcuni errori."
+
+#~ msgid "Check board: "
+#~ msgstr "Controlla la griglia: "
 
 #~ msgid "PuMoKu"
 #~ msgstr "PuMoKu"
