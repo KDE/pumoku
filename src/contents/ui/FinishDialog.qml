@@ -79,7 +79,7 @@ Rectangle {
             l_msg.text += KI18n.i18nc("%1 is hint count", "Hints: %1.", game.hintCount);
         } else {
             color = Kirigami.Theme.positiveBackgroundColor;
-            l_header.text = stepcount > 18 - game.givenCount ? KI18n.i18n("CONGRATULATIONS!!") : KI18n.i18n("PURE PERFECTION!!");
+            l_header.text = stepcount > 81 - game.givenCount ? KI18n.i18n("CONGRATULATIONS!!") : KI18n.i18n("PURE PERFECTION!!");
             l_text.text = KI18n.i18nc("%1 is step count", "You solved this sudoku with no hints or help in %1 steps.", stepcount);
             l_msg.text = KI18n.i18n("Well done!")
         }
