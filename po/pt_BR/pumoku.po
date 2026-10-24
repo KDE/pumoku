@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-23 00:46+0000\n"
-"PO-Revision-Date: 2026-10-21 09:20-0300\n"
+"PO-Revision-Date: 2026-10-23 06:46-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -48,12 +48,11 @@ msgid "All is good!"
 msgstr "Tudo certo!"
 
 #: contents/ui/CheckBoardDialog.qml:83
-#, fuzzy, kde-format
-#| msgid "There is an error."
+#, kde-format
 msgid "There is an error"
 msgid_plural "There are some errors."
-msgstr[0] "Há um erro."
-msgstr[1] "Há um erro."
+msgstr[0] "Há um erro"
+msgstr[1] "Há alguns erros."
 
 #: contents/ui/FinishDialog.qml:53
 #, kde-format

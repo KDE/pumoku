@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-23 00:46+0000\n"
-"PO-Revision-Date: 2026-10-21 16:02+0200\n"
+"PO-Revision-Date: 2026-10-23 07:48+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -47,14 +47,13 @@ msgid "All is good!"
 msgstr "Всё хорошо!"
 
 #: contents/ui/CheckBoardDialog.qml:83
-#, fuzzy, kde-format
-#| msgid "There is an error."
+#, kde-format
 msgid "There is an error"
 msgid_plural "There are some errors."
-msgstr[0] "Есть ошибка."
-msgstr[1] "Есть ошибка."
-msgstr[2] "Есть ошибка."
-msgstr[3] "Есть ошибка."
+msgstr[0] "Есть ошибки."
+msgstr[1] "Есть ошибки."
+msgstr[2] "Есть ошибки."
+msgstr[3] "Есть ошибка"
 
 #: contents/ui/FinishDialog.qml:53
 #, kde-format

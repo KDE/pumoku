@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-23 00:46+0000\n"
-"PO-Revision-Date: 2026-10-21 09:14+0200\n"
+"PO-Revision-Date: 2026-10-23 10:51+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.04.0\n"
+"X-Generator: Lokalize 26.08.2\n"
 
 #: contents/ui/CheckBoardDialog.qml:41
 #, kde-format
@@ -49,12 +49,11 @@ msgid "All is good!"
 msgstr "Tot està bé!"
 
 #: contents/ui/CheckBoardDialog.qml:83
-#, fuzzy, kde-format
-#| msgid "There is an error."
+#, kde-format
 msgid "There is an error"
 msgid_plural "There are some errors."
-msgstr[0] "Hi ha un error."
-msgstr[1] "Hi ha un error."
+msgstr[0] "Hi ha un error"
+msgstr[1] "Hi ha alguns errors."
 
 #: contents/ui/FinishDialog.qml:53
 #, kde-format
