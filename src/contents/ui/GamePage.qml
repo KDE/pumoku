@@ -92,8 +92,7 @@ Kirigami.Page {
         }
         onGameLoaded: () => {
             if (drawer.isOpen) {
-                drawer.isOpen = false
-                drawerLoader.source = ""
+                gameBoard.closeDrawer()
             }
         }
     }
@@ -133,9 +132,16 @@ Kirigami.Page {
         if (data) {
             game.load(data);
             timer.elapsed = data.elapsed;
+            closeDrawer();
             return true;
         }
         return false
+    }
+
+    function setGame(board, solution) {
+        game.setGame(board, solution, 0);
+        closeDrawer();
+        timer.reset()
     }
 
     function highlightConfigChanged() {
@@ -619,7 +625,7 @@ Kirigami.Page {
                                 standardButtons: Kirigami.Dialog.Ok | Kirigami.Dialog.Cancel
                                 onAccepted: {
                                     game.clear();
-                                    gameBoard.app.pageStack.layers.push("qrc:/MainMenu.qml", {gameLoaded: false})
+                                    gameBoard.app.pageStack.layers.push("qrc:/MainMenu.qml", {"gameLoaded": false, "gp": gameBoard})
                                 }
                             }
                         }

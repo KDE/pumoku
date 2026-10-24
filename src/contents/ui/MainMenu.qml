@@ -80,7 +80,7 @@ Kirigami.ScrollablePage {
             Layout.topMargin: Kirigami.Units.gridUnit
             Layout.bottomMargin: Kirigami.Units.gridUnit
             source: "qrc:/pumoku.svg"
-            Layout.preferredWidth: app.isWideScreen ? root.height/2 : root.width/2
+            Layout.preferredWidth: root.gp.wideScreen ? root.height/2 : root.width/2
             Layout.preferredHeight: width
             sourceSize.width: width
             sourceSize.height: height
@@ -116,7 +116,7 @@ Kirigami.ScrollablePage {
                 text: KI18n.i18nc("@action:button", "Import Sudoku …")
                 Layout.preferredWidth: root.width
                 onClicked: {
-                    app.pageStack.layers.push("qrc:/Import.qml")
+                    app.pageStack.layers.push("qrc:/Import.qml", {"gp": root.gp})
                 }
             }
             PumokuListItem {

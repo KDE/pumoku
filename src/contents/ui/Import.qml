@@ -7,11 +7,12 @@ import QtQuick.Layouts
 import org.kde.ki18n
 import org.kde.kirigami as Kirigami
 import org.kde.pumoku
-import org.kde.pumoku.private
 
 Kirigami.Page {
-    id: importPage
+    id: root
     title: KI18n.i18nc("@title:window", "Import Sudoku")
+    required property GamePage gp
+    property Kirigami.ApplicationWindow aw: applicationWindow()
 
     ColumnLayout {
         width: parent.width
@@ -31,11 +32,12 @@ Kirigami.Page {
         }
         QQC2.Label {
             Layout.fillWidth: true
-            Layout.maximumWidth: parent.width-parent.margins*2
+            // Layout.maximumWidth: parent.width-parent.margins*2
             wrapMode: Text.WordWrap
-            text: KI18n.i18nc("Use en dash for number range", "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any single non-numeric character except space will do for blanks cells. PuMoKu will check that the Sudoku is solvable and calculate the level.\n\nLine breaks and spaces are silently removed, so that you can enter one row per-line with some optional whitespace.")
+            text: KI18n.i18nc("Please use UTF character EN DASH (U+2013) for number range", "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any single non-numeric character except space will do for blanks cells. PuMoKu will check that the Sudoku is solvable and calculate the level.\n\nLine breaks and spaces are silently removed, so that you can enter one or more rows per-line with some optional whitespace.")
         }
         Kirigami.InlineMessage {
+            Layout.fillWidth: true
             id: message
             type: Kirigami.MessageType.Error
             showCloseButton: true
@@ -44,15 +46,15 @@ Kirigami.Page {
         QQC2.CheckBox{
             id: saveCheck
             text: KI18n.i18nc("@button:title","Save current game")
-            visible: gamePage.hasGame
+            visible: root.gp.hasGame
         }
         RowLayout {
-            width: parent.width
+            Layout.fillWidth: true
             spacing: Kirigami.Units.largeSpacing
             Layout.alignment: Qt.AlignRight
             QQC2.Button {
                 text: KI18n.i18nc("@action:button", "Cancel")
-                onClicked: applicationWindow().pageStack.layers.pop()
+                onClicked: root.aw.pageStack.layers.pop()
             }
             QQC2.Button {
                 text: KI18n.i18nc("@action:button", "Import")
@@ -72,11 +74,11 @@ Kirigami.Page {
                             importboard.push(parseInt(s[i]));
                         }
                         if (Qqw.solve(importboard) === 1) {
-                            if (gamePage.hasGame && saveCheck.checked) {
-                                gamePage.saveGame()
+                            if (root.gp.hasGame && saveCheck.checked) {
+                                root.gp.saveGame()
                             }
-                            gamePage.setGame(Qqw.sudoku, Qqw.solution);
-                            applicationWindow().pageStack.layers.clear();
+                            root.gp.setGame(Qqw.sudoku, Qqw.solution);
+                            root.aw.pageStack.layers.clear();
                         } else {
                             message.text = Qqw.message;
                             message.visible = true;

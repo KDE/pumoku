@@ -64,6 +64,8 @@ Rectangle {
         let stepcount = 0;
         game.stepCount.forEach((value) => stepcount += value );
 
+        console.log("givencount: " + game.givenCount + ", stepcount: " + stepcount);
+
         if (game.hintStatus & game.hintStatusAutoSolved) {
             color = Kirigami.Theme.alternateBackgroundColor;
             l_header.text = KI18n.i18n("There is your solution")
