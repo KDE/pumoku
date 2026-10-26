@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-23 00:46+0000\n"
+"POT-Creation-Date: 2026-10-26 00:46+0000\n"
 "PO-Revision-Date: 2026-01-05 20:45+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -61,29 +61,29 @@ msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
 msgstr "Toinen %1"
 
-#: contents/ui/FinishDialog.qml:69
+#: contents/ui/FinishDialog.qml:71
 #, kde-format
 msgid "There is your solution"
 msgstr "Tässä on ratkaisusi"
 
-#: contents/ui/FinishDialog.qml:70
+#: contents/ui/FinishDialog.qml:72
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "Luovutit %1 vaiheessa."
 
-#: contents/ui/FinishDialog.qml:71
+#: contents/ui/FinishDialog.qml:73
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "Ratkaistiin automaattisesti. Vihjeet: %1."
 
-#: contents/ui/FinishDialog.qml:74 contents/ui/FinishDialog.qml:84
+#: contents/ui/FinishDialog.qml:76 contents/ui/FinishDialog.qml:86
 #, kde-format
 msgid "Well done!"
 msgstr "Hyvää työtä!"
 
-#: contents/ui/FinishDialog.qml:75
+#: contents/ui/FinishDialog.qml:77
 #, fuzzy, kde-format
 #| msgctxt "%1 is level name, %2 is step count"
 #| msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
@@ -91,28 +91,28 @@ msgctxt "%1 is step count"
 msgid "You solved this sudoku (with a bit of help) in %1 steps."
 msgstr "Pääsit loppuun tämän %1-sudokun (pienellä avustuksella) %2 vaiheessa."
 
-#: contents/ui/FinishDialog.qml:77
+#: contents/ui/FinishDialog.qml:79
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "Käytettiin automaattisia kynänjälkiä."
 
-#: contents/ui/FinishDialog.qml:79
+#: contents/ui/FinishDialog.qml:81
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "Vihjeet: %1."
 
-#: contents/ui/FinishDialog.qml:82
+#: contents/ui/FinishDialog.qml:84
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "ONNEA!!"
 
-#: contents/ui/FinishDialog.qml:82
+#: contents/ui/FinishDialog.qml:84
 #, kde-format
 msgid "PURE PERFECTION!!"
 msgstr ""
 
-#: contents/ui/FinishDialog.qml:83
+#: contents/ui/FinishDialog.qml:85
 #, fuzzy, kde-format
 #| msgctxt "%1 is level name, %2 is step count"
 #| msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
@@ -147,96 +147,96 @@ msgctxt "@intoolbar, toggle highlight display in sudoku board"
 msgid "Highlight"
 msgstr "Korosta"
 
-#: contents/ui/GamePage.qml:464
+#: contents/ui/GamePage.qml:470
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Kumoa"
 
-#: contents/ui/GamePage.qml:474
+#: contents/ui/GamePage.qml:480
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Tee uudelleen"
 
-#: contents/ui/GamePage.qml:484
+#: contents/ui/GamePage.qml:490
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "Vihje"
 
-#: contents/ui/GamePage.qml:490
+#: contents/ui/GamePage.qml:496
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
 msgstr ""
 
-#: contents/ui/GamePage.qml:497
+#: contents/ui/GamePage.qml:503
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Ratkaise solu"
 
-#: contents/ui/GamePage.qml:510
+#: contents/ui/GamePage.qml:516
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "Aseta kynänjäljet"
 
-#: contents/ui/GamePage.qml:555
+#: contents/ui/GamePage.qml:561
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "Kynä"
 
-#: contents/ui/GamePage.qml:565
+#: contents/ui/GamePage.qml:571
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "Pyyhi"
 
-#: contents/ui/GamePage.qml:575
+#: contents/ui/GamePage.qml:581
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "Peli"
 
-#: contents/ui/GamePage.qml:581
+#: contents/ui/GamePage.qml:587
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "Pyyhi kynänjäljet"
 
-#: contents/ui/GamePage.qml:585
+#: contents/ui/GamePage.qml:591
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "Palauta peli"
 
-#: contents/ui/GamePage.qml:589
+#: contents/ui/GamePage.qml:595
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "Palautetaanko peli?"
 
-#: contents/ui/GamePage.qml:590 contents/ui/GamePage.qml:618
+#: contents/ui/GamePage.qml:596 contents/ui/GamePage.qml:624
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr "Menetät tekemäsi muutokset, eikä tätä voi kumota."
 
-#: contents/ui/GamePage.qml:599
+#: contents/ui/GamePage.qml:605
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Ratkaise peli"
 
-#: contents/ui/GamePage.qml:603
+#: contents/ui/GamePage.qml:609
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Ratkaistaanko peli?"
 
-#: contents/ui/GamePage.qml:604
+#: contents/ui/GamePage.qml:610
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -245,44 +245,52 @@ msgstr ""
 "Menetät tekemäsi muutokset, eikä tätä voi kumota. Et voi ratkaista peliä "
 "omillasi!"
 
-#: contents/ui/GamePage.qml:613
+#: contents/ui/GamePage.qml:619
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Luovuta"
 
-#: contents/ui/GamePage.qml:617
+#: contents/ui/GamePage.qml:623
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Luovutetaanko?"
 
-#: contents/ui/GamePage.qml:669
+#: contents/ui/GamePage.qml:675
 #, kde-format
 msgid "Please select a valid cell to solve."
 msgstr "Valitse ratkaistavaksi kelvollinen solu."
 
-#: contents/ui/GamePage.qml:672
+#: contents/ui/GamePage.qml:678
 #, kde-format
 msgid "Solve"
 msgstr "Ratkaise"
 
-#: contents/ui/Import.qml:14
+#: contents/ui/Import.qml:13
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Sudoku"
 msgstr "Tuo sudoku"
 
-#: contents/ui/Import.qml:36
-#, kde-format
-msgctxt "Use en dash for number range"
+#: contents/ui/Import.qml:37
+#, fuzzy, kde-format
+#| msgctxt "Use en dash for number range"
+#| msgid ""
+#| "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
+#| "single non-numeric character except space will do for blanks cells. "
+#| "PuMoKu will check that the Sudoku is solvable and calculate the level.\n"
+#| "\n"
+#| "Line breaks and spaces are silently removed, so that you can enter one "
+#| "row per-line with some optional whitespace."
+msgctxt "Please use UTF character EN DASH (U+2013) for number range"
 msgid ""
 "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
 "single non-numeric character except space will do for blanks cells. PuMoKu "
 "will check that the Sudoku is solvable and calculate the level.\n"
 "\n"
-"Line breaks and spaces are silently removed, so that you can enter one row "
-"per-line with some optional whitespace."
+"Line breaks and spaces are silently removed, so that you can enter one or "
+"more rows per-line with some optional whitespace."
 msgstr ""
 "Syötä tai liitä 81-merkkinen merkkijono. Annetuille soluille 1–9, 0 tai mikä "
 "tahansa ei-numeromerkki paitsi välilyönti kelpaa tyhjille soluille. PuMoKu "
@@ -291,25 +299,25 @@ msgstr ""
 "Rivinvaihdot ja sanavälit poistetaan hiljaisesti, jotta rivin kerrallaan voi "
 "antaa valinnaisella tyhjeellä."
 
-#: contents/ui/Import.qml:46
+#: contents/ui/Import.qml:48
 #, kde-format
 msgctxt "@button:title"
 msgid "Save current game"
 msgstr "Tallenna nykyinen peli"
 
-#: contents/ui/Import.qml:54
+#: contents/ui/Import.qml:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Peru"
 
-#: contents/ui/Import.qml:58
+#: contents/ui/Import.qml:60
 #, kde-format
 msgctxt "@action:button"
 msgid "Import"
 msgstr "Tuo"
 
-#: contents/ui/Import.qml:67
+#: contents/ui/Import.qml:69
 #, kde-format
 msgid ""
 "The provided string is not exactly 81 characters after cleanup. Please amend."

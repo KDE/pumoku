@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-23 00:46+0000\n"
+"POT-Creation-Date: 2026-10-26 00:46+0000\n"
 "PO-Revision-Date: 2026-01-02 10:37+0100\n"
 "Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -61,29 +61,29 @@ msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
 msgstr "Noch einmal %1"
 
-#: contents/ui/FinishDialog.qml:69
+#: contents/ui/FinishDialog.qml:71
 #, kde-format
 msgid "There is your solution"
 msgstr "Hier ist Ihre Lösung"
 
-#: contents/ui/FinishDialog.qml:70
+#: contents/ui/FinishDialog.qml:72
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "Sie haben nach %1 Schritten aufgegeben."
 
-#: contents/ui/FinishDialog.qml:71
+#: contents/ui/FinishDialog.qml:73
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "Automatisch gelöst. Hinweise: %1."
 
-#: contents/ui/FinishDialog.qml:74 contents/ui/FinishDialog.qml:84
+#: contents/ui/FinishDialog.qml:76 contents/ui/FinishDialog.qml:86
 #, kde-format
 msgid "Well done!"
 msgstr "Gut gemacht!"
 
-#: contents/ui/FinishDialog.qml:75
+#: contents/ui/FinishDialog.qml:77
 #, fuzzy, kde-format
 #| msgctxt "%1 is level name, %2 is step count"
 #| msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
@@ -92,28 +92,28 @@ msgid "You solved this sudoku (with a bit of help) in %1 steps."
 msgstr ""
 "Sie haben dieses Sudoku (%1) mit ein bisschen Hilfe in %2 Schritten gelöst."
 
-#: contents/ui/FinishDialog.qml:77
+#: contents/ui/FinishDialog.qml:79
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "Automatische Hilfszahlen verwendet."
 
-#: contents/ui/FinishDialog.qml:79
+#: contents/ui/FinishDialog.qml:81
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "Hinweise: %1."
 
-#: contents/ui/FinishDialog.qml:82
+#: contents/ui/FinishDialog.qml:84
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "Herzlichen Glückwunsch!"
 
-#: contents/ui/FinishDialog.qml:82
+#: contents/ui/FinishDialog.qml:84
 #, kde-format
 msgid "PURE PERFECTION!!"
 msgstr ""
 
-#: contents/ui/FinishDialog.qml:83
+#: contents/ui/FinishDialog.qml:85
 #, fuzzy, kde-format
 #| msgctxt "%1 is level name, %2 is step count"
 #| msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
@@ -149,98 +149,98 @@ msgctxt "@intoolbar, toggle highlight display in sudoku board"
 msgid "Highlight"
 msgstr "Hervorheben"
 
-#: contents/ui/GamePage.qml:464
+#: contents/ui/GamePage.qml:470
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Rückgängig"
 
-#: contents/ui/GamePage.qml:474
+#: contents/ui/GamePage.qml:480
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Wiederherstellen"
 
-#: contents/ui/GamePage.qml:484
+#: contents/ui/GamePage.qml:490
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "Hinweis"
 
-#: contents/ui/GamePage.qml:490
+#: contents/ui/GamePage.qml:496
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
 msgstr ""
 
-#: contents/ui/GamePage.qml:497
+#: contents/ui/GamePage.qml:503
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Zelle lösen"
 
-#: contents/ui/GamePage.qml:510
+#: contents/ui/GamePage.qml:516
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "Hilfszahlen festlegen"
 
-#: contents/ui/GamePage.qml:555
+#: contents/ui/GamePage.qml:561
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "Hilfszahlen"
 
-#: contents/ui/GamePage.qml:565
+#: contents/ui/GamePage.qml:571
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "Löschen"
 
-#: contents/ui/GamePage.qml:575
+#: contents/ui/GamePage.qml:581
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "Spiel"
 
-#: contents/ui/GamePage.qml:581
+#: contents/ui/GamePage.qml:587
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "Hilfszahlen leeren"
 
-#: contents/ui/GamePage.qml:585
+#: contents/ui/GamePage.qml:591
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "Spiel zurücksetzen"
 
-#: contents/ui/GamePage.qml:589
+#: contents/ui/GamePage.qml:595
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "Spiel zurücksetzen?"
 
-#: contents/ui/GamePage.qml:590 contents/ui/GamePage.qml:618
+#: contents/ui/GamePage.qml:596 contents/ui/GamePage.qml:624
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr ""
 "Alle von Ihnen durchgeführten Änderungen gehen verloren. Dies kann nicht "
 "rückgangig gemacht werden."
 
-#: contents/ui/GamePage.qml:599
+#: contents/ui/GamePage.qml:605
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Spiel lösen"
 
-#: contents/ui/GamePage.qml:603
+#: contents/ui/GamePage.qml:609
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Spiel lösen?"
 
-#: contents/ui/GamePage.qml:604
+#: contents/ui/GamePage.qml:610
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -249,44 +249,52 @@ msgstr ""
 "Alle von Ihnen durchgeführten Änderungen gehen verloren. Dies kann nicht "
 "rückgangig gemacht werden. Sie können das Rätsel nicht selbst lösen!"
 
-#: contents/ui/GamePage.qml:613
+#: contents/ui/GamePage.qml:619
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Aufgeben"
 
-#: contents/ui/GamePage.qml:617
+#: contents/ui/GamePage.qml:623
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Aufgeben?"
 
-#: contents/ui/GamePage.qml:669
+#: contents/ui/GamePage.qml:675
 #, kde-format
 msgid "Please select a valid cell to solve."
 msgstr "Bitte wählen Sie eine gültige zu lösende Zelle aus."
 
-#: contents/ui/GamePage.qml:672
+#: contents/ui/GamePage.qml:678
 #, kde-format
 msgid "Solve"
 msgstr "Lösen"
 
-#: contents/ui/Import.qml:14
+#: contents/ui/Import.qml:13
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Sudoku"
 msgstr "Sudoku importieren"
 
-#: contents/ui/Import.qml:36
-#, kde-format
-msgctxt "Use en dash for number range"
+#: contents/ui/Import.qml:37
+#, fuzzy, kde-format
+#| msgctxt "Use en dash for number range"
+#| msgid ""
+#| "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
+#| "single non-numeric character except space will do for blanks cells. "
+#| "PuMoKu will check that the Sudoku is solvable and calculate the level.\n"
+#| "\n"
+#| "Line breaks and spaces are silently removed, so that you can enter one "
+#| "row per-line with some optional whitespace."
+msgctxt "Please use UTF character EN DASH (U+2013) for number range"
 msgid ""
 "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
 "single non-numeric character except space will do for blanks cells. PuMoKu "
 "will check that the Sudoku is solvable and calculate the level.\n"
 "\n"
-"Line breaks and spaces are silently removed, so that you can enter one row "
-"per-line with some optional whitespace."
+"Line breaks and spaces are silently removed, so that you can enter one or "
+"more rows per-line with some optional whitespace."
 msgstr ""
 "Geben Sie hier eine 81 Zeichen lange Zeichenkette ein. Verwenden Sie 1–9 für "
 "ausgefüllte Zellen und 0 oder ein beliebiges nicht-numerisches Zeichen "
@@ -296,25 +304,25 @@ msgstr ""
 "Zeilenumbrüche und Leerzeichen werden automatisch entfernt, sodass Sie eine "
 "Sudoku-Zeile pro Zeile mit optionalen Leerzeichen eingeben können."
 
-#: contents/ui/Import.qml:46
+#: contents/ui/Import.qml:48
 #, kde-format
 msgctxt "@button:title"
 msgid "Save current game"
 msgstr "Aktuelles Spiel speichern"
 
-#: contents/ui/Import.qml:54
+#: contents/ui/Import.qml:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: contents/ui/Import.qml:58
+#: contents/ui/Import.qml:60
 #, kde-format
 msgctxt "@action:button"
 msgid "Import"
 msgstr "Importieren"
 
-#: contents/ui/Import.qml:67
+#: contents/ui/Import.qml:69
 #, kde-format
 msgid ""
 "The provided string is not exactly 81 characters after cleanup. Please amend."

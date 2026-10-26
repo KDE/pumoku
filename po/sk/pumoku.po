@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-23 00:46+0000\n"
+"POT-Creation-Date: 2026-10-26 00:46+0000\n"
 "PO-Revision-Date: 2026-01-07 00:41+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -47,13 +47,12 @@ msgid "All is good!"
 msgstr "Všetko je v poriadku!"
 
 #: contents/ui/CheckBoardDialog.qml:83
-#, fuzzy, kde-format
-#| msgid "There is an error."
+#, kde-format
 msgid "There is an error"
 msgid_plural "There are some errors."
 msgstr[0] "Je tu chyba."
-msgstr[1] "Je tu chyba."
-msgstr[2] "Je tu chyba."
+msgstr[1] "Sú tu chyby."
+msgstr[2] "Sú tu chyby."
 
 #: contents/ui/FinishDialog.qml:53
 #, kde-format
@@ -61,56 +60,56 @@ msgctxt "@action:button, %1 is level name"
 msgid "Another %1"
 msgstr "Ďalšie %1"
 
-#: contents/ui/FinishDialog.qml:69
+#: contents/ui/FinishDialog.qml:71
 #, kde-format
 msgid "There is your solution"
 msgstr "Tu je vaše riešenie"
 
-#: contents/ui/FinishDialog.qml:70
+#: contents/ui/FinishDialog.qml:72
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You gave in after %1 steps."
 msgstr "Vzdali ste sa po %1 krokoch."
 
-#: contents/ui/FinishDialog.qml:71
+#: contents/ui/FinishDialog.qml:73
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Automatically solved. Hints: %1."
 msgstr "Automaticky vyriešené. Nápovedy: %1."
 
-#: contents/ui/FinishDialog.qml:74 contents/ui/FinishDialog.qml:84
+#: contents/ui/FinishDialog.qml:76 contents/ui/FinishDialog.qml:86
 #, kde-format
 msgid "Well done!"
 msgstr "Výborne!"
 
-#: contents/ui/FinishDialog.qml:75
+#: contents/ui/FinishDialog.qml:77
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku (with a bit of help) in %1 steps."
 msgstr "Vyriešili ste toto sudoku (s trochou pomoci) v %1 krokoch."
 
-#: contents/ui/FinishDialog.qml:77
+#: contents/ui/FinishDialog.qml:79
 #, kde-format
 msgid "Auto pencilmarks used."
 msgstr "Boli použité automatické ceruzkové značky."
 
-#: contents/ui/FinishDialog.qml:79
+#: contents/ui/FinishDialog.qml:81
 #, kde-format
 msgctxt "%1 is hint count"
 msgid "Hints: %1."
 msgstr "Nápovedy: %1."
 
-#: contents/ui/FinishDialog.qml:82
+#: contents/ui/FinishDialog.qml:84
 #, kde-format
 msgid "CONGRATULATIONS!!"
 msgstr "GRATULUJEME!!"
 
-#: contents/ui/FinishDialog.qml:82
+#: contents/ui/FinishDialog.qml:84
 #, kde-format
 msgid "PURE PERFECTION!!"
 msgstr "ČISTÁ DOKONALOSŤ!!"
 
-#: contents/ui/FinishDialog.qml:83
+#: contents/ui/FinishDialog.qml:85
 #, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku with no hints or help in %1 steps."
@@ -139,96 +138,96 @@ msgctxt "@intoolbar, toggle highlight display in sudoku board"
 msgid "Highlight"
 msgstr "Zvýraznenie"
 
-#: contents/ui/GamePage.qml:464
+#: contents/ui/GamePage.qml:470
 #, kde-format
 msgctxt "@action:button"
 msgid "Undo"
 msgstr "Späť"
 
-#: contents/ui/GamePage.qml:474
+#: contents/ui/GamePage.qml:480
 #, kde-format
 msgctxt "@action:button"
 msgid "Redo"
 msgstr "Znova"
 
-#: contents/ui/GamePage.qml:484
+#: contents/ui/GamePage.qml:490
 #, kde-format
 msgctxt "@action:button"
 msgid "Hint"
 msgstr "&Pokyn"
 
-#: contents/ui/GamePage.qml:490
+#: contents/ui/GamePage.qml:496
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
 msgstr "Skontrolovať hraciu plochu"
 
-#: contents/ui/GamePage.qml:497
+#: contents/ui/GamePage.qml:503
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Cell"
 msgstr "Vyriešiť bunku"
 
-#: contents/ui/GamePage.qml:510
+#: contents/ui/GamePage.qml:516
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set Pencilmarks"
 msgstr "Nastaviť ceruzkové značky"
 
-#: contents/ui/GamePage.qml:555
+#: contents/ui/GamePage.qml:561
 #, kde-format
 msgctxt "@action:button"
 msgid "Pencil"
 msgstr "Ceruzka"
 
-#: contents/ui/GamePage.qml:565
+#: contents/ui/GamePage.qml:571
 #, kde-format
 msgctxt "@action:button"
 msgid "Erase"
 msgstr "Mazať"
 
-#: contents/ui/GamePage.qml:575
+#: contents/ui/GamePage.qml:581
 #, kde-format
 msgctxt "@action:button"
 msgid "Game"
 msgstr "Hra"
 
-#: contents/ui/GamePage.qml:581
+#: contents/ui/GamePage.qml:587
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Clear Pencilmarks"
 msgstr "Vyčistiť ceruzkové značky"
 
-#: contents/ui/GamePage.qml:585
+#: contents/ui/GamePage.qml:591
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Reset Game"
 msgstr "Reštartovať hru?"
 
-#: contents/ui/GamePage.qml:589
+#: contents/ui/GamePage.qml:595
 #, kde-format
 msgctxt "@title:window"
 msgid "Reset Game?"
 msgstr "Resetovať hru?"
 
-#: contents/ui/GamePage.qml:590 contents/ui/GamePage.qml:618
+#: contents/ui/GamePage.qml:596 contents/ui/GamePage.qml:624
 #, kde-format
 msgid "You will lose any changes you have made, this cannot be undone."
 msgstr "Stratíte všetky vykonané zmeny, toto sa nedá vrátiť."
 
-#: contents/ui/GamePage.qml:599
+#: contents/ui/GamePage.qml:605
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Solve Game"
 msgstr "Vyriešiť hru"
 
-#: contents/ui/GamePage.qml:603
+#: contents/ui/GamePage.qml:609
 #, kde-format
 msgctxt "@title:window"
 msgid "Solve Game?"
 msgstr "Vyriešiť hru?"
 
-#: contents/ui/GamePage.qml:604
+#: contents/ui/GamePage.qml:610
 #, kde-format
 msgid ""
 "You will lose any changes you have made, this cannot be undone. You can’t "
@@ -237,44 +236,52 @@ msgstr ""
 "Stratíte všetky vykonané zmeny, toto sa nedá vrátiť. Nedokážete vyriešiť "
 "hlavolam sami!"
 
-#: contents/ui/GamePage.qml:613
+#: contents/ui/GamePage.qml:619
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Give Up"
 msgstr "Vzdať sa"
 
-#: contents/ui/GamePage.qml:617
+#: contents/ui/GamePage.qml:623
 #, kde-format
 msgctxt "@title:window"
 msgid "Give Up?"
 msgstr "Vzdať sa?"
 
-#: contents/ui/GamePage.qml:669
+#: contents/ui/GamePage.qml:675
 #, kde-format
 msgid "Please select a valid cell to solve."
 msgstr "Vyberte prosím platnú bunku na vyriešenie."
 
-#: contents/ui/GamePage.qml:672
+#: contents/ui/GamePage.qml:678
 #, kde-format
 msgid "Solve"
 msgstr "Vyriešiť"
 
-#: contents/ui/Import.qml:14
+#: contents/ui/Import.qml:13
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Sudoku"
 msgstr "Importovať sudoku"
 
-#: contents/ui/Import.qml:36
-#, kde-format
-msgctxt "Use en dash for number range"
+#: contents/ui/Import.qml:37
+#, fuzzy, kde-format
+#| msgctxt "Use en dash for number range"
+#| msgid ""
+#| "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
+#| "single non-numeric character except space will do for blanks cells. "
+#| "PuMoKu will check that the Sudoku is solvable and calculate the level.\n"
+#| "\n"
+#| "Line breaks and spaces are silently removed, so that you can enter one "
+#| "row per-line with some optional whitespace."
+msgctxt "Please use UTF character EN DASH (U+2013) for number range"
 msgid ""
 "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
 "single non-numeric character except space will do for blanks cells. PuMoKu "
 "will check that the Sudoku is solvable and calculate the level.\n"
 "\n"
-"Line breaks and spaces are silently removed, so that you can enter one row "
-"per-line with some optional whitespace."
+"Line breaks and spaces are silently removed, so that you can enter one or "
+"more rows per-line with some optional whitespace."
 msgstr ""
 "Zadajte alebo prilepte reťazec 81 znakov. 1–9 pre zadané bunky, 0 alebo "
 "akýkoľvek jeden nečíselný znak okrem medzery pre prázdne bunky. PuMoKu "
@@ -283,25 +290,25 @@ msgstr ""
 "Zlomy riadkov a medzery sa potichu odstránia, takže môžete zadať jeden "
 "riadok na riadok s nejakým voliteľným prázdnym priestorom."
 
-#: contents/ui/Import.qml:46
+#: contents/ui/Import.qml:48
 #, kde-format
 msgctxt "@button:title"
 msgid "Save current game"
 msgstr "Uložiť aktuálnu hru"
 
-#: contents/ui/Import.qml:54
+#: contents/ui/Import.qml:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: contents/ui/Import.qml:58
+#: contents/ui/Import.qml:60
 #, kde-format
 msgctxt "@action:button"
 msgid "Import"
 msgstr "Importovať"
 
-#: contents/ui/Import.qml:67
+#: contents/ui/Import.qml:69
 #, kde-format
 msgid ""
 "The provided string is not exactly 81 characters after cleanup. Please amend."
