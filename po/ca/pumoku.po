@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-26 00:46+0000\n"
-"PO-Revision-Date: 2026-10-23 10:51+0200\n"
+"PO-Revision-Date: 2026-10-26 09:38+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 26.08.2\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: contents/ui/CheckBoardDialog.qml:41
 #, kde-format
@@ -266,15 +266,7 @@ msgid "Import Sudoku"
 msgstr "Importa un Sudoku"
 
 #: contents/ui/Import.qml:37
-#, fuzzy, kde-format
-#| msgctxt "Use en dash for number range"
-#| msgid ""
-#| "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
-#| "single non-numeric character except space will do for blanks cells. "
-#| "PuMoKu will check that the Sudoku is solvable and calculate the level.\n"
-#| "\n"
-#| "Line breaks and spaces are silently removed, so that you can enter one "
-#| "row per-line with some optional whitespace."
+#, kde-format
 msgctxt "Please use UTF character EN DASH (U+2013) for number range"
 msgid ""
 "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
@@ -290,7 +282,7 @@ msgstr ""
 "calcularà el nivell.\n"
 "\n"
 "Els salts de línia i els espais s'eliminen en silenci, de manera que podeu "
-"introduir una línia per fila amb algun espai en blanc opcional."
+"introduir una o més línies per fila amb algun espai en blanc opcional."
 
 #: contents/ui/Import.qml:48
 #, kde-format

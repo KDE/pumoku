@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the pumoku package.
 # Automatically generated, 2025.
 #
-# SPDX-FileCopyrightText: 2025-2026 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2025 Eloy Cuadra <ecuadra@eloihr.net>
 # SPDX-FileCopyrightText: 2026 Sofía Priego <spriego@darksylvania.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-26 00:46+0000\n"
-"PO-Revision-Date: 2026-10-24 00:31+0100\n"
+"PO-Revision-Date: 2026-10-27 00:37+0100\n"
 "Last-Translator: Sofía Priego <spriego@darksylvania.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -268,15 +268,7 @@ msgid "Import Sudoku"
 msgstr "Importar sudoku"
 
 #: contents/ui/Import.qml:37
-#, fuzzy, kde-format
-#| msgctxt "Use en dash for number range"
-#| msgid ""
-#| "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
-#| "single non-numeric character except space will do for blanks cells. "
-#| "PuMoKu will check that the Sudoku is solvable and calculate the level.\n"
-#| "\n"
-#| "Line breaks and spaces are silently removed, so that you can enter one "
-#| "row per-line with some optional whitespace."
+#, kde-format
 msgctxt "Please use UTF character EN DASH (U+2013) for number range"
 msgid ""
 "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
@@ -292,7 +284,8 @@ msgstr ""
 "nivel.\n"
 "\n"
 "Los saltos de línea y los espacios se ignoran, por lo que se puede "
-"introducir una fila por línea con varios espacios en blanco opcionales."
+"introducir una o más filas por línea con varios espacios en blanco "
+"opcionales."
 
 #: contents/ui/Import.qml:48
 #, kde-format
