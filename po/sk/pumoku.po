@@ -1,16 +1,16 @@
 # Slovak translations for pumoku package.
 # Copyright (C) 2026 This file is copyright:
 # This file is distributed under the same license as the pumoku package.
-# Automatically generated, 2026.
+# Roman Paholík <wizzardsk@gmail.com>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-26 00:46+0000\n"
-"PO-Revision-Date: 2026-01-07 00:41+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-28 10:57+0100\n"
+"Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
+"Language-Team: Slovak <opensuse-translation@opensuse.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -265,15 +265,7 @@ msgid "Import Sudoku"
 msgstr "Importovať sudoku"
 
 #: contents/ui/Import.qml:37
-#, fuzzy, kde-format
-#| msgctxt "Use en dash for number range"
-#| msgid ""
-#| "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
-#| "single non-numeric character except space will do for blanks cells. "
-#| "PuMoKu will check that the Sudoku is solvable and calculate the level.\n"
-#| "\n"
-#| "Line breaks and spaces are silently removed, so that you can enter one "
-#| "row per-line with some optional whitespace."
+#, kde-format
 msgctxt "Please use UTF character EN DASH (U+2013) for number range"
 msgid ""
 "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
@@ -285,10 +277,10 @@ msgid ""
 msgstr ""
 "Zadajte alebo prilepte reťazec 81 znakov. 1–9 pre zadané bunky, 0 alebo "
 "akýkoľvek jeden nečíselný znak okrem medzery pre prázdne bunky. PuMoKu "
-"skontroluje, či je sudoku riešiteľné a vypočíta úroveň.\n"
+"skontroluje, či je sudoku riešiteľné, a vypočíta úroveň.\n"
 "\n"
-"Zlomy riadkov a medzery sa potichu odstránia, takže môžete zadať jeden "
-"riadok na riadok s nejakým voliteľným prázdnym priestorom."
+"Zlomy riadkov a medzery sa potichu odstránia, takže môžete zadať jeden alebo "
+"viac riadkov na riadok s voliteľnými medzerami."
 
 #: contents/ui/Import.qml:48
 #, kde-format
