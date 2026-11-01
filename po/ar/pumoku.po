@@ -1,13 +1,13 @@
 # Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the pumoku package.
-# SPDX-FileCopyrightText: 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2025-2026 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-26 00:46+0000\n"
-"PO-Revision-Date: 2025-12-13 11:06+0400\n"
+"PO-Revision-Date: 2026-10-31 17:36+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -16,24 +16,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 26.08.1\n"
 
 #: contents/ui/CheckBoardDialog.qml:41
 #, kde-format
 msgctxt "@action:button"
 msgid "Show me"
-msgstr ""
+msgstr "أَرِني"
 
 #: contents/ui/CheckBoardDialog.qml:47
 #, kde-format
 msgctxt "@action:button, undo recursively"
 msgid "Scroll back"
-msgstr ""
+msgstr "لفّ للخلف"
 
 #: contents/ui/CheckBoardDialog.qml:51
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Reset Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "Reset game"
 msgstr "صفّر اللعبة"
@@ -42,23 +40,23 @@ msgstr "صفّر اللعبة"
 #, kde-format
 msgctxt "@action:button"
 msgid "Close"
-msgstr ""
+msgstr "أغلق"
 
 #: contents/ui/CheckBoardDialog.qml:82
 #, kde-format
 msgid "All is good!"
-msgstr ""
+msgstr "كل شيء على ما يرام!"
 
 #: contents/ui/CheckBoardDialog.qml:83
 #, kde-format
 msgid "There is an error"
 msgid_plural "There are some errors."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
+msgstr[0] "هناك خطأ"
+msgstr[1] "هناك خطأ"
+msgstr[2] "هناك خطأن"
+msgstr[3] "هناك بعض الأخطاء"
+msgstr[4] "هناك بعض الأخطاء"
+msgstr[5] "هناك بعض الأخطاء"
 
 #: contents/ui/FinishDialog.qml:53
 #, kde-format
@@ -89,12 +87,10 @@ msgid "Well done!"
 msgstr "أحسنت عملًا!"
 
 #: contents/ui/FinishDialog.qml:77
-#, fuzzy, kde-format
-#| msgctxt "%1 is level name, %2 is step count"
-#| msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
+#, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku (with a bit of help) in %1 steps."
-msgstr "أنهيت هذا اللغز %1 سودوكو (بقليل من المساعدة) باستخدام %2 خطوات."
+msgstr "حللت هذا السودوكو (ببعض المساعدة) في %1 خطوة."
 
 #: contents/ui/FinishDialog.qml:79
 #, kde-format
@@ -115,40 +111,33 @@ msgstr "تَهَانِينَا!!"
 #: contents/ui/FinishDialog.qml:84
 #, kde-format
 msgid "PURE PERFECTION!!"
-msgstr ""
+msgstr "كمال مطلق!!"
 
 #: contents/ui/FinishDialog.qml:85
-#, fuzzy, kde-format
-#| msgctxt "%1 is level name, %2 is step count"
-#| msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
+#, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku with no hints or help in %1 steps."
-msgstr ""
-"أنهيت لعبة سودوكو هذه بنسبة %1 دون أي تلميحات أو مساعدة باستخدام %2 خطوات."
+msgstr "حللت هذا السودوكو دون تلميحات أو مساعدة في %1 خطوة."
 
 #: contents/ui/GamePage.qml:54
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Share"
-msgstr ""
+msgstr "شارك"
 
 #: contents/ui/GamePage.qml:59
 #, kde-format
 msgid "Play at sudokuexchange.com"
-msgstr ""
+msgstr "العب على sudokuexchange.com"
 
 #: contents/ui/GamePage.qml:63
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Set Pencilmarks"
+#, kde-format
 msgctxt "@action:intoolbar, toggle pencilmarks display in sudoku board"
 msgid "Pencilmarks"
-msgstr "ضع علامات قلم رصاص"
+msgstr "علامات قلم رصاص"
 
 #: contents/ui/GamePage.qml:75
-#, fuzzy, kde-format
-#| msgctxt "@title"
-#| msgid "Highlight"
+#, kde-format
 msgctxt "@intoolbar, toggle highlight display in sudoku board"
 msgid "Highlight"
 msgstr "الإبراز"
@@ -175,7 +164,7 @@ msgstr "تلميح"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Check board"
-msgstr ""
+msgstr "افحص اللوحة"
 
 #: contents/ui/GamePage.qml:503
 #, kde-format
@@ -279,15 +268,7 @@ msgid "Import Sudoku"
 msgstr "استيراد سودوكو"
 
 #: contents/ui/Import.qml:37
-#, fuzzy, kde-format
-#| msgctxt "Use en dash for number range"
-#| msgid ""
-#| "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
-#| "single non-numeric character except space will do for blanks cells. "
-#| "PuMoKu will check that the Sudoku is solvable and calculate the level.\n"
-#| "\n"
-#| "Line breaks and spaces are silently removed, so that you can enter one "
-#| "row per-line with some optional whitespace."
+#, kde-format
 msgctxt "Please use UTF character EN DASH (U+2013) for number range"
 msgid ""
 "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
@@ -301,8 +282,8 @@ msgstr ""
 "باستثناء المسافة للخلايا الفارغة. سيتحقق بوموكو من إمكانية حل سوودوكو ويحسب "
 "المستوى.\n"
 "\n"
-"تحذف فواصل الأسطر والمسافات آليًا، بحيث يمكنك إدخال صف واحد في كل سطر مع بعض "
-"المسافات البيضاء الاختيارية."
+"تحذف فواصل الأسطر والمسافات آليًا، بحيث يمكنك إدخال صف واحد أو أكثر من صف في "
+"كل سطر مع بعض المسافات البيضاء الاختيارية."
 
 #: contents/ui/Import.qml:48
 #, kde-format
@@ -448,7 +429,7 @@ msgstr "قيم خاطئة"
 #, kde-format
 msgctxt "@title:menu"
 msgid "Share sudokuexchange.com link"
-msgstr ""
+msgstr "شارك رابط sudokuexchange.com"
 
 #: main.cpp:76
 #, kde-format
