@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-26 00:46+0000\n"
-"PO-Revision-Date: 2026-10-01 09:12+0300\n"
+"PO-Revision-Date: 2026-11-03 20:32+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,33 +16,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 26.08.0\n"
+"X-Generator: Lokalize 26.08.1\n"
 
 #: contents/ui/CheckBoardDialog.qml:41
 #, kde-format
 msgctxt "@action:button"
 msgid "Show me"
-msgstr ""
+msgstr "להראות לי"
 
 #: contents/ui/CheckBoardDialog.qml:47
 #, kde-format
 msgctxt "@action:button, undo recursively"
 msgid "Scroll back"
-msgstr ""
+msgstr "גלילה אחורה"
 
 #: contents/ui/CheckBoardDialog.qml:51
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Reset Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "Reset game"
-msgstr "איפוס משחק"
+msgstr "איפוס המשחק"
 
 #: contents/ui/CheckBoardDialog.qml:64
 #, kde-format
 msgctxt "@action:button"
 msgid "Close"
-msgstr ""
+msgstr "סגירה"
 
 #: contents/ui/CheckBoardDialog.qml:82
 #, kde-format
@@ -50,14 +48,13 @@ msgid "All is good!"
 msgstr "הכול בסדר!"
 
 #: contents/ui/CheckBoardDialog.qml:83
-#, fuzzy, kde-format
-#| msgid "There is an error."
+#, kde-format
 msgid "There is an error"
 msgid_plural "There are some errors."
-msgstr[0] "יש שגיאה."
-msgstr[1] "יש שגיאה."
-msgstr[2] "יש שגיאה."
-msgstr[3] "יש שגיאה."
+msgstr[0] "יש שגיאה"
+msgstr[1] "יש כמה שגיאות."
+msgstr[2] "יש כמה שגיאות."
+msgstr[3] "יש כמה שגיאות."
 
 #: contents/ui/FinishDialog.qml:53
 #, kde-format
@@ -124,7 +121,7 @@ msgstr "פתרת את הסודוקו הזה ללא רמזים או עזרה תו
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Share"
-msgstr ""
+msgstr "שיתוף"
 
 #: contents/ui/GamePage.qml:59
 #, kde-format
@@ -132,17 +129,13 @@ msgid "Play at sudokuexchange.com"
 msgstr "אפשר לשחק דרך sudokuexchange.com"
 
 #: contents/ui/GamePage.qml:63
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Set Pencilmarks"
+#, kde-format
 msgctxt "@action:intoolbar, toggle pencilmarks display in sudoku board"
 msgid "Pencilmarks"
-msgstr "הגדרת סימון בעיפרון"
+msgstr "סימון בעיפרון"
 
 #: contents/ui/GamePage.qml:75
-#, fuzzy, kde-format
-#| msgctxt "@title"
-#| msgid "Highlight"
+#, kde-format
 msgctxt "@intoolbar, toggle highlight display in sudoku board"
 msgid "Highlight"
 msgstr "הדגשה"
@@ -274,15 +267,7 @@ msgid "Import Sudoku"
 msgstr "ייבוא סודוקו"
 
 #: contents/ui/Import.qml:37
-#, fuzzy, kde-format
-#| msgctxt "Use en dash for number range"
-#| msgid ""
-#| "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
-#| "single non-numeric character except space will do for blanks cells. "
-#| "PuMoKu will check that the Sudoku is solvable and calculate the level.\n"
-#| "\n"
-#| "Line breaks and spaces are silently removed, so that you can enter one "
-#| "row per-line with some optional whitespace."
+#, kde-format
 msgctxt "Please use UTF character EN DASH (U+2013) for number range"
 msgid ""
 "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
@@ -296,8 +281,8 @@ msgstr ""
 "ספרה למעט רווח יספיק לציון תאים ריקים. PuMoKu יבדוק שהסודוקו פתיר ויחשב את "
 "הרמה.\n"
 "\n"
-"ירידות שורה ורווחים נמחקים בסתר, כדי לאפשר לך למלא שורה בקובץ עם רווחים "
-"כראות עיניך או עינייך."
+"ירידות שורה ורווחים נמחקים בסתר, כדי לאפשר לך למלא שורה או יותר בקובץ עם "
+"רווחים כראות עיניך או עינייך."
 
 #: contents/ui/Import.qml:48
 #, kde-format
