@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-26 00:46+0000\n"
-"PO-Revision-Date: 2026-01-05 20:45+0200\n"
+"PO-Revision-Date: 2026-10-06 17:17+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -46,7 +46,7 @@ msgstr ""
 #: contents/ui/CheckBoardDialog.qml:82
 #, kde-format
 msgid "All is good!"
-msgstr ""
+msgstr "Kaikki hyvin!"
 
 #: contents/ui/CheckBoardDialog.qml:83
 #, kde-format
@@ -84,12 +84,10 @@ msgid "Well done!"
 msgstr "Hyvää työtä!"
 
 #: contents/ui/FinishDialog.qml:77
-#, fuzzy, kde-format
-#| msgctxt "%1 is level name, %2 is step count"
-#| msgid "You finished this %1 Sudoku (with a bit of help) using %2 steps."
+#, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku (with a bit of help) in %1 steps."
-msgstr "Pääsit loppuun tämän %1-sudokun (pienellä avustuksella) %2 vaiheessa."
+msgstr "Ratkaisit tämän sudokun (pienellä avustuksella) %1 vaiheessa."
 
 #: contents/ui/FinishDialog.qml:79
 #, kde-format
@@ -110,15 +108,13 @@ msgstr "ONNEA!!"
 #: contents/ui/FinishDialog.qml:84
 #, kde-format
 msgid "PURE PERFECTION!!"
-msgstr ""
+msgstr "AIVAN TÄYDELLISTÄ!!"
 
 #: contents/ui/FinishDialog.qml:85
-#, fuzzy, kde-format
-#| msgctxt "%1 is level name, %2 is step count"
-#| msgid "You finished this %1 Sudoku with no hints or help using %2 steps."
+#, kde-format
 msgctxt "%1 is step count"
 msgid "You solved this sudoku with no hints or help in %1 steps."
-msgstr "Pääsit loppuun tämän %1-sudokun avustuksetta ja ohjeitta %2 vaiheessa."
+msgstr "Ratkaisit sudokun vihjeittä ja ohjeitta %1 vaiheessa."
 
 #: contents/ui/GamePage.qml:54
 #, kde-format
@@ -129,7 +125,7 @@ msgstr ""
 #: contents/ui/GamePage.qml:59
 #, kde-format
 msgid "Play at sudokuexchange.com"
-msgstr ""
+msgstr "Pelaa sudokuexchange.comissa"
 
 #: contents/ui/GamePage.qml:63
 #, fuzzy, kde-format
@@ -445,7 +441,7 @@ msgstr "Väärät arvot"
 #, kde-format
 msgctxt "@title:menu"
 msgid "Share sudokuexchange.com link"
-msgstr ""
+msgstr "Jaa sudokuexchange.com-linkki"
 
 #: main.cpp:76
 #, kde-format
