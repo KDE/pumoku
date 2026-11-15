@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: pumoku\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-26 00:46+0000\n"
-"PO-Revision-Date: 2026-10-09 22:30+0200\n"
+"PO-Revision-Date: 2026-11-14 16:15+0100\n"
 "Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr@latin\n"
@@ -21,18 +21,16 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Show me"
-msgstr ""
+msgstr "Prikaži"
 
 #: contents/ui/CheckBoardDialog.qml:47
 #, kde-format
 msgctxt "@action:button, undo recursively"
 msgid "Scroll back"
-msgstr ""
+msgstr "Premotaj unazad"
 
 #: contents/ui/CheckBoardDialog.qml:51
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Reset Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "Reset game"
 msgstr "Resetuj igru"
@@ -41,7 +39,7 @@ msgstr "Resetuj igru"
 #, kde-format
 msgctxt "@action:button"
 msgid "Close"
-msgstr ""
+msgstr "Zatvori"
 
 #: contents/ui/CheckBoardDialog.qml:82
 #, kde-format
@@ -49,14 +47,13 @@ msgid "All is good!"
 msgstr "Sve je u redu!"
 
 #: contents/ui/CheckBoardDialog.qml:83
-#, fuzzy, kde-format
-#| msgid "There is an error."
+#, kde-format
 msgid "There is an error"
 msgid_plural "There are some errors."
-msgstr[0] "Ima jedna greška."
-msgstr[1] "Ima jedna greška."
-msgstr[2] "Ima jedna greška."
-msgstr[3] "Ima jedna greška."
+msgstr[0] "Ima više grešaka."
+msgstr[1] "Ima više grešaka."
+msgstr[2] "Ima više grešaka."
+msgstr[3] "Ima jedna greška"
 
 #: contents/ui/FinishDialog.qml:53
 #, kde-format
@@ -123,7 +120,7 @@ msgstr "Rešili ste ovaj sudoku bez saveta i pomoći. Broj koraka: %1."
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Share"
-msgstr ""
+msgstr "Podeli"
 
 #: contents/ui/GamePage.qml:59
 #, kde-format
@@ -131,17 +128,13 @@ msgid "Play at sudokuexchange.com"
 msgstr "Igraj na sudokuexchange.com"
 
 #: contents/ui/GamePage.qml:63
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Set Pencilmarks"
+#, kde-format
 msgctxt "@action:intoolbar, toggle pencilmarks display in sudoku board"
 msgid "Pencilmarks"
-msgstr "Postavi beleške"
+msgstr "Beleške"
 
 #: contents/ui/GamePage.qml:75
-#, fuzzy, kde-format
-#| msgctxt "@title"
-#| msgid "Highlight"
+#, kde-format
 msgctxt "@intoolbar, toggle highlight display in sudoku board"
 msgid "Highlight"
 msgstr "Isticanje"
@@ -273,15 +266,7 @@ msgid "Import Sudoku"
 msgstr "Uvoz sudokua"
 
 #: contents/ui/Import.qml:37
-#, fuzzy, kde-format
-#| msgctxt "Use en dash for number range"
-#| msgid ""
-#| "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
-#| "single non-numeric character except space will do for blanks cells. "
-#| "PuMoKu will check that the Sudoku is solvable and calculate the level.\n"
-#| "\n"
-#| "Line breaks and spaces are silently removed, so that you can enter one "
-#| "row per-line with some optional whitespace."
+#, kde-format
 msgctxt "Please use UTF character EN DASH (U+2013) for number range"
 msgid ""
 "Enter or paste a string of 81 characters. 1–9 for given cells, 0 or any "
@@ -295,8 +280,8 @@ msgstr ""
 "pojedinačni znak koji nije cifra, osim razmaka, za prazne ćelije. PuMoKu će "
 "proveriti da li sudoku može da se reši i izračunati nivo.\n"
 "\n"
-"Prelomi redova i razmaci se tiho uklanjaju, tako da možete uneti po jednu "
-"vrstu table u svakom redu, uz neobavezne praznine."
+"Prelomi redova i razmaci se tiho uklanjaju, tako da možete uneti jednu ili "
+"više vrsta table u svakom redu, uz neobavezne praznine."
 
 #: contents/ui/Import.qml:48
 #, kde-format
@@ -553,9 +538,3 @@ msgstr "Zadati sudoku nema jedinstveno rešenje."
 #, kde-format
 msgid "The provided Sudoku is not solvable."
 msgstr "Zadati sudoku ne može da se reši."
-
-#~ msgid "There are some errors."
-#~ msgstr "Ima nekoliko grešaka."
-
-#~ msgid "Check board: "
-#~ msgstr "Provera table: "
